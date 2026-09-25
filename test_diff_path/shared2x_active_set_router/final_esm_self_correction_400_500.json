@@ -1,0 +1,78 @@
+{
+  "method": "per-snapshot ESM sequential-admission self-correction",
+  "final_config": {
+    "steps": 24,
+    "learning_rate": 0.06,
+    "low_weight": 0.25,
+    "anchor_weight": 0.01
+  },
+  "selection_protocol": {
+    "exploration": [
+      350,
+      358
+    ],
+    "validation": [
+      358,
+      400
+    ],
+    "final_untouched_test": [
+      400,
+      500
+    ]
+  },
+  "input_contract": {
+    "policy_correction": "ESM-predicted High/Medium/Low TMs only",
+    "actual_TM": "sequential-admission evaluation only"
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "correction_seconds_for_100_snapshots": 43.33836560000054,
+  "deployment_mode": "strict one-snapshot-at-a-time correction",
+  "batch_independence_max_abs_delta": 0.004194855690002441,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985364955663681,
+      "norm_fulfill_p1": 0.9882580137252808,
+      "norm_fulfill_p10": 0.9963001132011413
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662250041962,
+      "norm_fulfill_p1": 0.8901874989271163,
+      "norm_fulfill_p10": 0.8966957449913024
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1472881764173508,
+      "norm_fulfill_p1": 0.9548773527145386,
+      "norm_fulfill_p10": 0.9992087304592132
+    }
+  },
+  "candidate": {
+    "High": {
+      "norm_fulfill_mean": 0.9985364937782287,
+      "norm_fulfill_p1": 0.9882580137252808,
+      "norm_fulfill_p10": 0.9963001132011413
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9551847970485687,
+      "norm_fulfill_p1": 0.9037061595916748,
+      "norm_fulfill_p10": 0.9202934384346009
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1681529647111892,
+      "norm_fulfill_p1": 0.9813958084583283,
+      "norm_fulfill_p10": 1.0097174048423767
+    }
+  },
+  "delta": {
+    "High.norm_fulfill_mean": -1.7881394143159923e-09,
+    "High.norm_fulfill_p1": 0.0,
+    "High.norm_fulfill_p10": 0.0,
+    "Medium.norm_fulfill_mean": 0.02081857204437254,
+    "Medium.norm_fulfill_p1": 0.013518660664558424,
+    "Medium.norm_fulfill_p10": 0.02359769344329843,
+    "Low.norm_fulfill_mean": 0.02086478829383842,
+    "Low.norm_fulfill_p1": 0.02651845574378975,
+    "Low.norm_fulfill_p10": 0.010508674383163497
+  },
+  "constraints_passed": true
+}

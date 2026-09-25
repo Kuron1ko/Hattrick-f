@@ -1,0 +1,347 @@
+{
+  "strict_esm": true,
+  "training_bounds": [
+    0,
+    318
+  ],
+  "loads": {
+    "2": {
+      "od_widths": [
+        462,
+        462,
+        462
+      ],
+      "splits": {
+        "development": {
+          "raw": {
+            "nmae": 0.11933004856109619,
+            "nrmse": 0.4589807987213135,
+            "snapshot_total_correlation": 0.9791056171975284,
+            "mean_ratio": 0.9987320303916931
+          },
+          "per_feature_scale": {
+            "nmae": 0.11842577159404755,
+            "nrmse": 0.4564956724643707,
+            "snapshot_total_correlation": 0.9794428903010309,
+            "mean_ratio": 0.9846606254577637
+          },
+          "per_feature_affine": {
+            "nmae": 0.12632392346858978,
+            "nrmse": 0.45531943440437317,
+            "snapshot_total_correlation": 0.9795945702361476,
+            "mean_ratio": 1.014338493347168
+          },
+          "ridge_log_0.01": {
+            "nmae": 0.41365744725079423,
+            "nrmse": 1.3737343846065144,
+            "snapshot_total_correlation": 0.8839662056412948,
+            "mean_ratio": 1.1236987443798436
+          },
+          "ridge_log_0.1": {
+            "nmae": 0.29958136852835476,
+            "nrmse": 1.0519618462757987,
+            "snapshot_total_correlation": 0.9499041958012796,
+            "mean_ratio": 1.055436459847541
+          },
+          "ridge_log_1": {
+            "nmae": 0.24295757318507383,
+            "nrmse": 0.9761580778046997,
+            "snapshot_total_correlation": 0.9775782158556031,
+            "mean_ratio": 1.027550422960638
+          },
+          "ridge_log_10": {
+            "nmae": 0.26216270149733567,
+            "nrmse": 1.169688366599127,
+            "snapshot_total_correlation": 0.9797315653730563,
+            "mean_ratio": 1.0269256214983253
+          },
+          "ridge_log_100": {
+            "nmae": 0.341100693031295,
+            "nrmse": 1.5562345531274955,
+            "snapshot_total_correlation": 0.9756459864593762,
+            "mean_ratio": 1.0858857334294092
+          },
+          "knn_residual_1": {
+            "nmae": 0.17248590290546417,
+            "nrmse": 0.6063242554664612,
+            "snapshot_total_correlation": 0.9768976170521082,
+            "mean_ratio": 1.003766417503357
+          },
+          "knn_residual_4": {
+            "nmae": 0.134974867105484,
+            "nrmse": 0.49031031131744385,
+            "snapshot_total_correlation": 0.983234486981213,
+            "mean_ratio": 0.9979181885719299
+          },
+          "knn_residual_8": {
+            "nmae": 0.1276945024728775,
+            "nrmse": 0.4724828600883484,
+            "snapshot_total_correlation": 0.986270711069896,
+            "mean_ratio": 0.9934437870979309
+          },
+          "knn_residual_16": {
+            "nmae": 0.12364163249731064,
+            "nrmse": 0.4610083997249603,
+            "snapshot_total_correlation": 0.9861362268290561,
+            "mean_ratio": 0.9925105571746826
+          },
+          "knn_residual_32": {
+            "nmae": 0.12130916863679886,
+            "nrmse": 0.4616137444972992,
+            "snapshot_total_correlation": 0.9835351788388962,
+            "mean_ratio": 0.9942798614501953
+          }
+        },
+        "evaluation": {
+          "raw": {
+            "nmae": 0.13293002545833588,
+            "nrmse": 0.4507729709148407,
+            "snapshot_total_correlation": 0.9893060884903164,
+            "mean_ratio": 0.9946012496948242
+          },
+          "per_feature_scale": {
+            "nmae": 0.13169655203819275,
+            "nrmse": 0.45031216740608215,
+            "snapshot_total_correlation": 0.9890334106234903,
+            "mean_ratio": 0.9754741787910461
+          },
+          "per_feature_affine": {
+            "nmae": 0.13401925563812256,
+            "nrmse": 0.44859224557876587,
+            "snapshot_total_correlation": 0.9892150410088947,
+            "mean_ratio": 0.9796994924545288
+          },
+          "ridge_log_0.01": {
+            "nmae": 0.4953224018951426,
+            "nrmse": 1.7921301047246854,
+            "snapshot_total_correlation": 0.9680791714766247,
+            "mean_ratio": 1.115454054182292
+          },
+          "ridge_log_0.1": {
+            "nmae": 0.345620057718099,
+            "nrmse": 1.187013280661627,
+            "snapshot_total_correlation": 0.9797695992394063,
+            "mean_ratio": 1.0281750046346148
+          },
+          "ridge_log_1": {
+            "nmae": 0.27523741502522137,
+            "nrmse": 1.0583704723979908,
+            "snapshot_total_correlation": 0.9841863335924435,
+            "mean_ratio": 1.0089155941698797
+          },
+          "ridge_log_10": {
+            "nmae": 0.2709380035220661,
+            "nrmse": 1.1727346169678614,
+            "snapshot_total_correlation": 0.9846911048087322,
+            "mean_ratio": 0.9935595558728347
+          },
+          "ridge_log_100": {
+            "nmae": 0.29883902067299367,
+            "nrmse": 1.34700999993943,
+            "snapshot_total_correlation": 0.9858587127371353,
+            "mean_ratio": 0.9129683269439471
+          },
+          "knn_residual_1": {
+            "nmae": 0.18566375970840454,
+            "nrmse": 0.612101137638092,
+            "snapshot_total_correlation": 0.9906053106607924,
+            "mean_ratio": 0.985319197177887
+          },
+          "knn_residual_4": {
+            "nmae": 0.15076543390750885,
+            "nrmse": 0.49449479579925537,
+            "snapshot_total_correlation": 0.9921188455493245,
+            "mean_ratio": 0.9820523262023926
+          },
+          "knn_residual_8": {
+            "nmae": 0.14242449402809143,
+            "nrmse": 0.4665262699127197,
+            "snapshot_total_correlation": 0.991891504031667,
+            "mean_ratio": 0.9837114214897156
+          },
+          "knn_residual_16": {
+            "nmae": 0.1371370106935501,
+            "nrmse": 0.45922061800956726,
+            "snapshot_total_correlation": 0.9918237721409022,
+            "mean_ratio": 0.9865615963935852
+          },
+          "knn_residual_32": {
+            "nmae": 0.13436490297317505,
+            "nrmse": 0.4556461572647095,
+            "snapshot_total_correlation": 0.9919127582149692,
+            "mean_ratio": 0.9881529808044434
+          }
+        }
+      }
+    },
+    "3": {
+      "od_widths": [
+        462,
+        462,
+        462
+      ],
+      "splits": {
+        "development": {
+          "raw": {
+            "nmae": 0.11932992935180664,
+            "nrmse": 0.4589807987213135,
+            "snapshot_total_correlation": 0.9791056134591688,
+            "mean_ratio": 0.998731255531311
+          },
+          "per_feature_scale": {
+            "nmae": 0.11842577904462814,
+            "nrmse": 0.45649564266204834,
+            "snapshot_total_correlation": 0.979442906872543,
+            "mean_ratio": 0.9846603274345398
+          },
+          "per_feature_affine": {
+            "nmae": 0.1263238936662674,
+            "nrmse": 0.4553193747997284,
+            "snapshot_total_correlation": 0.9795945609863643,
+            "mean_ratio": 1.014338493347168
+          },
+          "ridge_log_0.01": {
+            "nmae": 0.41609526669982966,
+            "nrmse": 1.4247750709805236,
+            "snapshot_total_correlation": 0.8754473285474338,
+            "mean_ratio": 1.1248053185596716
+          },
+          "ridge_log_0.1": {
+            "nmae": 0.3007114010643278,
+            "nrmse": 1.0830735387762196,
+            "snapshot_total_correlation": 0.945486302639044,
+            "mean_ratio": 1.054378156509856
+          },
+          "ridge_log_1": {
+            "nmae": 0.24448206105632284,
+            "nrmse": 1.007110772279728,
+            "snapshot_total_correlation": 0.9762252383779135,
+            "mean_ratio": 1.0243962296340297
+          },
+          "ridge_log_10": {
+            "nmae": 0.2637273055136407,
+            "nrmse": 1.2163629477849525,
+            "snapshot_total_correlation": 0.9796083886175202,
+            "mean_ratio": 1.022071178191031
+          },
+          "ridge_log_100": {
+            "nmae": 0.34141664807778405,
+            "nrmse": 1.6035487770704064,
+            "snapshot_total_correlation": 0.9750652428990276,
+            "mean_ratio": 1.0793925874764065
+          },
+          "knn_residual_1": {
+            "nmae": 0.17208744585514069,
+            "nrmse": 0.6092340350151062,
+            "snapshot_total_correlation": 0.9768878959895502,
+            "mean_ratio": 1.0021717548370361
+          },
+          "knn_residual_4": {
+            "nmae": 0.13483887910842896,
+            "nrmse": 0.49111488461494446,
+            "snapshot_total_correlation": 0.9827947675380757,
+            "mean_ratio": 0.9967407584190369
+          },
+          "knn_residual_8": {
+            "nmae": 0.12764497101306915,
+            "nrmse": 0.47399774193763733,
+            "snapshot_total_correlation": 0.9864367032171436,
+            "mean_ratio": 0.9931263327598572
+          },
+          "knn_residual_16": {
+            "nmae": 0.12342312932014465,
+            "nrmse": 0.45988744497299194,
+            "snapshot_total_correlation": 0.9860178491844813,
+            "mean_ratio": 0.9921559691429138
+          },
+          "knn_residual_32": {
+            "nmae": 0.12110897898674011,
+            "nrmse": 0.4606614410877228,
+            "snapshot_total_correlation": 0.983833327987752,
+            "mean_ratio": 0.993973970413208
+          }
+        },
+        "evaluation": {
+          "raw": {
+            "nmae": 0.1329299360513687,
+            "nrmse": 0.4507729113101959,
+            "snapshot_total_correlation": 0.9893060839318184,
+            "mean_ratio": 0.9946006536483765
+          },
+          "per_feature_scale": {
+            "nmae": 0.13169655203819275,
+            "nrmse": 0.4503121078014374,
+            "snapshot_total_correlation": 0.9890334261924508,
+            "mean_ratio": 0.9754739999771118
+          },
+          "per_feature_affine": {
+            "nmae": 0.13401921093463898,
+            "nrmse": 0.4485921561717987,
+            "snapshot_total_correlation": 0.9892150512068746,
+            "mean_ratio": 0.979699432849884
+          },
+          "ridge_log_0.01": {
+            "nmae": 0.5115718577755088,
+            "nrmse": 2.0053103886145265,
+            "snapshot_total_correlation": 0.9617232739155485,
+            "mean_ratio": 1.1298251930641476
+          },
+          "ridge_log_0.1": {
+            "nmae": 0.35238628384201937,
+            "nrmse": 1.2545328540240877,
+            "snapshot_total_correlation": 0.9768446478855743,
+            "mean_ratio": 1.0315322848079693
+          },
+          "ridge_log_1": {
+            "nmae": 0.2780848381919814,
+            "nrmse": 1.084781837820237,
+            "snapshot_total_correlation": 0.9828646227161786,
+            "mean_ratio": 1.0079027790628132
+          },
+          "ridge_log_10": {
+            "nmae": 0.2727437505180473,
+            "nrmse": 1.2034577464257774,
+            "snapshot_total_correlation": 0.983653709487048,
+            "mean_ratio": 0.9913941209052881
+          },
+          "ridge_log_100": {
+            "nmae": 0.2997526760700021,
+            "nrmse": 1.3765086427452897,
+            "snapshot_total_correlation": 0.9854385241794568,
+            "mean_ratio": 0.908052525195612
+          },
+          "knn_residual_1": {
+            "nmae": 0.1868109554052353,
+            "nrmse": 0.621857762336731,
+            "snapshot_total_correlation": 0.9906727078106191,
+            "mean_ratio": 0.9840782880783081
+          },
+          "knn_residual_4": {
+            "nmae": 0.15095356106758118,
+            "nrmse": 0.4977799952030182,
+            "snapshot_total_correlation": 0.9920968128352657,
+            "mean_ratio": 0.98179030418396
+          },
+          "knn_residual_8": {
+            "nmae": 0.14228525757789612,
+            "nrmse": 0.46893975138664246,
+            "snapshot_total_correlation": 0.9919994381730319,
+            "mean_ratio": 0.9834479093551636
+          },
+          "knn_residual_16": {
+            "nmae": 0.13704946637153625,
+            "nrmse": 0.4587235152721405,
+            "snapshot_total_correlation": 0.9919745976108899,
+            "mean_ratio": 0.9859723448753357
+          },
+          "knn_residual_32": {
+            "nmae": 0.13429003953933716,
+            "nrmse": 0.45694002509117126,
+            "snapshot_total_correlation": 0.9920153974919476,
+            "mean_ratio": 0.9877359867095947
+          }
+        }
+      }
+    }
+  }
+}

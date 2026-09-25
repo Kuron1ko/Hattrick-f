@@ -1,0 +1,169 @@
+{
+  "method": "joint HOFR with train-only affine ESM calibration",
+  "scope": "frozen Hattrick supplies the learned path prior; exact lexicographic LP reselects High/Medium/Low jointly",
+  "traffic_scale": "2x",
+  "input_contract": {
+    "offline_calibration": "actual and ESM TMs from 0-349",
+    "online_policy": "ESM predictions only",
+    "actual_test_tm": "sequential-admission evaluation only"
+  },
+  "selection_protocol": {
+    "calibration": [
+      0,
+      350
+    ],
+    "exploration": [
+      350,
+      358
+    ],
+    "validation": [
+      358,
+      400
+    ],
+    "untouched_final_for_this_method": [
+      400,
+      500
+    ]
+  },
+  "frozen_config": {
+    "affine_calibration_blend": 1.0,
+    "residual_uncertainty_std": 0.75,
+    "medium_slack_fraction": 0.0
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "seconds_100_snapshots": 67.9946626000019,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985365027189255,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001787662507
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662160634995,
+      "norm_fulfill_p1": 0.8901875573396683,
+      "norm_fulfill_p10": 0.8966956436634064
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1472881811857223,
+      "norm_fulfill_p1": 0.9548773527145386,
+      "norm_fulfill_p10": 0.9992088854312897
+    }
+  },
+  "candidate": {
+    "High": {
+      "norm_fulfill_mean": 0.9966003841161728,
+      "norm_fulfill_p1": 0.978594416975975,
+      "norm_fulfill_p10": 0.9923234045505523
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.936667930483818,
+      "norm_fulfill_p1": 0.8967300826311111,
+      "norm_fulfill_p10": 0.906998234987259
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1560519796609878,
+      "norm_fulfill_p1": 0.9202223497629166,
+      "norm_fulfill_p10": 0.9917840898036957
+    }
+  },
+  "delta": {
+    "High.norm_fulfill_mean": -0.0019361186027526678,
+    "High.norm_fulfill_p1": -0.00966359734535216,
+    "High.norm_fulfill_p10": -0.003976774215698309,
+    "Medium.norm_fulfill_mean": 0.002301714420318568,
+    "Medium.norm_fulfill_p1": 0.006542525291442836,
+    "Medium.norm_fulfill_p10": 0.010302591323852583,
+    "Low.norm_fulfill_mean": 0.008763798475265538,
+    "Low.norm_fulfill_p1": -0.03465500295162194,
+    "Low.norm_fulfill_p10": -0.007424795627594016
+  },
+  "diagnostics": {
+    "seconds": 67.80262260000018,
+    "high_path_l1_mean": 0.0806669497318492,
+    "medium_path_l1_mean": 0.044959606023938475,
+    "low_path_l1_mean": 0.03598858045597866,
+    "max_normalized_policy_capacity_ratio": 6.161659746611495,
+    "high_optimum_mean": 51.444941224015786,
+    "medium_optimum_mean": 29.26908755125515,
+    "low_optimum_mean": 5.256541372810167
+  },
+  "paired_bootstrap_20000": {
+    "High": {
+      "mean": {
+        "delta": -0.0019361186027526678,
+        "ci95": [
+          -0.0024440563023090446,
+          -0.0014482782930135773
+        ]
+      },
+      "p1": {
+        "delta": -0.00966359734535216,
+        "ci95": [
+          -0.009671449661254883,
+          -0.0030790328979491965
+        ]
+      },
+      "p10": {
+        "delta": -0.003976774215698309,
+        "ci95": [
+          -0.006076931953430176,
+          -0.0024866889417171994
+        ]
+      }
+    },
+    "Medium": {
+      "mean": {
+        "delta": 0.002301714420318568,
+        "ci95": [
+          0.0003111450523138576,
+          0.004218412026762918
+        ]
+      },
+      "p1": {
+        "delta": 0.006542525291442836,
+        "ci95": [
+          0.0015004873275756836,
+          0.01305365204811093
+        ]
+      },
+      "p10": {
+        "delta": 0.010302591323852583,
+        "ci95": [
+          0.005337250232696489,
+          0.013178312778472923
+        ]
+      }
+    },
+    "Low": {
+      "mean": {
+        "delta": 0.008763798475265538,
+        "ci95": [
+          0.0025668821334839886,
+          0.015042627513408768
+        ]
+      },
+      "p1": {
+        "delta": -0.03465500295162194,
+        "ci95": [
+          -0.05904732823371883,
+          0.007229428291320783
+        ]
+      },
+      "p10": {
+        "delta": -0.007424795627594016,
+        "ci95": [
+          -0.02715693220496175,
+          0.016668093204498247
+        ]
+      }
+    }
+  },
+  "target_checks": {
+    "high_mean_at_least_0_995": true,
+    "low_mean_significant_decline": false,
+    "medium_mean_improved": true,
+    "medium_p1_improved": true,
+    "medium_p10_improved": true
+  }
+}

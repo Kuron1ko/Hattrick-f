@@ -1,0 +1,38 @@
+{
+  "gurobi": {
+    "geant_diff_classmask_flexile_mf": true,
+    "geant_diff_classmask_flexile_mf_mf": true,
+    "geant_diff_classmask_flexile_mf_mf_mf": true,
+    "geant_diff_classmask_gt_mf": true,
+    "geant_diff_classmask_gt_mf_mf": true,
+    "geant_diff_classmask_gt_mf_mf_mf": true,
+    "geant_diff_classmask_gt_mlu": true,
+    "geant_diff_classmask_gt_mlu_mlu": true,
+    "geant_diff_classmask_gt_mlu_mlu_mlu": true,
+    "geant_diff_classmask_swan_mf": true,
+    "geant_diff_classmask_swan_mf_mf": true,
+    "geant_diff_classmask_swan_mf_mf_mf": true,
+    "geant_diff_shared_flexile_mf": true,
+    "geant_diff_shared_flexile_mf_mf": true,
+    "geant_diff_shared_flexile_mf_mf_mf": true,
+    "geant_diff_shared_gt_mf": true,
+    "geant_diff_shared_gt_mf_mf": true,
+    "geant_diff_shared_gt_mf_mf_mf": true,
+    "geant_diff_shared_gt_mlu": true,
+    "geant_diff_shared_gt_mlu_mlu": true,
+    "geant_diff_shared_gt_mlu_mlu_mlu": true,
+    "geant_diff_shared_swan_mf": true,
+    "geant_diff_shared_swan_mf_mf": true,
+    "geant_diff_shared_swan_mf_mf_mf": true
+  },
+  "hattrick": {
+    "test_classmask_retrained": true,
+    "test_classmask_zero_shot": true,
+    "test_shared_retrained": true,
+    "test_shared_zero_shot": true,
+    "train_classmask_retrained": true,
+    "train_shared_retrained": true
+  },
+  "prepare": true,
+  "report": true
+}

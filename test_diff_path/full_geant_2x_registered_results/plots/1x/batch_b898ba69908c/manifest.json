@@ -1,0 +1,50 @@
+{
+  "dataset": "1x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 4
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 49
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 4
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "1x",
+        "seed": 490,
+        "epoch": 4,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_1x_hattrick_f3\\artifacts\\seed_490\\checkpoints\\epoch_004.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick-f3\\seed_490\\test_epoch_004_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick-f3\\seed_490\\test_epoch_004_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick-f3\\seed_490\\test_epoch_004_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "1x",
+        "seed": 490,
+        "epoch": 49,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_1x_hattrick\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_049.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick\\seed_490\\test_epoch_049_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick\\seed_490\\test_epoch_049_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\1x\\hattrick\\seed_490\\test_epoch_049_metrics.csv"
+      },
+      "name": "Hattrick-49_Hattrick-f3-4",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\1x\\batch_b898ba69908c\\Hattrick-49_Hattrick-f3-4.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

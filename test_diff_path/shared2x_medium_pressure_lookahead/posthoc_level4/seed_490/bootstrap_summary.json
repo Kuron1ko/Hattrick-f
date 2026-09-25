@@ -1,0 +1,41 @@
+{
+  "comparison": "candidate minus Hattrick",
+  "pairing_unit": "snapshot",
+  "snapshots": [400, 500],
+  "method": "percentile paired bootstrap",
+  "resamples": 50000,
+  "rng": "numpy.random.default_rng",
+  "seed": 490,
+  "confidence_level": 0.95,
+  "results": [
+    {
+      "method": "Hattrick-LA epoch 052",
+      "class": "High",
+      "mean_delta": -0.0016870511090762985,
+      "ci_lower": -0.00206099,
+      "ci_upper": -0.00132513
+    },
+    {
+      "method": "Hattrick-LA epoch 052",
+      "class": "Medium",
+      "mean_delta": 0.008629080448955384,
+      "ci_lower": 0.00710549,
+      "ci_upper": 0.01014928
+    },
+    {
+      "method": "Hattrick-LA epoch 052",
+      "class": "Low",
+      "mean_delta": -0.004866474850580671,
+      "ci_lower": -0.00959722,
+      "ci_upper": -0.00019605
+    },
+    {
+      "method": "Hattrick-LA epoch 057",
+      "class": "Low",
+      "mean_delta": -0.002984431075679,
+      "ci_lower": -0.00798650,
+      "ci_upper": 0.00176714
+    }
+  ],
+  "note": "The frozen primary remains epoch 052. Epoch 057 is a validation-selected secondary and is not promoted based on confirmation results."
+}

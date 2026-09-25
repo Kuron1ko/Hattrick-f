@@ -1,0 +1,623 @@
+{
+  "method": "direct CDF-calibrated ESM gain gate",
+  "safety_feasible_count": 22,
+  "validation_feasible_count": 12,
+  "winner": {
+    "medium_threshold": 0.008,
+    "low_threshold": 0.005,
+    "safety": {
+      "accepted": 3,
+      "total": 32,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.0010065026581287384,
+          "paired_negative_count": 1,
+          "paired_min_gain": -0.0022251009941101074,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.007099885493516922,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": false
+    },
+    "validation": {
+      "accepted": 8,
+      "total": 50,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.004420064687728882,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.0025683093070983888,
+          "paired_negative_count": 1,
+          "paired_min_gain": -0.0013659000396728516,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": false
+    }
+  },
+  "top10": [
+    {
+      "medium_threshold": 0.008,
+      "low_threshold": 0.005,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.004420064687728882,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0025683093070983888,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.01,
+      "low_threshold": 0.005,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 7,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.003934853076934815,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0019765114784240723,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.008,
+      "low_threshold": 0.008,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 5,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002729787826538086,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.002385256290435791,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.01,
+      "low_threshold": 0.008,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 4,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0022445762157440184,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0017934584617614747,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.008,
+      "low_threshold": 0.01,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 4,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0021895360946655273,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.002019350528717041,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.008,
+      "low_threshold": 0.015,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 4,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0021895360946655273,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.002019350528717041,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.008,
+      "low_threshold": 0.02,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 4,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0021895360946655273,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.002019350528717041,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.01,
+      "low_threshold": 0.01,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 3,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00170432448387146,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0014275527000427246,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.01,
+      "low_threshold": 0.015,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 3,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00170432448387146,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0014275527000427246,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_threshold": 0.01,
+      "low_threshold": 0.02,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065026581287384,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0022251009941101074,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007099885493516922,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 3,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00170432448387146,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0014275527000427246,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013659000396728516,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "name": "persistent Stage-2 Level-4 prediction-only Low guard protocol",
+  "frozen_before_core_training_completed": true,
+  "core_source": "level4_selection_validation_only/selected_checkpoint.pt",
+  "splits": {
+    "guard_train": [0, 250],
+    "guard_safety_selection": [250, 300],
+    "guard_internal_gate_once": [300, 350],
+    "joint_core_composite_validation_once": [350, 400],
+    "forbidden_test_until_composite_freeze": [400, 500]
+  },
+  "strict_information_policy": {
+    "policy_inputs": "ESM predictions, topology/path embeddings, capacities, PTE and masks only",
+    "actual_tm_policy_input": false,
+    "actual_tm_offline_training_loss": true,
+    "actual_tm_offline_validation_score": true,
+    "high_medium_policy_modified": false
+  },
+  "fixed_candidates": [
+    {"max_toll": 0.75, "safety_weight": 10.0, "seed": 20261001},
+    {"max_toll": 1.25, "safety_weight": 30.0, "seed": 20261002},
+    {"max_toll": 2.0, "safety_weight": 60.0, "seed": 20261003}
+  ],
+  "training": {
+    "epochs": 60,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.003,
+    "weight_decay": 0.0002,
+    "gradient_clip": 2.0,
+    "safety_target_per_snapshot_gain": 0.0002,
+    "hard_fraction": 0.30,
+    "toll_l2_weight": 0.0003,
+    "safety_check_epochs": [1, 10, 20, 30, 40, 50, 60]
+  },
+  "safety_selection_rank": [
+    "zero Low ECDF upward violation versus frozen core",
+    "minimum Low ECDF upward violation",
+    "Low P1 gain",
+    "Low P10 gain",
+    "Low mean gain",
+    "minimum mean absolute toll"
+  ],
+  "internal_gate_300_349": {
+    "guard_vs_core_low_mean_gain_min": -1e-06,
+    "guard_vs_core_low_p1_gain_min": -1e-06,
+    "guard_vs_core_low_p10_gain_min": -1e-06,
+    "guard_vs_core_low_paired_negative_count_max": 0,
+    "guard_vs_core_low_ecdf_upward_violation_max": 0.0,
+    "high_policy_torch_equal": true,
+    "medium_policy_torch_equal": true,
+    "max_admitted_capacity_ratio": 1.000001,
+    "max_disabled_flow": 1e-08,
+    "failure_action": "reject this composite before opening 350-399"
+  },
+  "single_validation_acceptance": {
+    "head_optimizer_and_safety_rank_do_not_consume_350_399_metrics": true,
+    "head_checkpoint_frozen_before_guarded_350_399_metrics_are_computed": true,
+    "integrity_hashes_and_core_selection_manifest_may_be_read_before_head_freeze": true,
+    "350_399_is_joint_validation_not_independent_confirmation": true,
+    "guard_vs_core_low_mean_gain_min": 0.0,
+    "guard_vs_core_low_p1_gain_min": 0.0,
+    "guard_vs_core_low_p10_gain_min": 0.0,
+    "guard_vs_core_low_paired_negative_count_max": 0,
+    "guard_vs_core_low_ecdf_upward_violation_max": 0.0,
+    "final_vs_native_hattrick_primary_metric": "paired Low mean NormFulFill",
+    "final_vs_native_hattrick_noninferiority_margin": 0.005,
+    "final_vs_native_hattrick_one_sided_95_ci_lower_min": -0.005,
+    "final_vs_native_hattrick_two_sided_95_ci_upper_min": 0.0,
+    "final_vs_native_hattrick_low_p1_gain_min": -0.005,
+    "final_vs_native_hattrick_low_p10_gain_min": -0.005,
+    "final_vs_native_hattrick_medium_mean_gain_min": 0.005,
+    "final_vs_native_hattrick_medium_p1_gain_min": 0.0,
+    "final_vs_native_hattrick_medium_p10_gain_min": 0.0,
+    "high_policy_torch_equal": true,
+    "medium_policy_torch_equal": true,
+    "final_high_norm_mean_min": 0.995,
+    "final_high_norm_p1_min": 0.985,
+    "final_high_norm_p10_min": 0.99,
+    "max_admitted_capacity_ratio": 1.000001,
+    "max_disabled_flow": 1e-08
+  },
+  "failure_policy": "reject the frozen core+guard composite; do not revisit core checkpoint selection or tune on validation",
+  "test_open_policy": "only after core checkpoint, guard checkpoint, protocol and all source hashes are frozen into one composite manifest"
+}

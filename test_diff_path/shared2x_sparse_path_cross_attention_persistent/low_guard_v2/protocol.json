@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "name": "LowGuard-v2 minimal constraint repair after frozen Medium core",
+  "purpose": "Preserve the selected persistent High/Medium core exactly while repairing only Low enough to satisfy the original no-significant-decline constraint.",
+  "relation_to_v1": {
+    "v1_status": "permanently rejected under its precommitted zero-negative/zero-ECDF internal gate",
+    "v1_is_not_reinterpreted": true,
+    "v2_reason": "The original task requires no statistically significant Low decline, not per-snapshot bitwise dominance. Development also showed that the v1 safety penalty underfit the Low-only rerouter."
+  },
+  "splits": {
+    "head_training": [0, 250],
+    "training_safety_diagnostics": [250, 300],
+    "development_model_selection": [300, 350],
+    "joint_validation_once": [350, 400],
+    "forbidden_test": [400, 500]
+  },
+  "development_disclosure": "The candidate was not fixed before snapshots 300-349. That window compared four training settings, seven saved epochs, and four fixed scales and is development selection evidence only.",
+  "postselection_robustness_disclosure": "With hyperparameters then fixed, rolling past-only fits evaluated snapshots 150-349 out of fit. Aggregate Low mean improved versus both core and native Hattrick, while extreme P1/P10 were not uniformly better; this is development diagnosis, not independent confirmation.",
+  "validation_evidence_scope": {
+    "core_checkpoint_selected_on_350_399": true,
+    "core_medium_metrics_previously_known": true,
+    "low_guard_v2_head_trained_selected_or_scaled_on_350_399": false,
+    "low_guard_v2_guarded_metrics_computed_on_350_399_before_authorization": false,
+    "role": "one-shot Low-head/composite constraint check; not an independent confirmation of the frozen core's Medium result"
+  },
+  "benchmark_reuse_disclosure": {
+    "unrelated_abandoned_architectures_previously_used_400_499": true,
+    "persistent_core_plus_low_guard_v2_previously_evaluated_on_400_499": false,
+    "future_400_499_role": "adaptive confirmation of this exact frozen composite, not a globally untouched research holdout"
+  },
+  "fixed_candidate": {
+    "core_epoch": 41,
+    "core_selection": "frozen before LowGuard-v2 development; High/Medium Medium-Pareto maximin selector",
+    "guard_max_toll": 2.0,
+    "guard_safety_weight": 3.0,
+    "guard_epoch": 60,
+    "scale": 1.0,
+    "candidate_count_after_freeze": 1,
+    "high_policy_modified": false,
+    "medium_policy_modified": false,
+    "low_policy_only": true
+  },
+  "information_boundary": {
+    "policy_inference_inputs": "ESM predictions, topology, capacities, and frozen model parameters only",
+    "actual_tm_policy_input": false,
+    "actual_tm_use": "offline sequential-admission scoring and offline guard training labels only",
+    "pre_receipt_integrity_reads": "Before the access receipt, the validator may hash immutable pre-existing source, checkpoint, manifest, and validation-artifact bytes solely to verify the frozen chain. It may not parse validation rows, construct snapshots 350-399, run policy inference, or compute candidate metrics before the receipt.",
+    "strict_counterfactual": "literal-zero versus permuted actual TM must give bitwise-identical core policies, edge features, edge tolls, and final Low policy on CPU"
+  },
+  "primary_objective": {
+    "class": "Medium",
+    "comparison": "native Hattrick under the same strict-ESM evaluator",
+    "mean_gain_min": 0.005,
+    "p1_gain_min": 0.0,
+    "p10_gain_min": 0.0
+  },
+  "high_gates": {
+    "norm_mean_min": 0.995,
+    "norm_p1_min": 0.985,
+    "norm_p10_min": 0.99
+  },
+  "low_constraint": {
+    "guard_vs_core_mean_gain_min": 0.0,
+    "guard_vs_core_paired_bootstrap_95_lower_min": 0.0,
+    "native_no_significant_decline": "paired bootstrap two-sided 95% upper bound must be nonnegative",
+    "native_noninferiority_margin": 0.005,
+    "native_paired_bootstrap_95_lower_min": -0.005,
+    "native_p1_gain_min": -0.005,
+    "native_p10_gain_min": -0.005,
+    "bootstrap_seed": 20260824,
+    "bootstrap_samples": 100000,
+    "ecdf_and_negative_snapshot_count": "reported diagnostics, not hard gates"
+  },
+  "feasibility": {
+    "max_admitted_capacity_ratio": 1.000001,
+    "max_disabled_flow": 1e-8,
+    "high_medium_policy_torch_equal": true
+  },
+  "one_shot_rule": "The validator contains no optimizer or candidate loop. A separate authorization record anchors the final precommit, validator, protocol, core, and Low-head hashes. The validator atomically records an access receipt before constructing 350-399 and refuses any pre-existing output directory. Failure permanently rejects this v2 candidate; no threshold, scale, head, or checkpoint may be changed and reevaluated on 350-399.",
+  "test_rule": "For this exact persistent-core plus LowGuard-v2 composite, snapshots 400-499 remain forbidden unless every joint-validation gate passes and a frozen composite manifest explicitly sets test_open_authorization=true.",
+  "low_guard_v2_joint_guarded_metrics_read": false,
+  "persistent_composite_test_data_read": false
+}

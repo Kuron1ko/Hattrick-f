@@ -1,0 +1,115 @@
+{
+  "method": "ESM-SAR 2x configuration transferred unchanged to 1x",
+  "topology": "geant_priomask500_shared",
+  "model": "D:\\kuroresearch\\Hattrick-main\\hattrick_geant_priomask500_shared_8sp.pkl",
+  "model_sha256": "b233b86867a44366744b9fb44e1622027f6c8c76f7d300d74c91eda947f07f79",
+  "config": {
+    "steps": 24,
+    "learning_rate": 0.06,
+    "low_weight": 0.25,
+    "anchor_weight": 0.01
+  },
+  "input_contract": "ESM predictions only for correction; actual TMs evaluation only",
+  "small": {
+    "range": [
+      350,
+      358
+    ],
+    "baseline": {
+      "High": {
+        "norm_fulfill_mean": 1.0000000223517418,
+        "norm_fulfill_p1": 0.9999999445676804,
+        "norm_fulfill_p10": 0.9999999821186065
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9995583593845367,
+        "norm_fulfill_p1": 0.9979920202493667,
+        "norm_fulfill_p10": 0.9983700454235077
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0018355026841164,
+        "norm_fulfill_p1": 0.9979316794872284,
+        "norm_fulfill_p10": 0.9992370247840882
+      }
+    },
+    "candidate": {
+      "High": {
+        "norm_fulfill_mean": 1.0000000223517418,
+        "norm_fulfill_p1": 0.9999999445676804,
+        "norm_fulfill_p10": 0.9999999821186065
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.997751422226429,
+        "norm_fulfill_p1": 0.9867526412010192,
+        "norm_fulfill_p10": 0.9944040179252625
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0105974450707436,
+        "norm_fulfill_p1": 0.9999520981311798,
+        "norm_fulfill_p10": 0.9999544262886048
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": 0.0,
+      "High.norm_fulfill_p1": 0.0,
+      "High.norm_fulfill_p10": 0.0,
+      "Medium.norm_fulfill_mean": -0.0018069371581077576,
+      "Medium.norm_fulfill_p1": -0.011239379048347486,
+      "Medium.norm_fulfill_p10": -0.0039660274982452615,
+      "Low.norm_fulfill_mean": 0.008761942386627197,
+      "Low.norm_fulfill_p1": 0.002020418643951416,
+      "Low.norm_fulfill_p10": 0.0007174015045166016
+    }
+  },
+  "holdout": {
+    "range": [
+      358,
+      400
+    ],
+    "baseline": {
+      "High": {
+        "norm_fulfill_mean": 1.0000000014191581,
+        "norm_fulfill_p1": 0.9999998807907104,
+        "norm_fulfill_p10": 1.0
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9961954752604166,
+        "norm_fulfill_p1": 0.9885835462808609,
+        "norm_fulfill_p10": 0.9927085399627685
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0042123993237813,
+        "norm_fulfill_p1": 0.974080924987793,
+        "norm_fulfill_p10": 0.9840318322181701
+      }
+    },
+    "candidate": {
+      "High": {
+        "norm_fulfill_mean": 1.0000000014191581,
+        "norm_fulfill_p1": 0.9999998807907104,
+        "norm_fulfill_p10": 1.0
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9973696697325933,
+        "norm_fulfill_p1": 0.9859606170654297,
+        "norm_fulfill_p10": 0.9925064265727996
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0070885093439192,
+        "norm_fulfill_p1": 0.9779268324375152,
+        "norm_fulfill_p10": 0.9893344461917877
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": 0.0,
+      "High.norm_fulfill_p1": 0.0,
+      "High.norm_fulfill_p10": 0.0,
+      "Medium.norm_fulfill_mean": 0.001174194472176704,
+      "Medium.norm_fulfill_p1": -0.002622929215431169,
+      "Medium.norm_fulfill_p10": -0.00020211338996889427,
+      "Low.norm_fulfill_mean": 0.0028761100201379897,
+      "Low.norm_fulfill_p1": 0.003845907449722241,
+      "Low.norm_fulfill_p10": 0.0053026139736175315
+    }
+  }
+}

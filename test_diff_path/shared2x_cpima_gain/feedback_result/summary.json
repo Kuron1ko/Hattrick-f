@@ -1,0 +1,166 @@
+{
+  "method": "Causal asymmetric C-PIMA temperature controller",
+  "strong_temperature": 1.5,
+  "weak_temperature": 0.5,
+  "low_shield": "original bounded C-PIMA Low head at both temperatures",
+  "reserve": 0.3425006866455078,
+  "reserve_rule": "2x the worst one-snapshot aggressive Low admitted-traffic loss on validation 350-399",
+  "inference_contract": "current ESM policy and debt accumulated from completed prior snapshots only; no current actual TM enters current policy",
+  "results": [
+    {
+      "seed": 490,
+      "aggressive_slices": 31,
+      "final_debt": -1.692946434020996,
+      "classes": {
+        "High": {
+          "baseline": {
+            "mean": 0.998536502122879,
+            "p1": 0.9882580143213272,
+            "p10": 0.9963001668453216
+          },
+          "candidate": {
+            "mean": 0.9985365045070648,
+            "p1": 0.9882580143213272,
+            "p10": 0.9963001668453216
+          },
+          "gaps": {
+            "mean": 2.38418573772492e-09,
+            "p1": 0.0,
+            "p10": 0.0
+          }
+        },
+        "Medium": {
+          "baseline": {
+            "mean": 0.9343662267923355,
+            "p1": 0.8901875573396683,
+            "p10": 0.8966957569122315
+          },
+          "candidate": {
+            "mean": 0.9426137763261795,
+            "p1": 0.8970100390911102,
+            "p10": 0.9044065773487091
+          },
+          "gaps": {
+            "mean": 0.00824754953384399,
+            "p1": 0.006822481751441956,
+            "p10": 0.007710820436477639
+          }
+        },
+        "Low": {
+          "baseline": {
+            "mean": 1.1472882014513015,
+            "p1": 0.9548775321245193,
+            "p10": 0.9992088913917542
+          },
+          "candidate": {
+            "mean": 1.1444057154655456,
+            "p1": 0.9528377771377563,
+            "p10": 0.9999551475048065
+          },
+          "gaps": {
+            "mean": -0.0028824859857559115,
+            "p1": -0.0020397549867630094,
+            "p10": 0.000746256113052346
+          }
+        }
+      }
+    },
+    {
+      "seed": 491,
+      "aggressive_slices": 33,
+      "final_debt": 0.04144906997680664,
+      "classes": {
+        "High": {
+          "baseline": {
+            "mean": 0.9985365086793899,
+            "p1": 0.9882580155134201,
+            "p10": 0.9963001668453216
+          },
+          "candidate": {
+            "mean": 0.9985365128517151,
+            "p1": 0.9882580155134201,
+            "p10": 0.9963001668453216
+          },
+          "gaps": {
+            "mean": 4.172325152040912e-09,
+            "p1": 0.0,
+            "p10": 0.0
+          }
+        },
+        "Medium": {
+          "baseline": {
+            "mean": 0.9343662226200103,
+            "p1": 0.8901874977350235,
+            "p10": 0.8966957449913024
+          },
+          "candidate": {
+            "mean": 0.9400734716653824,
+            "p1": 0.8952630805969238,
+            "p10": 0.902013224363327
+          },
+          "gaps": {
+            "mean": 0.005707249045372009,
+            "p1": 0.005075582861900352,
+            "p10": 0.005317479372024536
+          }
+        },
+        "Low": {
+          "baseline": {
+            "mean": 1.147288213968277,
+            "p1": 0.9548774129152298,
+            "p10": 0.9992086172103882
+          },
+          "candidate": {
+            "mean": 1.147876064181328,
+            "p1": 0.9528235906362533,
+            "p10": 1.0019127488136292
+          },
+          "gaps": {
+            "mean": 0.0005878502130509666,
+            "p1": -0.002053822278976436,
+            "p10": 0.002704131603241011
+          }
+        }
+      }
+    }
+  ],
+  "two_order_average": {
+    "classes": {
+      "High": {
+        "mean_gap": 3.2782554626464844e-09,
+        "p1_gap_average_of_orders": 0.0,
+        "p10_gap_average_of_orders": 0.0
+      },
+      "Medium": {
+        "mean_gap": 0.006977399289608002,
+        "p1_gap_average_of_orders": 0.005949032306671154,
+        "p10_gap_average_of_orders": 0.0065141499042510875
+      },
+      "Low": {
+        "mean_gap": -0.001147317886352539,
+        "p1_gap_average_of_orders": -0.0020467886328697227,
+        "p10_gap_average_of_orders": 0.0017251938581466786
+      }
+    }
+  },
+  "bootstrap": {
+    "High": {
+      "paired_mean_gap_ci95": [
+        0.0,
+        7.152557373046875e-09
+      ]
+    },
+    "Medium": {
+      "paired_mean_gap_ci95": [
+        0.005968236319720745,
+        0.008088517718017099
+      ]
+    },
+    "Low": {
+      "paired_mean_gap_ci95": [
+        -0.004545234188437461,
+        0.0021632759124040604
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "dataset": "3x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 34
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 20
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 34
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "3x",
+        "seed": 490,
+        "epoch": 34,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_3x_hattrick_f3\\artifacts\\seed_490\\top5\\epoch_034.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_034_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_034_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_034_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "3x",
+        "seed": 490,
+        "epoch": 20,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_3x_hattrick\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_020.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick\\seed_490\\test_epoch_020_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick\\seed_490\\test_epoch_020_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick\\seed_490\\test_epoch_020_metrics.csv"
+      },
+      "name": "Hattrick-20_Hattrick-f3-34",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\3x\\batch_8019e2d68f47\\Hattrick-20_Hattrick-f3-34.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

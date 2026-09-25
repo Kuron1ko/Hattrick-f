@@ -1,0 +1,617 @@
+{
+  "method": "Low-only trust region after direct CDF gate",
+  "range": [
+    318,
+    400
+  ],
+  "medium_threshold": 0.008,
+  "low_threshold": 0.005,
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "results": [
+    {
+      "low_trust_alpha": 0.0,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065101087093353,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.006479937583208084,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -0.000502326488494873,
+            "paired_negative_count": 5,
+            "paired_min_gain": -0.04092681407928467,
+            "ecdf_max_upward_violation": 0.07999999999999999
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.1,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065101087093353,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.00658923014998436,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -0.00015889763832092286,
+            "paired_negative_count": 5,
+            "paired_min_gain": -0.037032246589660645,
+            "ecdf_max_upward_violation": 0.07999999999999999
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.2,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065138339996338,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.006700281053781509,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.00019350409507751465,
+            "paired_negative_count": 4,
+            "paired_min_gain": -0.0329323410987854,
+            "ecdf_max_upward_violation": 0.060000000000000026
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.3,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065101087093353,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.006813134998083115,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0005552947521209716,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.02860957384109497,
+            "ecdf_max_upward_violation": 0.06
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.4,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065138339996338,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.006915062665939331,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.004419906139373779,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0009275364875793457,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.024045348167419434,
+            "ecdf_max_upward_violation": 0.04000000000000001
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.5,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065101087093353,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.00695398822426796,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.004419904947280884,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0013112258911132813,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.019218802452087402,
+            "ecdf_max_upward_violation": 0.04000000000000001
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.6,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065138339996338,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.006992589682340622,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0017074191570281983,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.014106273651123047,
+            "ecdf_max_upward_violation": 0.01999999999999999
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.75,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065101087093353,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007040444761514664,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0044199109077453615,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0021306538581848146,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.005842924118041992,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "low_trust_alpha": 0.9,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065138339996338,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007073167711496353,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.004419904947280884,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0024839985370635987,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "low_trust_alpha": 1.0,
+      "safety": {
+        "accepted": 3,
+        "total": 32,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0010065138339996338,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.002224862575531006,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.007094912230968475,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      },
+      "validation": {
+        "accepted": 8,
+        "total": 50,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00441990852355957,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.002570967674255371,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0013639330863952637,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": false
+      }
+    }
+  ],
+  "winner": {
+    "low_trust_alpha": 1.0,
+    "safety": {
+      "accepted": 3,
+      "total": 32,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.0010065138339996338,
+          "paired_negative_count": 1,
+          "paired_min_gain": -0.002224862575531006,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.007094912230968475,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": false
+    },
+    "validation": {
+      "accepted": 8,
+      "total": 50,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.00441990852355957,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.002570967674255371,
+          "paired_negative_count": 1,
+          "paired_min_gain": -0.0013639330863952637,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": false
+    }
+  }
+}

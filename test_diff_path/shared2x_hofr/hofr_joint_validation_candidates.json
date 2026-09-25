@@ -1,0 +1,217 @@
+{
+  "method": "joint HOFR conservative-candidate validation",
+  "range": [
+    358,
+    400
+  ],
+  "final_test_400_500_touched": false,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9997020548298245,
+      "norm_fulfill_p1": 0.9987357133626937,
+      "norm_fulfill_p10": 0.9991996109485626
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9539506563118526,
+      "norm_fulfill_p1": 0.926025716662407,
+      "norm_fulfill_p10": 0.9296318590641022
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.0469986626080103,
+      "norm_fulfill_p1": 0.9818002837896347,
+      "norm_fulfill_p10": 0.9930351555347443
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "affine_calibration_blend": 1.0,
+        "residual_uncertainty_std": 0.5,
+        "medium_slack_fraction": 0.0
+      },
+      "feasible": false,
+      "medium_score": 0.00285998080883707,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9985740667297727,
+          "norm_fulfill_p1": 0.9942677772045135,
+          "norm_fulfill_p10": 0.996250182390213
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9538094358784812,
+          "norm_fulfill_p1": 0.9297947442531586,
+          "norm_fulfill_p10": 0.9344376921653748
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0423122005803245,
+          "norm_fulfill_p1": 0.9512173336744308,
+          "norm_fulfill_p10": 0.9800558686256409
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.0011279881000518799,
+        "High.norm_fulfill_p1": -0.004467936158180197,
+        "High.norm_fulfill_p10": -0.002949428558349565,
+        "Medium.norm_fulfill_mean": -0.00014122043337139178,
+        "Medium.norm_fulfill_p1": 0.0037690275907515947,
+        "Medium.norm_fulfill_p10": 0.004805833101272583,
+        "Low.norm_fulfill_mean": -0.004686462027685856,
+        "Low.norm_fulfill_p1": -0.030582950115203844,
+        "Low.norm_fulfill_p10": -0.012979286909103438
+      },
+      "diagnostics": {
+        "seconds": 26.010186699997575,
+        "high_path_l1_mean": 0.07667344449793635,
+        "medium_path_l1_mean": 0.048024796264514114,
+        "low_path_l1_mean": 0.04423807551196289,
+        "max_normalized_policy_capacity_ratio": 6.605796392670702,
+        "high_optimum_mean": 41.79153264196686,
+        "medium_optimum_mean": 25.125732686358873,
+        "low_optimum_mean": 5.741901975022195
+      }
+    },
+    {
+      "config": {
+        "affine_calibration_blend": 1.0,
+        "residual_uncertainty_std": 0.5,
+        "medium_slack_fraction": 0.005
+      },
+      "feasible": false,
+      "medium_score": 0.003140173237948151,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9985762749399457,
+          "norm_fulfill_p1": 0.9942677772045135,
+          "norm_fulfill_p10": 0.996250182390213
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9543752485797519,
+          "norm_fulfill_p1": 0.9292494106292725,
+          "norm_fulfill_p10": 0.9341669678688049
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0432315142381758,
+          "norm_fulfill_p1": 0.9512138390541076,
+          "norm_fulfill_p10": 0.98169304728508
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.0011257798898788307,
+        "High.norm_fulfill_p1": -0.004467936158180197,
+        "High.norm_fulfill_p10": -0.002949428558349565,
+        "Medium.norm_fulfill_mean": 0.00042459226789925975,
+        "Medium.norm_fulfill_p1": 0.003223693966865504,
+        "Medium.norm_fulfill_p10": 0.004535108804702759,
+        "Low.norm_fulfill_mean": -0.0037671483698344943,
+        "Low.norm_fulfill_p1": -0.030586444735527074,
+        "Low.norm_fulfill_p10": -0.011342108249664307
+      },
+      "diagnostics": {
+        "seconds": 26.073560400000133,
+        "high_path_l1_mean": 0.07666726332393992,
+        "medium_path_l1_mean": 0.04752570758670024,
+        "low_path_l1_mean": 0.04471657430955232,
+        "max_normalized_policy_capacity_ratio": 6.605796392670702,
+        "high_optimum_mean": 41.79153264196686,
+        "medium_optimum_mean": 25.125732686358873,
+        "low_optimum_mean": 5.870240248507893
+      }
+    },
+    {
+      "config": {
+        "affine_calibration_blend": 1.0,
+        "residual_uncertainty_std": 0.75,
+        "medium_slack_fraction": 0.0
+      },
+      "feasible": true,
+      "medium_score": 0.004258345344236824,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.997946811573846,
+          "norm_fulfill_p1": 0.9926010119915009,
+          "norm_fulfill_p10": 0.9945706367492676
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9536692542689187,
+          "norm_fulfill_p1": 0.9314342212677001,
+          "norm_fulfill_p10": 0.9371940612792968
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0462889061087655,
+          "norm_fulfill_p1": 0.9705828696489334,
+          "norm_fulfill_p10": 0.996192890405655
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.0017552432559785336,
+        "High.norm_fulfill_p1": -0.006134701371192874,
+        "High.norm_fulfill_p10": -0.004628974199294977,
+        "Medium.norm_fulfill_mean": -0.00028140204293392035,
+        "Medium.norm_fulfill_p1": 0.005408504605293185,
+        "Medium.norm_fulfill_p10": 0.007562202215194658,
+        "Low.norm_fulfill_mean": -0.0007097564992448735,
+        "Low.norm_fulfill_p1": -0.01121741414070132,
+        "Low.norm_fulfill_p10": 0.0031577348709106445
+      },
+      "diagnostics": {
+        "seconds": 26.31098519999796,
+        "high_path_l1_mean": 0.07589732503268751,
+        "medium_path_l1_mean": 0.047361831073308325,
+        "low_path_l1_mean": 0.0418825173142008,
+        "max_normalized_policy_capacity_ratio": 6.780894929383514,
+        "high_optimum_mean": 43.45930608092896,
+        "medium_optimum_mean": 26.336401379068235,
+        "low_optimum_mean": 5.858328185985203
+      }
+    }
+  ],
+  "winner": {
+    "config": {
+      "affine_calibration_blend": 1.0,
+      "residual_uncertainty_std": 0.75,
+      "medium_slack_fraction": 0.0
+    },
+    "feasible": true,
+    "medium_score": 0.004258345344236824,
+    "metrics": {
+      "High": {
+        "norm_fulfill_mean": 0.997946811573846,
+        "norm_fulfill_p1": 0.9926010119915009,
+        "norm_fulfill_p10": 0.9945706367492676
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9536692542689187,
+        "norm_fulfill_p1": 0.9314342212677001,
+        "norm_fulfill_p10": 0.9371940612792968
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0462889061087655,
+        "norm_fulfill_p1": 0.9705828696489334,
+        "norm_fulfill_p10": 0.996192890405655
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": -0.0017552432559785336,
+      "High.norm_fulfill_p1": -0.006134701371192874,
+      "High.norm_fulfill_p10": -0.004628974199294977,
+      "Medium.norm_fulfill_mean": -0.00028140204293392035,
+      "Medium.norm_fulfill_p1": 0.005408504605293185,
+      "Medium.norm_fulfill_p10": 0.007562202215194658,
+      "Low.norm_fulfill_mean": -0.0007097564992448735,
+      "Low.norm_fulfill_p1": -0.01121741414070132,
+      "Low.norm_fulfill_p10": 0.0031577348709106445
+    },
+    "diagnostics": {
+      "seconds": 26.31098519999796,
+      "high_path_l1_mean": 0.07589732503268751,
+      "medium_path_l1_mean": 0.047361831073308325,
+      "low_path_l1_mean": 0.0418825173142008,
+      "max_normalized_policy_capacity_ratio": 6.780894929383514,
+      "high_optimum_mean": 43.45930608092896,
+      "medium_optimum_mean": 26.336401379068235,
+      "low_optimum_mean": 5.858328185985203
+    }
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab"
+}

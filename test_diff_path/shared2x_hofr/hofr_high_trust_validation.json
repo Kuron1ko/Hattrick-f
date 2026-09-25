@@ -1,0 +1,385 @@
+{
+  "method": "HOFR High-only policy trust region",
+  "range": [
+    358,
+    400
+  ],
+  "hofr_config": {
+    "affine_calibration_blend": 1.0,
+    "residual_uncertainty_std": 0.75,
+    "medium_slack_fraction": 0.0
+  },
+  "selection_rule": "Medium Mean/P1/P10 >= -0.0005/0/0; Low Mean/P1/P10 >= -0.003/-0.020/-0.005; then maximize High Mean, High P1, Medium composite",
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9997020377999261,
+      "norm_fulfill_p1": 0.9987357836961747,
+      "norm_fulfill_p10": 0.9991996109485626
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9539506775992257,
+      "norm_fulfill_p1": 0.9260257655382156,
+      "norm_fulfill_p10": 0.9296318769454956
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.046998632805688,
+      "norm_fulfill_p1": 0.9818003892898559,
+      "norm_fulfill_p10": 0.9930351436138153
+    }
+  },
+  "hofr_diagnostics": {
+    "seconds": 34742.0353423,
+    "high_path_l1_mean": 0.07589732485010414,
+    "medium_path_l1_mean": 0.04736183096690741,
+    "low_path_l1_mean": 0.04188251726081081,
+    "max_normalized_policy_capacity_ratio": 6.780891846910004,
+    "high_optimum_mean": 43.45930608092896,
+    "medium_optimum_mean": 26.336401379068235,
+    "low_optimum_mean": 5.858328185985203
+  },
+  "candidates": [
+    {
+      "high_trust_alpha": 0.0,
+      "feasible": false,
+      "medium_score": 0.004010601720639673,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020392190843,
+          "norm_fulfill_p1": 0.9987357836961747,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9551204868725368,
+          "norm_fulfill_p1": 0.930422580242157,
+          "norm_fulfill_p10": 0.9333516120910644
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0395553154604775,
+          "norm_fulfill_p1": 0.9492543226480484,
+          "norm_fulfill_p10": 0.9734853684902192
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 1.4191582353717536e-09,
+        "High.norm_fulfill_p1": 0.0,
+        "High.norm_fulfill_p10": 0.0,
+        "Medium.norm_fulfill_mean": 0.0011698092733111176,
+        "Medium.norm_fulfill_p1": 0.004396814703941376,
+        "Medium.norm_fulfill_p10": 0.003719735145568781,
+        "Low.norm_fulfill_mean": -0.007443317345210421,
+        "Low.norm_fulfill_p1": -0.03254606664180748,
+        "Low.norm_fulfill_p10": -0.019549775123596125
+      },
+      "high_policy_l1_from_hattrick": 0.0
+    },
+    {
+      "high_trust_alpha": 0.1,
+      "feasible": false,
+      "medium_score": 0.002759621834471165,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9998799491496313,
+          "norm_fulfill_p1": 0.9989465183019638,
+          "norm_fulfill_p10": 0.999561733007431
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9545078164055234,
+          "norm_fulfill_p1": 0.9292136490345001,
+          "norm_fulfill_p10": 0.9327368021011353
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0402282362892514,
+          "norm_fulfill_p1": 0.9507822513580322,
+          "norm_fulfill_p10": 0.9744316577911377
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0001779113497052398,
+        "High.norm_fulfill_p1": 0.00021073460578913128,
+        "High.norm_fulfill_p10": 0.0003621220588684304,
+        "Medium.norm_fulfill_mean": 0.0005571388062977078,
+        "Medium.norm_fulfill_p1": 0.003187883496284516,
+        "Medium.norm_fulfill_p10": 0.0031049251556396484,
+        "Low.norm_fulfill_mean": -0.0067703965164365165,
+        "Low.norm_fulfill_p1": -0.03101813793182373,
+        "Low.norm_fulfill_p10": -0.018603485822677568
+      },
+      "high_policy_l1_from_hattrick": 0.0075897336937487125
+    },
+    {
+      "high_trust_alpha": 0.2,
+      "feasible": false,
+      "medium_score": 0.002830003893091587,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9998462214356377,
+          "norm_fulfill_p1": 0.9987494164705276,
+          "norm_fulfill_p10": 0.9994417607784272
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9542076772167569,
+          "norm_fulfill_p1": 0.9295089364051818,
+          "norm_fulfill_p10": 0.9335001468658447
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0410585814998263,
+          "norm_fulfill_p1": 0.9522979456186295,
+          "norm_fulfill_p10": 0.976852411031723
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.00014418363571166992,
+        "High.norm_fulfill_p1": 1.363277435295629e-05,
+        "High.norm_fulfill_p10": 0.00024214982986459077,
+        "Medium.norm_fulfill_mean": 0.00025699961753122835,
+        "Medium.norm_fulfill_p1": 0.0034831708669662564,
+        "Medium.norm_fulfill_p10": 0.0038682699203490545,
+        "Low.norm_fulfill_mean": -0.0059400513058616156,
+        "Low.norm_fulfill_p1": -0.029502443671226453,
+        "Low.norm_fulfill_p10": -0.01618273258209224
+      },
+      "high_policy_l1_from_hattrick": 0.015179463662207127
+    },
+    {
+      "high_trust_alpha": 0.3,
+      "feasible": false,
+      "medium_score": 0.002661157880510617,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9997891230242593,
+          "norm_fulfill_p1": 0.9983296644687653,
+          "norm_fulfill_p10": 0.9991104304790497
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9538835287094116,
+          "norm_fulfill_p1": 0.9293707972764969,
+          "norm_fulfill_p10": 0.9340820074081421
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0420570501259394,
+          "norm_fulfill_p1": 0.9538135331869125,
+          "norm_fulfill_p10": 0.9795797944068909
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 8.708522433320542e-05,
+        "High.norm_fulfill_p1": -0.0004061192274094072,
+        "High.norm_fulfill_p10": -8.918046951289504e-05,
+        "Medium.norm_fulfill_mean": -6.714888981407263e-05,
+        "Medium.norm_fulfill_p1": 0.0033450317382812678,
+        "Medium.norm_fulfill_p10": 0.004450130462646418,
+        "Low.norm_fulfill_mean": -0.004941582679748535,
+        "Low.norm_fulfill_p1": -0.02798685610294338,
+        "Low.norm_fulfill_p10": -0.013455349206924372
+      },
+      "high_policy_l1_from_hattrick": 0.022769197821617126
+    },
+    {
+      "high_trust_alpha": 0.4,
+      "feasible": false,
+      "medium_score": 0.002761063733271224,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9996556966077714,
+          "norm_fulfill_p1": 0.9977124893665313,
+          "norm_fulfill_p10": 0.9987722337245941
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9536873953683036,
+          "norm_fulfill_p1": 0.929714388847351,
+          "norm_fulfill_p10": 0.934584242105484
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0429696838061016,
+          "norm_fulfill_p1": 0.9543310767412185,
+          "norm_fulfill_p10": 0.9823035418987274
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -4.634119215463084e-05,
+        "High.norm_fulfill_p1": -0.0010232943296433206,
+        "High.norm_fulfill_p10": -0.00042737722396846145,
+        "Medium.norm_fulfill_mean": -0.0002632822309220906,
+        "Medium.norm_fulfill_p1": 0.0036886233091354415,
+        "Medium.norm_fulfill_p10": 0.0049523651599883145,
+        "Low.norm_fulfill_mean": -0.00402894899958639,
+        "Low.norm_fulfill_p1": -0.02746931254863738,
+        "Low.norm_fulfill_p10": -0.010731601715087913
+      },
+      "high_policy_l1_from_hattrick": 0.03035893104970455
+    },
+    {
+      "high_trust_alpha": 0.5,
+      "feasible": false,
+      "medium_score": 0.00281005878533635,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9994345704714457,
+          "norm_fulfill_p1": 0.997095205783844,
+          "norm_fulfill_p10": 0.9984978318214417
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9536217365946088,
+          "norm_fulfill_p1": 0.9301944935321808,
+          "norm_fulfill_p10": 0.9344317197799683
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0438731908798218,
+          "norm_fulfill_p1": 0.9565686672925949,
+          "norm_fulfill_p10": 0.9850666344165802
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.00026746732848037524,
+        "High.norm_fulfill_p1": -0.0016405779123306319,
+        "High.norm_fulfill_p10": -0.0007017791271208829,
+        "Medium.norm_fulfill_mean": -0.00032894100461688947,
+        "Medium.norm_fulfill_p1": 0.004168727993965171,
+        "Medium.norm_fulfill_p10": 0.004799842834472656,
+        "Low.norm_fulfill_mean": -0.003125441925866168,
+        "Low.norm_fulfill_p1": -0.02523172199726098,
+        "Low.norm_fulfill_p10": -0.00796850919723513
+      },
+      "high_policy_l1_from_hattrick": 0.03794866055250168
+    },
+    {
+      "high_trust_alpha": 0.6,
+      "feasible": false,
+      "medium_score": 0.0029566445833161367,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9991811301027026,
+          "norm_fulfill_p1": 0.9964781850576401,
+          "norm_fulfill_p10": 0.9976885080337524
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9535961803935823,
+          "norm_fulfill_p1": 0.9306277364492417,
+          "norm_fulfill_p10": 0.9344903111457825
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0447873458975838,
+          "norm_fulfill_p1": 0.9595901542901992,
+          "norm_fulfill_p10": 0.9878489077091217
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.0005209076972234605,
+        "High.norm_fulfill_p1": -0.002257598638534586,
+        "High.norm_fulfill_p10": -0.0015111029148101585,
+        "Medium.norm_fulfill_mean": -0.00035449720564340037,
+        "Medium.norm_fulfill_p1": 0.004601970911026099,
+        "Medium.norm_fulfill_p10": 0.004858434200286865,
+        "Low.norm_fulfill_mean": -0.0022112869081041264,
+        "Low.norm_fulfill_p1": -0.022210234999656686,
+        "Low.norm_fulfill_p10": -0.005186235904693581
+      },
+      "high_policy_l1_from_hattrick": 0.04553839564323425
+    },
+    {
+      "high_trust_alpha": 0.75,
+      "feasible": true,
+      "medium_score": 0.003510695847727035,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9987601793947674,
+          "norm_fulfill_p1": 0.9953134191036225,
+          "norm_fulfill_p10": 0.9963008046150208
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9536172265098208,
+          "norm_fulfill_p1": 0.9308424532413483,
+          "norm_fulfill_p10": 0.9357984662055969
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0459836139565422,
+          "norm_fulfill_p1": 0.9638564521074295,
+          "norm_fulfill_p10": 0.9934691429138184
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.000941858405158702,
+        "High.norm_fulfill_p1": -0.003422364592552185,
+        "High.norm_fulfill_p10": -0.0028988063335417813,
+        "Medium.norm_fulfill_mean": -0.000333451089404857,
+        "Medium.norm_fulfill_p1": 0.004816687703132705,
+        "Medium.norm_fulfill_p10": 0.006166589260101274,
+        "Low.norm_fulfill_mean": -0.0010150188491457879,
+        "Low.norm_fulfill_p1": -0.017943937182426373,
+        "Low.norm_fulfill_p10": 0.00043399930000309617
+      },
+      "high_policy_l1_from_hattrick": 0.056922994554042816
+    },
+    {
+      "high_trust_alpha": 1.0,
+      "feasible": true,
+      "medium_score": 0.004258303530159473,
+      "metrics": {
+        "High": {
+          "norm_fulfill_mean": 0.9979468101546878,
+          "norm_fulfill_p1": 0.9926010119915009,
+          "norm_fulfill_p10": 0.9945705771446228
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9536692571072352,
+          "norm_fulfill_p1": 0.9314342212677001,
+          "norm_fulfill_p10": 0.9371940612792968
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.046288903270449,
+          "norm_fulfill_p1": 0.9705828696489334,
+          "norm_fulfill_p10": 0.996192890405655
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": -0.0017552276452382776,
+        "High.norm_fulfill_p1": -0.006134771704673803,
+        "High.norm_fulfill_p10": -0.004629033803939753,
+        "Medium.norm_fulfill_mean": -0.0002814204919905361,
+        "Medium.norm_fulfill_p1": 0.0054084557294845625,
+        "Medium.norm_fulfill_p10": 0.007562184333801181,
+        "Low.norm_fulfill_mean": -0.0007097295352389565,
+        "Low.norm_fulfill_p1": -0.011217519640922546,
+        "Low.norm_fulfill_p10": 0.0031577467918396662
+      },
+      "high_policy_l1_from_hattrick": 0.07589732110500336
+    }
+  ],
+  "winner": {
+    "high_trust_alpha": 0.75,
+    "feasible": true,
+    "medium_score": 0.003510695847727035,
+    "metrics": {
+      "High": {
+        "norm_fulfill_mean": 0.9987601793947674,
+        "norm_fulfill_p1": 0.9953134191036225,
+        "norm_fulfill_p10": 0.9963008046150208
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9536172265098208,
+        "norm_fulfill_p1": 0.9308424532413483,
+        "norm_fulfill_p10": 0.9357984662055969
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0459836139565422,
+        "norm_fulfill_p1": 0.9638564521074295,
+        "norm_fulfill_p10": 0.9934691429138184
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": -0.000941858405158702,
+      "High.norm_fulfill_p1": -0.003422364592552185,
+      "High.norm_fulfill_p10": -0.0028988063335417813,
+      "Medium.norm_fulfill_mean": -0.000333451089404857,
+      "Medium.norm_fulfill_p1": 0.004816687703132705,
+      "Medium.norm_fulfill_p10": 0.006166589260101274,
+      "Low.norm_fulfill_mean": -0.0010150188491457879,
+      "Low.norm_fulfill_p1": -0.017943937182426373,
+      "Low.norm_fulfill_p10": 0.00043399930000309617
+    },
+    "high_policy_l1_from_hattrick": 0.056922994554042816
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "final_400_500_touched_during_selection": false
+}

@@ -1,0 +1,2406 @@
+{
+  "method": "three congestion prototypes with one strict-ESM mean-load fallback gate",
+  "strict_esm_inference": true,
+  "actual_tm_used_for_policy": false,
+  "evaluation_400_500_used": false,
+  "prototypes": 3,
+  "medium_gain": 0.2,
+  "low_gain": 0.4,
+  "threshold_trials": [
+    0.68,
+    0.7,
+    0.72,
+    0.74,
+    0.75,
+    0.76,
+    0.77,
+    0.78,
+    0.8,
+    0.82
+  ],
+  "loads": {
+    "1": {
+      "trials": [
+        {
+          "threshold": 0.68,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152293264866,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -1.862645149230957e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.13102499997330597
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335343360901,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321173191072,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.5497207628278886e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 7.152557435219364e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.014959999971324578
+            }
+          }
+        },
+        {
+          "threshold": 0.7,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152274638414,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -2.0489096641540527e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.022881250060891034
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335343360901,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.003832116127014,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.5497207628278886e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 5.9604643443122995e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.015577999874949455
+            }
+          }
+        },
+        {
+          "threshold": 0.72,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152293264866,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -1.862645149230957e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.024568749950049096
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335367202759,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321185112,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.3113021890553966e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 8.344650304081824e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.014999999984866008
+            }
+          }
+        },
+        {
+          "threshold": 0.74,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152311891317,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -1.6763806343078613e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.02713124990805227
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335367202759,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321208953858,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.3113021890553966e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 1.0728836041806744e-08,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.015917999990051612
+            }
+          }
+        },
+        {
+          "threshold": 0.75,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152293264866,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -1.862645149230957e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.021856249986740295
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.996733535528183,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321173191072,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884991228580475
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.4305114759416426e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 7.152557435219364e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": -1.6093254084914577e-07
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.014785999956075102
+            }
+          }
+        },
+        {
+          "threshold": 0.76,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152311891317,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -1.6763806343078613e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.023396875121761695
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.996733535528183,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.003832116127014,
+                  "norm_fulfill_p1": 0.9742020452022553,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.4305114759416426e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 5.9604643443122995e-09,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.014794000016991049
+            }
+          }
+        },
+        {
+          "threshold": 0.77,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152274638414,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -2.0489096641540527e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.022525000076711876
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.996733535528183,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321149349212,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.4305114759416426e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 4.76837147544984e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.01949199999216944
+            }
+          }
+        },
+        {
+          "threshold": 0.78,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152274638414,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -2.0489096641540527e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.028762500051016104
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335343360901,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321185112,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.5497207628278886e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 8.344650304081824e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.020157999970251694
+            }
+          }
+        },
+        {
+          "threshold": 0.8,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152162879705,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -3.166496753692627e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.028278125000724685
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9967335343360901,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.003832116127014,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.5497207628278886e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 5.9604643443122995e-09,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.017711999971652403
+            }
+          }
+        },
+        {
+          "threshold": 0.82,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 1.0000000018626451,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998867511749
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9998948965221643,
+                  "norm_fulfill_p1": 0.9983863443136215,
+                  "norm_fulfill_p10": 0.9999722361564636
+                },
+                "Low": {
+                  "norm_fulfill_mean": 0.9998152200132608,
+                  "norm_fulfill_p1": 0.9954408252239227,
+                  "norm_fulfill_p10": 0.9997752487659455
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -5.587935447692871e-09,
+                "Medium.norm_fulfill_p1": 1.847743991145734e-08,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": -2.7939677238464355e-08,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": 5.364418032005602e-08
+              },
+              "active_count": 0,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.29280710220336914,
+                0.3959682285785675
+              ],
+              "overlay_ms_per_snapshot": 0.04659375008486677
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999999928474427,
+                  "norm_fulfill_p1": 0.9999998807907104,
+                  "norm_fulfill_p10": 0.9999998807907104
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.996733535528183,
+                  "norm_fulfill_p1": 0.9885964637994766,
+                  "norm_fulfill_p10": 0.9927555561065674
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0038321208953858,
+                  "norm_fulfill_p1": 0.9742020159959793,
+                  "norm_fulfill_p10": 0.9884992837905884
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": -1.4305114759416426e-08,
+                "Medium.norm_fulfill_p1": -5.8412551906528165e-08,
+                "Medium.norm_fulfill_p10": 1.1920928955078125e-07,
+                "Low.norm_fulfill_mean": 1.0728836041806744e-08,
+                "Low.norm_fulfill_p1": -2.9206275953264083e-08,
+                "Low.norm_fulfill_p10": 0.0
+              },
+              "active_count": 0,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.3127216100692749,
+                0.4487698972225189
+              ],
+              "overlay_ms_per_snapshot": 0.01550800006953068
+            }
+          }
+        }
+      ]
+    },
+    "2": {
+      "trials": [
+        {
+          "threshold": 0.68,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535866081715,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.978570556268096,
+                  "norm_fulfill_p1": 0.9470002943277359,
+                  "norm_fulfill_p10": 0.9566009044647217
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0220017787069082,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0018008127808570862,
+                "Medium.norm_fulfill_p1": 0.005784575939178471,
+                "Medium.norm_fulfill_p10": 0.0025788664817809615,
+                "Low.norm_fulfill_mean": 0.0035709403455257416,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 17,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.02391249995525868
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9613284146785737,
+                  "norm_fulfill_p1": 0.9312251740694046,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0467808592319487,
+                  "norm_fulfill_p1": 0.9769773405790328,
+                  "norm_fulfill_p10": 0.9996783256530761
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002116698026657149,
+                "Medium.norm_fulfill_p1": 0.005193415880203278,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.006293791532516302,
+                "Low.norm_fulfill_p1": 0.005944846272468496,
+                "Low.norm_fulfill_p10": 0.008267813920974643
+              },
+              "active_count": 46,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.016871999978320673
+            }
+          }
+        },
+        {
+          "threshold": 0.7,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9785963334143162,
+                  "norm_fulfill_p1": 0.9470002943277359,
+                  "norm_fulfill_p10": 0.9566009044647217
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0213566739112139,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0018265899270772934,
+                "Medium.norm_fulfill_p1": 0.005784575939178471,
+                "Medium.norm_fulfill_p10": 0.0025788664817809615,
+                "Low.norm_fulfill_mean": 0.0029258355498313904,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 15,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350026607513428
+              ],
+              "overlay_ms_per_snapshot": 0.024390624957959517
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9613112688064576,
+                  "norm_fulfill_p1": 0.9312251156568527,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0466059744358063,
+                  "norm_fulfill_p1": 0.9725177782773972,
+                  "norm_fulfill_p10": 0.9996783256530761
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002099552154541051,
+                "Medium.norm_fulfill_p1": 0.005193357467651372,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.00611890673637383,
+                "Low.norm_fulfill_p1": 0.001485283970832807,
+                "Low.norm_fulfill_p10": 0.008267813920974643
+              },
+              "active_count": 45,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.01649600002565421
+            }
+          }
+        },
+        {
+          "threshold": 0.72,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535866081715,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9784369468688965,
+                  "norm_fulfill_p1": 0.9470002943277359,
+                  "norm_fulfill_p10": 0.9566009044647217
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0208423249423504,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679799556732
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0016672033816576004,
+                "Medium.norm_fulfill_p1": 0.005784575939178471,
+                "Medium.norm_fulfill_p10": 0.0025788664817809615,
+                "Low.norm_fulfill_mean": 0.002411486580967903,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -4.1723251298364517e-08
+              },
+              "active_count": 13,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.023881250172053115
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9612843871116639,
+                  "norm_fulfill_p1": 0.9312250548601151,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.046303573846817,
+                  "norm_fulfill_p1": 0.9725177782773972,
+                  "norm_fulfill_p10": 0.9996783256530761
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.00207267045974735,
+                "Medium.norm_fulfill_p1": 0.005193296670913727,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.0058165061473844926,
+                "Low.norm_fulfill_p1": 0.001485283970832807,
+                "Low.norm_fulfill_p10": 0.008267813920974643
+              },
+              "active_count": 43,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.018093999970005825
+            }
+          }
+        },
+        {
+          "threshold": 0.74,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9782535936683416,
+                  "norm_fulfill_p1": 0.9470002943277359,
+                  "norm_fulfill_p10": 0.9561136603355408
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0202371291816235,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0014838501811027527,
+                "Medium.norm_fulfill_p1": 0.005784575939178471,
+                "Medium.norm_fulfill_p10": 0.0020916223526000755,
+                "Low.norm_fulfill_mean": 0.0018062908202409744,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 11,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350026607513428
+              ],
+              "overlay_ms_per_snapshot": 0.02654062495821563
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9611986303329467,
+                  "norm_fulfill_p1": 0.9312250864505768,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0460310089588165,
+                  "norm_fulfill_p1": 0.9725177782773972,
+                  "norm_fulfill_p10": 0.9996783256530761
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0019869136810302113,
+                "Medium.norm_fulfill_p1": 0.005193328261375418,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.0055439412593840665,
+                "Low.norm_fulfill_p1": 0.001485283970832807,
+                "Low.norm_fulfill_p10": 0.008267813920974643
+              },
+              "active_count": 41,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.01970799989067018
+            }
+          }
+        },
+        {
+          "threshold": 0.75,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9782535973936319,
+                  "norm_fulfill_p1": 0.9470003128051758,
+                  "norm_fulfill_p10": 0.9561136603355408
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0202371291816235,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0014838539063930511,
+                "Medium.norm_fulfill_p1": 0.005784594416618383,
+                "Medium.norm_fulfill_p10": 0.0020916223526000755,
+                "Low.norm_fulfill_mean": 0.0018062908202409744,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 11,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.02391249995525868
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9611015248298646,
+                  "norm_fulfill_p1": 0.9312251740694046,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0456109821796418,
+                  "norm_fulfill_p1": 0.9725177782773972,
+                  "norm_fulfill_p10": 0.9987179160118103
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001889808177948038,
+                "Medium.norm_fulfill_p1": 0.005193415880203278,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.005123914480209324,
+                "Low.norm_fulfill_p1": 0.001485283970832807,
+                "Low.norm_fulfill_p10": 0.0073074042797087735
+              },
+              "active_count": 39,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.015417999966302887
+            }
+          }
+        },
+        {
+          "threshold": 0.76,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9781637620180845,
+                  "norm_fulfill_p1": 0.9470002943277359,
+                  "norm_fulfill_p10": 0.9561136603355408
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0199865698814392,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001394018530845642,
+                "Medium.norm_fulfill_p1": 0.005784575939178471,
+                "Medium.norm_fulfill_p10": 0.0020916223526000755,
+                "Low.norm_fulfill_mean": 0.0015557315200567245,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 10,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350026607513428
+              ],
+              "overlay_ms_per_snapshot": 0.025274999870816828
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9611015248298646,
+                  "norm_fulfill_p1": 0.9312251156568527,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0456109845638275,
+                  "norm_fulfill_p1": 0.9725177782773972,
+                  "norm_fulfill_p10": 0.9987179279327393
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001889808177948038,
+                "Medium.norm_fulfill_p1": 0.005193357467651372,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.005123916864395062,
+                "Low.norm_fulfill_p1": 0.001485283970832807,
+                "Low.norm_fulfill_p10": 0.007307416200637795
+              },
+              "active_count": 39,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.01829200002248399
+            }
+          }
+        },
+        {
+          "threshold": 0.77,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9780659377574921,
+                  "norm_fulfill_p1": 0.9460298591852188,
+                  "norm_fulfill_p10": 0.9561136603355408
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.019781470298767,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0012961942702531815,
+                "Medium.norm_fulfill_p1": 0.004814140796661315,
+                "Medium.norm_fulfill_p10": 0.0020916223526000755,
+                "Low.norm_fulfill_mean": 0.0013506319373846054,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 9,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.025165625174849993
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9610453033447266,
+                  "norm_fulfill_p1": 0.9312251740694046,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0452865600585937,
+                  "norm_fulfill_p1": 0.971436299085617,
+                  "norm_fulfill_p10": 0.9986088037490845
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0018335866928100852,
+                "Medium.norm_fulfill_p1": 0.005193415880203278,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.004799492359161217,
+                "Low.norm_fulfill_p1": 0.0004038047790526633,
+                "Low.norm_fulfill_p10": 0.007198292016982966
+              },
+              "active_count": 38,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.014264000055845827
+            }
+          }
+        },
+        {
+          "threshold": 0.78,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535866081715,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9779801499098539,
+                  "norm_fulfill_p1": 0.9460298591852188,
+                  "norm_fulfill_p10": 0.9561136603355408
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.019545555114746,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0012104064226150513,
+                "Medium.norm_fulfill_p1": 0.004814140796661315,
+                "Medium.norm_fulfill_p10": 0.0020916223526000755,
+                "Low.norm_fulfill_mean": 0.0011147167533636093,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 8,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350026607513428
+              ],
+              "overlay_ms_per_snapshot": 0.02512812488930649
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9610453057289123,
+                  "norm_fulfill_p1": 0.9312250864505768,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0452865624427796,
+                  "norm_fulfill_p1": 0.971436299085617,
+                  "norm_fulfill_p10": 0.9986088037490845
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001833589076995823,
+                "Medium.norm_fulfill_p1": 0.005193328261375418,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.004799494743347177,
+                "Low.norm_fulfill_p1": 0.0004038047790526633,
+                "Low.norm_fulfill_p10": 0.007198292016982966
+              },
+              "active_count": 38,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.0172460000612773
+            }
+          }
+        },
+        {
+          "threshold": 0.8,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9776369780302048,
+                  "norm_fulfill_p1": 0.9460298591852188,
+                  "norm_fulfill_p10": 0.9541260898113251
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0188386365771294,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.000867234542965889,
+                "Medium.norm_fulfill_p1": 0.004814140796661315,
+                "Medium.norm_fulfill_p10": 0.000104051828384355,
+                "Low.norm_fulfill_mean": 0.0004077982157468796,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 5,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.02617187510622898
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9608318209648132,
+                  "norm_fulfill_p1": 0.9312250864505768,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0451027965545654,
+                  "norm_fulfill_p1": 0.971436299085617,
+                  "norm_fulfill_p10": 0.9973075866699219
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0016201043128967196,
+                "Medium.norm_fulfill_p1": 0.005193328261375418,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.00461572885513295,
+                "Low.norm_fulfill_p1": 0.0004038047790526633,
+                "Low.norm_fulfill_p10": 0.005897074937820435
+              },
+              "active_count": 35,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.015278000064427033
+            }
+          }
+        },
+        {
+          "threshold": 0.82,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9999535828828812,
+                  "norm_fulfill_p1": 0.9993768900632858,
+                  "norm_fulfill_p10": 0.999985808134079
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9771503712981939,
+                  "norm_fulfill_p1": 0.9460298591852188,
+                  "norm_fulfill_p10": 0.9540220379829407
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.018579751253128,
+                  "norm_fulfill_p1": 0.9737852305173874,
+                  "norm_fulfill_p10": 0.9916679680347442
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": -3.725290298461914e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0003806278109550476,
+                "Medium.norm_fulfill_p1": 0.004814140796661315,
+                "Medium.norm_fulfill_p10": 0.0,
+                "Low.norm_fulfill_mean": 0.00014891289174556732,
+                "Low.norm_fulfill_p1": 0.0,
+                "Low.norm_fulfill_p10": -5.364418032005602e-08
+              },
+              "active_count": 2,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.6355519890785217,
+                0.8350027203559875
+              ],
+              "overlay_ms_per_snapshot": 0.022968750045038178
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9997348511219024,
+                  "norm_fulfill_p1": 0.9987430149316787,
+                  "norm_fulfill_p10": 0.99922776222229
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9608234810829163,
+                  "norm_fulfill_p1": 0.9312251740694046,
+                  "norm_fulfill_p10": 0.9355973958969116
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.0451160669326782,
+                  "norm_fulfill_p1": 0.971436299085617,
+                  "norm_fulfill_p10": 0.9973075866699219
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0016117644309997514,
+                "Medium.norm_fulfill_p1": 0.005193415880203278,
+                "Medium.norm_fulfill_p10": 0.005582821369171098,
+                "Low.norm_fulfill_mean": 0.0046289992332457786,
+                "Low.norm_fulfill_p1": 0.0004038047790526633,
+                "Low.norm_fulfill_p10": 0.005897074937820435
+              },
+              "active_count": 34,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.6551716923713684,
+                0.91474848985672
+              ],
+              "overlay_ms_per_snapshot": 0.01447400005417876
+            }
+          }
+        }
+      ]
+    },
+    "3": {
+      "trials": [
+        {
+          "threshold": 0.68,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043307095766,
+                  "norm_fulfill_p1": 0.9671630048751831,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744535446167,
+                  "norm_fulfill_p1": 0.9095723855495453,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484613537788,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 1.862645149230957e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077895760536194,
+                "Medium.norm_fulfill_p1": 0.0006803029775620528,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661585688591003,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.8841024041175842,
+                1.177341341972351
+              ],
+              "overlay_ms_per_snapshot": 0.024274999987028423
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314544677735,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148502826691,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036591529847,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.146750020980835
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 1.1920929798847624e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002881755828857413,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006051540374818,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003510594367981401
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.014765999949304387
+            }
+          }
+        },
+        {
+          "threshold": 0.7,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043325722218,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744609951973,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484613537788,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 3.725290298461914e-09,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077970266342163,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661585688591003,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.023603125100635225
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314532756805,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148502826691,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.243103678226471,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501282691956
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002881755828857413,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006070613861164,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511667251587802
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.01632600004086271
+            }
+          }
+        },
+        {
+          "threshold": 0.72,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043288469315,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744535446167,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484650790691,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077895760536194,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661589413881302,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.02442499999233405
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314532756805,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148490905763,
+                  "norm_fulfill_p1": 0.9608413344621658,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036686897279,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.146750020980835
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002881754636764544,
+                "Medium.norm_fulfill_p1": 1.5928745269788713e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006061077117991,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003510594367981401
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.014424000110011548
+            }
+          }
+        },
+        {
+          "threshold": 0.74,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043325722218,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744498193264,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484576284885,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 3.725290298461914e-09,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001107785850763321,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661581963300705,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.02210937486779585
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314568519592,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148502826691,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036829948425,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501282691956
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 3.576278717609682e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.002881755828857413,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.01200607538223264,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511667251587802
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.017610000068088993
+            }
+          }
+        },
+        {
+          "threshold": 0.75,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043288469315,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744516819715,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484650790691,
+                  "norm_fulfill_p1": 1.1453848493099212,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077877134084702,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661589413881302,
+                "Low.norm_fulfill_p1": 0.01950305819511411,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.177341341972351
+              ],
+              "overlay_ms_per_snapshot": 0.024040625021370943
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314544677735,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148538589477,
+                  "norm_fulfill_p1": 0.960841274857521,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.243103666305542,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.146750009059906
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 1.1920929798847624e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817594051360196,
+                "Medium.norm_fulfill_p1": 1.5869140625013323e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006058692932031,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.00035104751586922944
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.016324000025633723
+            }
+          }
+        },
+        {
+          "threshold": 0.76,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043288469315,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744516819715,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484576284885,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077877134084702,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661581963300705,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.027559374984775786
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314532756805,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148550510406,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.243103678226471,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501163482665
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817605972288884,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006070613861164,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511548042296475
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.016656000079819933
+            }
+          }
+        },
+        {
+          "threshold": 0.77,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043288469315,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744516819715,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484576284885,
+                  "norm_fulfill_p1": 1.1453848493099212,
+                  "norm_fulfill_p10": 1.1749189734458922
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077877134084702,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661581963300705,
+                "Low.norm_fulfill_p1": 0.01950305819511411,
+                "Low.norm_fulfill_p10": 0.02073980569839473
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.024112499886541627
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314532756805,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148478984834,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.243103678226471,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501163482665
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817534446716753,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006070613861164,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511548042296475
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.014327999961096793
+            }
+          }
+        },
+        {
+          "threshold": 0.78,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043288469315,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744516819715,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484613537788,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077877134084702,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661585688591003,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.02839374997165578
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314532756805,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148538589477,
+                  "norm_fulfill_p1": 0.9608413344621658,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036806106568,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501163482665
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 0.0,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817594051360196,
+                "Medium.norm_fulfill_p1": 1.5928745269788713e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006072998046902,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511548042296475
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.015866000030655414
+            }
+          }
+        },
+        {
+          "threshold": 0.8,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043325722218,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744498193264,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484539031982,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 3.725290298461914e-09,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.001107785850763321,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.024661578238010406,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.8841024041175842,
+                1.177341341972351
+              ],
+              "overlay_ms_per_snapshot": 0.02542500010349613
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314544677735,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148550510406,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036710739136,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501163482665
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 1.1920929798847624e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817605972288884,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006063461303729,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511548042296475
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.01651400001719594
+            }
+          }
+        },
+        {
+          "threshold": 0.82,
+          "splits": {
+            "safety": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9890043325722218,
+                  "norm_fulfill_p1": 0.967163046002388,
+                  "norm_fulfill_p10": 0.9752778708934784
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 0.9573744535446167,
+                  "norm_fulfill_p1": 0.9095724266767502,
+                  "norm_fulfill_p10": 0.9193115174770355
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2374484464526176,
+                  "norm_fulfill_p1": 1.145384886264801,
+                  "norm_fulfill_p10": 1.1749190807342529
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 3.725290298461914e-09,
+                "High.norm_fulfill_p1": 4.1127204863933287e-08,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0011077895760536194,
+                "Medium.norm_fulfill_p1": 0.0006803441047669168,
+                "Medium.norm_fulfill_p10": 0.0003321409225464089,
+                "Low.norm_fulfill_mean": 0.02466157078742981,
+                "Low.norm_fulfill_p1": 0.019503095149993932,
+                "Low.norm_fulfill_p10": 0.02073991298675537
+              },
+              "active_count": 32,
+              "sample_count": 32,
+              "total_mean_range": [
+                0.884102463722229,
+                1.1773414611816406
+              ],
+              "overlay_ms_per_snapshot": 0.028737500088027446
+            },
+            "validation": {
+              "summary": {
+                "High": {
+                  "norm_fulfill_mean": 0.9451314544677735,
+                  "norm_fulfill_p1": 0.9339664083719253,
+                  "norm_fulfill_p10": 0.9370577096939087
+                },
+                "Medium": {
+                  "norm_fulfill_mean": 1.0121148562431335,
+                  "norm_fulfill_p1": 0.9608413052558898,
+                  "norm_fulfill_p10": 0.9821272313594818
+                },
+                "Low": {
+                  "norm_fulfill_mean": 1.2431036686897279,
+                  "norm_fulfill_p1": 1.104582347869873,
+                  "norm_fulfill_p10": 1.1467501163482665
+                }
+              },
+              "delta": {
+                "High.norm_fulfill_mean": 1.1920929798847624e-09,
+                "High.norm_fulfill_p1": 0.0,
+                "High.norm_fulfill_p10": 0.0,
+                "Medium.norm_fulfill_mean": 0.0028817617893217573,
+                "Medium.norm_fulfill_p1": 1.589953899383545e-05,
+                "Medium.norm_fulfill_p10": 0.00019695758819571196,
+                "Low.norm_fulfill_mean": 0.012006061077117991,
+                "Low.norm_fulfill_p1": 0.006259874105453589,
+                "Low.norm_fulfill_p10": 0.0003511548042296475
+              },
+              "active_count": 50,
+              "sample_count": 50,
+              "total_mean_range": [
+                0.9413439631462097,
+                1.337066888809204
+              ],
+              "overlay_ms_per_snapshot": 0.014658000000054017
+            }
+          }
+        }
+      ]
+    }
+  },
+  "seconds": 4.622705400004634
+}

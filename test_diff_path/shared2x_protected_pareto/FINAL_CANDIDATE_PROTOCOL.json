@@ -1,0 +1,52 @@
+{
+  "frozen_at": "2026-08-20T17:01:21.9712525+08:00",
+  "status": "exploratory large-sample confirmation; final-window aggregates from reserve factor 1.10 were already known",
+  "scenario": "GEANT shared paths, 2x load, K=8, restored Fh/Fhm checkpoint",
+  "small_screen": [350, 366],
+  "validation_holdout": [366, 400],
+  "large_evaluation": [400, 500],
+  "method": {
+    "high_policy": "exact restored-Fh/Fhm baseline policy",
+    "lower_policy": "joint predicted Medium/Low continuous LP",
+    "low_floor_factor": 1.15,
+    "predicted_dominance_guard": true,
+    "policy_step": 1.0,
+    "objective_order": ["Low feasibility floor", "maximum Medium", "maximum Low tie-break"]
+  },
+  "validation_evidence": {
+    "small_screen": {
+      "high_mean": 0.9999262451252375,
+      "medium_mean_gap": 0.0010335766812480454,
+      "medium_p1_gap": 0.0006059260737659722,
+      "medium_p10_gap": 0.0045421434494810065,
+      "low_mean_gap": 0.002121453706631006
+    },
+    "holdout": {
+      "high_mean": 0.9996447804688574,
+      "medium_mean_gap": 0.008224562410933348,
+      "medium_p1_gap": -0.00008749418389641939,
+      "medium_p10_gap": 0.007779291203654837,
+      "low_mean_gap": 0.00150620364784708
+    }
+  },
+  "large_evaluation_contract": {
+    "high_norm_fulfill_mean_min": 0.995,
+    "low_no_material_decline_mean_gap_min": -0.005,
+    "low_paired_mean_gap_bootstrap_95pct_lower_min": -0.01,
+    "report_medium_mean_p1_p10_even_if_mixed": true,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260820,
+    "no_post_large_evaluation_tuning": true
+  },
+  "prior_final_window_disclosure": {
+    "known_before_this_freeze": true,
+    "reserve_1p10_unguarded_low_mean_gap": -0.02646997216547101,
+    "reserve_1p10_guarded_low_mean_gap": -0.02439665116600093
+  },
+  "sha256": {
+    "run_experiment.py": "ce1b610343ea62c906bfaeb0bb15de409b61853bb4014941481ce4a336b6dcbd",
+    "repair.py": "4a3a30928ef7feab3d7326d4569d5356ee9df5b6170e9e3edac013d3a55545da",
+    "frameworks/hattrick_system.py": "4d1e371746e16c0a049ab85b68c6492dafd8c4a494d01ab7dd777bb4823578ba",
+    "best_model.pt": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "report": false,
+  "smoke": false,
+  "test": {
+    "shared_w_1_0p01_0p001": true,
+    "shared_w_1_0p1_0p01": true,
+    "strict_w_1_0p01_0p001": true,
+    "strict_w_1_0p1_0p01": true
+  },
+  "train": {
+    "shared_w_1_0p01_0p001": {
+      "done": true,
+      "elapsed_sec": 40.69871211051941
+    },
+    "shared_w_1_0p1_0p01": {
+      "done": true,
+      "elapsed_sec": 41.069607734680176
+    },
+    "strict_w_1_0p01_0p001": {
+      "done": true,
+      "elapsed_sec": 41.445151805877686
+    },
+    "strict_w_1_0p1_0p01": {
+      "done": true,
+      "elapsed_sec": 42.30883455276489
+    }
+  },
+  "validate": false
+}

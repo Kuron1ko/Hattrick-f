@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-24T13:46:55.055612+00:00",
+  "frozen": false,
+  "target_epoch": 60,
+  "latest_history_epoch": 0,
+  "observed_history_epochs": [],
+  "archived_epochs": [],
+  "unavailable_past_checkpoints": [],
+  "source_run_directory": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\level4_confirmation\\seed_490",
+  "source_train_history_sha256": null,
+  "baseline_validation_metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\validation_epoch_060_metrics.csv",
+  "baseline_validation_metrics_sha256": "225f8809e26cf11e144589e447981a88f48fd07c7dce8777445dff3a80b9602d",
+  "policy": {
+    "name": "persistent Stage-2 Level-4 validation-only core selector",
+    "target_epoch": 60,
+    "allowed_candidate_window": [
+      350,
+      400
+    ],
+    "forbidden_test_window": [
+      400,
+      500
+    ],
+    "hard_gates": {
+      "high_norm_mean_min": 0.995,
+      "max_post_admission_mlu_max": 1.000001,
+      "max_disabled_flow_max": 1e-08
+    },
+    "preferred_high_tail_gates": {
+      "high_norm_p1_min": 0.985,
+      "high_norm_p10_min": 0.99,
+      "fallback_if_empty": "retain every hard-gate candidate"
+    },
+    "selection": {
+      "coordinates": [
+        "medium_norm_mean",
+        "medium_norm_p1",
+        "medium_norm_p10"
+      ],
+      "pareto": "remove candidates weakly dominated on all three Medium coordinates",
+      "maximin": "maximize min(metric / best eligible metric) on the Pareto front",
+      "tie_break": [
+        "mean of normalized Medium coordinates",
+        "Medium mean",
+        "Medium P1",
+        "Medium P10",
+        "minimum High tail",
+        "earlier epoch"
+      ]
+    },
+    "low_policy": {
+      "core_low_is_descriptive_not_a_gate": true,
+      "reason": "a mandatory prediction-only Low guard is trained after the core checkpoint is frozen; it cannot alter High or Medium",
+      "final_composite_requirement": "on 350-399, Low guard must have nonnegative Mean/P1/P10 gain over its core and final Low must pass paired no-significant-decline versus native Hattrick"
+    },
+    "checkpoint_requirement": "immutable archived checkpoint matching train history and per-epoch validation files",
+    "test_data_policy": "neither training wrapper nor watcher opens snapshots 400-499"
+  },
+  "test_data_read": false,
+  "selection": {
+    "selection_tier": "hard-high+medium-pareto-maximin",
+    "candidate_count": 0,
+    "hard_gate_count": 0,
+    "preferred_tail_count": 0,
+    "selection_pool_count": 0,
+    "pareto_epochs": [],
+    "core_low_used_for_selection": false,
+    "mandatory_downstream_low_guard": true,
+    "selected": null,
+    "candidates": []
+  },
+  "watcher_source_sha256": {
+    "watch_and_select.py": "6ef9548a3368615125f03cb38ed32ba87dfb129ce074dd516a53d2af7f642f58",
+    "base_watch_and_select.py": "c0e25d46ff0aedd9b1a30f66465e225db1f00815848812fc39d82e555a7d1197",
+    "selection_policy.json": "36026468706c73562c4ac61c812ca5054494f42c313fd71332f897525ea948bf",
+    "level4_precommit_manifest.json": "02bb300ad263cbfe770a42cabd358ff3de330a39677d8c0d2a14b8b0a5bcf82f"
+  }
+}

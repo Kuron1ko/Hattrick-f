@@ -1,0 +1,45 @@
+{
+  "purpose": "deterministic information-boundary audit",
+  "actual_tm_used_for_policy": false,
+  "loads": {
+    "1": {
+      "snapshots": [
+        400,
+        500
+      ],
+      "active": 0,
+      "repeat_activation_mismatch": 0,
+      "repeat_policy_max_abs_diff": 0.0,
+      "zero_actual_activation_mismatch": 0,
+      "zero_actual_policy_max_abs_diff": 0.0,
+      "zero_predicted_activation_mismatch": 0,
+      "zero_predicted_policy_max_abs_diff": 0.0
+    },
+    "2": {
+      "snapshots": [
+        400,
+        500
+      ],
+      "active": 86,
+      "repeat_activation_mismatch": 0,
+      "repeat_policy_max_abs_diff": 0.013196349143981934,
+      "zero_actual_activation_mismatch": 0,
+      "zero_actual_policy_max_abs_diff": 0.008321940898895264,
+      "zero_predicted_activation_mismatch": 86,
+      "zero_predicted_policy_max_abs_diff": 0.3108910024166107
+    },
+    "3": {
+      "snapshots": [
+        400,
+        500
+      ],
+      "active": 100,
+      "repeat_activation_mismatch": 0,
+      "repeat_policy_max_abs_diff": 0.016143202781677246,
+      "zero_actual_activation_mismatch": 0,
+      "zero_actual_policy_max_abs_diff": 0.013996481895446777,
+      "zero_predicted_activation_mismatch": 100,
+      "zero_predicted_policy_max_abs_diff": 0.31199005246162415
+    }
+  }
+}

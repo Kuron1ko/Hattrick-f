@@ -1,0 +1,170 @@
+{
+  "method": "joint HOFR with High-only policy trust region",
+  "traffic_scale": "2x",
+  "protocol_note": "alpha was selected on 358-399 without using 400-499 in the trust-region search; however 400-499 had already been evaluated by the preceding alpha=1 HOFR experiment, so this is a follow-up confirmation rather than a fresh untouched test",
+  "input_contract": {
+    "offline_calibration": "actual and ESM TMs from 0-349",
+    "online_policy": "ESM predictions only",
+    "actual_test_tm": "sequential-admission evaluation only"
+  },
+  "selection": {
+    "range": [
+      358,
+      400
+    ],
+    "high_trust_alpha": 0.75,
+    "hofr_config": {
+      "affine_calibration_blend": 1.0,
+      "residual_uncertainty_std": 0.75,
+      "medium_slack_fraction": 0.0
+    }
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "seconds_100_snapshots": 69.13426669999899,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985364991426467,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001191616059
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662244081498,
+      "norm_fulfill_p1": 0.8901875579357147,
+      "norm_fulfill_p10": 0.8966957569122315
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.14728816986084,
+      "norm_fulfill_p1": 0.9548773527145386,
+      "norm_fulfill_p10": 0.9992088854312897
+    }
+  },
+  "candidate": {
+    "High": {
+      "norm_fulfill_mean": 0.9979181158542633,
+      "norm_fulfill_p1": 0.9839106506109238,
+      "norm_fulfill_p10": 0.9948694765567779
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9351294708251953,
+      "norm_fulfill_p1": 0.8948280614614487,
+      "norm_fulfill_p10": 0.9040093660354614
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1546732902526855,
+      "norm_fulfill_p1": 0.9205630141496658,
+      "norm_fulfill_p10": 0.9910216867923737
+    }
+  },
+  "delta_vs_hattrick": {
+    "High.norm_fulfill_mean": -0.0006183832883834839,
+    "High.norm_fulfill_p1": -0.004347363710403451,
+    "High.norm_fulfill_p10": -0.0014306426048279475,
+    "Medium.norm_fulfill_mean": 0.0007632464170455044,
+    "Medium.norm_fulfill_p1": 0.004640503525733974,
+    "Medium.norm_fulfill_p10": 0.0073136091232299805,
+    "Low.norm_fulfill_mean": 0.007385120391845579,
+    "Low.norm_fulfill_p1": -0.03431433856487276,
+    "Low.norm_fulfill_p10": -0.008187198638916038
+  },
+  "delta_vs_previous_alpha_1_hofr": {
+    "High.norm_fulfill_mean": 0.0013177317380904663,
+    "High.norm_fulfill_p1": 0.005316233634948708,
+    "High.norm_fulfill_p10": 0.002546072006225586,
+    "Medium.norm_fulfill_mean": -0.0015384596586227595,
+    "Medium.norm_fulfill_p1": -0.0019020211696624267,
+    "Medium.norm_fulfill_p10": -0.0029888689517975076,
+    "Low.norm_fulfill_mean": -0.001378689408302325,
+    "Low.norm_fulfill_p1": 0.00034066438674917876,
+    "Low.norm_fulfill_p10": -0.0007624030113220215
+  },
+  "diagnostics": {
+    "seconds": 68.94640659999277,
+    "high_path_l1_mean": 0.0806669497415529,
+    "medium_path_l1_mean": 0.04495960577162277,
+    "low_path_l1_mean": 0.03598858033062065,
+    "max_normalized_policy_capacity_ratio": 6.1616599052060375,
+    "high_optimum_mean": 51.444941224015786,
+    "medium_optimum_mean": 29.26908755125515,
+    "low_optimum_mean": 5.256541372810167,
+    "high_policy_l1_from_hattrick": 0.060500212013721466
+  },
+  "paired_bootstrap_20000": {
+    "High": {
+      "mean": {
+        "delta": -0.0006183832883834839,
+        "ci95": [
+          -0.0009065367728471995,
+          -0.00034362161159518537
+        ]
+      },
+      "p1": {
+        "delta": -0.004347363710403451,
+        "ci95": [
+          -0.005068838596343994,
+          0.0008470147848129717
+        ]
+      },
+      "p10": {
+        "delta": -0.0014306426048279475,
+        "ci95": [
+          -0.0025146463513374987,
+          0.00043273568153379127
+        ]
+      }
+    },
+    "Medium": {
+      "mean": {
+        "delta": 0.0007632464170455044,
+        "ci95": [
+          -0.0007368971556425214,
+          0.002231107786297704
+        ]
+      },
+      "p1": {
+        "delta": 0.004640503525733974,
+        "ci95": [
+          -0.0009480714797973633,
+          0.01128476321697236
+        ]
+      },
+      "p10": {
+        "delta": 0.0073136091232299805,
+        "ci95": [
+          0.002545809745788552,
+          0.010266542434692383
+        ]
+      }
+    },
+    "Low": {
+      "mean": {
+        "delta": 0.007385120391845579,
+        "ci95": [
+          0.0019327057003974914,
+          0.012783341780304795
+        ]
+      },
+      "p1": {
+        "delta": -0.03431433856487276,
+        "ci95": [
+          -0.058601298928260825,
+          0.012128829956054688
+        ]
+      },
+      "p10": {
+        "delta": -0.008187198638916038,
+        "ci95": [
+          -0.026138496398925737,
+          0.01420038819313046
+        ]
+      }
+    }
+  },
+  "target_checks": {
+    "high_mean_at_least_0_995": true,
+    "low_mean_significant_decline": false,
+    "medium_mean_improved": true,
+    "medium_p1_improved": true,
+    "medium_p10_improved": true
+  }
+}

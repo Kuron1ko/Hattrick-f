@@ -1,0 +1,115 @@
+{
+  "level": 3,
+  "window": {
+    "train": [
+      0,
+      350
+    ],
+    "validation": [
+      350,
+      400
+    ]
+  },
+  "strict_esm": {
+    "verified": true,
+    "description": "ESM prediction is the only traffic input to routing policy",
+    "pred": 1,
+    "pred_type": "esm"
+  },
+  "phase_a_objectives": [
+    "Fh",
+    "Uh",
+    "Fhm",
+    "Uhm",
+    "Fhml",
+    "Uhml"
+  ],
+  "phase_f_objectives": [
+    "Fh",
+    "Fhm",
+    "Fhml"
+  ],
+  "optimizer_reset": true,
+  "selection_gate": {
+    "high_all_snapshots": ">= 0.995 with 1e-4 numerical tolerance",
+    "low_mean": ">= Phase-A Low mean - 0.02",
+    "simulator": "capacity <= 1.0001 and disabled flow <= 1e-8"
+  },
+  "control_selected_epoch": 12,
+  "hattrick_f_selected_epoch": 14,
+  "statistics": {
+    "hattrick_f_vs_phase_a": {
+      "High": {
+        "n": 50,
+        "paired_mean_delta": -0.00011934485236119175,
+        "paired_delta_ci95": [
+          -0.0004158536367927459,
+          0.00016027756894911673
+        ],
+        "right_better_fraction": 0.64,
+        "equal_fraction": 0.0
+      },
+      "Medium": {
+        "n": 50,
+        "paired_mean_delta": 0.054930661642062596,
+        "paired_delta_ci95": [
+          0.0505499505278788,
+          0.059381061478964985
+        ],
+        "right_better_fraction": 1.0,
+        "equal_fraction": 0.0
+      },
+      "Low": {
+        "n": 50,
+        "paired_mean_delta": 0.07441296951865072,
+        "paired_delta_ci95": [
+          0.057849562641270676,
+          0.09085349359205011
+        ],
+        "right_better_fraction": 0.82,
+        "equal_fraction": 0.0
+      }
+    },
+    "hattrick_f_vs_equal_budget_six_loss_control": {
+      "High": {
+        "n": 50,
+        "paired_mean_delta": 0.0005714207493554002,
+        "paired_delta_ci95": [
+          0.00012205216200376075,
+          0.0010363479955165917
+        ],
+        "right_better_fraction": 0.66,
+        "equal_fraction": 0.0
+      },
+      "Medium": {
+        "n": 50,
+        "paired_mean_delta": 0.0345523701576178,
+        "paired_delta_ci95": [
+          0.030657640932013747,
+          0.03848127739098346
+        ],
+        "right_better_fraction": 1.0,
+        "equal_fraction": 0.0
+      },
+      "Low": {
+        "n": 50,
+        "paired_mean_delta": -0.032573135731102536,
+        "paired_delta_ci95": [
+          -0.04963728152713045,
+          -0.017336947920355693
+        ],
+        "right_better_fraction": 0.2,
+        "equal_fraction": 0.0
+      }
+    }
+  },
+  "route_reconstruction": {
+    "demand_weighted_tv_mean": 0.3494497520478868,
+    "argmax_change_fraction_mean": 0.3018614718614719,
+    "initial_entropy_mean": 0.6436434890444046,
+    "final_entropy_mean": 0.33951671469908473,
+    "entropy_delta": -0.3041267743453199,
+    "initial_top1_share_mean": 0.4862305825880652,
+    "final_top1_share_mean": 0.7300324115367931
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "method": "DOTE Medium-critical residual signature projection",
+  "objective_order": [
+    "Fh",
+    "Sd",
+    "Uh",
+    "Fhm",
+    "Uhm",
+    "Fhml",
+    "Uhml"
+  ],
+  "path_policy_distillation": false,
+  "teacher_used_at_inference": false,
+  "strict_esm_teacher_and_student": true,
+  "aux_weight": 0.05,
+  "source_sha256": {
+    "run_dote_signature_experiment.py": "a97db223f1f6e2101f5c1da96ab504863f371cc7da5507f6efbb4ea0ebbccb6b",
+    "persistent_runner.py": "c4061d15495d4d5ecfdf4e3ca7dd77fa0a64a732bfb0c1c1d0ceefb61a1df14f",
+    "dote_runner.py": "c2d0dab06a27bded6e91e25100275d0183b7d03dab752f57147fb4d33a8e3d2f",
+    "dote_checkpoint": "7055147581ad30c29de6dc9872585cf40f5b9cccea126cf75745c723ef82e1e0",
+    "ordered_projection.py": "a8ed960f641e9cb0786ab8edee3b4a3c571255c3e76c939f0d6803ce01543e3a",
+    "frameworks/hattrick_system.py": "4f7b15dba81b23f0e23d432e0b65f8ae895b459070dd8249a22c1345b15eb862",
+    "dote_signature/settings": "3f69a02f9f679e248638c22f85086921adf863b28ed2b3bb164467340d184e3b"
+  }
+}

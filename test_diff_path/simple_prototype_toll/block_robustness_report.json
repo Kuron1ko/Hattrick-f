@@ -1,0 +1,1503 @@
+{
+  "method": "blocked temporal robustness for compressed edge-toll prototypes",
+  "strict_esm_inference": true,
+  "actual_tm_used_for_policy": false,
+  "evaluation_400_500_used": false,
+  "blocks": [
+    [
+      318,
+      338
+    ],
+    [
+      338,
+      358
+    ],
+    [
+      358,
+      378
+    ],
+    [
+      378,
+      400
+    ]
+  ],
+  "candidates": [
+    {
+      "name": "P3",
+      "prototypes": 3,
+      "medium_gain": 0.2,
+      "low_gain": 0.4
+    },
+    {
+      "name": "P4",
+      "prototypes": 4,
+      "medium_gain": 0.125,
+      "low_gain": 0.25
+    },
+    {
+      "name": "P8",
+      "prototypes": 8,
+      "medium_gain": 0.25,
+      "low_gain": 0.25
+    }
+  ],
+  "loads": {
+    "2": {
+      "P3": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999759793281555,
+              "norm_fulfill_p1": 0.9996884042024612,
+              "norm_fulfill_p10": 0.9999927759170533
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9706043004989624,
+              "norm_fulfill_p1": 0.9461972123384476,
+              "norm_fulfill_p10": 0.9543161034584046
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.032973402738571,
+              "norm_fulfill_p1": 0.9937064731121064,
+              "norm_fulfill_p10": 1.005797302722931
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0029164046049118264,
+            "Medium.norm_fulfill_p1": 0.0062460255622863725,
+            "Medium.norm_fulfill_p10": 0.0027837336063385454,
+            "Low.norm_fulfill_mean": 0.005938577651977361,
+            "Low.norm_fulfill_p1": 0.0014656811952591386,
+            "Low.norm_fulfill_p10": 0.0089227855205537
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0029164046049118043,
+              "ci95": [
+                0.0019750589132308963,
+                0.00383337639272213
+              ],
+              "positive_fraction": 0.95
+            },
+            "Low": {
+              "mean": 0.005938577651977539,
+              "ci95": [
+                0.0042699784040451045,
+                0.007623857408761979
+              ],
+              "positive_fraction": 0.95
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999125719070434,
+              "norm_fulfill_p1": 0.9992701464891434,
+              "norm_fulfill_p10": 0.9997533679008483
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9898019224405289,
+              "norm_fulfill_p1": 0.9790820986032486,
+              "norm_fulfill_p10": 0.9808028161525726
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.008814090490341,
+              "norm_fulfill_p1": 0.9699025475978851,
+              "norm_fulfill_p10": 0.9852354168891907
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -7.472038269040748e-05,
+            "Medium.norm_fulfill_p1": 0.0005706530809401755,
+            "Medium.norm_fulfill_p10": -0.0009102642536163996,
+            "Low.norm_fulfill_mean": 0.003838989138603033,
+            "Low.norm_fulfill_p1": 0.007618345618247924,
+            "Low.norm_fulfill_p10": 0.0024199187755584717
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": -7.472038269042968e-05,
+              "ci95": [
+                -0.00033812113106250767,
+                0.00019106678664684298
+              ],
+              "positive_fraction": 0.45
+            },
+            "Low": {
+              "mean": 0.0038389891386032106,
+              "ci95": [
+                0.0021137266606092455,
+                0.005394999235868454
+              ],
+              "positive_fraction": 0.85
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9998171746730804,
+              "norm_fulfill_p1": 0.9987158912420273,
+              "norm_fulfill_p10": 0.9994917631149292
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9643399864435196,
+              "norm_fulfill_p1": 0.9533158338069916,
+              "norm_fulfill_p10": 0.9542761504650116
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0039960891008377,
+              "norm_fulfill_p1": 0.9967407387495041,
+              "norm_fulfill_p10": 0.9996550500392913
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0012698978185653464,
+            "Medium.norm_fulfill_p1": 0.0004935646057129262,
+            "Medium.norm_fulfill_p10": 0.0003000378608702947,
+            "Low.norm_fulfill_mean": 0.005024707317352273,
+            "Low.norm_fulfill_p1": 0.015121738910675031,
+            "Low.norm_fulfill_p10": 0.010841190814971924
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0012698978185653686,
+              "ci95": [
+                0.0006670571118593216,
+                0.0019202778488397602
+              ],
+              "positive_fraction": 0.95
+            },
+            "Low": {
+              "mean": 0.005024707317352295,
+              "ci95": [
+                0.0025656596571207047,
+                0.007902948036789894
+              ],
+              "positive_fraction": 0.95
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9995974031361666,
+              "norm_fulfill_p1": 0.9990936642885209,
+              "norm_fulfill_p10": 0.9991996109485626
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9491757885976271,
+              "norm_fulfill_p1": 0.9311789631843567,
+              "norm_fulfill_p10": 0.934446781873703
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0989915566010908,
+              "norm_fulfill_p1": 0.9990944731235504,
+              "norm_fulfill_p10": 1.0005863070487977
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.41860412095474e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0035155225883830576,
+            "Medium.norm_fulfill_p1": 0.005168350338935812,
+            "Medium.norm_fulfill_p10": 0.0052204668521881326,
+            "Low.norm_fulfill_mean": 0.008331800049001581,
+            "Low.norm_fulfill_p1": 0.0058087199926375455,
+            "Low.norm_fulfill_p10": 0.00013583898544311523
+          },
+          "paired_mean": {
+            "High": {
+              "mean": -5.418604070490057e-09,
+              "ci95": [
+                -1.625581221147017e-08,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0035155225883830676,
+              "ci95": [
+                0.002542484619400718,
+                0.004454553804614328
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.00833180004900152,
+              "ci95": [
+                0.004458574205636979,
+                0.012519778649915348
+              ],
+              "positive_fraction": 0.9090909090909091
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ],
+      "P4": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999759823083878,
+              "norm_fulfill_p1": 0.9996884042024612,
+              "norm_fulfill_p10": 0.9999927759170533
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9695798635482789,
+              "norm_fulfill_p1": 0.9437068051099777,
+              "norm_fulfill_p10": 0.9531825721263886
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0309760570526123,
+              "norm_fulfill_p1": 0.9945833516120911,
+              "norm_fulfill_p10": 0.9999654293060303
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0018919885158539262,
+            "Medium.norm_fulfill_p1": 0.0037557148933410334,
+            "Medium.norm_fulfill_p10": 0.0016502022743225542,
+            "Low.norm_fulfill_mean": 0.0039412409067154375,
+            "Low.norm_fulfill_p1": 0.002342548370361408,
+            "Low.norm_fulfill_p10": 0.00309101343154905
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0018919885158538818,
+              "ci95": [
+                0.0013000117242336273,
+                0.0024582264572381974
+              ],
+              "positive_fraction": 0.95
+            },
+            "Low": {
+              "mean": 0.003941240906715393,
+              "ci95": [
+                0.002940862253308296,
+                0.004960436746478081
+              ],
+              "positive_fraction": 0.95
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999125719070434,
+              "norm_fulfill_p1": 0.9992700982093811,
+              "norm_fulfill_p10": 0.9997533679008483
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9898401349782944,
+              "norm_fulfill_p1": 0.9788982093334198,
+              "norm_fulfill_p10": 0.9811890304088593
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0075501412153245,
+              "norm_fulfill_p1": 0.9662889432907105,
+              "norm_fulfill_p10": 0.9853079617023468
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -3.650784492492676e-05,
+            "Medium.norm_fulfill_p1": 0.00038676381111135694,
+            "Medium.norm_fulfill_p10": -0.0005240499973296897,
+            "Low.norm_fulfill_mean": 0.002575057744979903,
+            "Low.norm_fulfill_p1": 0.00400483787059791,
+            "Low.norm_fulfill_p10": 0.0024925708770752175
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": -3.650784492492676e-05,
+              "ci95": [
+                -0.00020888678729534147,
+                0.0001438701152801514
+              ],
+              "positive_fraction": 0.4
+            },
+            "Low": {
+              "mean": 0.0025750577449798586,
+              "ci95": [
+                0.001608022078871727,
+                0.0034406428784132005
+              ],
+              "positive_fraction": 0.85
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9998171657323838,
+              "norm_fulfill_p1": 0.9987157946825027,
+              "norm_fulfill_p10": 0.9994917631149292
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9637127578258514,
+              "norm_fulfill_p1": 0.9528311741352081,
+              "norm_fulfill_p10": 0.9537344992160797
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0028562247753143,
+              "norm_fulfill_p1": 0.9927201527357101,
+              "norm_fulfill_p10": 0.9962982356548309
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0006426513195038064,
+            "Medium.norm_fulfill_p1": 8.9389085770053e-06,
+            "Medium.norm_fulfill_p10": -0.00024159550666813523,
+            "Low.norm_fulfill_mean": 0.0038848340511321577,
+            "Low.norm_fulfill_p1": 0.01110124945640567,
+            "Low.norm_fulfill_p10": 0.0074843227863311546
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0006426513195037842,
+              "ci95": [
+                0.00011445119976997376,
+                0.0011963245272636415
+              ],
+              "positive_fraction": 0.45
+            },
+            "Low": {
+              "mean": 0.003884834051132202,
+              "ci95": [
+                0.0020127174258232116,
+                0.006023520156741143
+              ],
+              "positive_fraction": 1.0
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9995974058454687,
+              "norm_fulfill_p1": 0.9990935701131821,
+              "norm_fulfill_p10": 0.9991996109485626
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9476444829594005,
+              "norm_fulfill_p1": 0.9289966642856597,
+              "norm_fulfill_p10": 0.9323259770870209
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0963654084639116,
+              "norm_fulfill_p1": 0.9962470293045044,
+              "norm_fulfill_p10": 1.000556480884552
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0019842034036462453,
+            "Medium.norm_fulfill_p1": 0.0029860514402388905,
+            "Medium.norm_fulfill_p10": 0.003099662065506048,
+            "Low.norm_fulfill_mean": 0.005705627528103996,
+            "Low.norm_fulfill_p1": 0.0029612636566161976,
+            "Low.norm_fulfill_p10": 0.00010601282119737654
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0019842034036462956,
+              "ci95": [
+                0.001347550546581095,
+                0.002581991864876314
+              ],
+              "positive_fraction": 0.7272727272727273
+            },
+            "Low": {
+              "mean": 0.005705627528103915,
+              "ci95": [
+                0.0031960954720323736,
+                0.008351418308236384
+              ],
+              "positive_fraction": 0.9545454545454546
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ],
+      "P8": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999759882688523,
+              "norm_fulfill_p1": 0.9996884042024612,
+              "norm_fulfill_p10": 0.9999927759170533
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9712273716926575,
+              "norm_fulfill_p1": 0.947938225865364,
+              "norm_fulfill_p10": 0.9542145252227783
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.034172186255455,
+              "norm_fulfill_p1": 1.0006616169214249,
+              "norm_fulfill_p10": 1.0052690029144287
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0035394847393036555,
+            "Medium.norm_fulfill_p1": 0.007987061738967793,
+            "Medium.norm_fulfill_p10": 0.0026820600032806396,
+            "Low.norm_fulfill_mean": 0.007137352228164584,
+            "Low.norm_fulfill_p1": 0.00842081367969516,
+            "Low.norm_fulfill_p10": 0.008394479751586914
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0035394847393035887,
+              "ci95": [
+                0.0023397981375455857,
+                0.004773522913455963
+              ],
+              "positive_fraction": 0.9
+            },
+            "Low": {
+              "mean": 0.0071373522281646725,
+              "ci95": [
+                0.0051175767928361895,
+                0.009106996133923531
+              ],
+              "positive_fraction": 0.95
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9999125689268112,
+              "norm_fulfill_p1": 0.9992701464891434,
+              "norm_fulfill_p10": 0.9997533679008483
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9899293184280396,
+              "norm_fulfill_p1": 0.9788306051492691,
+              "norm_fulfill_p10": 0.981064397096634
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0094613015651703,
+              "norm_fulfill_p1": 0.9705505460500717,
+              "norm_fulfill_p10": 0.9849028050899505
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 5.268454551698998e-05,
+            "Medium.norm_fulfill_p1": 0.00031925618648531717,
+            "Medium.norm_fulfill_p10": -0.0006486833095550315,
+            "Low.norm_fulfill_mean": 0.004486221075058028,
+            "Low.norm_fulfill_p1": 0.008266392350196883,
+            "Low.norm_fulfill_p10": 0.002087414264678955
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 5.268454551696777e-05,
+              "ci95": [
+                -0.00020269855856895445,
+                0.0003067792207002641
+              ],
+              "positive_fraction": 0.5
+            },
+            "Low": {
+              "mean": 0.004486221075057984,
+              "ci95": [
+                0.0027343855798244478,
+                0.0061353886127471936
+              ],
+              "positive_fraction": 0.9
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9998171746730804,
+              "norm_fulfill_p1": 0.9987157464027405,
+              "norm_fulfill_p10": 0.9994917631149292
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9653203964233399,
+              "norm_fulfill_p1": 0.9537715756893158,
+              "norm_fulfill_p10": 0.9555381000041961
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0047435998916625,
+              "norm_fulfill_p1": 0.988586146235466,
+              "norm_fulfill_p10": 0.9971039354801178
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.002250298857688904,
+            "Medium.norm_fulfill_p1": 0.0009493404626846891,
+            "Medium.norm_fulfill_p10": 0.001562005281448342,
+            "Low.norm_fulfill_mean": 0.005772221088409357,
+            "Low.norm_fulfill_p1": 0.006967146396636981,
+            "Low.norm_fulfill_p10": 0.008290022611618042
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.002250298857688904,
+              "ci95": [
+                0.0013339761644601822,
+                0.0031786329299211503
+              ],
+              "positive_fraction": 0.75
+            },
+            "Low": {
+              "mean": 0.005772221088409424,
+              "ci95": [
+                0.0021313692629337314,
+                0.01006418563425541
+              ],
+              "positive_fraction": 0.95
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9995973841710524,
+              "norm_fulfill_p1": 0.9990936642885209,
+              "norm_fulfill_p10": 0.9991996109485626
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9507097818634727,
+              "norm_fulfill_p1": 0.932796870470047,
+              "norm_fulfill_p10": 0.9360161483287811
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.09130920605226,
+              "norm_fulfill_p1": 1.0003497838973998,
+              "norm_fulfill_p10": 1.0009176850318908
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.005049515854228637,
+            "Medium.norm_fulfill_p1": 0.006786304712295577,
+            "Medium.norm_fulfill_p10": 0.006789839267730691,
+            "Low.norm_fulfill_mean": 0.0006494332443585105,
+            "Low.norm_fulfill_p1": 0.007064030766486984,
+            "Low.norm_fulfill_p10": 0.00046710968017582566
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.005049515854228626,
+              "ci95": [
+                0.004038903591307727,
+                0.005997376143932343
+              ],
+              "positive_fraction": 0.9545454545454546
+            },
+            "Low": {
+              "mean": 0.0006494332443584095,
+              "ci95": [
+                -0.001243984563784166,
+                0.0027471864088015126
+              ],
+              "positive_fraction": 0.5454545454545454
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ]
+    },
+    "3": {
+      "P3": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.984887769818306,
+              "norm_fulfill_p1": 0.9660290098190307,
+              "norm_fulfill_p10": 0.9749838650226593
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9753028899431229,
+              "norm_fulfill_p1": 0.9312920236587524,
+              "norm_fulfill_p10": 0.9420203447341919
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1998339772224427,
+              "norm_fulfill_p1": 1.1442043256759644,
+              "norm_fulfill_p10": 1.1600881099700928
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.001356363296508789,
+            "Medium.norm_fulfill_p1": 0.0011875635385513172,
+            "Medium.norm_fulfill_p10": 0.0007384598255157915,
+            "Low.norm_fulfill_mean": 0.023219919204712003,
+            "Low.norm_fulfill_p1": 0.01916365265846265,
+            "Low.norm_fulfill_p10": 0.016613805294037
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.001356363296508789,
+              "ci95": [
+                0.0011407192796468735,
+                0.0015697409212589264
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.023219919204711913,
+              "ci95": [
+                0.021031641066074372,
+                0.02550872355699539
+              ],
+              "positive_fraction": 1.0
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9810879021883011,
+              "norm_fulfill_p1": 0.9534682554006576,
+              "norm_fulfill_p10": 0.9544138789176941
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9467643409967422,
+              "norm_fulfill_p1": 0.9091618317365646,
+              "norm_fulfill_p10": 0.9148168563842773
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2656865894794465,
+              "norm_fulfill_p1": 1.1038455057144165,
+              "norm_fulfill_p10": 1.1828530192375184
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -2.9802321721561498e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0005851298570632713,
+            "Medium.norm_fulfill_p1": 0.0005258750915526633,
+            "Medium.norm_fulfill_p10": 0.0019554495811462402,
+            "Low.norm_fulfill_mean": 0.01576310396194458,
+            "Low.norm_fulfill_p1": 0.005872871875763019,
+            "Low.norm_fulfill_p10": 0.023252856731414973
+          },
+          "paired_mean": {
+            "High": {
+              "mean": -2.9802322387695314e-09,
+              "ci95": [
+                -8.940696716308593e-09,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0005851298570632935,
+              "ci95": [
+                0.00014276668429374695,
+                0.001022029966115952
+              ],
+              "positive_fraction": 0.8
+            },
+            "Low": {
+              "mean": 0.01576310396194458,
+              "ci95": [
+                0.008047305941581727,
+                0.023920003622770317
+              ],
+              "positive_fraction": 0.65
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9413071304559708,
+              "norm_fulfill_p1": 0.9354417842626571,
+              "norm_fulfill_p10": 0.9369176805019379
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.028293278813362,
+              "norm_fulfill_p1": 0.9936868453025818,
+              "norm_fulfill_p10": 0.997102016210556
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.209310281276703,
+              "norm_fulfill_p1": 1.117372714281082,
+              "norm_fulfill_p10": 1.132995069026947
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -8.940696627490752e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": -1.0728836052908974e-07,
+            "Medium.norm_fulfill_mean": 0.0033908903598784956,
+            "Medium.norm_fulfill_p1": 0.006371985673904401,
+            "Medium.norm_fulfill_p10": 0.0034736871719360796,
+            "Low.norm_fulfill_mean": 0.007123011350631758,
+            "Low.norm_fulfill_p1": 0.004590554237365652,
+            "Low.norm_fulfill_p10": 0.014287126064300493
+          },
+          "paired_mean": {
+            "High": {
+              "mean": -8.940696716308593e-09,
+              "ci95": [
+                -2.0861625671386717e-08,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.00339089035987854,
+              "ci95": [
+                0.0023530235886573794,
+                0.004440987557172775
+              ],
+              "positive_fraction": 0.95
+            },
+            "Low": {
+              "mean": 0.007123011350631714,
+              "ci95": [
+                0.0031798891723155975,
+                0.011332514137029648
+              ],
+              "positive_fraction": 0.7
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.94359351830049,
+              "norm_fulfill_p1": 0.9332200449705124,
+              "norm_fulfill_p10": 0.936955738067627
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.010659635066986,
+              "norm_fulfill_p1": 0.9884980314970017,
+              "norm_fulfill_p10": 1.0001165091991424
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2844054102897644,
+              "norm_fulfill_p1": 1.190365836620331,
+              "norm_fulfill_p10": 1.219141137599945
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.003313221714713377,
+            "Medium.norm_fulfill_p1": 0.0037595558166504395,
+            "Medium.norm_fulfill_p10": 0.004969429969787553,
+            "Low.norm_fulfill_mean": 0.021243366328152824,
+            "Low.norm_fulfill_p1": 0.015132435560226476,
+            "Low.norm_fulfill_p10": 0.016002523899078414
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0033132217147133565,
+              "ci95": [
+                0.002855262498963963,
+                0.0038196065209128638
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.021243366328152744,
+              "ci95": [
+                0.015041747011921623,
+                0.027388391305099836
+              ],
+              "positive_fraction": 0.8636363636363636
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ],
+      "P4": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9848877787590027,
+              "norm_fulfill_p1": 0.966029058098793,
+              "norm_fulfill_p10": 0.9749838650226593
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9748204290866852,
+              "norm_fulfill_p1": 0.930761530995369,
+              "norm_fulfill_p10": 0.941722297668457
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.190581601858139,
+              "norm_fulfill_p1": 1.136124939918518,
+              "norm_fulfill_p10": 1.153767502307892
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0008738964796066728,
+            "Medium.norm_fulfill_p1": 0.0006571561098098755,
+            "Medium.norm_fulfill_p10": 0.0004404604434967707,
+            "Low.norm_fulfill_mean": 0.01396754980087267,
+            "Low.norm_fulfill_p1": 0.011084266901016271,
+            "Low.norm_fulfill_p10": 0.010293090343475475
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0008738964796066284,
+              "ci95": [
+                0.0007262627780437469,
+                0.0010153492540121078
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.013967549800872803,
+              "ci95": [
+                0.012603562772274018,
+                0.015361129641532899
+              ],
+              "positive_fraction": 1.0
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9810879111289978,
+              "norm_fulfill_p1": 0.9534682667255402,
+              "norm_fulfill_p10": 0.9544138848781586
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9465681701898575,
+              "norm_fulfill_p1": 0.9089648234844208,
+              "norm_fulfill_p10": 0.9138447701931
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2596877455711364,
+              "norm_fulfill_p1": 1.1002702128887176,
+              "norm_fulfill_p10": 1.1726468443870544
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0003889352083206177,
+            "Medium.norm_fulfill_p1": 0.00032886683940880346,
+            "Medium.norm_fulfill_p10": 0.0009833633899688499,
+            "Low.norm_fulfill_mean": 0.009764254093170166,
+            "Low.norm_fulfill_p1": 0.00229767560958849,
+            "Low.norm_fulfill_p10": 0.013046681880950928
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0003889352083206177,
+              "ci95": [
+                0.00011322446167469026,
+                0.0006583768129348756
+              ],
+              "positive_fraction": 0.9
+            },
+            "Low": {
+              "mean": 0.009764254093170166,
+              "ci95": [
+                0.005109789371490479,
+                0.014679256528615953
+              ],
+              "positive_fraction": 0.75
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9413071393966674,
+              "norm_fulfill_p1": 0.9354417842626571,
+              "norm_fulfill_p10": 0.9369177877902984
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0271259099245071,
+              "norm_fulfill_p1": 0.9915466612577438,
+              "norm_fulfill_p10": 0.996512508392334
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2080088555812836,
+              "norm_fulfill_p1": 1.1180250418186188,
+              "norm_fulfill_p10": 1.1275128841400146
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 2.9802321721561498e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.002223527431488126,
+            "Medium.norm_fulfill_p1": 0.004231824278831509,
+            "Medium.norm_fulfill_p10": 0.0028841912746429,
+            "Low.norm_fulfill_mean": 0.005821567773818925,
+            "Low.norm_fulfill_p1": 0.005242881774902397,
+            "Low.norm_fulfill_p10": 0.008804941177368075
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 2.9802322387695314e-09,
+              "ci95": [
+                -1.4901161193847656e-08,
+                2.0861625671386717e-08
+              ],
+              "positive_fraction": 0.1
+            },
+            "Medium": {
+              "mean": 0.002223527431488037,
+              "ci95": [
+                0.0015252669155597686,
+                0.002912372797727585
+              ],
+              "positive_fraction": 0.95
+            },
+            "Low": {
+              "mean": 0.0058215677738189696,
+              "ci95": [
+                0.0027447152137756348,
+                0.00899853363633156
+              ],
+              "positive_fraction": 0.75
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9435935128818859,
+              "norm_fulfill_p1": 0.9332200920581818,
+              "norm_fulfill_p10": 0.936955738067627
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0091352002187208,
+              "norm_fulfill_p1": 0.987124707698822,
+              "norm_fulfill_p10": 0.9982219517230988
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2773921598087659,
+              "norm_fulfill_p1": 1.1892135274410247,
+              "norm_fulfill_p10": 1.2170087218284606
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 2.7093020049662186e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0017887516455217245,
+            "Medium.norm_fulfill_p1": 0.0023862320184707686,
+            "Medium.norm_fulfill_p10": 0.003074926137924261,
+            "Low.norm_fulfill_mean": 0.014230126684362299,
+            "Low.norm_fulfill_p1": 0.013980126380920277,
+            "Low.norm_fulfill_p10": 0.013870215415954457
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 2.7093020352450285e-09,
+              "ci95": [
+                -8.127906105735085e-09,
+                1.625581221147017e-08
+              ],
+              "positive_fraction": 0.045454545454545456
+            },
+            "Medium": {
+              "mean": 0.0017887516455216842,
+              "ci95": [
+                0.0014105703343044627,
+                0.0021925093098120255
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.014230126684362238,
+              "ci95": [
+                0.009901415353471582,
+                0.0186743900179863
+              ],
+              "positive_fraction": 0.8636363636363636
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ],
+      "P8": [
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9848877787590027,
+              "norm_fulfill_p1": 0.966029058098793,
+              "norm_fulfill_p10": 0.9749838650226593
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9755289047956467,
+              "norm_fulfill_p1": 0.9313157677650452,
+              "norm_fulfill_p10": 0.9417353987693786
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1885672390460968,
+              "norm_fulfill_p1": 1.1346285021305085,
+              "norm_fulfill_p10": 1.150840985774994
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 5.960464455334602e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0015823543071746826,
+            "Medium.norm_fulfill_p1": 0.0012114042043686046,
+            "Medium.norm_fulfill_p10": 0.0004535675048827903,
+            "Low.norm_fulfill_mean": 0.011953222751617476,
+            "Low.norm_fulfill_p1": 0.009587829113006707,
+            "Low.norm_fulfill_p10": 0.0073666810989381215
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 5.960464477539063e-09,
+              "ci95": [
+                0.0,
+                1.4901161193847656e-08
+              ],
+              "positive_fraction": 0.1
+            },
+            "Medium": {
+              "mean": 0.0015823543071746826,
+              "ci95": [
+                0.0012769762426614762,
+                0.0018646419793367387
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.011953222751617431,
+              "ci95": [
+                0.01005583956837654,
+                0.01401191458106041
+              ],
+              "positive_fraction": 1.0
+            }
+          },
+          "range": [
+            318,
+            338
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9810878932476044,
+              "norm_fulfill_p1": 0.9534682327508927,
+              "norm_fulfill_p10": 0.9544137597084046
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9467941284179687,
+              "norm_fulfill_p1": 0.9091560083627701,
+              "norm_fulfill_p10": 0.9147530436515808
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2614310383796692,
+              "norm_fulfill_p1": 1.1049975979328155,
+              "norm_fulfill_p10": 1.1739332556724549
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0006148904561996682,
+            "Medium.norm_fulfill_p1": 0.0005200517177581521,
+            "Medium.norm_fulfill_p10": 0.0018916368484497292,
+            "Low.norm_fulfill_mean": 0.011507582664489702,
+            "Low.norm_fulfill_p1": 0.007025105953216482,
+            "Low.norm_fulfill_p10": 0.014333117008209273
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.000614890456199646,
+              "ci95": [
+                9.678520262241364e-05,
+                0.0011340872943401336
+              ],
+              "positive_fraction": 0.7
+            },
+            "Low": {
+              "mean": 0.011507582664489747,
+              "ci95": [
+                0.0068319736421108244,
+                0.016359101980924606
+              ],
+              "positive_fraction": 0.9
+            }
+          },
+          "range": [
+            338,
+            358
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9413071244955062,
+              "norm_fulfill_p1": 0.9354417842626571,
+              "norm_fulfill_p10": 0.9369177877902984
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0288963794708252,
+              "norm_fulfill_p1": 0.9939750766754151,
+              "norm_fulfill_p10": 0.9977079927921295
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2054953157901764,
+              "norm_fulfill_p1": 1.1175403249263764,
+              "norm_fulfill_p10": 1.1254100441932677
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -1.1920929021691506e-08,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.003993988037109375,
+            "Medium.norm_fulfill_p1": 0.006660228371620169,
+            "Medium.norm_fulfill_p10": 0.004079669713973999,
+            "Low.norm_fulfill_mean": 0.0033080577850341797,
+            "Low.norm_fulfill_p1": 0.004757971763611035,
+            "Low.norm_fulfill_p10": 0.006702101230621205
+          },
+          "paired_mean": {
+            "High": {
+              "mean": -1.1920928955078126e-08,
+              "ci95": [
+                -2.6822090148925782e-08,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.003993988037109375,
+              "ci95": [
+                0.0021321944892406467,
+                0.005995806679129601
+              ],
+              "positive_fraction": 0.65
+            },
+            "Low": {
+              "mean": 0.0033080577850341797,
+              "ci95": [
+                -0.0004367324709892273,
+                0.006995611935853958
+              ],
+              "positive_fraction": 0.55
+            }
+          },
+          "range": [
+            358,
+            378
+          ]
+        },
+        {
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9435935128818859,
+              "norm_fulfill_p1": 0.9332200920581818,
+              "norm_fulfill_p10": 0.9369558453559875
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0109835131601854,
+              "norm_fulfill_p1": 0.9900420612096786,
+              "norm_fulfill_p10": 0.9994560003280639
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2808818817138672,
+              "norm_fulfill_p1": 1.186776216030121,
+              "norm_fulfill_p10": 1.2164826393127441
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.0036370943893087038,
+            "Medium.norm_fulfill_p1": 0.005303632616996734,
+            "Medium.norm_fulfill_p10": 0.004308867454528742,
+            "Low.norm_fulfill_mean": 0.01771985942667187,
+            "Low.norm_fulfill_p1": 0.011542909145355384,
+            "Low.norm_fulfill_p10": 0.01334402561187753
+          },
+          "paired_mean": {
+            "High": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "positive_fraction": 0.0
+            },
+            "Medium": {
+              "mean": 0.0036370943893085828,
+              "ci95": [
+                0.002762900157408281,
+                0.004558020423759114
+              ],
+              "positive_fraction": 1.0
+            },
+            "Low": {
+              "mean": 0.01771985942667181,
+              "ci95": [
+                0.012264515188607302,
+                0.023182408647103744
+              ],
+              "positive_fraction": 0.9090909090909091
+            }
+          },
+          "range": [
+            378,
+            400
+          ]
+        }
+      ]
+    }
+  },
+  "seconds": 4.670287700006156
+}

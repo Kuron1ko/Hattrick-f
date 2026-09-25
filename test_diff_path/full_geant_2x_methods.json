@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "default_dataset": "2x",
+  "datasets": {
+    "1x": {
+      "aliases": ["1x", "geant-1x", "geant_1x"],
+      "name": "GEANT full shared-path 1x",
+      "topology": "geant_full_shared_load1x_train",
+      "load_factor": 1.0,
+      "strict_esm": true,
+      "train": [0, 6000],
+      "validation": [6000, 7500],
+      "test": [7500, 10200],
+      "runtime": "test_diff_path/full_geant_1x_hattrick/run_full_experiment.py",
+      "baseline": {
+        "method": "Hattrick",
+        "selection_file": "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/complete.json",
+        "selection_field": "selected_epoch"
+      }
+    },
+    "2x": {
+      "aliases": ["2x", "geant-2x", "geant_2x"],
+      "name": "GEANT full shared-path 2x",
+      "topology": "geant_full_shared_load2x_train",
+      "load_factor": 2.0,
+      "strict_esm": true,
+      "train": [0, 6000],
+      "validation": [6000, 7500],
+      "test": [7500, 10200],
+      "runtime": "test_diff_path/full_geant_2x_hattrick_f/run_full_experiment.py",
+      "baseline": {"method": "Hattrick", "epoch": 22}
+    },
+    "3x": {
+      "aliases": ["3x", "geant-3x", "geant_3x"],
+      "name": "GEANT full shared-path 3x",
+      "topology": "geant_full_shared_load3x_train",
+      "load_factor": 3.0,
+      "strict_esm": true,
+      "train": [0, 6000],
+      "validation": [6000, 7500],
+      "test": [7500, 10200],
+      "runtime": "test_diff_path/full_geant_3x_hattrick/run_full_experiment.py",
+      "baseline": {
+        "method": "Hattrick",
+        "selection_file": "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/complete.json",
+        "selection_field": "selected_epoch"
+      }
+    }
+  },
+  "methods": {
+    "Hattrick": {
+      "aliases": ["hattrick", "hatrrick"],
+      "datasets": {
+        "1x": {
+          "runner": "test_diff_path/full_geant_1x_hattrick/run_full_experiment.py",
+          "training_script": "test_diff_path/full_geant_1x_hattrick/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_1x_hattrick/artifacts/hattrick/seed_{seed}/*.pt"
+          ],
+          "checkpoint_search_rule": "templates first, then globs; exact dataset, method, seed and epoch only",
+          "legacy_test_caches": []
+        },
+        "2x": {
+          "runner": "test_diff_path/full_geant_2x_hattrick_f/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/selected_hattrick.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick/seed_{seed}/final_model.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick/seed_{seed}/*.pt"
+          ],
+          "legacy_test_caches": [
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_epoch_comparison_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_epoch_comparison_summary.json"
+            },
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_summary.json"
+            }
+          ]
+        },
+        "3x": {
+          "runner": "test_diff_path/full_geant_3x_hattrick/run_full_experiment.py",
+          "training_script": "test_diff_path/full_geant_3x_hattrick/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/*.pt"
+          ],
+          "checkpoint_search_rule": "templates first, then globs; exact dataset, method, seed and epoch only",
+          "legacy_test_caches": []
+        }
+      }
+    },
+    "Hattrick-f": {
+      "aliases": ["hattrick-f", "hattrick_f"],
+      "datasets": {
+        "2x": {
+          "runner": "test_diff_path/full_geant_2x_hattrick_f/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick_f/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick_f/seed_{seed}/final_model.pt",
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/selected_hattrick_f.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_2x_hattrick_f/artifacts/hattrick_f/seed_{seed}/*.pt"
+          ],
+          "legacy_test_caches": [
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_f_epoch_{epoch:03d}_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_f_epoch_{epoch:03d}_summary.json"
+            },
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_f_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f/artifacts/test_hattrick_f_summary.json"
+            }
+          ]
+        }
+      }
+    },
+    "Hattrick-f3": {
+      "aliases": ["hattrick-f3", "hattrick_f3"],
+      "datasets": {
+        "1x": {
+          "runner": "test_diff_path/full_geant_1x_hattrick_f3/run_full_experiment.py",
+          "training_script": "test_diff_path/full_geant_1x_hattrick_f3/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_1x_hattrick_f3/artifacts/seed_{seed}/*.pt"
+          ],
+          "checkpoint_search_rule": "templates first, then globs; exact dataset, method, seed and epoch only",
+          "legacy_test_caches": []
+        },
+        "2x": {
+          "runner": "test_diff_path/full_geant_2x_hattrick_f3/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/pinned/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/pinned/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/*.pt"
+          ],
+          "legacy_test_caches": [
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/test_hattrick_f3_epoch_{epoch:03d}_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f3/artifacts/seed_{seed}/test_hattrick_f3_epoch_{epoch:03d}_summary.json"
+            }
+          ]
+        },
+        "3x": {
+          "runner": "test_diff_path/full_geant_3x_hattrick_f3/run_full_experiment.py",
+          "training_script": "test_diff_path/full_geant_3x_hattrick_f3/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_3x_hattrick_f3/artifacts/seed_{seed}/*.pt"
+          ],
+          "checkpoint_search_rule": "templates first, then globs; exact dataset, method, seed and epoch only",
+          "legacy_test_caches": []
+        }
+      }
+    },
+    "Hattrick-f4": {
+      "aliases": ["hattrick-f4", "hattrick_f4", "f4"],
+      "datasets": {
+        "2x": {
+          "runner": "test_diff_path/full_geant_2x_hattrick_f4/run_full_experiment.py",
+          "training_script": "test_diff_path/full_geant_2x_hattrick_f4/run_full_experiment.py",
+          "checkpoint_templates": [
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/checkpoints/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/top5/epoch_{epoch:03d}.pt",
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/best_model.pt",
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/resume_state.pt"
+          ],
+          "checkpoint_globs": [
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/checkpoints/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/top5/*.pt",
+            "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/*.pt"
+          ],
+          "checkpoint_search_rule": "templates first, then globs; exact dataset, method, seed and epoch only",
+          "legacy_test_caches": [
+            {
+              "metrics": "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/test_hattrick_f4_epoch_{epoch:03d}_metrics.csv",
+              "summary": "test_diff_path/full_geant_2x_hattrick_f4/artifacts/seed_{seed}/test_hattrick_f4_epoch_{epoch:03d}_summary.json"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source_model": "D:\\kuroresearch\\Hattrick-main\\hattrick_geant_priomask500_shared_8sp.pkl",
+  "source_model_sha256": "b233b86867a44366744b9fb44e1622027f6c8c76f7d300d74c91eda947f07f79",
+  "topology": "geant_priomask500_shared",
+  "config": {
+    "steps": 24,
+    "learning_rate": 0.06,
+    "low_weight": 0.25,
+    "anchor_weight": 0.01,
+    "predicted_medium_trigger_threshold": 0.875
+  },
+  "input_contract": "current ESM predictions generate policy; current actual TMs are evaluation only"
+}

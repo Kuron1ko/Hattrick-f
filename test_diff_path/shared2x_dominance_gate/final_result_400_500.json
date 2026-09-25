@@ -1,0 +1,99 @@
+{
+  "method": "ESM proposal with per-snapshot dominance abstention gate",
+  "traffic_scale": "2x",
+  "selection_protocol": {
+    "margin_search": [
+      350,
+      358
+    ],
+    "independent_validation": [
+      358,
+      400
+    ],
+    "level4_confirmation": [
+      400,
+      500
+    ],
+    "frozen_medium_margin": 0.002,
+    "frozen_low_margin": 0.02
+  },
+  "input_contract": {
+    "online": "ESM-predicted TMs, Hattrick policies, capacities",
+    "actual_tm": "sequential-admission evaluation only",
+    "high_policy": "identical to Hattrick by construction"
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "seconds_100_snapshots": 33.59641259998898,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985365086793899,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001132011413
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662267923355,
+      "norm_fulfill_p1": 0.8901874989271163,
+      "norm_fulfill_p10": 0.8966957569122315
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1472881919145583,
+      "norm_fulfill_p1": 0.9548775297403336,
+      "norm_fulfill_p10": 0.9992087244987488
+    }
+  },
+  "candidate": {
+    "High": {
+      "norm_fulfill_mean": 0.9985365039110183,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001132011413
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9412210291624069,
+      "norm_fulfill_p1": 0.8960916620492935,
+      "norm_fulfill_p10": 0.9103868544101715
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1664602613449098,
+      "norm_fulfill_p1": 0.9548775291442871,
+      "norm_fulfill_p10": 1.0066304087638855
+    }
+  },
+  "delta": {
+    "High.norm_fulfill_mean": -4.768371586472142e-09,
+    "High.norm_fulfill_p1": 0.0,
+    "High.norm_fulfill_p10": 0.0,
+    "Medium.norm_fulfill_mean": 0.006854802370071411,
+    "Medium.norm_fulfill_p1": 0.00590416312217712,
+    "Medium.norm_fulfill_p10": 0.013691097497940063,
+    "Low.norm_fulfill_mean": 0.019172069430351435,
+    "Low.norm_fulfill_p1": -5.9604643443123e-10,
+    "Low.norm_fulfill_p10": 0.007421684265136785
+  },
+  "dominance_diagnostics": {
+    "accepted": 39,
+    "total": 100,
+    "classes": {
+      "High": {
+        "mean_gain": -4.76837158203125e-09,
+        "paired_negative_count": 3,
+        "paired_min_gain": -1.1920928955078125e-07,
+        "ecdf_max_upward_violation": 0.010000000000000009
+      },
+      "Medium": {
+        "mean_gain": 0.006854802370071411,
+        "paired_negative_count": 4,
+        "paired_min_gain": -1.1920928955078125e-07,
+        "ecdf_max_upward_violation": 0.01
+      },
+      "Low": {
+        "mean_gain": 0.019172069430351258,
+        "paired_negative_count": 19,
+        "paired_min_gain": -0.03357994556427002,
+        "ecdf_max_upward_violation": 0.010000000000000009
+      }
+    },
+    "all_three_empirical_cdfs_noninferior": false,
+    "all_three_paired_noninferior": false
+  }
+}

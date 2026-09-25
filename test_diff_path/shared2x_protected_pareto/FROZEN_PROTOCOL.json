@@ -1,0 +1,40 @@
+{
+  "frozen_at": "2026-08-20T16:49:14.4261326+08:00",
+  "scenario": "GEANT shared paths, 2x load, K=8, restored Fh/Fhm checkpoint",
+  "selection_window": [350, 366],
+  "independent_validation_holdout": [366, 400],
+  "final_evaluation": [400, 500],
+  "method": "freeze High; jointly optimize Medium/Low on predicted residual capacity; constrain predicted Low to 1.10 times its baseline admission when feasible; maximize Medium then Low",
+  "mode": "joint",
+  "low_floor_factor": 1.1,
+  "holdout_gate": {
+    "high_norm_fulfill_mean_min": 0.995,
+    "low_norm_fulfill_mean_gap_min": -0.005,
+    "medium_norm_fulfill_mean_gap_min": 0.0,
+    "medium_norm_fulfill_mean_or_p10_must_improve": true,
+    "max_admitted_capacity_ratio": 1.0001,
+    "max_disabled_flow": 1e-8
+  },
+  "final_reporting": {
+    "high_norm_fulfill_mean_min": 0.995,
+    "low_no_material_decline_mean_gap_min": -0.005,
+    "low_paired_mean_gap_bootstrap_95pct_lower_min": -0.01,
+    "report_medium_mean_p1_p10_even_if_mixed": true,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260820,
+    "no_post_final_tuning": true
+  },
+  "holdout_observation": {
+    "high_mean": 0.9996447776841083,
+    "medium_mean_gap": 0.008454719290584046,
+    "medium_p1_gap": -0.004343563230969849,
+    "medium_p10_gap": 0.004877444700616018,
+    "low_mean_gap": -0.0006777557678112448
+  },
+  "sha256": {
+    "run_experiment.py": "ce2cb39e8df0c6625cc7a8e91b1ccb32803c5bfb2c410bfa6009e883f9f4fe0b",
+    "repair.py": "4a3a30928ef7feab3d7326d4569d5356ee9df5b6170e9e3edac013d3a55545da",
+    "frameworks/hattrick_system.py": "4d1e371746e16c0a049ab85b68c6492dafd8c4a494d01ab7dd777bb4823578ba",
+    "best_model.pt": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "status": "COMPLETE",
+  "strict_esm": true,
+  "test": [
+    7500,
+    10200
+  ],
+  "checkpoint": {
+    "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_3x_hattrick\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_020.pt",
+    "sha256": "514354f6b768d7e287ec401f4b35222902ce4163ac468843f6b72595570ffea9",
+    "method": "Hattrick",
+    "seed": 490,
+    "epoch": 20,
+    "dataset": "3x",
+    "config_sha256": "c1ed7df9c17b37f5957e86aab5abf8c73a8fc5f353d0e7f1e2b8c56653825d62",
+    "config_contract": {
+      "dataset": "3x",
+      "topology": "geant_full_shared_load3x_train",
+      "load_factor": 3.0,
+      "strict_esm": true,
+      "train": [
+        0,
+        6000
+      ],
+      "validation": [
+        6000,
+        7500
+      ],
+      "test": [
+        7500,
+        10200
+      ]
+    },
+    "rank": [
+      0.0,
+      0.8501922922445979,
+      0.9906402156278927,
+      0.9155534245483692,
+      0.8939568906577979,
+      1.1071291972410215
+    ]
+  },
+  "inference_config": {
+    "method": "Hattrick",
+    "seed": 490,
+    "epoch": 20,
+    "checkpoint_sha256": "514354f6b768d7e287ec401f4b35222902ce4163ac468843f6b72595570ffea9",
+    "checkpoint_config_sha256": "c1ed7df9c17b37f5957e86aab5abf8c73a8fc5f353d0e7f1e2b8c56653825d62",
+    "dataset": {
+      "key": "3x",
+      "aliases": [
+        "3x",
+        "geant-3x",
+        "geant_3x"
+      ],
+      "name": "GEANT full shared-path 3x",
+      "topology": "geant_full_shared_load3x_train",
+      "load_factor": 3.0,
+      "strict_esm": true,
+      "train": [
+        0,
+        6000
+      ],
+      "validation": [
+        6000,
+        7500
+      ],
+      "test": [
+        7500,
+        10200
+      ],
+      "runtime": "test_diff_path/full_geant_3x_hattrick/run_full_experiment.py",
+      "baseline": {
+        "method": "Hattrick",
+        "selection_file": "test_diff_path/full_geant_3x_hattrick/artifacts/hattrick/seed_{seed}/complete.json",
+        "selection_field": "selected_epoch"
+      }
+    },
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "source_sha256": {
+      "runtime": "4ba040b0936dbd13edfe8715c99b66ec783d2350d9a938a9f3dfe03353fa267e",
+      "hattrick_system": "4f7b15dba81b23f0e23d432e0b65f8ae895b459070dd8249a22c1345b15eb862",
+      "dataset": "53c69ca0f24b8d514252dabd58192a3eee1b5584257065e4e1f460a85037be46"
+    }
+  },
+  "inference_config_sha256": "d1588a0f4693cb0f32c89e0abfca1f0cef4bddd94024fde99f49c929330e3b18",
+  "classes": [
+    {
+      "class": "High",
+      "n": 2700,
+      "admitted_traffic_mean": 48.07786283422399,
+      "admitted_traffic_p1": 30.948756275177,
+      "admitted_traffic_p10": 36.81399421691894,
+      "demand_mean": 52.85102236076638,
+      "demand_p1": 31.49563129425049,
+      "demand_p10": 38.93202438354492,
+      "fulfill_ratio_mean": 0.9151606109404511,
+      "fulfill_ratio_p1": 0.7893871149700364,
+      "fulfill_ratio_p10": 0.8497139964047923,
+      "norm_fulfill_mean": 0.998061824959048,
+      "norm_fulfill_p1": 0.9903831942107286,
+      "norm_fulfill_p10": 0.9957890821142383,
+      "normalized_mlu_mean": 1.0056482290374504,
+      "normalized_mlu_p1": 1.0000593864230503,
+      "normalized_mlu_p10": 1.000389482439678,
+      "raw_mlu_mean": 2.2559599486766038,
+      "raw_mlu_p1": 1.109278497695923,
+      "raw_mlu_p10": 1.303405237197876,
+      "admitted_capacity_ratio_mean": 0.9999925313614033,
+      "admitted_capacity_ratio_p1": 0.9999998807907104,
+      "admitted_capacity_ratio_p10": 1.0,
+      "max_disabled_flow": 0.0,
+      "max_admitted_capacity_ratio": 1.000000238418579
+    },
+    {
+      "class": "Medium",
+      "n": 2700,
+      "admitted_traffic_mean": 25.379511134182966,
+      "admitted_traffic_p1": 16.450028266906738,
+      "admitted_traffic_p10": 18.308495140075685,
+      "demand_mean": 47.291669811672634,
+      "demand_p1": 28.16899040222168,
+      "demand_p10": 34.82545394897461,
+      "fulfill_ratio_mean": 0.5430072381029878,
+      "fulfill_ratio_p1": 0.40217565547823614,
+      "fulfill_ratio_p10": 0.4534227907264267,
+      "norm_fulfill_mean": 0.9457326975267379,
+      "norm_fulfill_p1": 0.8058921679374407,
+      "norm_fulfill_p10": 0.8860585225276219,
+      "normalized_mlu_mean": 1.003908119838491,
+      "normalized_mlu_p1": 1.0000636521937893,
+      "normalized_mlu_p10": 1.0003356275720137,
+      "raw_mlu_mean": 4.270170095982375,
+      "raw_mlu_p1": 2.0613113498687743,
+      "raw_mlu_p10": 2.4484838247299194,
+      "admitted_capacity_ratio_mean": 1.000000107685725,
+      "admitted_capacity_ratio_p1": 1.0,
+      "admitted_capacity_ratio_p10": 1.0,
+      "max_disabled_flow": 0.0,
+      "max_admitted_capacity_ratio": 1.000000238418579
+    },
+    {
+      "class": "Low",
+      "n": 2700,
+      "admitted_traffic_mean": 5.350122514742392,
+      "admitted_traffic_p1": 3.2990289330482483,
+      "admitted_traffic_p10": 3.9237805366516114,
+      "demand_mean": 11.11198095092067,
+      "demand_p1": 6.489237580299378,
+      "demand_p10": 8.123691749572753,
+      "fulfill_ratio_mean": 0.48865525879758176,
+      "fulfill_ratio_p1": 0.30864722460234856,
+      "fulfill_ratio_p10": 0.3859271536458012,
+      "norm_fulfill_mean": 1.0075177504475896,
+      "norm_fulfill_p1": 0.7251892108135385,
+      "norm_fulfill_p10": 0.8908165728005447,
+      "normalized_mlu_mean": 1.0034117970053644,
+      "normalized_mlu_p1": 1.00003731469788,
+      "normalized_mlu_p10": 1.0002843252620688,
+      "raw_mlu_mean": 4.742050071778121,
+      "raw_mlu_p1": 2.2875821566581727,
+      "raw_mlu_p10": 2.7222313404083254,
+      "admitted_capacity_ratio_mean": 1.000000130423793,
+      "admitted_capacity_ratio_p1": 1.0,
+      "admitted_capacity_ratio_p10": 1.0,
+      "max_disabled_flow": 0.0,
+      "max_admitted_capacity_ratio": 1.0000003576278687
+    }
+  ],
+  "diagnostics": {
+    "inversion_raw_gap_mean": 0.06178505292085144,
+    "inversion_positive_gap_mean": 0.07643079806477691,
+    "inversion_violation_fraction": 0.8137037037037037,
+    "inversion_gap_p90": 0.2007381763145975,
+    "inversion_gap_max": 0.9476780708284711
+  },
+  "tail_diagnostics": {
+    "High": {
+      "n": 2700,
+      "norm_fulfill_min": 0.9406345449649633,
+      "norm_fulfill_max": 1.0,
+      "fraction_below_0.995": 0.06111111111111111
+    },
+    "Medium": {
+      "n": 2700,
+      "norm_fulfill_min": 0.697888937470955,
+      "norm_fulfill_max": 1.0192762830712663,
+      "fraction_below_0.995": 0.9311111111111111
+    },
+    "Low": {
+      "n": 2700,
+      "norm_fulfill_min": 0.6280430744488844,
+      "norm_fulfill_max": 1.7262528640238448,
+      "fraction_below_0.995": 0.3111111111111111
+    }
+  },
+  "cache": {
+    "reused": false,
+    "source": null
+  }
+}

@@ -1,0 +1,1680 @@
+{
+  "method": "RCDR residual-capacity dominance routing",
+  "protocol": {
+    "residual_calibration": [
+      0,
+      318
+    ],
+    "small_selection": [
+      350,
+      358
+    ],
+    "independent_validation": [
+      358,
+      400
+    ],
+    "final_confirmation": [
+      400,
+      500
+    ],
+    "actual_tm_online": false
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "small_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9999070093035698,
+      "norm_fulfill_p1": 0.9993257695436477,
+      "norm_fulfill_p10": 0.9997781455516815
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9868322163820267,
+      "norm_fulfill_p1": 0.9783600956201554,
+      "norm_fulfill_p10": 0.981487900018692
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.006301373243332,
+      "norm_fulfill_p1": 0.9626552402973175,
+      "norm_fulfill_p10": 0.9774491786956787
+    }
+  },
+  "small_results": [
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868328720331192,
+          "norm_fulfill_p1": 0.9783602499961853,
+          "norm_fulfill_p10": 0.9814894437789917
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0063029825687408,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 6.556510925292969e-07,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.6093254089355469e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 3.142286856672172e-05,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322163820267,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322163820267,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868328124284744,
+          "norm_fulfill_p1": 0.9783602333068848,
+          "norm_fulfill_p10": 0.9814892768859863
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0063028186559677,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 5.960464477539062e-07,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.4454126358032227e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 2.828058171004955e-05,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322163820267,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868327230215073,
+          "norm_fulfill_p1": 0.9783602124452591,
+          "norm_fulfill_p10": 0.9814890682697296
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0063025951385498,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 5.066394805908203e-07,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.2218952178955078e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 2.356715142504129e-05,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322163820267,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9999070093035698,
+          "norm_fulfill_p1": 0.9993257695436477,
+          "norm_fulfill_p10": 0.9997781455516815
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868322312831879,
+          "norm_fulfill_p1": 0.9783600956201554,
+          "norm_fulfill_p10": 0.981487900018692
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.006301373243332,
+          "norm_fulfill_p1": 0.9626552402973175,
+          "norm_fulfill_p10": 0.9774491786956787
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.0,
+      "alpha_positive_count": 0
+    }
+  ],
+  "small_feasible_count": 15,
+  "validation_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9997020420574007,
+      "norm_fulfill_p1": 0.9987357133626937,
+      "norm_fulfill_p10": 0.9991996109485626
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9539506719225929,
+      "norm_fulfill_p1": 0.9260257655382156,
+      "norm_fulfill_p10": 0.9296318054199219
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.0469986512547447,
+      "norm_fulfill_p1": 0.9818002837896347,
+      "norm_fulfill_p10": 0.9930351436138153
+    }
+  },
+  "validation_results": [
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9541197404974983,
+          "norm_fulfill_p1": 0.9261538720130921,
+          "norm_fulfill_p10": 0.9297113597393036
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469460359641485,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9928824186325074
+        }
+      },
+      "diagnostics": {
+        "accepted": 17,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00016907283238002231,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -5.2618128912789484e-05,
+            "paired_negative_count": 6,
+            "paired_min_gain": -0.0008829832077026367,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.005946470600606733,
+      "alpha_positive_count": 17
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9541132279804775,
+          "norm_fulfill_p1": 0.9261538720130921,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469547027633304,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9928824186325074
+        }
+      },
+      "diagnostics": {
+        "accepted": 6,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00016256173451741537,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -4.394423393976121e-05,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.0008829832077026367,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.005688272327894256,
+      "alpha_positive_count": 6
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9541101200239999,
+          "norm_fulfill_p1": 0.9261538720130921,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.046958748783384,
+          "norm_fulfill_p1": 0.9818003678321838,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 5,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00015944810140700567,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -3.9903890518915086e-05,
+            "paired_negative_count": 2,
+            "paired_min_gain": -0.0008829832077026367,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.0055643720330581774,
+      "alpha_positive_count": 5
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540973859173911,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0470000093891507,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00014672250974745977,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.3595535641624814e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.005061108796369462,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 1.0,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540684308324542,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469997681322551,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 2,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00011776032901945568,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.1154583522251675e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.003986494704371407,
+      "alpha_positive_count": 2
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9541024892103105,
+          "norm_fulfill_p1": 0.926142337322235,
+          "norm_fulfill_p10": 0.9297034204006195
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469513138135274,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9928977608680725
+        }
+      },
+      "diagnostics": {
+        "accepted": 17,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00015182580266680037,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -4.7338860375540594e-05,
+            "paired_negative_count": 5,
+            "paired_min_gain": -0.0007941722869873047,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.00535182354054606,
+      "alpha_positive_count": 17
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540938209919703,
+          "norm_fulfill_p1": 0.926142337322235,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469627522286915,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 5,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00014315758432660784,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -3.590186436971029e-05,
+            "paired_negative_count": 2,
+            "paired_min_gain": -0.0007941722869873047,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.00500793482975236,
+      "alpha_positive_count": 5
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540823754810152,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469998660541715,
+          "norm_fulfill_p1": 0.9818002837896347,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00013171349252973284,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.217637743268694e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.004554997916732516,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540823669660659,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469998674733298,
+          "norm_fulfill_p1": 0.9818003678321838,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0001317120733715239,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.217637743268694e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.004554997916732516,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.9,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540563566344125,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469996545995985,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 2,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00010567903518676758,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 9.99087379092262e-07,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.003587845233934266,
+      "alpha_positive_count": 2
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540767598719824,
+          "norm_fulfill_p1": 0.9261251330375672,
+          "norm_fulfill_p10": 0.9296915113925934
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469592213630676,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9929206132888794
+        }
+      },
+      "diagnostics": {
+        "accepted": 17,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.0001260950451805478,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -3.942563420250302e-05,
+            "paired_negative_count": 6,
+            "paired_min_gain": -0.0006612539291381836,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.00445985295045505,
+      "alpha_positive_count": 17
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540695349375407,
+          "norm_fulfill_p1": 0.9261251330375672,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469687581062317,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 5,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00011887152989705403,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -2.989598682948521e-05,
+            "paired_negative_count": 2,
+            "paired_min_gain": -0.0006612539291381836,
+            "ecdf_max_upward_violation": 0.023809523809523836
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      },
+      "alpha_mean": 0.0041732790247936335,
+      "alpha_positive_count": 5
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020448957171,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540600024518513,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469996687911807,
+          "norm_fulfill_p1": 0.9818003678321838,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00010933904420761835,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.0132789611816406e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.003795831597277096,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540599996135348,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318054199219
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469996659528642,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.00010933904420761835,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 1.0132789611816406e-06,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.003795831597277096,
+      "alpha_positive_count": 3
+    },
+    {
+      "residual_quantile": 0.8,
+      "alpha_multiplier": 0.75,
+      "min_applied_alpha": 0.05,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9997020420574007,
+          "norm_fulfill_p1": 0.9987357133626937,
+          "norm_fulfill_p10": 0.9991996109485626
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9540383659657978,
+          "norm_fulfill_p1": 0.9260257655382156,
+          "norm_fulfill_p10": 0.9296318590641022
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.0469994857197715,
+          "norm_fulfill_p1": 0.9818003189563751,
+          "norm_fulfill_p10": 0.9930351436138153
+        }
+      },
+      "diagnostics": {
+        "accepted": 2,
+        "total": 42,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 8.768836657206218e-05,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 8.31626710437593e-07,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      },
+      "alpha_mean": 0.002989871028278555,
+      "alpha_positive_count": 2
+    }
+  ],
+  "validation_feasible_count": 8,
+  "winner": {
+    "residual_quantile": 0.8,
+    "alpha_multiplier": 1.0,
+    "min_applied_alpha": 0.02,
+    "summary": {
+      "High": {
+        "norm_fulfill_mean": 0.9997020420574007,
+        "norm_fulfill_p1": 0.9987357133626937,
+        "norm_fulfill_p10": 0.9991996109485626
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9540973859173911,
+        "norm_fulfill_p1": 0.9260257655382156,
+        "norm_fulfill_p10": 0.9296318590641022
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0470000093891507,
+        "norm_fulfill_p1": 0.9818003189563751,
+        "norm_fulfill_p10": 0.9930351436138153
+      }
+    },
+    "diagnostics": {
+      "accepted": 3,
+      "total": 42,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.00014672250974745977,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 1.3595535641624814e-06,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": true
+    },
+    "alpha_mean": 0.005061108796369462,
+    "alpha_positive_count": 3
+  },
+  "final_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985364955663681,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001668453216
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662273883819,
+      "norm_fulfill_p1": 0.8901874989271163,
+      "norm_fulfill_p10": 0.8966957628726959
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1472881788015366,
+      "norm_fulfill_p1": 0.9548773527145386,
+      "norm_fulfill_p10": 0.9992088913917542
+    }
+  },
+  "final": {
+    "residual_quantile": 0.8,
+    "alpha_multiplier": 1.0,
+    "min_applied_alpha": 0.02,
+    "summary": {
+      "High": {
+        "norm_fulfill_mean": 0.9985364961624146,
+        "norm_fulfill_p1": 0.9882580143213272,
+        "norm_fulfill_p10": 0.9963001668453216
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9348157477378846,
+        "norm_fulfill_p1": 0.8907550436258316,
+        "norm_fulfill_p10": 0.8966957628726959
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.1463590413331985,
+        "norm_fulfill_p1": 0.9548773527145386,
+        "norm_fulfill_p10": 0.9992088913917542
+      }
+    },
+    "diagnostics": {
+      "accepted": 19,
+      "total": 100,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.00044952094554901123,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": -0.0009291350841522216,
+          "paired_negative_count": 18,
+          "paired_min_gain": -0.016895532608032227,
+          "ecdf_max_upward_violation": 0.040000000000000036
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": false,
+      "all_three_paired_noninferior": false
+    },
+    "alpha_mean": 0.015296506471931934,
+    "alpha_positive_count": 19
+  }
+}

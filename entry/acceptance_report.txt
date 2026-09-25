@@ -1,0 +1,61 @@
+entry 工作区验收记录（2026-09-02）
+==================================
+
+结论：通过。1x、2x、3x 的 Hattrick / Hattrick-f3 已迁入 entry，公共入口可在
+不同当前目录下运行，运行数据、模型、基线、缓存和图片均解析到 entry 内。
+
+数据
+----
+- 每个 dataset 均有 1、1_esm、2、2_esm、3、3_esm 六组流量。
+- 每组各 10200 个快照，即每个 dataset 共 61200 个流量文件。
+- topology、pairs、manifest、8-path 缓存齐全。
+- generate.py 已验证：拒绝修改 1x；目标已存在时询问用户，回答 n 后没有改动。
+
+基线
+----
+- baseline.py 对 1x、2x、3x 均通过。
+- 每个 dataset 的 6 个 oracle 文件和 filenames.txt 均为 10200 行。
+
+训练
+----
+- RTX 4090 Laptop GPU 冒烟测试通过。
+- Hattrick 与 Hattrick-f3 都完成一个真实 batch 的前向、目标计算、梯度处理和
+  参数更新，train_batches=1 且全部报告值有限。
+- 新 seed=491 被识别为 initial；已有可恢复状态被识别为 resume。
+- seed=490 当前恢复点：1x f3=4；2x Hattrick=65、f3=44；
+  3x Hattrick=31、f3=50。
+- 已知且已明确提示的例外：导入的 1x Hattrick-49 只有推理权重，没有优化器
+  状态，不能原地续训；使用新 seed 可从头训练。
+
+模型查看和选择
+--------------
+- list.py 已在六种 dataset-method 组合上运行，能读取独立 epoch 和验证指标。
+- select.py 已运行；选择只使用验证区间，不使用测试区间。
+- selection_rules.json 的 High mean 候选窗口会被实际执行：先保留
+  h_mean > h_mean_max - 0.005，再按 m_mean、m_p10、m_p1 字典序选最大值。
+
+推理与缓存
+----------
+- 1x Hattrick-49 / Hattrick-f3-4、2x Hattrick-56 / Hattrick-f3-37、
+  3x Hattrick-20 / Hattrick-f3-34 均通过缓存完整性与 checkpoint SHA 校验。
+- 从 C:\WINDOWS\system32 调用 entry/infer.py 仍正确命中 entry/cache，证明不
+  依赖当前工作目录。
+- 不存在的 epoch 会列出可用 epoch，不会静默选错模型。
+
+绘图
+----
+- 上述 1x、2x、3x 三组对比图已实际生成并目视检查。
+- 标题、坐标范围、平滑单调 CDF、平直首尾和紧凑图例符合参考样式。
+- 图片位于 pictures/1x、pictures/2x、pictures/3x。
+
+代码
+----
+- 公共脚本、方法注册、训练公共层和已修改的数据读取模块均通过 py_compile。
+- 原 run_full_experiment 的数据构造、严格 ESM 推理、六目标训练、有序投影、
+  验证、恢复和保存功能已收进 method/hattrick_system.py；Hattrick-f3 的退火与
+  flow-only 更新收进 method/hattrick_f3_system.py。
+- CPU 等价性对照中，迁移前后 Hattrick 与 Hattrick-f3 单 batch 参数更新的
+  max_abs_delta 均为 0.0。
+- entry/test_diff_path 已不存在；在该目录移出后重新通过训练、推理、查看、
+  选择和绘图测试。
+- 重复搬运可使用 migrate_workspace.py；已适配的公共运行文件会被保留。

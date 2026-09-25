@@ -1,0 +1,553 @@
+{
+  "method": "sparse cross-attention e48 High + frozen Hattrick-e Medium/Low edge-toll",
+  "window": [
+    400,
+    500
+  ],
+  "load": "2x",
+  "strict_esm": true,
+  "fixed_components": {
+    "hashes": {
+      "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\checkpoint_selection_validation_only\\archive\\epoch_048.pt": "55dfbe1506148099c838f3e5e08ca871f280877e56748ae3ea5af574c0a3acad",
+      "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\checkpoint_selection_validation_only\\manifest_frozen_epoch_060.json": "a481a9ff750a00a5ab8abc5a76a66e8db05c82c0cecca7d1f807437282e09d6d",
+      "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_edge_toll_head\\best_edge_toll_head.pt": "00cdaf25b1fd08e8c5f5f084b1b10e04c3dfbfef58ae7386aac500208461753a",
+      "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\run_experiment.py": "3b40dff9801bc71e6606888d8a690adbe2e695b52fd1a4710f6bb97b71b19f56",
+      "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_edge_toll_head\\run_experiment.py": "839c6a8b2a091553fe817abedc97016b35e498980a4eb2d8f936cb5cbae4c866"
+    },
+    "sparse_selection": {
+      "frozen": true,
+      "test_data_read": false,
+      "selection_tier": "paired-low-no-significant-decline+preferred-high-tail",
+      "epoch": 48,
+      "checkpoint_sha256": "55dfbe1506148099c838f3e5e08ca871f280877e56748ae3ea5af574c0a3acad",
+      "validation_window": [
+        350,
+        400
+      ],
+      "forbidden_test_window": [
+        400,
+        500
+      ]
+    },
+    "checkpoint_discovery_or_ranking_in_hybrid": false,
+    "test_metrics_used_to_choose_backbone_or_head": false
+  },
+  "head_contract": {
+    "edge_count": 72,
+    "fixed_feature_count": 7,
+    "learned_edge_embedding_channels": 6,
+    "local_input_width": 13,
+    "outputs": [
+      "Medium edge toll",
+      "Low edge toll"
+    ],
+    "high_output": null,
+    "base_medium_low": "sparse-e48 formal serial Medium/Low policies",
+    "causal_features": "recomputed after sparse-e48 strict policy inference from current High/Medium/Low policies, ESM predictions, PTE and capacities",
+    "causal_feature_shape": [
+      100,
+      72,
+      7
+    ],
+    "causal_feature_formula_max_delta": 0.0,
+    "state_dict_strict": true,
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "head_selection_payload": {
+      "summary": {
+        "High": {
+          "class": "High",
+          "n": 32,
+          "admitted_traffic_mean": 33.86637371778488,
+          "admitted_traffic_p1": 30.083245468139648,
+          "admitted_traffic_p10": 30.179716682434083,
+          "demand_mean": 34.64723014831543,
+          "demand_p1": 30.221106815338135,
+          "demand_p10": 30.47280158996582,
+          "fulfill_ratio_mean": 0.9789661262184381,
+          "fulfill_ratio_p1": 0.9435598093271256,
+          "fulfill_ratio_p10": 0.9517943143844605,
+          "norm_fulfill_mean": 0.9999535884708166,
+          "norm_fulfill_p1": 0.9993768119812012,
+          "norm_fulfill_p10": 0.999985808134079,
+          "normalized_mlu_mean": 0.8179912567138672,
+          "normalized_mlu_p1": 0.5378438216447831,
+          "normalized_mlu_p10": 0.6785025775432587,
+          "raw_mlu_mean": 1.0000000521540642,
+          "raw_mlu_p1": 0.9999998807907104,
+          "raw_mlu_p10": 1.0,
+          "admitted_capacity_ratio_mean": 1.0000000521540642,
+          "admitted_capacity_ratio_p1": 0.9999998807907104,
+          "admitted_capacity_ratio_p10": 1.0,
+          "max_disabled_flow": 0.0,
+          "max_admitted_capacity_ratio": 1.000000238418579
+        },
+        "Medium": {
+          "class": "Medium",
+          "n": 32,
+          "admitted_traffic_mean": 21.61551719903946,
+          "admitted_traffic_p1": 20.052157821655275,
+          "admitted_traffic_p10": 20.227894020080566,
+          "demand_mean": 31.013408362865448,
+          "demand_p1": 27.198188705444338,
+          "demand_p10": 27.283400344848634,
+          "fulfill_ratio_mean": 0.7016250770539045,
+          "fulfill_ratio_p1": 0.598310706615448,
+          "fulfill_ratio_p10": 0.6315652966499329,
+          "norm_fulfill_mean": 0.9818999785929918,
+          "norm_fulfill_p1": 0.9573594957590104,
+          "norm_fulfill_p10": 0.9671220719814301,
+          "normalized_mlu_mean": 0.43076291866600513,
+          "normalized_mlu_p1": 0.2881227111816406,
+          "normalized_mlu_p10": 0.3565468192100525,
+          "raw_mlu_mean": 1.0000000782310963,
+          "raw_mlu_p1": 1.0,
+          "raw_mlu_p10": 1.0,
+          "admitted_capacity_ratio_mean": 1.0000000782310963,
+          "admitted_capacity_ratio_p1": 1.0,
+          "admitted_capacity_ratio_p10": 1.0,
+          "max_disabled_flow": 0.0,
+          "max_admitted_capacity_ratio": 1.000000238418579
+        },
+        "Low": {
+          "class": "Low",
+          "n": 32,
+          "admitted_traffic_mean": 4.48968843370676,
+          "admitted_traffic_p1": 3.8015456080436705,
+          "admitted_traffic_p10": 4.191916227340698,
+          "demand_mean": 7.300345078110695,
+          "demand_p1": 6.2188430643081665,
+          "demand_p10": 6.596511936187744,
+          "fulfill_ratio_mean": 0.6199216060340405,
+          "fulfill_ratio_p1": 0.5114610511064529,
+          "fulfill_ratio_p10": 0.5366819202899933,
+          "norm_fulfill_mean": 1.0222090017050505,
+          "norm_fulfill_p1": 0.9635818088054657,
+          "norm_fulfill_p10": 0.9915972411632538,
+          "normalized_mlu_mean": 0.38853986700996757,
+          "normalized_mlu_p1": 0.25850015178322794,
+          "normalized_mlu_p10": 0.3241987645626068,
+          "raw_mlu_mean": 1.0000001043081284,
+          "raw_mlu_p1": 1.0,
+          "raw_mlu_p10": 1.0,
+          "admitted_capacity_ratio_mean": 1.0000001043081284,
+          "admitted_capacity_ratio_p1": 1.0,
+          "admitted_capacity_ratio_p10": 1.0,
+          "max_disabled_flow": 0.0,
+          "max_admitted_capacity_ratio": 1.000000238418579
+        }
+      },
+      "diagnostics": {
+        "High": {
+          "mean_gain": 0.0,
+          "p1_gain": 0.0,
+          "p10_gain": 0.0,
+          "paired_negative_count": 0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.005130218341946602,
+          "p1_gain": 0.01614369511604319,
+          "p10_gain": 0.013100033998489358,
+          "paired_negative_count": 9,
+          "ecdf_max_upward_violation": 0.03125
+        },
+        "Low": {
+          "mean_gain": 0.0037781205028295517,
+          "p1_gain": -0.010203335285186688,
+          "p10_gain": -7.104873657226562e-05,
+          "paired_negative_count": 8,
+          "ecdf_max_upward_violation": 0.03125
+        },
+        "all_cdfs_noninferior": false
+      },
+      "gate_mean_medium": 0.605336606502533,
+      "gate_mean_low": 0.6279183030128479,
+      "epoch": 80,
+      "safety_weight": 25.0,
+      "low_reward": 0.25
+    }
+  },
+  "high_preservation": {
+    "adapter_high_torch_equal": true,
+    "adapter_high_same_storage": true,
+    "sequential_admission_rows": {
+      "all_numeric_fields_exact": true,
+      "max_abs_delta": {
+        "admitted_traffic": 0.0,
+        "demand": 0.0,
+        "fulfill_ratio": 0.0,
+        "oracle_admitted_traffic": 0.0,
+        "norm_fulfill": 0.0,
+        "raw_mlu": 0.0,
+        "oracle_mlu": 0.0,
+        "normalized_mlu": 0.0,
+        "disabled_flow": 0.0,
+        "admitted_capacity_ratio": 0.0
+      }
+    }
+  },
+  "information_flow": {
+    "policy_actual_tm_inputs": "literal zero tensors",
+    "policy_predictions": "ESM tm1_pred/tm2_pred/tm3_pred",
+    "real_actual_tm_first_use": "sequential model.simulate after policy/head cache frozen",
+    "admission_forward_calls": 0,
+    "zero_policy_cache_audit": {
+      "mode": "zero",
+      "replacement_l1": 86297.34484863281,
+      "model_actual_input_abs_max": 0.0,
+      "model_actual_input_nonzero_count": 0,
+      "model_was_eval": true,
+      "dropout_modules_in_train_mode": []
+    },
+    "permuted_policy_cache_audit": {
+      "mode": "permute",
+      "replacement_l1": 26417.844482421875,
+      "model_actual_input_abs_max": 3.348863363265991,
+      "model_actual_input_nonzero_count": 207576,
+      "model_was_eval": true,
+      "dropout_modules_in_train_mode": []
+    },
+    "backbone_counterfactual": {
+      "High": {
+        "torch_equal": true,
+        "different_elements": 0,
+        "max_abs_policy_delta": 0.0,
+        "mean_abs_policy_delta": 0.0,
+        "argmax_changed_od_count": 0,
+        "max_od_total_variation": 0.0
+      },
+      "Medium": {
+        "torch_equal": true,
+        "different_elements": 0,
+        "max_abs_policy_delta": 0.0,
+        "mean_abs_policy_delta": 0.0,
+        "argmax_changed_od_count": 0,
+        "max_od_total_variation": 0.0
+      },
+      "Low": {
+        "torch_equal": true,
+        "different_elements": 0,
+        "max_abs_policy_delta": 0.0,
+        "mean_abs_policy_delta": 0.0,
+        "argmax_changed_od_count": 0,
+        "max_od_total_variation": 0.0
+      }
+    },
+    "causal_feature_counterfactual_max_delta": 0.0,
+    "head_policy_counterfactual_max_delta": 0.0,
+    "head_gate_counterfactual_max_delta": 0.0
+  },
+  "head_activity": {
+    "medium_gate_mean": 0.7944129705429077,
+    "low_gate_mean": 0.8327978253364563,
+    "medium_policy_max_abs_delta": 0.4791063368320465,
+    "low_policy_max_abs_delta": 0.8706146478652954
+  },
+  "summary": {
+    "hybrid": [
+      {
+        "class": "High",
+        "n": 100,
+        "admitted_traffic_mean": 47.20773931503296,
+        "admitted_traffic_p1": 31.719155158996582,
+        "admitted_traffic_p10": 34.12138366699219,
+        "demand_mean": 51.24900716781616,
+        "demand_p1": 32.02582475662231,
+        "demand_p10": 34.84220390319824,
+        "fulfill_ratio_mean": 0.9298033636808395,
+        "fulfill_ratio_p1": 0.8773697435855865,
+        "fulfill_ratio_p10": 0.8846043586730957,
+        "norm_fulfill_mean": 0.9973778957128525,
+        "norm_fulfill_p1": 0.9852546560764313,
+        "norm_fulfill_p10": 0.9939818978309631,
+        "normalized_mlu_mean": 0.5779564303159713,
+        "normalized_mlu_p1": 0.3517636296153068,
+        "normalized_mlu_p10": 0.3717722356319427,
+        "raw_mlu_mean": 1.0000001662969589,
+        "raw_mlu_p1": 0.9999998211860657,
+        "raw_mlu_p10": 1.0,
+        "admitted_capacity_ratio_mean": 1.0000001662969589,
+        "admitted_capacity_ratio_p1": 0.9999998211860657,
+        "admitted_capacity_ratio_p10": 1.0,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000007152557373
+      },
+      {
+        "class": "Medium",
+        "n": 100,
+        "admitted_traffic_mean": 25.937295742034912,
+        "admitted_traffic_p1": 21.04363676071167,
+        "admitted_traffic_p10": 21.74028072357178,
+        "demand_mean": 45.844889907836915,
+        "demand_p1": 28.71817684173584,
+        "demand_p10": 31.1589412689209,
+        "fulfill_ratio_mean": 0.5853183913230896,
+        "fulfill_ratio_p1": 0.48110589921474456,
+        "fulfill_ratio_p10": 0.5010195970535278,
+        "norm_fulfill_mean": 0.9482558608055115,
+        "norm_fulfill_p1": 0.9025110244750977,
+        "norm_fulfill_p10": 0.9177907526493072,
+        "normalized_mlu_mean": 0.30476497441530226,
+        "normalized_mlu_p1": 0.1877032585442066,
+        "normalized_mlu_p10": 0.19814919233322142,
+        "raw_mlu_mean": 1.0000002312660217,
+        "raw_mlu_p1": 1.0,
+        "raw_mlu_p10": 1.0000001192092896,
+        "admitted_capacity_ratio_mean": 1.0000002312660217,
+        "admitted_capacity_ratio_p1": 1.0,
+        "admitted_capacity_ratio_p10": 1.0000001192092896,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000008344650269
+      },
+      {
+        "class": "Low",
+        "n": 100,
+        "admitted_traffic_mean": 5.578184385299682,
+        "admitted_traffic_p1": 4.198899803161621,
+        "admitted_traffic_p10": 4.490988874435425,
+        "demand_mean": 10.77778561592102,
+        "demand_p1": 6.816013131141663,
+        "demand_p10": 7.2051429271698,
+        "fulfill_ratio_mean": 0.5356250610947609,
+        "fulfill_ratio_p1": 0.4120363685488701,
+        "fulfill_ratio_p10": 0.44246206283569334,
+        "norm_fulfill_mean": 1.1684217953681946,
+        "norm_fulfill_p1": 0.9384550857543945,
+        "norm_fulfill_p10": 0.9903063416481018,
+        "normalized_mlu_mean": 0.27448869809508325,
+        "normalized_mlu_p1": 0.1670252200961113,
+        "normalized_mlu_p10": 0.17895486503839492,
+        "raw_mlu_mean": 1.00000027179718,
+        "raw_mlu_p1": 1.0000001180171967,
+        "raw_mlu_p10": 1.0000001192092896,
+        "admitted_capacity_ratio_mean": 1.00000027179718,
+        "admitted_capacity_ratio_p1": 1.0000001180171967,
+        "admitted_capacity_ratio_p10": 1.0000001192092896,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.000001072883606
+      }
+    ],
+    "sparse_e48": [
+      {
+        "class": "High",
+        "n": 100,
+        "admitted_traffic_mean": 47.20773931503296,
+        "admitted_traffic_p1": 31.719155158996582,
+        "admitted_traffic_p10": 34.12138366699219,
+        "demand_mean": 51.24900716781616,
+        "demand_p1": 32.02582475662231,
+        "demand_p10": 34.84220390319824,
+        "fulfill_ratio_mean": 0.9298033636808395,
+        "fulfill_ratio_p1": 0.8773697435855865,
+        "fulfill_ratio_p10": 0.8846043586730957,
+        "norm_fulfill_mean": 0.9973778957128525,
+        "norm_fulfill_p1": 0.9852546560764313,
+        "norm_fulfill_p10": 0.9939818978309631,
+        "normalized_mlu_mean": 0.5779564303159713,
+        "normalized_mlu_p1": 0.3517636296153068,
+        "normalized_mlu_p10": 0.3717722356319427,
+        "raw_mlu_mean": 1.0000001662969589,
+        "raw_mlu_p1": 0.9999998211860657,
+        "raw_mlu_p10": 1.0,
+        "admitted_capacity_ratio_mean": 1.0000001662969589,
+        "admitted_capacity_ratio_p1": 0.9999998211860657,
+        "admitted_capacity_ratio_p10": 1.0,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000007152557373
+      },
+      {
+        "class": "Medium",
+        "n": 100,
+        "admitted_traffic_mean": 25.606700820922853,
+        "admitted_traffic_p1": 20.969540786743163,
+        "admitted_traffic_p10": 21.63465061187744,
+        "demand_mean": 45.844889907836915,
+        "demand_p1": 28.71817684173584,
+        "demand_p10": 31.1589412689209,
+        "fulfill_ratio_mean": 0.5786226412653923,
+        "fulfill_ratio_p1": 0.4699858486652374,
+        "fulfill_ratio_p10": 0.49524525701999667,
+        "norm_fulfill_mean": 0.9367653715610504,
+        "norm_fulfill_p1": 0.8922287422418594,
+        "norm_fulfill_p10": 0.9026380717754364,
+        "normalized_mlu_mean": 0.3047649723291397,
+        "normalized_mlu_p1": 0.1877032585442066,
+        "normalized_mlu_p10": 0.19814919233322142,
+        "raw_mlu_mean": 1.0000002241134645,
+        "raw_mlu_p1": 1.0,
+        "raw_mlu_p10": 1.0000001192092896,
+        "admitted_capacity_ratio_mean": 1.0000002241134645,
+        "admitted_capacity_ratio_p1": 1.0,
+        "admitted_capacity_ratio_p10": 1.0000001192092896,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000007152557373
+      },
+      {
+        "class": "Low",
+        "n": 100,
+        "admitted_traffic_mean": 5.473542261123657,
+        "admitted_traffic_p1": 4.187680988311768,
+        "admitted_traffic_p10": 4.5010017395019535,
+        "demand_mean": 10.77778561592102,
+        "demand_p1": 6.816013131141663,
+        "demand_p10": 7.2051429271698,
+        "fulfill_ratio_mean": 0.5267694798111916,
+        "fulfill_ratio_p1": 0.3980028766393662,
+        "fulfill_ratio_p10": 0.4332411676645279,
+        "norm_fulfill_mean": 1.1465775632858277,
+        "norm_fulfill_p1": 0.9478874284029007,
+        "norm_fulfill_p10": 0.988540768623352,
+        "normalized_mlu_mean": 0.2744886937737465,
+        "normalized_mlu_p1": 0.1670252200961113,
+        "normalized_mlu_p10": 0.17895486503839492,
+        "raw_mlu_mean": 1.0000002551078797,
+        "raw_mlu_p1": 1.0,
+        "raw_mlu_p10": 1.0000001192092896,
+        "admitted_capacity_ratio_mean": 1.0000002551078797,
+        "admitted_capacity_ratio_p1": 1.0,
+        "admitted_capacity_ratio_p10": 1.0000001192092896,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000007152557373
+      }
+    ],
+    "existing_hattrick_e": [
+      {
+        "class": "High",
+        "n": 100,
+        "admitted_traffic_mean": 47.26920269012451,
+        "admitted_traffic_p1": 31.708248977661132,
+        "admitted_traffic_p10": 34.12128219604492,
+        "demand_mean": 51.24900646209717,
+        "demand_p1": 32.0258247756958,
+        "demand_p10": 34.842203521728514,
+        "fulfill_ratio_mean": 0.9308559781312943,
+        "fulfill_ratio_p1": 0.8786068171262741,
+        "fulfill_ratio_p10": 0.8869710385799408,
+        "norm_fulfill_mean": 0.9985365015268326,
+        "norm_fulfill_p1": 0.9882580143213272,
+        "norm_fulfill_p10": 0.9963001728057861,
+        "normalized_mlu_mean": 0.5779563739895821,
+        "normalized_mlu_p1": 0.3517636299133301,
+        "normalized_mlu_p10": 0.3717720597982407,
+        "raw_mlu_mean": 1.0000000631809234,
+        "raw_mlu_p1": 0.9999998807907104,
+        "raw_mlu_p10": 1.0,
+        "admitted_capacity_ratio_mean": 1.0000000631809234,
+        "admitted_capacity_ratio_p1": 0.9999998807907104,
+        "admitted_capacity_ratio_p10": 1.0,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000003576278687
+      },
+      {
+        "class": "Medium",
+        "n": 100,
+        "admitted_traffic_mean": 25.8931392288208,
+        "admitted_traffic_p1": 21.092902927398683,
+        "admitted_traffic_p10": 21.807546615600586,
+        "demand_mean": 45.844890441894535,
+        "demand_p1": 28.718176860809326,
+        "demand_p10": 31.158942794799806,
+        "fulfill_ratio_mean": 0.584984555542469,
+        "fulfill_ratio_p1": 0.4771938633918762,
+        "fulfill_ratio_p10": 0.49809029698371887,
+        "norm_fulfill_mean": 0.9472379618883133,
+        "norm_fulfill_p1": 0.8982986223697662,
+        "norm_fulfill_p10": 0.9095984399318695,
+        "normalized_mlu_mean": 0.304764940738678,
+        "normalized_mlu_p1": 0.1877032585442066,
+        "normalized_mlu_p10": 0.19814912229776382,
+        "raw_mlu_mean": 1.0000001168251038,
+        "raw_mlu_p1": 1.0,
+        "raw_mlu_p10": 1.0,
+        "admitted_capacity_ratio_mean": 1.0000001168251038,
+        "admitted_capacity_ratio_p1": 1.0,
+        "admitted_capacity_ratio_p10": 1.0,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000003576278687
+      },
+      {
+        "class": "Low",
+        "n": 100,
+        "admitted_traffic_mean": 5.612220964431763,
+        "admitted_traffic_p1": 4.173731956481934,
+        "admitted_traffic_p10": 4.546908140182495,
+        "demand_mean": 10.777785730361938,
+        "demand_p1": 6.816013612747192,
+        "demand_p10": 7.205142068862915,
+        "fulfill_ratio_mean": 0.5387503570318222,
+        "fulfill_ratio_p1": 0.4264248913526535,
+        "fulfill_ratio_p10": 0.4459228843450546,
+        "norm_fulfill_mean": 1.17570203602314,
+        "norm_fulfill_p1": 0.9651254123449325,
+        "norm_fulfill_p10": 1.0013089716434478,
+        "normalized_mlu_mean": 0.27448865786194804,
+        "normalized_mlu_p1": 0.1670252053439617,
+        "normalized_mlu_p10": 0.17895485907793046,
+        "raw_mlu_mean": 1.0000001311302185,
+        "raw_mlu_p1": 1.0,
+        "raw_mlu_p10": 1.0,
+        "admitted_capacity_ratio_mean": 1.0000001311302185,
+        "admitted_capacity_ratio_p1": 1.0,
+        "admitted_capacity_ratio_p10": 1.0,
+        "max_disabled_flow": 0.0,
+        "max_admitted_capacity_ratio": 1.0000003576278687
+      }
+    ],
+    "hybrid_minus_sparse_e48": {
+      "High": {
+        "mean": 0.0,
+        "p1": 0.0,
+        "p10": 0.0
+      },
+      "Medium": {
+        "mean": 0.011490489244461055,
+        "p1": 0.010282282233238238,
+        "p10": 0.015152680873870783
+      },
+      "Low": {
+        "mean": 0.021844232082366855,
+        "p1": -0.009432342648506231,
+        "p10": 0.001765573024749778
+      }
+    },
+    "hybrid_minus_existing_hattrick_e": {
+      "High": {
+        "mean": -0.0011586058139800848,
+        "p1": -0.0030033582448959484,
+        "p10": -0.0023182749748229536
+      },
+      "Medium": {
+        "mean": 0.0010178989171981678,
+        "p1": 0.00421240210533147,
+        "p10": 0.0081923127174377
+      },
+      "Low": {
+        "mean": -0.00728024065494548,
+        "p1": -0.02667032659053803,
+        "p10": -0.011002629995345958
+      }
+    }
+  },
+  "runtime": {
+    "device": "cpu",
+    "seconds": 9.132371200015768,
+    "policy_batch_size": 20,
+    "admission_batch_size": 20
+  },
+  "source_hashes": {
+    "evaluate_fixed_hybrid.py": "2f238a69e5799a53f76afb58c752248df65f8179099ccab96dfb8fe0ef0e0dcb",
+    "strict_evaluator": "4afdbd4fb2ccc4d8b6bd77297cf0dc24485f34b922719283f31121f1f741f98b",
+    "hattrick_e_rows": "063bafc11d181fefea01510e3ade8d087be78da627197984828680aa05d633fa"
+  },
+  "sparse_state_load": {
+    "strict": true,
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "output_hashes": {
+    "hybrid_rows.csv": "cce04251fad8d9f8ed88fa9d6cb96338b85f1da4a9d1e261075f37e4cf12bcc8",
+    "sparse_e48_rows.csv": "f43a886bcfbcc0942dabb5aaf1e4cd16311962209e83b556513a9b4ed94c4838",
+    "comparison_summary.json": "b36750edd1de1ceea86edef2d8df0feb8e5d93302478a41294d0c6f927bd5851"
+  }
+}

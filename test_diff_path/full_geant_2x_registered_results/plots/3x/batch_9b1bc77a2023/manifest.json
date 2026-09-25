@@ -1,0 +1,50 @@
+{
+  "dataset": "3x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 50
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 31
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 50
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "3x",
+        "seed": 490,
+        "epoch": 50,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_3x_hattrick_f3\\artifacts\\seed_490\\checkpoints\\epoch_050.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_050_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_050_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick-f3\\seed_490\\test_epoch_050_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "3x",
+        "seed": 490,
+        "epoch": 31,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_3x_hattrick\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_031.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick\\seed_490\\test_epoch_031_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\3x\\hattrick\\seed_490\\test_epoch_031_summary.json",
+        "cache_reused": false,
+        "cache_source": null
+      },
+      "name": "Hattrick-31_Hattrick-f3-50",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\3x\\batch_9b1bc77a2023\\Hattrick-31_Hattrick-f3-50.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

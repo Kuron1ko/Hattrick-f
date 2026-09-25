@@ -1,0 +1,208 @@
+{
+  "protocol": {
+    "inference": "strict ESM prediction only",
+    "train": [
+      0,
+      350
+    ],
+    "validation_selection_only": [
+      350,
+      400
+    ],
+    "independent_evaluation": [
+      400,
+      500
+    ],
+    "paths": 8
+  },
+  "sources": {
+    "1x_Hattrick": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared1x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_evaluation_metrics.csv",
+    "1x_Hattrick-f": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared1x_hattrick_f\\artifacts\\level4_confirmation\\fh_release_low_budget_0p03\\seed_490\\evaluation_metrics.csv",
+    "1x_DOTE-MC": "D:\\kuroresearch\\Hattrick-main\\output\\comparisons\\dotemc_hattricke\\comparison_rows_1x.csv",
+    "2x_Hattrick": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_evaluation_metrics.csv",
+    "2x_Hattrick-f": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_hattrick_f\\artifacts\\level4_confirmation\\fh_release_low_budget_0p03\\seed_490\\evaluation_metrics.csv",
+    "2x_DOTE-MC": "D:\\kuroresearch\\Hattrick-main\\output\\comparisons\\dotemc_hattricke\\comparison_rows_2x.csv"
+  },
+  "series": [
+    {
+      "load": "1x",
+      "class": "High",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 0.9999977690795832,
+      "min": 0.9999926213123331,
+      "max": 1.0,
+      "bandwidth": 0.0001
+    },
+    {
+      "load": "1x",
+      "class": "High",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 0.9999916028068347,
+      "min": 0.9997041452163196,
+      "max": 1.0,
+      "bandwidth": 0.0001
+    },
+    {
+      "load": "1x",
+      "class": "High",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 0.9999620950222016,
+      "min": 0.9987401962280273,
+      "max": 1.0,
+      "bandwidth": 0.0001
+    },
+    {
+      "load": "1x",
+      "class": "Medium",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 0.9980237248902207,
+      "min": 0.9896084251628824,
+      "max": 0.9999999327904731,
+      "bandwidth": 0.0015
+    },
+    {
+      "load": "1x",
+      "class": "Medium",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 0.9996290784414122,
+      "min": 0.9962376787485736,
+      "max": 1.0000569601641325,
+      "bandwidth": 0.0015
+    },
+    {
+      "load": "1x",
+      "class": "Medium",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 0.9951617521047592,
+      "min": 0.9633444547653198,
+      "max": 1.000789761543274,
+      "bandwidth": 0.001829285758429952
+    },
+    {
+      "load": "1x",
+      "class": "Low",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 1.0013588073153339,
+      "min": 0.9572845513631691,
+      "max": 1.049649739653229,
+      "bandwidth": 0.008
+    },
+    {
+      "load": "1x",
+      "class": "Low",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 0.9996210547053278,
+      "min": 0.9770905871617795,
+      "max": 1.0187934342952556,
+      "bandwidth": 0.008
+    },
+    {
+      "load": "1x",
+      "class": "Low",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 0.9780009359121322,
+      "min": 0.8581840991973877,
+      "max": 1.1007981300354004,
+      "bandwidth": 0.014568116092482422
+    },
+    {
+      "load": "2x",
+      "class": "High",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 0.9985365067530261,
+      "min": 0.9872204077998291,
+      "max": 0.9999960100738474,
+      "bandwidth": 0.0005181131929705527
+    },
+    {
+      "load": "2x",
+      "class": "High",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 0.9991078846571194,
+      "min": 0.9938271022583819,
+      "max": 1.0,
+      "bandwidth": 0.0002476731942187624
+    },
+    {
+      "load": "2x",
+      "class": "High",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 0.9980131322145462,
+      "min": 0.9888395667076111,
+      "max": 1.0,
+      "bandwidth": 0.0006120930466523063
+    },
+    {
+      "load": "2x",
+      "class": "Medium",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 0.9343662272279443,
+      "min": 0.8862454252099302,
+      "max": 0.9913240874252653,
+      "bandwidth": 0.010589086271144193
+    },
+    {
+      "load": "2x",
+      "class": "Medium",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 0.9797908186475135,
+      "min": 0.9480170951258975,
+      "max": 0.9992209687713249,
+      "bandwidth": 0.004503833919397084
+    },
+    {
+      "load": "2x",
+      "class": "Medium",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 0.9821234941482544,
+      "min": 0.896762490272522,
+      "max": 1.0050703287124634,
+      "bandwidth": 0.004198779567092118
+    },
+    {
+      "load": "2x",
+      "class": "Low",
+      "method": "Hattrick",
+      "n": 100,
+      "mean": 1.1472881392026197,
+      "min": 0.9478587878381685,
+      "max": 1.4263886083437336,
+      "bandwidth": 0.025
+    },
+    {
+      "load": "2x",
+      "class": "Low",
+      "method": "Hattrick-f",
+      "n": 100,
+      "mean": 1.0496639439149484,
+      "min": 0.957986943483373,
+      "max": 1.2102998318195377,
+      "bandwidth": 0.017401716388900278
+    },
+    {
+      "load": "2x",
+      "class": "Low",
+      "method": "DOTE-MC",
+      "n": 100,
+      "mean": 1.056849940419197,
+      "min": 0.9122580289840698,
+      "max": 1.3115772008895874,
+      "bandwidth": 0.020199513809888884
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "authorized": true,
+  "precommit_sha256": "35b7c29f1fd7ae18a146adcc8314b1c18187bf0312713fdd359f65281a3d2372",
+  "validator_sha256": "92d00f11b3aa5dac4eced9d62a332571231816b4b8e998a8da74c6a541b25f95",
+  "protocol_sha256": "89b68a5500ffb5c8912750ad216bb51f2363c80b1433784d6958fbf87b23cc3e",
+  "core_sha256": "e8f7df484aff6e13fc45bbd26a055deb368e90cb9a1bb1167b1f72ac3416fe14",
+  "head_sha256": "e6f1921e2e7192d1c66d114ee4cb212eec0b56b450a475f7fbe87b22ac32754c",
+  "validation_window": [350, 400],
+  "forbidden_test_window": [400, 500],
+  "core_checkpoint_selected_on_350_399": true,
+  "core_medium_metrics_previously_known": true,
+  "low_guard_v2_head_trained_selected_or_scaled_on_350_399": false,
+  "low_guard_v2_guarded_metrics_computed_on_350_399_before_authorization": false,
+  "validation_window_role": "one-shot LowGuard-v2 head/composite check; not independent Medium confirmation",
+  "persistent_composite_evaluated_on_400_499": false,
+  "unrelated_abandoned_architectures_previously_used_400_499": true,
+  "future_400_499_role": "adaptive confirmation of this exact frozen composite, not a globally untouched research holdout"
+}

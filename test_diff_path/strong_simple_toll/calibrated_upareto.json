@@ -1,0 +1,2498 @@
+{
+  "method": "historically calibrated ESM plus class-symmetric U-Pareto",
+  "strict_esm_online": true,
+  "current_actual_tm_used_online": false,
+  "training_bounds": [
+    0,
+    318
+  ],
+  "small_bounds": [
+    318,
+    334
+  ],
+  "validation_bounds": [
+    334,
+    400
+  ],
+  "evaluation_bounds": [
+    400,
+    500
+  ],
+  "small_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9811326526105404,
+      "norm_fulfill_p1": 0.96565101146698,
+      "norm_fulfill_p10": 0.9744059145450592
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9829514250159264,
+      "norm_fulfill_p1": 0.9529328167438507,
+      "norm_fulfill_p10": 0.9594959318637848
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1639495640993118,
+      "norm_fulfill_p1": 1.1247604727745055,
+      "norm_fulfill_p10": 1.1378049850463867
+    }
+  },
+  "small_top": [
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838824942708015,
+          "norm_fulfill_p1": 0.9687794655561447,
+          "norm_fulfill_p10": 0.9786531627178192
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9876088388264179,
+          "norm_fulfill_p1": 0.9626278012990952,
+          "norm_fulfill_p10": 0.9664304554462433
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1860409826040268,
+          "norm_fulfill_p1": 1.137747848033905,
+          "norm_fulfill_p10": 1.1596625447273254
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002749841660261154,
+        "High.norm_fulfill_p1": 0.003128454089164734,
+        "High.norm_fulfill_p10": 0.00424724817276001,
+        "Medium.norm_fulfill_mean": 0.004657413810491562,
+        "Medium.norm_fulfill_p1": 0.009694984555244535,
+        "Medium.norm_fulfill_p10": 0.006934523582458496,
+        "Low.norm_fulfill_mean": 0.022091418504714966,
+        "Low.norm_fulfill_p1": 0.012987375259399414,
+        "Low.norm_fulfill_p10": 0.02185755968093872
+      },
+      "safe_secondary": true,
+      "score": 0.008715266361832619
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838824309408665,
+          "norm_fulfill_p1": 0.9687794148921967,
+          "norm_fulfill_p10": 0.9786531627178192
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.987609039992094,
+          "norm_fulfill_p1": 0.9626261323690415,
+          "norm_fulfill_p10": 0.9664310812950134
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1860415264964104,
+          "norm_fulfill_p1": 1.137747871875763,
+          "norm_fulfill_p10": 1.1596632599830627
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0027497783303260803,
+        "High.norm_fulfill_p1": 0.003128403425216697,
+        "High.norm_fulfill_p10": 0.00424724817276001,
+        "Medium.norm_fulfill_mean": 0.004657614976167679,
+        "Medium.norm_fulfill_p1": 0.009693315625190824,
+        "Medium.norm_fulfill_p10": 0.006935149431228638,
+        "Low.norm_fulfill_mean": 0.02209196239709854,
+        "Low.norm_fulfill_p1": 0.012987399101257457,
+        "Low.norm_fulfill_p10": 0.021858274936676025
+      },
+      "safe_secondary": true,
+      "score": 0.008715096488595009
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838526770472527,
+          "norm_fulfill_p1": 0.9691589117050171,
+          "norm_fulfill_p10": 0.9788015782833099
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868581742048264,
+          "norm_fulfill_p1": 0.9619965583086014,
+          "norm_fulfill_p10": 0.9658790528774261
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1905814334750175,
+          "norm_fulfill_p1": 1.1363039314746857,
+          "norm_fulfill_p10": 1.161483347415924
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002720024436712265,
+        "High.norm_fulfill_p1": 0.003507900238037154,
+        "High.norm_fulfill_p10": 0.004395663738250732,
+        "Medium.norm_fulfill_mean": 0.003906749188899994,
+        "Medium.norm_fulfill_p1": 0.00906374156475076,
+        "Medium.norm_fulfill_p10": 0.006383121013641357,
+        "Low.norm_fulfill_mean": 0.02663186937570572,
+        "Low.norm_fulfill_p1": 0.011543458700180143,
+        "Low.norm_fulfill_p10": 0.023678362369537354
+      },
+      "safe_secondary": true,
+      "score": 0.008550748229026794
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838523603975773,
+          "norm_fulfill_p1": 0.9691591262817383,
+          "norm_fulfill_p10": 0.978801816701889
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9868587888777256,
+          "norm_fulfill_p1": 0.9620031118392944,
+          "norm_fulfill_p10": 0.9658794403076172
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.190581202507019,
+          "norm_fulfill_p1": 1.136304932832718,
+          "norm_fulfill_p10": 1.1614840030670166
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0027197077870368958,
+        "High.norm_fulfill_p1": 0.003508114814758323,
+        "High.norm_fulfill_p10": 0.004395902156829834,
+        "Medium.norm_fulfill_mean": 0.00390736386179924,
+        "Medium.norm_fulfill_p1": 0.00907029509544377,
+        "Medium.norm_fulfill_p10": 0.0063835084438323975,
+        "Low.norm_fulfill_mean": 0.026631638407707214,
+        "Low.norm_fulfill_p1": 0.011544460058212414,
+        "Low.norm_fulfill_p10": 0.023679018020629883
+      },
+      "safe_secondary": true,
+      "score": 0.008549859747290611
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838294610381126,
+          "norm_fulfill_p1": 0.9687622576951981,
+          "norm_fulfill_p10": 0.97858926653862
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9874331280589104,
+          "norm_fulfill_p1": 0.9637987554073334,
+          "norm_fulfill_p10": 0.9663399159908295
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1862091943621635,
+          "norm_fulfill_p1": 1.1378725588321685,
+          "norm_fulfill_p10": 1.1596825122833252
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0026968084275722504,
+        "High.norm_fulfill_p1": 0.003111246228218123,
+        "High.norm_fulfill_p10": 0.004183351993560791,
+        "Medium.norm_fulfill_mean": 0.004481703042984009,
+        "Medium.norm_fulfill_p1": 0.010865938663482733,
+        "Medium.norm_fulfill_p10": 0.006843984127044678,
+        "Low.norm_fulfill_mean": 0.022259630262851715,
+        "Low.norm_fulfill_p1": 0.013112086057663008,
+        "Low.norm_fulfill_p10": 0.021877527236938477
+      },
+      "safe_secondary": true,
+      "score": 0.008538595587015151
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838293716311455,
+          "norm_fulfill_p1": 0.9687622755765914,
+          "norm_fulfill_p10": 0.978588730096817
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9874333404004574,
+          "norm_fulfill_p1": 0.9637983471155167,
+          "norm_fulfill_p10": 0.9663400053977966
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1862097829580307,
+          "norm_fulfill_p1": 1.1378730177879333,
+          "norm_fulfill_p10": 1.1596831679344177
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0026967190206050873,
+        "High.norm_fulfill_p1": 0.003111264109611489,
+        "High.norm_fulfill_p10": 0.0041828155517578125,
+        "Medium.norm_fulfill_mean": 0.004481915384531021,
+        "Medium.norm_fulfill_p1": 0.010865530371666043,
+        "Medium.norm_fulfill_p10": 0.006844073534011841,
+        "Low.norm_fulfill_mean": 0.022260218858718872,
+        "Low.norm_fulfill_p1": 0.013112545013427734,
+        "Low.norm_fulfill_p10": 0.021878182888031006
+      },
+      "safe_secondary": true,
+      "score": 0.008538348600268364
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838134795427322,
+          "norm_fulfill_p1": 0.9690619230270385,
+          "norm_fulfill_p10": 0.9785524606704712
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9869226440787315,
+          "norm_fulfill_p1": 0.9633008390665054,
+          "norm_fulfill_p10": 0.965211033821106
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.189927652478218,
+          "norm_fulfill_p1": 1.1312103629112245,
+          "norm_fulfill_p10": 1.1608735918998718
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0026808269321918488,
+        "High.norm_fulfill_p1": 0.0034109115600585715,
+        "High.norm_fulfill_p10": 0.004146546125411987,
+        "Medium.norm_fulfill_mean": 0.003971219062805176,
+        "Medium.norm_fulfill_p1": 0.010368022322654769,
+        "Medium.norm_fulfill_p10": 0.005715101957321167,
+        "Low.norm_fulfill_mean": 0.02597808837890625,
+        "Low.norm_fulfill_p1": 0.006449890136718928,
+        "Low.norm_fulfill_p10": 0.023068606853485107
+      },
+      "safe_secondary": true,
+      "score": 0.008439602702856064
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838134348392487,
+          "norm_fulfill_p1": 0.969061815738678,
+          "norm_fulfill_p10": 0.9785521030426025
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9869226440787315,
+          "norm_fulfill_p1": 0.9633008450269699,
+          "norm_fulfill_p10": 0.9652100503444672
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1899276971817017,
+          "norm_fulfill_p1": 1.13120995759964,
+          "norm_fulfill_p10": 1.1608734130859375
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002680782228708267,
+        "High.norm_fulfill_p1": 0.0034108042716980425,
+        "High.norm_fulfill_p10": 0.004146188497543335,
+        "Medium.norm_fulfill_mean": 0.003971219062805176,
+        "Medium.norm_fulfill_p1": 0.010368028283119224,
+        "Medium.norm_fulfill_p10": 0.005714118480682373,
+        "Low.norm_fulfill_mean": 0.02597813308238983,
+        "Low.norm_fulfill_p1": 0.006449484825134411,
+        "Low.norm_fulfill_p10": 0.02306842803955078
+      },
+      "safe_secondary": true,
+      "score": 0.00843946859240532
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9839797131717205,
+          "norm_fulfill_p1": 0.9679865688085556,
+          "norm_fulfill_p10": 0.9772745668888092
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9866623543202877,
+          "norm_fulfill_p1": 0.9599733352661133,
+          "norm_fulfill_p10": 0.962788850069046
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1937130838632584,
+          "norm_fulfill_p1": 1.1386960089206695,
+          "norm_fulfill_p10": 1.1503238081932068
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0028470605611801147,
+        "High.norm_fulfill_p1": 0.0023355573415756448,
+        "High.norm_fulfill_p10": 0.00286865234375,
+        "Medium.norm_fulfill_mean": 0.0037109293043613434,
+        "Medium.norm_fulfill_p1": 0.007040518522262618,
+        "Medium.norm_fulfill_p10": 0.0032929182052612305,
+        "Low.norm_fulfill_mean": 0.029763519763946533,
+        "Low.norm_fulfill_p1": 0.01393553614616394,
+        "Low.norm_fulfill_p10": 0.012518823146820068
+      },
+      "safe_secondary": true,
+      "score": 0.007847467064857528
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9839796721935272,
+          "norm_fulfill_p1": 0.967986524105072,
+          "norm_fulfill_p10": 0.9772743582725525
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.986662570387125,
+          "norm_fulfill_p1": 0.9599734097719193,
+          "norm_fulfill_p10": 0.9627884924411774
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1937127634882927,
+          "norm_fulfill_p1": 1.1386959671974182,
+          "norm_fulfill_p10": 1.1503244638442993
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0028470195829868317,
+        "High.norm_fulfill_p1": 0.0023355126380920632,
+        "High.norm_fulfill_p10": 0.002868443727493286,
+        "Medium.norm_fulfill_mean": 0.003711145371198654,
+        "Medium.norm_fulfill_p1": 0.007040593028068587,
+        "Medium.norm_fulfill_p10": 0.003292560577392578,
+        "Low.norm_fulfill_mean": 0.029763199388980865,
+        "Low.norm_fulfill_p1": 0.013935494422912642,
+        "Low.norm_fulfill_p10": 0.012519478797912598
+      },
+      "safe_secondary": true,
+      "score": 0.007847300916910216
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837178997695446,
+          "norm_fulfill_p1": 0.968468251824379,
+          "norm_fulfill_p10": 0.9772723615169525
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9860271103680134,
+          "norm_fulfill_p1": 0.9585024237632751,
+          "norm_fulfill_p10": 0.9595043063163757
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.188047707080841,
+          "norm_fulfill_p1": 1.1364983320236206,
+          "norm_fulfill_p10": 1.1534247994422913
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0025852471590042114,
+        "High.norm_fulfill_p1": 0.0028172403573990534,
+        "High.norm_fulfill_p10": 0.0028664469718933105,
+        "Medium.norm_fulfill_mean": 0.003075685352087021,
+        "Medium.norm_fulfill_p1": 0.0055696070194244385,
+        "Medium.norm_fulfill_p10": 8.374452590942383e-06,
+        "Low.norm_fulfill_mean": 0.024098142981529236,
+        "Low.norm_fulfill_p1": 0.011737859249115079,
+        "Low.norm_fulfill_p10": 0.015619814395904541
+      },
+      "safe_secondary": true,
+      "score": 0.007756578922271729
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837178252637386,
+          "norm_fulfill_p1": 0.9684682786464691,
+          "norm_fulfill_p10": 0.977272093296051
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9860271662473679,
+          "norm_fulfill_p1": 0.958502185344696,
+          "norm_fulfill_p10": 0.9595041871070862
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1880478635430336,
+          "norm_fulfill_p1": 1.1364981293678285,
+          "norm_fulfill_p10": 1.1534247994422913
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002585172653198242,
+        "High.norm_fulfill_p1": 0.002817267179489158,
+        "High.norm_fulfill_p10": 0.0028661787509918213,
+        "Medium.norm_fulfill_mean": 0.003075741231441498,
+        "Medium.norm_fulfill_p1": 0.005569368600845337,
+        "Medium.norm_fulfill_p10": 8.255243301391602e-06,
+        "Low.norm_fulfill_mean": 0.02409829944372177,
+        "Low.norm_fulfill_p1": 0.011737656593322932,
+        "Low.norm_fulfill_p10": 0.015619814395904541
+      },
+      "safe_secondary": true,
+      "score": 0.007756343483924866
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837071932852268,
+          "norm_fulfill_p1": 0.9687650114297867,
+          "norm_fulfill_p10": 0.9772986769676208
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9860955029726028,
+          "norm_fulfill_p1": 0.958559450507164,
+          "norm_fulfill_p10": 0.9595892131328583
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1882729902863503,
+          "norm_fulfill_p1": 1.1365599155426025,
+          "norm_fulfill_p10": 1.1531972885131836
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002574540674686432,
+        "High.norm_fulfill_p1": 0.0031139999628067017,
+        "High.norm_fulfill_p10": 0.0028927624225616455,
+        "Medium.norm_fulfill_mean": 0.003144077956676483,
+        "Medium.norm_fulfill_p1": 0.0056266337633132935,
+        "Medium.norm_fulfill_p10": 9.328126907348633e-05,
+        "Low.norm_fulfill_mean": 0.02432342618703842,
+        "Low.norm_fulfill_p1": 0.011799442768096968,
+        "Low.norm_fulfill_p10": 0.015392303466796875
+      },
+      "safe_secondary": true,
+      "score": 0.007732950150966644
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837071262300014,
+          "norm_fulfill_p1": 0.9687649339437485,
+          "norm_fulfill_p10": 0.9772983491420746
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9860955961048603,
+          "norm_fulfill_p1": 0.9585593938827515,
+          "norm_fulfill_p10": 0.9595887959003448
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1882731020450592,
+          "norm_fulfill_p1": 1.136559545993805,
+          "norm_fulfill_p10": 1.153197705745697
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0025744736194610596,
+        "High.norm_fulfill_p1": 0.0031139224767685603,
+        "High.norm_fulfill_p10": 0.002892434597015381,
+        "Medium.norm_fulfill_mean": 0.0031441710889339447,
+        "Medium.norm_fulfill_p1": 0.005626577138900801,
+        "Medium.norm_fulfill_p10": 9.28640365600586e-05,
+        "Low.norm_fulfill_mean": 0.024323537945747375,
+        "Low.norm_fulfill_p1": 0.011799073219299405,
+        "Low.norm_fulfill_p10": 0.015392720699310303
+      },
+      "safe_secondary": true,
+      "score": 0.007732707262039185
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837997704744339,
+          "norm_fulfill_p1": 0.9679505467414856,
+          "norm_fulfill_p10": 0.9774788022041321
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9874431192874908,
+          "norm_fulfill_p1": 0.9632370620965958,
+          "norm_fulfill_p10": 0.9663949310779572
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1881479173898697,
+          "norm_fulfill_p1": 1.1388113915920257,
+          "norm_fulfill_p10": 1.166089951992035
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002667117863893509,
+        "High.norm_fulfill_p1": 0.0022995352745056596,
+        "High.norm_fulfill_p10": 0.003072887659072876,
+        "Medium.norm_fulfill_mean": 0.004491694271564484,
+        "Medium.norm_fulfill_p1": 0.0103042453527451,
+        "Medium.norm_fulfill_p10": 0.006898999214172363,
+        "Low.norm_fulfill_mean": 0.02419835329055786,
+        "Low.norm_fulfill_p1": 0.014050918817520186,
+        "Low.norm_fulfill_p10": 0.028284966945648193
+      },
+      "safe_secondary": true,
+      "score": 0.0077153578400612766
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837999008595943,
+          "norm_fulfill_p1": 0.9679504632949829,
+          "norm_fulfill_p10": 0.9774788916110992
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9874428659677505,
+          "norm_fulfill_p1": 0.9632381975650788,
+          "norm_fulfill_p10": 0.9663937389850616
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.188148207962513,
+          "norm_fulfill_p1": 1.1388104736804963,
+          "norm_fulfill_p10": 1.1660895943641663
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002667248249053955,
+        "High.norm_fulfill_p1": 0.002299451828002952,
+        "High.norm_fulfill_p10": 0.003072977066040039,
+        "Medium.norm_fulfill_mean": 0.004491440951824188,
+        "Medium.norm_fulfill_p1": 0.010305380821228116,
+        "Medium.norm_fulfill_p10": 0.0068978071212768555,
+        "Low.norm_fulfill_mean": 0.02419864386320114,
+        "Low.norm_fulfill_p1": 0.014050000905990734,
+        "Low.norm_fulfill_p10": 0.02828460931777954
+      },
+      "safe_secondary": true,
+      "score": 0.0077152960002422775
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.98398831859231,
+          "norm_fulfill_p1": 0.9678873300552369,
+          "norm_fulfill_p10": 0.9772355258464813
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9867556802928448,
+          "norm_fulfill_p1": 0.9601168155670166,
+          "norm_fulfill_p10": 0.9628860652446747
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1936714127659798,
+          "norm_fulfill_p1": 1.1389906585216523,
+          "norm_fulfill_p10": 1.1507024765014648
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0028556659817695618,
+        "High.norm_fulfill_p1": 0.0022363185882569026,
+        "High.norm_fulfill_p10": 0.002829611301422119,
+        "Medium.norm_fulfill_mean": 0.0038042552769184113,
+        "Medium.norm_fulfill_p1": 0.0071839988231658936,
+        "Medium.norm_fulfill_p10": 0.0033901333808898926,
+        "Low.norm_fulfill_mean": 0.029721848666667938,
+        "Low.norm_fulfill_p1": 0.01423018574714674,
+        "Low.norm_fulfill_p10": 0.012897491455078125
+      },
+      "safe_secondary": true,
+      "score": 0.007667316496372356
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9839880652725697,
+          "norm_fulfill_p1": 0.9678872436285019,
+          "norm_fulfill_p10": 0.9772353768348694
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9867562688887119,
+          "norm_fulfill_p1": 0.960116708278656,
+          "norm_fulfill_p10": 0.9628871083259583
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.193671591579914,
+          "norm_fulfill_p1": 1.1389907121658325,
+          "norm_fulfill_p10": 1.150703251361847
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0028554126620292664,
+        "High.norm_fulfill_p1": 0.0022362321615219116,
+        "High.norm_fulfill_p10": 0.0028294622898101807,
+        "Medium.norm_fulfill_mean": 0.0038048438727855682,
+        "Medium.norm_fulfill_p1": 0.0071838915348053645,
+        "Medium.norm_fulfill_p10": 0.003391176462173462,
+        "Low.norm_fulfill_mean": 0.029722027480602264,
+        "Low.norm_fulfill_p1": 0.014230239391326949,
+        "Low.norm_fulfill_p10": 0.012898266315460205
+      },
+      "safe_secondary": true,
+      "score": 0.007666994631290436
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837747067213058,
+          "norm_fulfill_p1": 0.9679027408361435,
+          "norm_fulfill_p10": 0.9772456288337708
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9875173643231392,
+          "norm_fulfill_p1": 0.963248997926712,
+          "norm_fulfill_p10": 0.9652849733829498
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1884102523326874,
+          "norm_fulfill_p1": 1.1393682777881622,
+          "norm_fulfill_p10": 1.1681122779846191
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002642054110765457,
+        "High.norm_fulfill_p1": 0.002251729369163513,
+        "High.norm_fulfill_p10": 0.002839714288711548,
+        "Medium.norm_fulfill_mean": 0.00456593930721283,
+        "Medium.norm_fulfill_p1": 0.010316181182861373,
+        "Medium.norm_fulfill_p10": 0.005789041519165039,
+        "Low.norm_fulfill_mean": 0.02446068823337555,
+        "Low.norm_fulfill_p1": 0.01460780501365666,
+        "Low.norm_fulfill_p10": 0.030307292938232422
+      },
+      "safe_secondary": true,
+      "score": 0.0076021067798137665
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9837747029960155,
+          "norm_fulfill_p1": 0.9679027318954467,
+          "norm_fulfill_p10": 0.9772457182407379
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9875173605978489,
+          "norm_fulfill_p1": 0.9632477462291718,
+          "norm_fulfill_p10": 0.9652848243713379
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1884095296263695,
+          "norm_fulfill_p1": 1.1393613398075104,
+          "norm_fulfill_p10": 1.168112337589264
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0026420503854751587,
+        "High.norm_fulfill_p1": 0.0022517204284667747,
+        "High.norm_fulfill_p10": 0.002839803695678711,
+        "Medium.norm_fulfill_mean": 0.004565935581922531,
+        "Medium.norm_fulfill_p1": 0.01031492948532109,
+        "Medium.norm_fulfill_p10": 0.005788892507553101,
+        "Low.norm_fulfill_mean": 0.024459965527057648,
+        "Low.norm_fulfill_p1": 0.014600867033004894,
+        "Low.norm_fulfill_p10": 0.030307352542877197
+      },
+      "safe_secondary": true,
+      "score": 0.007602084800600961
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9834527596831322,
+          "norm_fulfill_p1": 0.9692420572042465,
+          "norm_fulfill_p10": 0.9776436984539032
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9867422990500927,
+          "norm_fulfill_p1": 0.9645423531532288,
+          "norm_fulfill_p10": 0.9682155847549438
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1857188269495964,
+          "norm_fulfill_p1": 1.1285269737243653,
+          "norm_fulfill_p10": 1.1615746021270752
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0023201070725917816,
+        "High.norm_fulfill_p1": 0.0035910457372665405,
+        "High.norm_fulfill_p10": 0.003237783908843994,
+        "Medium.norm_fulfill_mean": 0.003790874034166336,
+        "Medium.norm_fulfill_p1": 0.011609536409378118,
+        "Medium.norm_fulfill_p10": 0.008719652891159058,
+        "Low.norm_fulfill_mean": 0.021769262850284576,
+        "Low.norm_fulfill_p1": 0.0037665009498597524,
+        "Low.norm_fulfill_p10": 0.023769617080688477
+      },
+      "safe_secondary": true,
+      "score": 0.00733697131276132
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9834526851773262,
+          "norm_fulfill_p1": 0.9692422360181808,
+          "norm_fulfill_p10": 0.9776437878608704
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9867424443364143,
+          "norm_fulfill_p1": 0.9645424634218216,
+          "norm_fulfill_p10": 0.9682155847549438
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1857192516326904,
+          "norm_fulfill_p1": 1.1285270273685455,
+          "norm_fulfill_p10": 1.1615747809410095
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0023200325667858124,
+        "High.norm_fulfill_p1": 0.0035912245512008667,
+        "High.norm_fulfill_p10": 0.0032378733158111572,
+        "Medium.norm_fulfill_mean": 0.003791019320487976,
+        "Medium.norm_fulfill_p1": 0.01160964667797093,
+        "Medium.norm_fulfill_p10": 0.008719652891159058,
+        "Low.norm_fulfill_mean": 0.0217696875333786,
+        "Low.norm_fulfill_p1": 0.0037665545940399614,
+        "Low.norm_fulfill_p10": 0.023769795894622803
+      },
+      "safe_secondary": true,
+      "score": 0.007336753159761433
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.005",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9834111891686916,
+          "norm_fulfill_p1": 0.9678752005100251,
+          "norm_fulfill_p10": 0.9780146181583405
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9877364449203014,
+          "norm_fulfill_p1": 0.959466302394867,
+          "norm_fulfill_p10": 0.9642565250396729
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1931470334529877,
+          "norm_fulfill_p1": 1.1445673406124115,
+          "norm_fulfill_p10": 1.1706575155258179
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002278536558151245,
+        "High.norm_fulfill_p1": 0.0022241890430451106,
+        "High.norm_fulfill_p10": 0.00360870361328125,
+        "Medium.norm_fulfill_mean": 0.004785019904375076,
+        "Medium.norm_fulfill_p1": 0.006533485651016302,
+        "Medium.norm_fulfill_p10": 0.0047605931758880615,
+        "Low.norm_fulfill_mean": 0.029197469353675842,
+        "Low.norm_fulfill_p1": 0.019806867837905973,
+        "Low.norm_fulfill_p10": 0.03285253047943115
+      },
+      "safe_secondary": true,
+      "score": 0.007202973961830272
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.005",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9834072701632977,
+          "norm_fulfill_p1": 0.9678754061460495,
+          "norm_fulfill_p10": 0.9780149757862091
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9877421446144581,
+          "norm_fulfill_p1": 0.9595447808504105,
+          "norm_fulfill_p10": 0.9642565846443176
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1931874230504036,
+          "norm_fulfill_p1": 1.1445691645145417,
+          "norm_fulfill_p10": 1.1706575155258179
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002274617552757263,
+        "High.norm_fulfill_p1": 0.0022243946790695412,
+        "High.norm_fulfill_p10": 0.0036090612411499023,
+        "Medium.norm_fulfill_mean": 0.004790719598531723,
+        "Medium.norm_fulfill_p1": 0.006611964106559842,
+        "Medium.norm_fulfill_p10": 0.004760652780532837,
+        "Low.norm_fulfill_mean": 0.029237858951091766,
+        "Low.norm_fulfill_p1": 0.01980869174003619,
+        "Low.norm_fulfill_p10": 0.03285253047943115
+      },
+      "safe_secondary": true,
+      "score": 0.0071994721889496295
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9839640967547894,
+          "norm_fulfill_p1": 0.9676529437303543,
+          "norm_fulfill_p10": 0.9770060777664185
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9861522987484932,
+          "norm_fulfill_p1": 0.961479464173317,
+          "norm_fulfill_p10": 0.9676510393619537
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1841659620404243,
+          "norm_fulfill_p1": 1.1314203441143036,
+          "norm_fulfill_p10": 1.1586742401123047
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0028314441442489624,
+        "High.norm_fulfill_p1": 0.0020019322633743064,
+        "High.norm_fulfill_p10": 0.002600163221359253,
+        "Medium.norm_fulfill_mean": 0.0032008737325668335,
+        "Medium.norm_fulfill_p1": 0.008546647429466314,
+        "Medium.norm_fulfill_p10": 0.008155107498168945,
+        "Low.norm_fulfill_mean": 0.02021639794111252,
+        "Low.norm_fulfill_p1": 0.0066598713397980625,
+        "Low.norm_fulfill_p10": 0.02086925506591797
+      },
+      "safe_secondary": true,
+      "score": 0.007155396044254259
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.983964093029499,
+          "norm_fulfill_p1": 0.9676528662443161,
+          "norm_fulfill_p10": 0.9770059883594513
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9861523471772671,
+          "norm_fulfill_p1": 0.9614792674779892,
+          "norm_fulfill_p10": 0.9676511883735657
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1841660365462303,
+          "norm_fulfill_p1": 1.131419724225998,
+          "norm_fulfill_p10": 1.1586741209030151
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.002831440418958664,
+        "High.norm_fulfill_p1": 0.002001854777336165,
+        "High.norm_fulfill_p10": 0.00260007381439209,
+        "Medium.norm_fulfill_mean": 0.0032009221613407135,
+        "Medium.norm_fulfill_p1": 0.008546450734138511,
+        "Medium.norm_fulfill_p10": 0.008155256509780884,
+        "Low.norm_fulfill_mean": 0.020216472446918488,
+        "Low.norm_fulfill_p1": 0.006659251451492487,
+        "Low.norm_fulfill_p10": 0.020869135856628418
+      },
+      "safe_secondary": true,
+      "score": 0.007155242189765066
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838869720697403,
+          "norm_fulfill_p1": 0.9676635026931762,
+          "norm_fulfill_p10": 0.976570725440979
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9862963631749153,
+          "norm_fulfill_p1": 0.9615782529115677,
+          "norm_fulfill_p10": 0.9676202535629272
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1843545883893967,
+          "norm_fulfill_p1": 1.1316968202590942,
+          "norm_fulfill_p10": 1.1591696739196777
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0027543194591999054,
+        "High.norm_fulfill_p1": 0.002012491226196289,
+        "High.norm_fulfill_p10": 0.0021648108959198,
+        "Medium.norm_fulfill_mean": 0.0033449381589889526,
+        "Medium.norm_fulfill_p1": 0.008645436167717069,
+        "Medium.norm_fulfill_p10": 0.008124321699142456,
+        "Low.norm_fulfill_mean": 0.02040502429008484,
+        "Low.norm_fulfill_p1": 0.006936347484588712,
+        "Low.norm_fulfill_p10": 0.021364688873291016
+      },
+      "safe_secondary": true,
+      "score": 0.007113795727491379
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9838869720697403,
+          "norm_fulfill_p1": 0.9676634937524795,
+          "norm_fulfill_p10": 0.9765706062316895
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9862962253391743,
+          "norm_fulfill_p1": 0.9615783095359802,
+          "norm_fulfill_p10": 0.9676198959350586
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1843551397323608,
+          "norm_fulfill_p1": 1.131697803735733,
+          "norm_fulfill_p10": 1.159170687198639
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0027543194591999054,
+        "High.norm_fulfill_p1": 0.0020124822854995505,
+        "High.norm_fulfill_p10": 0.002164691686630249,
+        "Medium.norm_fulfill_mean": 0.0033448003232479095,
+        "Medium.norm_fulfill_p1": 0.008645492792129561,
+        "Medium.norm_fulfill_p10": 0.008123964071273804,
+        "Low.norm_fulfill_mean": 0.02040557563304901,
+        "Low.norm_fulfill_p1": 0.006937330961227506,
+        "Low.norm_fulfill_p10": 0.021365702152252197
+      },
+      "safe_secondary": true,
+      "score": 0.007113764062523798
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.005",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9833023324608803,
+          "norm_fulfill_p1": 0.9677923291921615,
+          "norm_fulfill_p10": 0.9775832891464233
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9878262840211391,
+          "norm_fulfill_p1": 0.9597182333469391,
+          "norm_fulfill_p10": 0.9641204178333282
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1933123767375946,
+          "norm_fulfill_p1": 1.1458896338939666,
+          "norm_fulfill_p10": 1.1707467436790466
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0021696798503398895,
+        "High.norm_fulfill_p1": 0.0021413177251815574,
+        "High.norm_fulfill_p10": 0.0031773746013641357,
+        "Medium.norm_fulfill_mean": 0.004874859005212784,
+        "Medium.norm_fulfill_p1": 0.006785416603088401,
+        "Medium.norm_fulfill_p10": 0.004624485969543457,
+        "Low.norm_fulfill_mean": 0.029362812638282776,
+        "Low.norm_fulfill_p1": 0.02112916111946106,
+        "Low.norm_fulfill_p10": 0.03294175863265991
+      },
+      "safe_secondary": true,
+      "score": 0.00691476389765735
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.005",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 16,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9833022579550743,
+          "norm_fulfill_p1": 0.9677922844886779,
+          "norm_fulfill_p10": 0.9775829911231995
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9878264740109444,
+          "norm_fulfill_p1": 0.9597178220748901,
+          "norm_fulfill_p10": 0.9641202092170715
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1933122426271439,
+          "norm_fulfill_p1": 1.1458887577056884,
+          "norm_fulfill_p10": 1.170746386051178
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0021696053445339203,
+        "High.norm_fulfill_p1": 0.002141273021697976,
+        "High.norm_fulfill_p10": 0.003177076578140259,
+        "Medium.norm_fulfill_mean": 0.004875048995018005,
+        "Medium.norm_fulfill_p1": 0.006785005331039429,
+        "Medium.norm_fulfill_p10": 0.004624277353286743,
+        "Low.norm_fulfill_mean": 0.02936267852783203,
+        "Low.norm_fulfill_p1": 0.021128284931182906,
+        "Low.norm_fulfill_p10": 0.03294140100479126
+      },
+      "safe_secondary": true,
+      "score": 0.006914579123258546
+    }
+  ],
+  "validation_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9576756051092437,
+      "norm_fulfill_p1": 0.9344282805919647,
+      "norm_fulfill_p10": 0.9379698038101196
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9899236830798063,
+      "norm_fulfill_p1": 0.9096177339553833,
+      "norm_fulfill_p10": 0.9288514256477356
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.2384979923566182,
+      "norm_fulfill_p1": 1.1024326026439666,
+      "norm_fulfill_p10": 1.1520313024520874
+    }
+  },
+  "validation": [
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9640047496015375,
+          "norm_fulfill_p1": 0.9432415008544922,
+          "norm_fulfill_p10": 0.9468716681003571
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0003928126710835,
+          "norm_fulfill_p1": 0.9114710062742233,
+          "norm_fulfill_p10": 0.9305331707000732
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2569095889727275,
+          "norm_fulfill_p1": 1.1018297255039216,
+          "norm_fulfill_p10": 1.1561409831047058
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006329144492293826,
+        "High.norm_fulfill_p1": 0.00881322026252751,
+        "High.norm_fulfill_p10": 0.008901864290237427,
+        "Medium.norm_fulfill_mean": 0.010469129591277215,
+        "Medium.norm_fulfill_p1": 0.0018532723188400269,
+        "Medium.norm_fulfill_p10": 0.0016817450523376465,
+        "Low.norm_fulfill_mean": 0.01841159661610936,
+        "Low.norm_fulfill_p1": -0.0006028771400450328,
+        "Low.norm_fulfill_p10": 0.004109680652618408
+      },
+      "safe_secondary": true,
+      "score": 0.018927145762876973
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9639866334019285,
+          "norm_fulfill_p1": 0.9432784348726273,
+          "norm_fulfill_p10": 0.9468704760074615
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0005777261473916,
+          "norm_fulfill_p1": 0.9114682167768479,
+          "norm_fulfill_p10": 0.9317481815814972
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2565969409364643,
+          "norm_fulfill_p1": 1.1012319445610046,
+          "norm_fulfill_p10": 1.1558566689491272
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006311028292684817,
+        "High.norm_fulfill_p1": 0.008850154280662603,
+        "High.norm_fulfill_p10": 0.008900672197341919,
+        "Medium.norm_fulfill_mean": 0.010654043067585328,
+        "Medium.norm_fulfill_p1": 0.0018504828214646052,
+        "Medium.norm_fulfill_p10": 0.0028967559337615967,
+        "Low.norm_fulfill_mean": 0.018098948579846175,
+        "Low.norm_fulfill_p1": -0.0012006580829619917,
+        "Low.norm_fulfill_p10": 0.003825366497039795
+      },
+      "safe_secondary": true,
+      "score": 0.01881301906975825
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 66,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.963930682702498,
+          "norm_fulfill_p1": 0.9432415693998337,
+          "norm_fulfill_p10": 0.9468696713447571
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0017956657843157,
+          "norm_fulfill_p1": 0.9160460799932479,
+          "norm_fulfill_p10": 0.937505453824997
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2609691764369155,
+          "norm_fulfill_p1": 1.1018304169178008,
+          "norm_fulfill_p10": 1.1594614386558533
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006255077593254388,
+        "High.norm_fulfill_p1": 0.008813288807869024,
+        "High.norm_fulfill_p10": 0.008899867534637451,
+        "Medium.norm_fulfill_mean": 0.011871982704509398,
+        "Medium.norm_fulfill_p1": 0.006428346037864685,
+        "Medium.norm_fulfill_p10": 0.008654028177261353,
+        "Low.norm_fulfill_mean": 0.022471184080297357,
+        "Low.norm_fulfill_p1": -0.0006021857261657715,
+        "Low.norm_fulfill_p10": 0.007430136203765869
+      },
+      "safe_secondary": true,
+      "score": 0.018705014207146587
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 66,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9639125204447544,
+          "norm_fulfill_p1": 0.943278455734253,
+          "norm_fulfill_p10": 0.9468782544136047
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0019470209425145,
+          "norm_fulfill_p1": 0.9160493016242981,
+          "norm_fulfill_p10": 0.9378490149974823
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2609954656976643,
+          "norm_fulfill_p1": 1.1019252300262452,
+          "norm_fulfill_p10": 1.1590862274169922
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.00623691533551074,
+        "High.norm_fulfill_p1": 0.008850175142288252,
+        "High.norm_fulfill_p10": 0.008908450603485107,
+        "Medium.norm_fulfill_mean": 0.012023337862708261,
+        "Medium.norm_fulfill_p1": 0.006431567668914839,
+        "Medium.norm_fulfill_p10": 0.008997589349746704,
+        "Low.norm_fulfill_mean": 0.022497473341046126,
+        "Low.norm_fulfill_p1": -0.00050737261772138,
+        "Low.norm_fulfill_p10": 0.007054924964904785
+      },
+      "safe_secondary": true,
+      "score": 0.018660008744760082
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9639111811464484,
+          "norm_fulfill_p1": 0.943246814608574,
+          "norm_fulfill_p10": 0.9466536045074463
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0008963165861187,
+          "norm_fulfill_p1": 0.910338819026947,
+          "norm_fulfill_p10": 0.9316022992134094
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.25530545278029,
+          "norm_fulfill_p1": 1.1017179906368255,
+          "norm_fulfill_p10": 1.1627415418624878
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006235576037204704,
+        "High.norm_fulfill_p1": 0.008818534016609259,
+        "High.norm_fulfill_p10": 0.00868380069732666,
+        "Medium.norm_fulfill_mean": 0.01097263350631239,
+        "Medium.norm_fulfill_p1": 0.0007210850715637651,
+        "Medium.norm_fulfill_p10": 0.002750873565673828,
+        "Low.norm_fulfill_mean": 0.01680746042367187,
+        "Low.norm_fulfill_p1": -0.0007146120071410689,
+        "Low.norm_fulfill_p10": 0.01071023941040039
+      },
+      "safe_secondary": true,
+      "score": 0.018635266910900006
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 65,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9637421757885904,
+          "norm_fulfill_p1": 0.9426251769065856,
+          "norm_fulfill_p10": 0.9464157223701477
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0018425340002233,
+          "norm_fulfill_p1": 0.9161313474178314,
+          "norm_fulfill_p10": 0.9344602525234222
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2612109671939502,
+          "norm_fulfill_p1": 1.1066358268260956,
+          "norm_fulfill_p10": 1.1665562391281128
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006066570679346794,
+        "High.norm_fulfill_p1": 0.00819689631462095,
+        "High.norm_fulfill_p10": 0.008445918560028076,
+        "Medium.norm_fulfill_mean": 0.011918850920417001,
+        "Medium.norm_fulfill_p1": 0.0065136134624481645,
+        "Medium.norm_fulfill_p10": 0.0056088268756866455,
+        "Low.norm_fulfill_mean": 0.022712974837332034,
+        "Low.norm_fulfill_p1": 0.0042032241821290395,
+        "Low.norm_fulfill_p10": 0.01452493667602539
+      },
+      "safe_secondary": true,
+      "score": 0.018620034456253286
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 65,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9637791893698953,
+          "norm_fulfill_p1": 0.9427286505699157,
+          "norm_fulfill_p10": 0.946405291557312
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0016834356568076,
+          "norm_fulfill_p1": 0.9161356329917908,
+          "norm_fulfill_p10": 0.9344142079353333
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2607904997738926,
+          "norm_fulfill_p1": 1.1055153071880341,
+          "norm_fulfill_p10": 1.1666138172149658
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006103584260651607,
+        "High.norm_fulfill_p1": 0.008300369977951028,
+        "High.norm_fulfill_p10": 0.008435487747192383,
+        "Medium.norm_fulfill_mean": 0.011759752577001348,
+        "Medium.norm_fulfill_p1": 0.006517899036407537,
+        "Medium.norm_fulfill_p10": 0.005562782287597656,
+        "Low.norm_fulfill_mean": 0.0222925074172744,
+        "Low.norm_fulfill_p1": 0.0030827045440675604,
+        "Low.norm_fulfill_p10": 0.014582514762878418
+      },
+      "safe_secondary": true,
+      "score": 0.018619023236361575
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 58,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.963873236468344,
+          "norm_fulfill_p1": 0.9431960999965667,
+          "norm_fulfill_p10": 0.9465918838977814
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.000820896842263,
+          "norm_fulfill_p1": 0.9103286296129227,
+          "norm_fulfill_p10": 0.9315702319145203
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2565899978984485,
+          "norm_fulfill_p1": 1.1018221139907838,
+          "norm_fulfill_p10": 1.162707805633545
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006197631359100342,
+        "High.norm_fulfill_p1": 0.008767819404602029,
+        "High.norm_fulfill_p10": 0.008622080087661743,
+        "Medium.norm_fulfill_mean": 0.01089721376245667,
+        "Medium.norm_fulfill_p1": 0.0007108956575394565,
+        "Medium.norm_fulfill_p10": 0.002718806266784668,
+        "Low.norm_fulfill_mean": 0.018092005541830325,
+        "Low.norm_fulfill_p1": -0.0006104886531828058,
+        "Low.norm_fulfill_p10": 0.01067650318145752
+      },
+      "safe_secondary": true,
+      "score": 0.018531845211982746
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9638048690376859,
+          "norm_fulfill_p1": 0.9427285879850388,
+          "norm_fulfill_p10": 0.9464147984981537
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0005676872802503,
+          "norm_fulfill_p1": 0.9112923234701157,
+          "norm_fulfill_p10": 0.929824024438858
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.256631031180873,
+          "norm_fulfill_p1": 1.1055246353149415,
+          "norm_fulfill_p10": 1.1619775891304016
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006129263928442263,
+        "High.norm_fulfill_p1": 0.00830030739307408,
+        "High.norm_fulfill_p10": 0.008444994688034058,
+        "Medium.norm_fulfill_mean": 0.01064400420044398,
+        "Medium.norm_fulfill_p1": 0.0016745895147324275,
+        "Medium.norm_fulfill_p10": 0.0009725987911224365,
+        "Low.norm_fulfill_mean": 0.018133038824254877,
+        "Low.norm_fulfill_p1": 0.003092032670974909,
+        "Low.norm_fulfill_p10": 0.009946286678314209
+      },
+      "safe_secondary": true,
+      "score": 0.018485051664439034
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.963772817994609,
+          "norm_fulfill_p1": 0.9426252365112304,
+          "norm_fulfill_p10": 0.9464568495750427
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0007509218923973,
+          "norm_fulfill_p1": 0.9112867832183837,
+          "norm_fulfill_p10": 0.9300209581851959
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.256821298238003,
+          "norm_fulfill_p1": 1.106646466255188,
+          "norm_fulfill_p10": 1.1617475152015686
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006097212885365355,
+        "High.norm_fulfill_p1": 0.008196955919265725,
+        "High.norm_fulfill_p10": 0.008487045764923096,
+        "Medium.norm_fulfill_mean": 0.010827238812591067,
+        "Medium.norm_fulfill_p1": 0.0016690492630004883,
+        "Medium.norm_fulfill_p10": 0.0011695325374603271,
+        "Low.norm_fulfill_mean": 0.018323305881384755,
+        "Low.norm_fulfill_p1": 0.004213863611221447,
+        "Low.norm_fulfill_p10": 0.009716212749481201
+      },
+      "safe_secondary": true,
+      "score": 0.0184085919098421
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 65,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.963828469767715,
+          "norm_fulfill_p1": 0.943226358294487,
+          "norm_fulfill_p10": 0.9466536045074463
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0022535838864066,
+          "norm_fulfill_p1": 0.9181362807750701,
+          "norm_fulfill_p10": 0.9381060898303986
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.258639973221403,
+          "norm_fulfill_p1": 1.1017541289329529,
+          "norm_fulfill_p10": 1.165115475654602
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006152864658471313,
+        "High.norm_fulfill_p1": 0.008798077702522278,
+        "High.norm_fulfill_p10": 0.00868380069732666,
+        "Medium.norm_fulfill_mean": 0.012329900806600347,
+        "Medium.norm_fulfill_p1": 0.00851854681968689,
+        "Medium.norm_fulfill_p10": 0.009254664182662964,
+        "Low.norm_fulfill_mean": 0.020141980864784914,
+        "Low.norm_fulfill_p1": -0.0006784737110137051,
+        "Low.norm_fulfill_p10": 0.013084173202514648
+      },
+      "safe_secondary": true,
+      "score": 0.018390746604312568
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 66,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9637919429576758,
+          "norm_fulfill_p1": 0.9432380557060241,
+          "norm_fulfill_p10": 0.946591854095459
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.002153989943591,
+          "norm_fulfill_p1": 0.9181314945220947,
+          "norm_fulfill_p10": 0.9383479654788971
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2599694855285413,
+          "norm_fulfill_p1": 1.1019278585910797,
+          "norm_fulfill_p10": 1.165174663066864
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.00611633784843213,
+        "High.norm_fulfill_p1": 0.008809775114059448,
+        "High.norm_fulfill_p10": 0.008622050285339355,
+        "Medium.norm_fulfill_mean": 0.012230306863784679,
+        "Medium.norm_fulfill_p1": 0.008513760566711492,
+        "Medium.norm_fulfill_p10": 0.009496539831161499,
+        "Low.norm_fulfill_mean": 0.021471493171923095,
+        "Low.norm_fulfill_p1": -0.0005047440528869185,
+        "Low.norm_fulfill_p10": 0.013143360614776611
+      },
+      "safe_secondary": true,
+      "score": 0.018298539140007695
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 58,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9637545536864888,
+          "norm_fulfill_p1": 0.9422755181789398,
+          "norm_fulfill_p10": 0.9448879659175873
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0002498717019053,
+          "norm_fulfill_p1": 0.9118119835853576,
+          "norm_fulfill_p10": 0.9305331707000732
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2534578027147236,
+          "norm_fulfill_p1": 1.0764858305454255,
+          "norm_fulfill_p10": 1.1334672570228577
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0060789485772451135,
+        "High.norm_fulfill_p1": 0.007847237586975142,
+        "High.norm_fulfill_p10": 0.006918162107467651,
+        "Medium.norm_fulfill_mean": 0.010326188622098997,
+        "Medium.norm_fulfill_p1": 0.0021942496299743874,
+        "Medium.norm_fulfill_p10": 0.0016817450523376465,
+        "Low.norm_fulfill_mean": 0.014959810358105452,
+        "Low.norm_fulfill_p1": -0.025946772098541127,
+        "Low.norm_fulfill_p10": -0.018564045429229736
+      },
+      "safe_secondary": false,
+      "score": 0.015642168521881227
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 65,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9636498066512021,
+          "norm_fulfill_p1": 0.9422755002975464,
+          "norm_fulfill_p10": 0.9448879659175873
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0013795215072054,
+          "norm_fulfill_p1": 0.9199683040380477,
+          "norm_fulfill_p10": 0.9357250928878784
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2570434826793093,
+          "norm_fulfill_p1": 1.0763967037200928,
+          "norm_fulfill_p10": 1.133467197418213
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.00597420154195849,
+        "High.norm_fulfill_p1": 0.007847219705581665,
+        "High.norm_fulfill_p10": 0.006918162107467651,
+        "Medium.norm_fulfill_mean": 0.011455838427399168,
+        "Medium.norm_fulfill_p1": 0.01035057008266449,
+        "Medium.norm_fulfill_p10": 0.006873667240142822,
+        "Low.norm_fulfill_mean": 0.01854549032269115,
+        "Low.norm_fulfill_p1": -0.026035898923873813,
+        "Low.norm_fulfill_p10": -0.01856410503387451
+      },
+      "safe_secondary": false,
+      "score": 0.01531901473348809
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 58,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9637412293390795,
+          "norm_fulfill_p1": 0.9422775775194168,
+          "norm_fulfill_p10": 0.9450199902057648
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0003322028752528,
+          "norm_fulfill_p1": 0.9118166327476501,
+          "norm_fulfill_p10": 0.9305331707000732
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.25337236216574,
+          "norm_fulfill_p1": 1.0734821200370788,
+          "norm_fulfill_p10": 1.1335749626159668
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.006065624229835809,
+        "High.norm_fulfill_p1": 0.007849296927452065,
+        "High.norm_fulfill_p10": 0.007050186395645142,
+        "Medium.norm_fulfill_mean": 0.010408519795446547,
+        "Medium.norm_fulfill_p1": 0.002198898792266868,
+        "Medium.norm_fulfill_p10": 0.0016817450523376465,
+        "Low.norm_fulfill_mean": 0.014874369809121823,
+        "Low.norm_fulfill_p1": -0.028950482606887817,
+        "Low.norm_fulfill_p10": -0.018456339836120605
+      },
+      "safe_secondary": false,
+      "score": 0.015301824428818644
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 66,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9636390633655317,
+          "norm_fulfill_p1": 0.9422775775194168,
+          "norm_fulfill_p10": 0.9450200796127319
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0016195187062928,
+          "norm_fulfill_p1": 0.9200089871883392,
+          "norm_fulfill_p10": 0.9398927688598633
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2570368087652959,
+          "norm_fulfill_p1": 1.0734660148620605,
+          "norm_fulfill_p10": 1.1335747241973877
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.005963458256288079,
+        "High.norm_fulfill_p1": 0.007849296927452065,
+        "High.norm_fulfill_p10": 0.007050275802612305,
+        "Medium.norm_fulfill_mean": 0.011695835626486573,
+        "Medium.norm_fulfill_p1": 0.010391253232955977,
+        "Medium.norm_fulfill_p10": 0.011041343212127686,
+        "Low.norm_fulfill_mean": 0.018538816408677716,
+        "Low.norm_fulfill_p1": -0.028966587781906084,
+        "Low.norm_fulfill_p10": -0.018456578254699707
+      },
+      "safe_secondary": false,
+      "score": 0.014993715990673628
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9628785189354059,
+          "norm_fulfill_p1": 0.9408263593912125,
+          "norm_fulfill_p10": 0.9446484744548798
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9999698183753274,
+          "norm_fulfill_p1": 0.9104877084493637,
+          "norm_fulfill_p10": 0.9305331707000732
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.251177845579205,
+          "norm_fulfill_p1": 1.0843123495578766,
+          "norm_fulfill_p10": 1.1369928121566772
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.005202913826162225,
+        "High.norm_fulfill_p1": 0.006398078799247808,
+        "High.norm_fulfill_p10": 0.006678670644760132,
+        "Medium.norm_fulfill_mean": 0.01004613529552112,
+        "Medium.norm_fulfill_p1": 0.0008699744939804077,
+        "Medium.norm_fulfill_p10": 0.0016817450523376465,
+        "Low.norm_fulfill_mean": 0.012679853222586912,
+        "Low.norm_fulfill_p1": -0.01812025308609,
+        "Low.norm_fulfill_p10": -0.015038490295410156
+      },
+      "safe_secondary": false,
+      "score": 0.013796716169877677
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 57,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9628759947690096,
+          "norm_fulfill_p1": 0.9408286154270172,
+          "norm_fulfill_p10": 0.9446477591991425
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9999520607066877,
+          "norm_fulfill_p1": 0.9104881346225738,
+          "norm_fulfill_p10": 0.9305331707000732
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2512866403117324,
+          "norm_fulfill_p1": 1.0842661321163178,
+          "norm_fulfill_p10": 1.1371926665306091
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.0052003896597659915,
+        "High.norm_fulfill_p1": 0.006400334835052535,
+        "High.norm_fulfill_p10": 0.006677955389022827,
+        "Medium.norm_fulfill_mean": 0.010028377626881468,
+        "Medium.norm_fulfill_p1": 0.000870400667190574,
+        "Medium.norm_fulfill_p10": 0.0016817450523376465,
+        "Low.norm_fulfill_mean": 0.012788647955114252,
+        "Low.norm_fulfill_p1": -0.018166470527648748,
+        "Low.norm_fulfill_p10": -0.014838635921478271
+      },
+      "safe_secondary": false,
+      "score": 0.0137845219265331
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 63,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9628105172605226,
+          "norm_fulfill_p1": 0.940826416015625,
+          "norm_fulfill_p10": 0.944648414850235
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0005955488392801,
+          "norm_fulfill_p1": 0.91048743724823,
+          "norm_fulfill_p10": 0.9333608448505402
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.251931607723236,
+          "norm_fulfill_p1": 1.0843100011348725,
+          "norm_fulfill_p10": 1.1369928121566772
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.005134912151278925,
+        "High.norm_fulfill_p1": 0.0063981354236603005,
+        "High.norm_fulfill_p10": 0.0066786110401153564,
+        "Medium.norm_fulfill_mean": 0.010671865759473875,
+        "Medium.norm_fulfill_p1": 0.0008697032928467463,
+        "Medium.norm_fulfill_p10": 0.004509419202804565,
+        "Low.norm_fulfill_mean": 0.013433615366617913,
+        "Low.norm_fulfill_p1": -0.01812260150909406,
+        "Low.norm_fulfill_p10": -0.015038490295410156
+      },
+      "safe_secondary": false,
+      "score": 0.01359247630292737
+    },
+    {
+      "calibrator": "ridge_0.1",
+      "blend": 0.25,
+      "config": [
+        "relative_softmin_0.003",
+        16,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 63,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9628082288034034,
+          "norm_fulfill_p1": 0.940826678276062,
+          "norm_fulfill_p10": 0.9446478188037872
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0005776105505046,
+          "norm_fulfill_p1": 0.9104881346225738,
+          "norm_fulfill_p10": 0.9333296418190002
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2520494876485881,
+          "norm_fulfill_p1": 1.084265810251236,
+          "norm_fulfill_p10": 1.137192726135254
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.005132623694159788,
+        "High.norm_fulfill_p1": 0.0063983976840973344,
+        "High.norm_fulfill_p10": 0.0066780149936676025,
+        "Medium.norm_fulfill_mean": 0.010653927470698377,
+        "Medium.norm_fulfill_p1": 0.000870400667190574,
+        "Medium.norm_fulfill_p10": 0.0044782161712646484,
+        "Low.norm_fulfill_mean": 0.013551495291969973,
+        "Low.norm_fulfill_p1": -0.01816679239273067,
+        "Low.norm_fulfill_p10": -0.014838576316833496
+      },
+      "safe_secondary": false,
+      "score": 0.013581191843206298
+    }
+  ],
+  "frozen_specs": [
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0
+    }
+  ],
+  "evaluation_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9490669006109238,
+      "norm_fulfill_p1": 0.8994986671209335,
+      "norm_fulfill_p10": 0.9126088798046113
+    },
+    "Medium": {
+      "norm_fulfill_mean": 1.0239537978172302,
+      "norm_fulfill_p1": 0.9414205706119537,
+      "norm_fulfill_p10": 0.959907740354538
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1987055230140686,
+      "norm_fulfill_p1": 1.0470808935165405,
+      "norm_fulfill_p10": 1.1180704474449157
+    }
+  },
+  "evaluation": [
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9536771631240845,
+          "norm_fulfill_p1": 0.9079282343387604,
+          "norm_fulfill_p10": 0.9179063141345978
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0328833228349685,
+          "norm_fulfill_p1": 0.9501460140943527,
+          "norm_fulfill_p10": 0.9643906474113464
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2168146800994872,
+          "norm_fulfill_p1": 1.050279701948166,
+          "norm_fulfill_p10": 1.1293851017951966
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004610262513160657,
+        "High.norm_fulfill_p1": 0.008429567217826839,
+        "High.norm_fulfill_p10": 0.005297434329986528,
+        "Medium.norm_fulfill_mean": 0.00892952501773836,
+        "Medium.norm_fulfill_p1": 0.008725443482399009,
+        "Medium.norm_fulfill_p10": 0.004482907056808427,
+        "Low.norm_fulfill_mean": 0.018109157085418603,
+        "Low.norm_fulfill_p1": 0.003198808431625455,
+        "Low.norm_fulfill_p10": 0.011314654350280895
+      },
+      "safe_secondary": true,
+      "score": 0.014150668382644515
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9536763763427735,
+          "norm_fulfill_p1": 0.9079282343387604,
+          "norm_fulfill_p10": 0.9179062008857727
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0328787821531296,
+          "norm_fulfill_p1": 0.9501458376646041,
+          "norm_fulfill_p10": 0.9643908023834229
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.216830414533615,
+          "norm_fulfill_p1": 1.0502756595611573,
+          "norm_fulfill_p10": 1.1293861150741578
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004609475731849666,
+        "High.norm_fulfill_p1": 0.008429567217826839,
+        "High.norm_fulfill_p10": 0.005297321081161432,
+        "Medium.norm_fulfill_mean": 0.008924984335899389,
+        "Medium.norm_fulfill_p1": 0.00872526705265042,
+        "Medium.norm_fulfill_p10": 0.004483062028884932,
+        "Low.norm_fulfill_mean": 0.018124891519546438,
+        "Low.norm_fulfill_p1": 0.0031947660446167703,
+        "Low.norm_fulfill_p10": 0.011315667629242077
+      },
+      "safe_secondary": true,
+      "score": 0.014147903800010676
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9536717742681503,
+          "norm_fulfill_p1": 0.9079414039850235,
+          "norm_fulfill_p10": 0.9178357422351837
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0328569984436036,
+          "norm_fulfill_p1": 0.9500691485404968,
+          "norm_fulfill_p10": 0.9644099771976471
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2170306861400604,
+          "norm_fulfill_p1": 1.0503632891178132,
+          "norm_fulfill_p10": 1.1294827461242676
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004604873657226505,
+        "High.norm_fulfill_p1": 0.008442736864090028,
+        "High.norm_fulfill_p10": 0.005226862430572465,
+        "Medium.norm_fulfill_mean": 0.008903200626373398,
+        "Medium.norm_fulfill_p1": 0.008648577928543122,
+        "Medium.norm_fulfill_p10": 0.004502236843109131,
+        "Low.norm_fulfill_mean": 0.01832516312599175,
+        "Low.norm_fulfill_p1": 0.0032823956012726363,
+        "Low.norm_fulfill_p10": 0.011412298679351895
+      },
+      "safe_secondary": true,
+      "score": 0.014142860531806778
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.5,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0001,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9536708396673202,
+          "norm_fulfill_p1": 0.9079415792226792,
+          "norm_fulfill_p10": 0.9178358793258667
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.032858681678772,
+          "norm_fulfill_p1": 0.9500691479444504,
+          "norm_fulfill_p10": 0.9644100844860077
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.217026332616806,
+          "norm_fulfill_p1": 1.0503633546829223,
+          "norm_fulfill_p10": 1.1294798970222473
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004603939056396444,
+        "High.norm_fulfill_p1": 0.008442912101745637,
+        "High.norm_fulfill_p10": 0.005226999521255493,
+        "Medium.norm_fulfill_mean": 0.008904883861541757,
+        "Medium.norm_fulfill_p1": 0.008648577332496687,
+        "Medium.norm_fulfill_p10": 0.004502344131469771,
+        "Low.norm_fulfill_mean": 0.01832080960273741,
+        "Low.norm_fulfill_p1": 0.003282461166381756,
+        "Low.norm_fulfill_p10": 0.011409449577331587
+      },
+      "safe_secondary": true,
+      "score": 0.014140063285827509
+    },
+    {
+      "calibrator": "affine",
+      "blend": 0.75,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.01
+      ],
+      "margin": 0.0,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9535259956121445,
+          "norm_fulfill_p1": 0.9095347267389298,
+          "norm_fulfill_p10": 0.9190357863903046
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.033237737417221,
+          "norm_fulfill_p1": 0.9504353708028793,
+          "norm_fulfill_p10": 0.9662297129631042
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2155785393714904,
+          "norm_fulfill_p1": 1.048753193616867,
+          "norm_fulfill_p10": 1.1211405754089356
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004459095001220659,
+        "High.norm_fulfill_p1": 0.010036059617996251,
+        "High.norm_fulfill_p10": 0.006426906585693337,
+        "Medium.norm_fulfill_mean": 0.009283939599990854,
+        "Medium.norm_fulfill_p1": 0.009014800190925598,
+        "Medium.norm_fulfill_p10": 0.006321972608566262,
+        "Low.norm_fulfill_mean": 0.016873016357421777,
+        "Low.norm_fulfill_p1": 0.0016723001003264848,
+        "Low.norm_fulfill_p10": 0.003070127964019953
+      },
+      "safe_secondary": true,
+      "score": 0.013544515013694625
+    },
+    {
+      "calibrator": "affine",
+      "blend": 1.0,
+      "config": [
+        "relative_softmin_0.003",
+        24,
+        0.08,
+        0.02
+      ],
+      "margin": 0.0001,
+      "active": 100,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9534975934028626,
+          "norm_fulfill_p1": 0.9089148813486099,
+          "norm_fulfill_p10": 0.917500239610672
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.0329199278354644,
+          "norm_fulfill_p1": 0.9480424326658249,
+          "norm_fulfill_p10": 0.9635382175445557
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.2117708003520966,
+          "norm_fulfill_p1": 1.0428495132923126,
+          "norm_fulfill_p10": 1.11854487657547
+        }
+      },
+      "delta": {
+        "High.norm_fulfill_mean": 0.004430692791938751,
+        "High.norm_fulfill_p1": 0.009416214227676356,
+        "High.norm_fulfill_p10": 0.004891359806060702,
+        "Medium.norm_fulfill_mean": 0.008966130018234209,
+        "Medium.norm_fulfill_p1": 0.006621862053871164,
+        "Medium.norm_fulfill_p10": 0.0036304771900177446,
+        "Low.norm_fulfill_mean": 0.01306527733802798,
+        "Low.norm_fulfill_p1": -0.004231380224227976,
+        "Low.norm_fulfill_p10": 0.00047442913055428804
+      },
+      "safe_secondary": false,
+      "score": 0.012868940353393454
+    }
+  ]
+}

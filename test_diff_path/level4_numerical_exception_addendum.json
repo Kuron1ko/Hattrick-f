@@ -1,0 +1,22 @@
+{
+  "authorized": true,
+  "frozen_at_utc": "2026-08-16T04:21:33.0343744Z",
+  "scope": "Level-4 hybrid invariant assertion only; no policy, solver, objective, metric, checkpoint, or success-gate change",
+  "trigger": {
+    "candidate_metric_artifact_existed": false,
+    "solver_status": 0,
+    "max_edge_excess": 2.2005581579165323e-08,
+    "max_pair_mass": 1.0000001192092896,
+    "failed_original_condition": "max_pair_mass > 1.0 + 1e-7"
+  },
+  "rationale": "The emitted policy is float32. The first representable value above 1.0 is 1.0000001192092896, so decimal 1e-7 does not admit the intended one-ULP rounding allowance.",
+  "adjudication": "Accept max_pair_mass <= 1.0 + eps(float32) without changing any policy value; retain the original 1e-6 predicted-edge-excess assertion.",
+  "pair_mass_limit": 1.0000001192092896,
+  "edge_excess_limit": 1e-6,
+  "policy_values_adjusted": false,
+  "solver_or_objective_changed": false,
+  "metrics_or_success_gates_changed": false,
+  "infrastructure_retry_disclosed": true,
+  "original_manifest_sha256": "1acc87f0f1dff5b9c432634c4cea08d833a5de05e5afcfa065ec6c926b4a67c0",
+  "wrapper_sha256": "c60232e6b6a2b4928129dce87f2a1aa3932e17e875a21f6b35486f9db607fe5f"
+}

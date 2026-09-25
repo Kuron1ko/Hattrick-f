@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "Validation-only selection: keep epochs whose High mean is within a fixed window of the method's maximum, then maximize Medium metrics lexicographically.",
+  "high": {
+    "mean_window_from_max": 0.005
+  },
+  "candidate_ranking": [
+    "medium.norm_fulfill_mean",
+    "medium.norm_fulfill_p10",
+    "medium.norm_fulfill_p1"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_topology": "geant_priomask500_shared",
+  "target_topology": "geant_priomask500_shared_load3x_train",
+  "load_factor": 3.0,
+  "snapshots": 500,
+  "unique_traffic_matrices": 500,
+  "min_ratio": 2.999999463891004,
+  "max_ratio": 3.0000005911064487,
+  "sums": {
+    "actual_original": 23614.666100502014,
+    "actual_scaled": 70843.99845027924,
+    "esm_original": 23629.698459978736,
+    "esm_scaled": 70889.0953799363
+  },
+  "split": {
+    "hattrick_train": [
+      0,
+      350
+    ],
+    "hattrick_validation": [
+      350,
+      400
+    ],
+    "level4": [
+      400,
+      500
+    ]
+  },
+  "hattrick3_training": {
+    "epochs": 60,
+    "batch_size": 32,
+    "learning_rate": 0.002,
+    "initialization": "from scratch with seed 490",
+    "prediction_input": "strict current ESM"
+  }
+}

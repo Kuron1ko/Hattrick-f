@@ -1,0 +1,50 @@
+{
+  "dataset": "2x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 39
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 22
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 39
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 39,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f3\\artifacts\\seed_490\\checkpoints\\epoch_039.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_039_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_039_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_039_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 22,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f\\artifacts\\selected_hattrick.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_metrics.csv"
+      },
+      "name": "Hattrick-22_Hattrick-f3-39",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\2x\\batch_4b2724906994\\Hattrick-22_Hattrick-f3-39.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

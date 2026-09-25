@@ -1,0 +1,308 @@
+{
+  "dataset": "GEANT shared 8sp, Level-4 snapshots 400-499",
+  "protocol": {
+    "1x": "DOTE-MC trained on 1x data and evaluated on 1x",
+    "2x": "DOTE-MC retrained on 2x data and evaluated on 2x",
+    "weights": [
+      1.0,
+      0.1,
+      0.01
+    ],
+    "inference": "strict ESM predictions only; actual traffic is evaluation only",
+    "common_evaluator": "Hattrick exact sequential admission simulator"
+  },
+  "summary": [
+    {
+      "load": "1x",
+      "method": "Hattrick",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9999999630451203,
+      "norm_fulfill_p1": 0.9999997609853745,
+      "norm_fulfill_p10": 0.9999998807907104,
+      "fulfill_ratio_mean": 0.9989769577980041
+    },
+    {
+      "load": "1x",
+      "method": "Hattrick",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9957454067468643,
+      "norm_fulfill_p1": 0.9822047126293182,
+      "norm_fulfill_p10": 0.9905342578887939,
+      "fulfill_ratio_mean": 0.8750794422626496
+    },
+    {
+      "load": "1x",
+      "method": "Hattrick",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 1.0109981387853622,
+      "norm_fulfill_p1": 0.9742490434646607,
+      "norm_fulfill_p10": 0.9980078935623169,
+      "fulfill_ratio_mean": 0.7509512639045716
+    },
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9999999630451203,
+      "norm_fulfill_p1": 0.9999997609853745,
+      "norm_fulfill_p10": 0.9999998807907104,
+      "fulfill_ratio_mean": 0.9989769577980041
+    },
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9957454067468643,
+      "norm_fulfill_p1": 0.9822047126293182,
+      "norm_fulfill_p10": 0.9905342578887939,
+      "fulfill_ratio_mean": 0.8750794422626496
+    },
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 1.0109981536865233,
+      "norm_fulfill_p1": 0.9742490434646607,
+      "norm_fulfill_p10": 0.9980077862739563,
+      "fulfill_ratio_mean": 0.750951269865036
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9999621105194092,
+      "norm_fulfill_p1": 0.9991483587026596,
+      "norm_fulfill_p10": 0.9999998807907104,
+      "fulfill_ratio_mean": 0.9989391112327576
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9951617521047592,
+      "norm_fulfill_p1": 0.974084078669548,
+      "norm_fulfill_p10": 0.9840122818946838,
+      "fulfill_ratio_mean": 0.8745335423946381
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 0.9780009359121322,
+      "norm_fulfill_p1": 0.873783848285675,
+      "norm_fulfill_p10": 0.9112341046333313,
+      "fulfill_ratio_mean": 0.7285948646068573
+    },
+    {
+      "load": "2x",
+      "method": "Hattrick",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9985365015268326,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001728057861,
+      "fulfill_ratio_mean": 0.9308559781312943
+    },
+    {
+      "load": "2x",
+      "method": "Hattrick",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9343662232160568,
+      "norm_fulfill_p1": 0.8901874989271163,
+      "norm_fulfill_p10": 0.8966957032680511,
+      "fulfill_ratio_mean": 0.5773442909121513
+    },
+    {
+      "load": "2x",
+      "method": "Hattrick",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 1.1472881865501403,
+      "norm_fulfill_p1": 0.9548774111270905,
+      "norm_fulfill_p10": 0.9992087304592132,
+      "fulfill_ratio_mean": 0.5275465527176857
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9985365015268326,
+      "norm_fulfill_p1": 0.9882580143213272,
+      "norm_fulfill_p10": 0.9963001728057861,
+      "fulfill_ratio_mean": 0.9308559781312943
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9472379618883133,
+      "norm_fulfill_p1": 0.8982986223697662,
+      "norm_fulfill_p10": 0.9095984399318695,
+      "fulfill_ratio_mean": 0.584984555542469
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 1.17570203602314,
+      "norm_fulfill_p1": 0.9651254123449325,
+      "norm_fulfill_p10": 1.0013089716434478,
+      "fulfill_ratio_mean": 0.5387503570318222
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "High",
+      "n": 100,
+      "norm_fulfill_mean": 0.9980131322145462,
+      "norm_fulfill_p1": 0.989090058207512,
+      "norm_fulfill_p10": 0.9926527619361878,
+      "fulfill_ratio_mean": 0.9303376358747483
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "Medium",
+      "n": 100,
+      "norm_fulfill_mean": 0.9821234941482544,
+      "norm_fulfill_p1": 0.9043990880250931,
+      "norm_fulfill_p10": 0.9659088790416718,
+      "fulfill_ratio_mean": 0.6056586387753486
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "Low",
+      "n": 100,
+      "norm_fulfill_mean": 1.056849940419197,
+      "norm_fulfill_p1": 0.9380954748392105,
+      "norm_fulfill_p10": 0.9752912521362305,
+      "fulfill_ratio_mean": 0.49119424760341646
+    }
+  ],
+  "deltas_vs_hattrick": [
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "High",
+      "mean_delta_vs_hattrick": 0.0,
+      "p1_delta_vs_hattrick": 0.0,
+      "p10_delta_vs_hattrick": 0.0
+    },
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "Medium",
+      "mean_delta_vs_hattrick": 0.0,
+      "p1_delta_vs_hattrick": 0.0,
+      "p10_delta_vs_hattrick": 0.0
+    },
+    {
+      "load": "1x",
+      "method": "Hatrrick-e",
+      "class": "Low",
+      "mean_delta_vs_hattrick": 1.4901161193847656e-08,
+      "p1_delta_vs_hattrick": 0.0,
+      "p10_delta_vs_hattrick": -1.0728836064011205e-07
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "High",
+      "mean_delta_vs_hattrick": -3.7852525711090657e-05,
+      "p1_delta_vs_hattrick": -0.0008514022827148526,
+      "p10_delta_vs_hattrick": 0.0
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "Medium",
+      "mean_delta_vs_hattrick": -0.0005836546421050803,
+      "p1_delta_vs_hattrick": -0.00812063395977014,
+      "p10_delta_vs_hattrick": -0.006521975994110085
+    },
+    {
+      "load": "1x",
+      "method": "DOTE-MC",
+      "class": "Low",
+      "mean_delta_vs_hattrick": -0.032997202873229936,
+      "p1_delta_vs_hattrick": -0.10046519517898567,
+      "p10_delta_vs_hattrick": -0.08677378892898557
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "High",
+      "mean_delta_vs_hattrick": 0.0,
+      "p1_delta_vs_hattrick": 0.0,
+      "p10_delta_vs_hattrick": 0.0
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "Medium",
+      "mean_delta_vs_hattrick": 0.01287173867225655,
+      "p1_delta_vs_hattrick": 0.008111123442649859,
+      "p10_delta_vs_hattrick": 0.01290273666381836
+    },
+    {
+      "load": "2x",
+      "method": "Hatrrick-e",
+      "class": "Low",
+      "mean_delta_vs_hattrick": 0.02841384947299974,
+      "p1_delta_vs_hattrick": 0.010248001217842084,
+      "p10_delta_vs_hattrick": 0.0021002411842345747
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "High",
+      "mean_delta_vs_hattrick": -0.0005233693122863592,
+      "p1_delta_vs_hattrick": 0.0008320438861847412,
+      "p10_delta_vs_hattrick": -0.0036474108695983
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "Medium",
+      "mean_delta_vs_hattrick": 0.047757270932197615,
+      "p1_delta_vs_hattrick": 0.014211589097976707,
+      "p10_delta_vs_hattrick": 0.06921317577362063
+    },
+    {
+      "load": "2x",
+      "method": "DOTE-MC",
+      "class": "Low",
+      "mean_delta_vs_hattrick": -0.0904382461309432,
+      "p1_delta_vs_hattrick": -0.01678193628787994,
+      "p10_delta_vs_hattrick": -0.023917478322982744
+    }
+  ],
+  "provenance": {
+    "1x": {
+      "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\results_dotemc_priority_masks_500slice\\outputs\\shared\\w_1_0p1_0p01\\best_model.pt",
+      "checkpoint_sha256": "02f582065ca104e55bf6f5e14e023377139336e9103bac6d7f6a7bb2e0131857",
+      "backbone_used_as_common_simulator": "D:\\kuroresearch\\Hattrick-main\\hattrick_geant_priomask500_shared_8sp.pkl",
+      "actual_tm_policy_max_abs_diff": 0.0
+    },
+    "2x": {
+      "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\results_load2x_retrain_shared_strict\\outputs\\shared\\w_1_0p1_0p01\\best_model.pt",
+      "checkpoint_sha256": "7055147581ad30c29de6dc9872585cf40f5b9cccea126cf75745c723ef82e1e0",
+      "backbone_used_as_common_simulator": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+      "actual_tm_policy_max_abs_diff": 0.0
+    }
+  }
+}

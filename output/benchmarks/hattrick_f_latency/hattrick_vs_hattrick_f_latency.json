@@ -1,0 +1,205 @@
+{
+  "benchmark": "strict-ESM steady-state batch-1 policy forward",
+  "timing": "interleaved checkpoints; CUDA Events; synchronized each call",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "torch": "2.5.1+cu121",
+  "results": [
+    {
+      "load": "1x",
+      "topology": "geant_priomask500_shared",
+      "snapshot": 400,
+      "actual_traffic_zeroed": true,
+      "predicted_tm_l1": [
+        174.84786987304688,
+        156.66058349609375,
+        35.57206726074219
+      ],
+      "warmup_per_model": 30,
+      "timed_iterations_per_model": 200,
+      "same_constructor": "frameworks.hattrick_system.Hattrick",
+      "same_state_keys_and_shapes": true,
+      "parameter_count_each": 20105,
+      "latency": {
+        "hattrick": {
+          "mean_ms": 47.351574401855466,
+          "median_ms": 46.885406494140625,
+          "p05_ms": 42.59066047668457,
+          "p95_ms": 53.0287103652954,
+          "min_ms": 39.79993438720703,
+          "max_ms": 63.33030319213867
+        },
+        "hattrick_f": {
+          "mean_ms": 47.32989030838013,
+          "median_ms": 46.87616157531738,
+          "p05_ms": 43.01077404022217,
+          "p95_ms": 53.16373577117919,
+          "min_ms": 39.42630386352539,
+          "max_ms": 56.7193603515625
+        }
+      },
+      "hattrick_f_minus_hattrick_median_ms": -0.009244918823242188,
+      "hattrick_f_over_hattrick_median_ratio": 0.9998028188403486,
+      "checkpoints": {
+        "hattrick": {
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared1x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+          "sha256": "2b55f438fa4323b288a477da05ad49837712dfa1ea23f8c25a42c9cec3370f64",
+          "epoch": 49
+        },
+        "hattrick_f": {
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared1x_hattrick_f\\artifacts\\level4_confirmation\\fh_release_low_budget_0p03\\seed_490\\best_model.pt",
+          "sha256": "f87e875083e640d1d70e2ecde6c17b4330cc9e76b92aae7eb66796ddc4bee951",
+          "epoch": 10
+        }
+      },
+      "policy_audit": {
+        "hattrick": {
+          "shapes": [
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ]
+          ],
+          "checksums": [
+            462.0,
+            462.0,
+            462.0
+          ]
+        },
+        "hattrick_f": {
+          "shapes": [
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ]
+          ],
+          "checksums": [
+            462.0,
+            462.0,
+            462.0
+          ]
+        }
+      }
+    },
+    {
+      "load": "2x",
+      "topology": "geant_priomask500_shared_load2x_train",
+      "snapshot": 400,
+      "actual_traffic_zeroed": true,
+      "predicted_tm_l1": [
+        349.69537353515625,
+        313.32080078125,
+        71.14376831054688
+      ],
+      "warmup_per_model": 30,
+      "timed_iterations_per_model": 200,
+      "same_constructor": "frameworks.hattrick_system.Hattrick",
+      "same_state_keys_and_shapes": true,
+      "parameter_count_each": 20105,
+      "latency": {
+        "hattrick": {
+          "mean_ms": 49.23059534072876,
+          "median_ms": 48.53299331665039,
+          "p05_ms": 44.185959815979004,
+          "p95_ms": 56.0999418258667,
+          "min_ms": 41.5098876953125,
+          "max_ms": 81.14585876464844
+        },
+        "hattrick_f": {
+          "mean_ms": 48.945212326049806,
+          "median_ms": 48.30329704284668,
+          "p05_ms": 43.569765663146974,
+          "p95_ms": 56.009574508666994,
+          "min_ms": 39.16902542114258,
+          "max_ms": 70.76966094970703
+        }
+      },
+      "hattrick_f_minus_hattrick_median_ms": -0.22969627380371094,
+      "hattrick_f_over_hattrick_median_ratio": 0.9952672139485592,
+      "checkpoints": {
+        "hattrick": {
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+          "sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+          "epoch": 60
+        },
+        "hattrick_f": {
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_hattrick_f\\artifacts\\level4_confirmation\\fh_release_low_budget_0p03\\seed_490\\best_model.pt",
+          "sha256": "fd323a885e13f76c3e2ef8998330d5849ed679850a968003d5fc9a1e3e131588",
+          "epoch": 20
+        }
+      },
+      "policy_audit": {
+        "hattrick": {
+          "shapes": [
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ]
+          ],
+          "checksums": [
+            462.0,
+            462.0,
+            462.0
+          ]
+        },
+        "hattrick_f": {
+          "shapes": [
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ],
+            [
+              1,
+              3696,
+              1
+            ]
+          ],
+          "checksums": [
+            462.0,
+            462.0,
+            462.0
+          ]
+        }
+      }
+    }
+  ]
+}

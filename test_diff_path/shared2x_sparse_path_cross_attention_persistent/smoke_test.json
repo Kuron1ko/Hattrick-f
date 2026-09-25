@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "checkpoint_sha256": "55dfbe1506148099c838f3e5e08ca871f280877e56748ae3ea5af574c0a3acad",
+  "parent_state_strict": {
+    "missing": [],
+    "unexpected": []
+  },
+  "candidate_missing_keys_exact": [
+    "stage2_high_init_adapter.0.bias",
+    "stage2_high_init_adapter.0.weight",
+    "stage2_high_init_adapter.2.bias",
+    "stage2_high_init_adapter.2.weight",
+    "stage2_high_rau_adapter.0.bias",
+    "stage2_high_rau_adapter.0.weight",
+    "stage2_high_rau_adapter.2.bias",
+    "stage2_high_rau_adapter.2.weight"
+  ],
+  "zero_output_policy_equivalence": {
+    "High": {
+      "torch_equal": true,
+      "different_elements": 0,
+      "max_abs_policy_delta": 0.0,
+      "mean_abs_policy_delta": 0.0,
+      "argmax_changed_od_count": 0,
+      "max_od_total_variation": 0.0
+    },
+    "Medium": {
+      "torch_equal": true,
+      "different_elements": 0,
+      "max_abs_policy_delta": 0.0,
+      "mean_abs_policy_delta": 0.0,
+      "argmax_changed_od_count": 0,
+      "max_od_total_variation": 0.0
+    },
+    "Low": {
+      "torch_equal": true,
+      "different_elements": 0,
+      "max_abs_policy_delta": 0.0,
+      "mean_abs_policy_delta": 0.0,
+      "argmax_changed_od_count": 0,
+      "max_od_total_variation": 0.0
+    }
+  },
+  "parent_information_audit": {
+    "mode": "zero",
+    "replacement_l1": 699.3159866333008,
+    "model_actual_input_abs_max": 0.0,
+    "model_actual_input_nonzero_count": 0,
+    "model_was_eval": true,
+    "dropout_modules_in_train_mode": []
+  },
+  "candidate_information_audit": {
+    "mode": "zero",
+    "replacement_l1": 699.3159866333008,
+    "model_actual_input_abs_max": 0.0,
+    "model_actual_input_nonzero_count": 0,
+    "model_was_eval": true,
+    "dropout_modules_in_train_mode": []
+  },
+  "stage2_context_audit": {
+    "site": "mlp22",
+    "input_shape": [
+      3696,
+      33
+    ],
+    "context_shape": [
+      3696,
+      18
+    ],
+    "residual_shape": [
+      3696,
+      1
+    ],
+    "only_high_channel_modified": true,
+    "formal_stage2_call": true
+  },
+  "source_sha256": {
+    "run_experiment.py": "c4061d15495d4d5ecfdf4e3ca7dd77fa0a64a732bfb0c1c1d0ceefb61a1df14f",
+    "smoke_test.py": "0dcb9d90f45ed295f72f73079290bd6282266f2279cfb2a571a666f1267fbc1c",
+    "strict_evaluator": "4afdbd4fb2ccc4d8b6bd77297cf0dc24485f34b922719283f31121f1f741f98b"
+  }
+}

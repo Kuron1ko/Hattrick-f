@@ -1,0 +1,639 @@
+{
+  "benchmark": "strict-ESM steady-state policy forward",
+  "window_prefix": [
+    400,
+    420
+  ],
+  "batch_sizes": [
+    1,
+    16,
+    20
+  ],
+  "actual_traffic_matrices_zeroed": true,
+  "topology_cache": "first materialization excluded; steady-state cache reused",
+  "timing": "CUDA Events with synchronize before each timed forward",
+  "device": "cuda",
+  "torch_version": "2.5.1+cu124",
+  "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "results": [
+    {
+      "model": "native-hattrick",
+      "constructor_source": "runtime.Hattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_adapter\\run_experiment.py",
+      "runner_sha256": "02e2183670e336e0c67258e8c9ff10ca66b67b1529b40b5b7f845e067ff7a3fb",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\final_model.pt",
+        "sha256": "394e0fe592491f70836b92a9a17543ea53d3fe1fbfc5b3f156bef0e4c3a78622",
+        "epoch": 60
+      },
+      "parameters": {
+        "total_parameters": 20105,
+        "trainable_parameters": 20105,
+        "parameter_bytes": 80420,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {},
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 45.07316780090332,
+            "median": 45.16230392456055,
+            "p10": 41.838671875,
+            "p90": 47.56663436889649,
+            "p95": 48.36201801300049,
+            "min": 40.342529296875,
+            "max": 49.34860610961914
+          },
+          "throughput_snapshots_per_second": 22.18614862876265,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 39539712,
+            "reserved_before_timing": 69206016,
+            "peak_allocated": 47450112,
+            "peak_reserved": 69206016,
+            "incremental_peak_allocated": 7910400,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.200278808635713e-12,
+              "max": 0.9999955892562866,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.5828894320496847e-14,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 4.384153196729246e-12,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ]
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 77.50364921569825,
+            "median": 77.32425689697266,
+            "p10": 74.35633850097656,
+            "p90": 80.98266525268555,
+            "p95": 81.22603302001953,
+            "min": 72.28623962402344,
+            "max": 82.0222396850586
+          },
+          "throughput_snapshots_per_second": 206.44189224523927,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40204800,
+            "reserved_before_timing": 190840832,
+            "peak_allocated": 151620096,
+            "peak_reserved": 190840832,
+            "incremental_peak_allocated": 111415296,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 6.521759044267328e-13,
+              "max": 0.9999966621398926,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 3.1688538054561394e-15,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.299854646662213e-12,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ]
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 85.93473403930665,
+            "median": 85.86905670166016,
+            "p10": 83.61208801269531,
+            "p90": 88.92240829467774,
+            "p95": 90.19172592163086,
+            "min": 78.76265716552734,
+            "max": 92.47026824951172
+          },
+          "throughput_snapshots_per_second": 232.73476346423527,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40382976,
+            "reserved_before_timing": 226492416,
+            "peak_allocated": 180868608,
+            "peak_reserved": 226492416,
+            "incremental_peak_allocated": 140485632,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 6.521746033841258e-13,
+              "max": 0.9999967813491821,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 3.1688415234784042e-15,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.299854646662213e-12,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hattrick-la-e52",
+      "constructor_source": "MediumPressureHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\run_experiment.py",
+      "runner_sha256": "5ee4f7cfede0471ddb6cd1a2826fcb120ee89a73c7734c97b0f69290c9973be0",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\artifacts\\level4_confirmation\\seed_490\\epoch_checkpoints\\epoch_052.pt",
+        "sha256": "1e66c77783bbedb5392e487da4dfcc7347b10bcb465c688b101b22d3e551f8df",
+        "epoch": 52
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 46.472470703125,
+            "median": 46.87318420410156,
+            "p10": 43.54535179138183,
+            "p90": 48.86374282836914,
+            "p95": 49.316300773620604,
+            "min": 39.6453742980957,
+            "max": 51.00764846801758
+          },
+          "throughput_snapshots_per_second": 21.51811566869751,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 39546368,
+            "reserved_before_timing": 69206016,
+            "peak_allocated": 47486464,
+            "peak_reserved": 69206016,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 6.868100160725135e-15,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 1.7881393432617188e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.095469087112526e-15,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 3.2636653796158654e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ]
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 78.96086158752442,
+            "median": 79.06164932250977,
+            "p10": 76.63441314697266,
+            "p90": 81.73884887695313,
+            "p95": 82.37423210144043,
+            "min": 71.67488098144531,
+            "max": 83.61881256103516
+          },
+          "throughput_snapshots_per_second": 202.63203412825922,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40211456,
+            "reserved_before_timing": 190840832,
+            "peak_allocated": 152099840,
+            "peak_reserved": 190840832,
+            "incremental_peak_allocated": 111888384,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 3.3627561642251202e-15,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.36550829936466e-16,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.240253559575688e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ]
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 87.69373329162597,
+            "median": 87.17838287353516,
+            "p10": 84.71421737670899,
+            "p90": 90.4407096862793,
+            "p95": 91.80125465393066,
+            "min": 79.9283218383789,
+            "max": 111.02515411376953
+          },
+          "throughput_snapshots_per_second": 228.06646779981295,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40389632,
+            "reserved_before_timing": 226492416,
+            "peak_allocated": 181466624,
+            "peak_reserved": 226492416,
+            "incremental_peak_allocated": 141076992,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 3.3627561642251202e-15,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.3655031377576377e-16,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.240253559575688e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "virtual-medium-dual",
+      "constructor_source": "VirtualMediumDualHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_virtual_medium_dual\\run_experiment.py",
+      "runner_sha256": "182a332248af90837c82679a9d1b3f98198abe7ed856ff28af1a8cb0276eee4a",
+      "checkpoint": {
+        "loaded": false
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "virtual_medium_steps": 2,
+        "virtual_medium_temperature": 0.25,
+        "virtual_medium_price_power": 2.0,
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 48.70102340698242,
+            "median": 48.776174545288086,
+            "p10": 44.49817657470703,
+            "p90": 52.00436477661133,
+            "p95": 52.917193603515614,
+            "min": 42.027008056640625,
+            "max": 62.56447982788086
+          },
+          "throughput_snapshots_per_second": 20.533449402967307,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 39546368,
+            "reserved_before_timing": 69206016,
+            "peak_allocated": 47486464,
+            "peak_reserved": 69206016,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11697404086589813,
+              "max": 0.12874872982501984,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11546410620212555,
+              "max": 0.14523763954639435,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.10540889203548431,
+              "max": 0.1337762475013733,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ]
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 78.22381500244141,
+            "median": 77.78211212158203,
+            "p10": 74.83699417114258,
+            "p90": 81.75429000854493,
+            "p95": 82.77746429443359,
+            "min": 71.2489242553711,
+            "max": 84.31330871582031
+          },
+          "throughput_snapshots_per_second": 204.5412896251689,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40211456,
+            "reserved_before_timing": 190840832,
+            "peak_allocated": 152099840,
+            "peak_reserved": 190840832,
+            "incremental_peak_allocated": 111888384,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 0.11198773980140686,
+              "max": 0.14264807105064392,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 0.11243556439876556,
+              "max": 0.16061675548553467,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 0.09150385856628418,
+              "max": 0.14467619359493256,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ]
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 30,
+          "timed_iterations": 100,
+          "latency_ms": {
+            "mean": 86.42024040222168,
+            "median": 86.35380935668945,
+            "p10": 81.92019958496094,
+            "p90": 91.5044334411621,
+            "p95": 92.67709197998047,
+            "min": 78.0052490234375,
+            "max": 93.71647644042969
+          },
+          "throughput_snapshots_per_second": 231.42726642410315,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40389632,
+            "reserved_before_timing": 226492416,
+            "peak_allocated": 181466624,
+            "peak_reserved": 226492416,
+            "incremental_peak_allocated": 141076992,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 0.11198773980140686,
+              "max": 0.14264807105064392,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 0.11243556439876556,
+              "max": 0.16061674058437347,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 0.09150383621454239,
+              "max": 0.14467619359493256,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "virtual_dual_status": "included"
+}

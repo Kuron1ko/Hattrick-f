@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "comparison_id": "geant-shared2x-strict-esm-final-three-method",
+  "selection_locked_before_evaluation": true,
+  "test_metrics_used_for_selection": false,
+  "bootstrap_seed": 20260824,
+  "evaluation": {
+    "level": 4,
+    "split": "test",
+    "snapshots": [400, 500],
+    "expected_samples_per_class": 100,
+    "load_factor": 2.0,
+    "topology": "geant_priomask500_shared_load2x_train",
+    "paths_per_pair": 8,
+    "prediction": "esm",
+    "strict_prediction_only_policy": true
+  },
+  "methods": [
+    {
+      "role": "native_hattrick",
+      "label": "Hattrick",
+      "selection": {
+        "basis": "validation",
+        "source_range": [350, 400],
+        "rule": "REPLACE_WITH_FROZEN_RULE",
+        "test_metrics_read": false,
+        "evidence_path": "REPLACE_WITH_SELECTION_EVIDENCE",
+        "evidence_sha256": "REPLACE_WITH_SHA256"
+      },
+      "input": {
+        "kind": "rows",
+        "path": "REPLACE_WITH_HATTRICK_ROWS",
+        "sha256": "REPLACE_WITH_SHA256"
+      }
+    },
+    {
+      "role": "hattrick_e",
+      "label": "Hattrick-e",
+      "selection": {
+        "basis": "validation",
+        "source_range": [350, 400],
+        "rule": "REPLACE_WITH_FROZEN_RULE",
+        "test_metrics_read": false,
+        "evidence_path": "REPLACE_WITH_SELECTION_EVIDENCE",
+        "evidence_sha256": "REPLACE_WITH_SHA256"
+      },
+      "input": {
+        "kind": "rows",
+        "path": "REPLACE_WITH_HATTRICK_E_ROWS",
+        "sha256": "REPLACE_WITH_SHA256"
+      }
+    },
+    {
+      "role": "sparse_cross_attention",
+      "label": "Sparse cross-attention",
+      "selection": {
+        "basis": "validation",
+        "source_range": [350, 400],
+        "epoch": 0,
+        "rule": "REPLACE_WITH_FROZEN_RULE",
+        "test_metrics_read": false,
+        "evidence_path": "REPLACE_WITH_SELECTION_EVIDENCE",
+        "evidence_sha256": "REPLACE_WITH_SHA256"
+      },
+      "input": {
+        "kind": "checkpoint",
+        "checkpoint": "REPLACE_WITH_SPARSE_CHECKPOINT",
+        "checkpoint_sha256": "REPLACE_WITH_SHA256",
+        "runner": "../shared2x_sparse_path_cross_attention/run_experiment.py",
+        "runner_sha256": "3b40dff9801bc71e6606888d8a690adbe2e695b52fd1a4710f6bb97b71b19f56",
+        "model_class": "SparsePathCrossAttentionHattrick"
+      }
+    }
+  ]
+}

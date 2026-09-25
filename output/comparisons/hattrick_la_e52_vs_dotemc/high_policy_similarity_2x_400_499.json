@@ -1,0 +1,88 @@
+{
+  "comparison": "Hattrick-LA epoch052 versus DOTE-MC High policy",
+  "window": [
+    400,
+    500
+  ],
+  "load": "2x",
+  "paths_per_od": 8,
+  "od_snapshot_count": 46200,
+  "information_contract": {
+    "policy_inputs": "ESM-predicted High/Medium/Low traffic, topology, capacities, paths",
+    "real_high_demand": "used only as an offline aggregation weight, never as policy input",
+    "policies_are_pre_admission": true
+  },
+  "similarity": {
+    "unweighted": {
+      "argmax_agreement": 0.39714282751083374,
+      "argmax_changed": 0.6028571724891663,
+      "tv_mean": 0.5984197854995728,
+      "tv_median": 0.6945971846580505,
+      "tv_ge_0p25_fraction": 0.7764718532562256,
+      "tv_ge_0p50_fraction": 0.6590692400932312,
+      "tv_ge_0p75_fraction": 0.44363635778427124
+    },
+    "actual_high_demand_weighted": {
+      "argmax_agreement": 0.43891968746343774,
+      "argmax_changed": 0.5610803125365622,
+      "tv_mean": 0.5607914349707254,
+      "tv_median": 0.5831286311149597,
+      "tv_ge_0p25_fraction": 0.7972971749832028,
+      "tv_ge_0p50_fraction": 0.5891573159386863,
+      "tv_ge_0p75_fraction": 0.3376816060449346
+    }
+  },
+  "hattrick_la_epoch052": {
+    "unweighted": {
+      "pmax_mean": 0.6484313011169434,
+      "pmax_median": 0.6453396081924438,
+      "pmax_ge_0p9_fraction": 0.2569480538368225,
+      "entropy_mean": 0.9114198088645935,
+      "normalized_entropy_mean": 0.4383002794723054,
+      "effective_paths_mean": 3.0172173976898193,
+      "effective_paths_median": 2.420048236846924
+    },
+    "actual_high_demand_weighted": {
+      "pmax_mean": 0.656540390076179,
+      "pmax_median": 0.627647876739502,
+      "pmax_ge_0p9_fraction": 0.2203452220298489,
+      "entropy_mean": 0.8610643728212706,
+      "normalized_entropy_mean": 0.4140844335184709,
+      "effective_paths_mean": 2.63776734989895,
+      "effective_paths_median": 2.542344093322754
+    }
+  },
+  "dote_mc": {
+    "unweighted": {
+      "pmax_mean": 0.9127193093299866,
+      "pmax_median": 0.9930780529975891,
+      "pmax_ge_0p9_fraction": 0.7832466959953308,
+      "entropy_mean": 0.26999029517173767,
+      "normalized_entropy_mean": 0.1298378866441378,
+      "effective_paths_mean": 1.4996927976608276,
+      "effective_paths_median": 1.0496392250061035
+    },
+    "actual_high_demand_weighted": {
+      "pmax_mean": 0.8426960661201875,
+      "pmax_median": 0.9673493504524231,
+      "pmax_ge_0p9_fraction": 0.6358580140086564,
+      "entropy_mean": 0.4341070462878661,
+      "normalized_entropy_mean": 0.20876136096482006,
+      "effective_paths_mean": 1.824363773838592,
+      "effective_paths_median": 1.1894336938858032
+    }
+  },
+  "audits": {
+    "la_actual_tm_counterfactual_max_abs_policy_diff": 3.635883331298828e-06,
+    "la_max_od_probability_sum_error": 2.384185791015625e-07,
+    "dote_max_od_probability_sum_error": 2.384185791015625e-07,
+    "actual_high_demand_sum": 5124.900390625
+  },
+  "artifacts": {
+    "script": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\analysis\\analyze_la_e52_vs_dotemc_high.py",
+    "la_checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\artifacts\\level4_confirmation\\seed_490\\epoch_checkpoints\\epoch_052.pt",
+    "la_checkpoint_sha256": "1e66c77783bbedb5392e487da4dfcc7347b10bcb465c688b101b22d3e551f8df",
+    "dote_checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\results_load2x_retrain_shared_strict\\outputs\\shared\\w_1_0p1_0p01\\best_model.pt",
+    "dote_checkpoint_sha256": "7055147581ad30c29de6dc9872585cf40f5b9cccea126cf75745c723ef82e1e0"
+  }
+}

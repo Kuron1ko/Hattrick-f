@@ -1,0 +1,96 @@
+{
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_order_epsilon\\artifacts\\phase_a\\level3_validation_only\\seed_490\\best_model.pt",
+  "input_contract": "ESM-predicted TMs and frozen Hattrick policies only",
+  "train_range": [
+    0,
+    350
+  ],
+  "validation_range": [
+    350,
+    400
+  ],
+  "edge_count": 72,
+  "state_dimension": 144,
+  "utilization_quantization": [
+    {
+      "clusters": 2,
+      "train_rmse": 0.06784813851118088,
+      "validation_rmse": 0.07812142372131348,
+      "validation_used_clusters": 1,
+      "validation_min_occupancy": 50,
+      "validation_max_occupancy": 50
+    },
+    {
+      "clusters": 4,
+      "train_rmse": 0.053575001657009125,
+      "validation_rmse": 0.06703915446996689,
+      "validation_used_clusters": 2,
+      "validation_min_occupancy": 16,
+      "validation_max_occupancy": 34
+    },
+    {
+      "clusters": 8,
+      "train_rmse": 0.0444633774459362,
+      "validation_rmse": 0.06234637275338173,
+      "validation_used_clusters": 3,
+      "validation_min_occupancy": 5,
+      "validation_max_occupancy": 34
+    },
+    {
+      "clusters": 16,
+      "train_rmse": 0.033777084201574326,
+      "validation_rmse": 0.06076887995004654,
+      "validation_used_clusters": 5,
+      "validation_min_occupancy": 2,
+      "validation_max_occupancy": 15
+    },
+    {
+      "clusters": 24,
+      "train_rmse": 0.028982706367969513,
+      "validation_rmse": 0.05867450311779976,
+      "validation_used_clusters": 5,
+      "validation_min_occupancy": 2,
+      "validation_max_occupancy": 16
+    },
+    {
+      "clusters": 32,
+      "train_rmse": 0.025812862440943718,
+      "validation_rmse": 0.05886529013514519,
+      "validation_used_clusters": 4,
+      "validation_min_occupancy": 6,
+      "validation_max_occupancy": 20
+    }
+  ],
+  "top_edge_signatures": {
+    "1": {
+      "train_unique": 7,
+      "validation_unique": 7,
+      "validation_seen_in_train_fraction": 0.96,
+      "largest_validation_signature_count": 23
+    },
+    "2": {
+      "train_unique": 17,
+      "validation_unique": 13,
+      "validation_seen_in_train_fraction": 0.82,
+      "largest_validation_signature_count": 18
+    },
+    "3": {
+      "train_unique": 25,
+      "validation_unique": 16,
+      "validation_seen_in_train_fraction": 0.78,
+      "largest_validation_signature_count": 13
+    },
+    "4": {
+      "train_unique": 28,
+      "validation_unique": 19,
+      "validation_seen_in_train_fraction": 0.7,
+      "largest_validation_signature_count": 15
+    },
+    "6": {
+      "train_unique": 21,
+      "validation_unique": 7,
+      "validation_seen_in_train_fraction": 0.84,
+      "largest_validation_signature_count": 18
+    }
+  }
+}

@@ -1,0 +1,748 @@
+{
+  "benchmark": "strict-ESM steady-state policy forward",
+  "window_prefix": [
+    400,
+    420
+  ],
+  "batch_sizes": [
+    1,
+    16,
+    20
+  ],
+  "actual_traffic_matrices_zeroed": true,
+  "topology_cache": "first materialization excluded; steady-state cache reused",
+  "timing": "CUDA Events with synchronize before each timed forward",
+  "device": "cuda",
+  "torch_version": "2.5.1+cu124",
+  "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "results": [
+    {
+      "model": "native-hattrick",
+      "constructor_source": "runtime.Hattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_adapter\\run_experiment.py",
+      "runner_sha256": "02e2183670e336e0c67258e8c9ff10ca66b67b1529b40b5b7f845e067ff7a3fb",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\final_model.pt",
+        "sha256": "394e0fe592491f70836b92a9a17543ea53d3fe1fbfc5b3f156bef0e4c3a78622",
+        "epoch": 60
+      },
+      "parameters": {
+        "total_parameters": 20105,
+        "trainable_parameters": 20105,
+        "parameter_bytes": 80420,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {},
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 284.43466796875,
+            "median": 289.2635803222656,
+            "p10": 255.33951416015626,
+            "p90": 314.3185607910156,
+            "p95": 321.5072875976562,
+            "min": 253.77484130859375,
+            "max": 328.6960144042969
+          },
+          "throughput_snapshots_per_second": 3.515745837669363,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 39539712,
+            "reserved_before_timing": 69206016,
+            "peak_allocated": 47450112,
+            "peak_reserved": 69206016,
+            "incremental_peak_allocated": 7910400,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.200278808635713e-12,
+              "max": 0.9999955892562866,
+              "max_probability_sum_error": 1.7881393432617188e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.5828863827310746e-14,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 4.384144523111866e-12,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 617.7169555664062,
+            "median": 649.7146606445312,
+            "p10": 536.2736083984375,
+            "p90": 684.4885009765625,
+            "p95": 687.8304321289063,
+            "min": 534.89794921875,
+            "max": 691.17236328125
+          },
+          "throughput_snapshots_per_second": 25.901830694171316,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40204800,
+            "reserved_before_timing": 190840832,
+            "peak_allocated": 151620096,
+            "peak_reserved": 190840832,
+            "incremental_peak_allocated": 111415296,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 6.521759044267328e-13,
+              "max": 0.9999966621398926,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 3.1688538054561394e-15,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.299854646662213e-12,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 758.5321655273438,
+            "median": 768.3453979492188,
+            "p10": 685.1420166015625,
+            "p90": 835.7378173828125,
+            "p95": 854.0401733398437,
+            "min": 683.42578125,
+            "max": 872.342529296875
+          },
+          "throughput_snapshots_per_second": 26.36671311900884,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40382976,
+            "reserved_before_timing": 226492416,
+            "peak_allocated": 180868608,
+            "peak_reserved": 226492416,
+            "incremental_peak_allocated": 140485632,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 6.521746033841258e-13,
+              "max": 0.9999967813491821,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 3.1688538054561394e-15,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.299854646662213e-12,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    },
+    {
+      "model": "hattrick-la-e52",
+      "constructor_source": "MediumPressureHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\run_experiment.py",
+      "runner_sha256": "5ee4f7cfede0471ddb6cd1a2826fcb120ee89a73c7734c97b0f69290c9973be0",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\artifacts\\level4_confirmation\\seed_490\\epoch_checkpoints\\epoch_052.pt",
+        "sha256": "1e66c77783bbedb5392e487da4dfcc7347b10bcb465c688b101b22d3e551f8df",
+        "epoch": 52
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 368.0538269042969,
+            "median": 372.0732421875,
+            "p10": 352.6807556152344,
+            "p90": 381.58380126953125,
+            "p95": 382.7110290527344,
+            "min": 351.0927429199219,
+            "max": 383.8382568359375
+          },
+          "throughput_snapshots_per_second": 2.7169938930156126,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 39546368,
+            "reserved_before_timing": 69206016,
+            "peak_allocated": 47486464,
+            "peak_reserved": 69206016,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 6.868100160725135e-15,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.095469087112526e-15,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 3.2636653796158654e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 1.7881393432617188e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 573.5468872070312,
+            "median": 529.6210327148438,
+            "p10": 488.2723876953125,
+            "p90": 684.243603515625,
+            "p95": 701.1771606445312,
+            "min": 468.242431640625,
+            "max": 718.1107177734375
+          },
+          "throughput_snapshots_per_second": 27.896585888407998,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40211456,
+            "reserved_before_timing": 190840832,
+            "peak_allocated": 152099840,
+            "peak_reserved": 190840832,
+            "incremental_peak_allocated": 111888384,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 3.3627561642251202e-15,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.36550829936466e-16,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.2402561345558477e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 788.8793579101563,
+            "median": 803.0924682617188,
+            "p10": 756.0183837890625,
+            "p90": 810.26416015625,
+            "p95": 811.3416137695312,
+            "min": 736.385009765625,
+            "max": 812.4190673828125
+          },
+          "throughput_snapshots_per_second": 25.352418971872446,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 40389632,
+            "reserved_before_timing": 226492416,
+            "peak_allocated": 181466624,
+            "peak_reserved": 226492416,
+            "incremental_peak_allocated": 141076992,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 3.3627561642251202e-15,
+              "max": 0.9999996423721313,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.36550829936466e-16,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.240253559575688e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    },
+    {
+      "model": "medium-irreplaceability",
+      "constructor_source": "SparsePathCrossAttentionHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\run_experiment.py",
+      "runner_sha256": "3b40dff9801bc71e6606888d8a690adbe2e695b52fd1a4710f6bb97b71b19f56",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\artifacts\\level2_proxy\\seed_490\\final_model.pt",
+        "sha256": "7370c6e194dc640726a7660b54e8031beb427c693089c0471f148a402eaecf08",
+        "epoch": 12
+      },
+      "parameters": {
+        "total_parameters": 24142,
+        "trainable_parameters": 24142,
+        "parameter_bytes": 96568,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "medium_pressure_feature_count": 18,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 261.72559509277346,
+            "median": 257.0004577636719,
+            "p10": 243.91864318847655,
+            "p90": 281.81647338867185,
+            "p95": 285.45863647460936,
+            "min": 236.3197479248047,
+            "max": 289.1007995605469
+          },
+          "throughput_snapshots_per_second": 3.8207955918317107,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 45170688,
+            "reserved_before_timing": 109051904,
+            "peak_allocated": 80420352,
+            "peak_reserved": 109051904,
+            "incremental_peak_allocated": 35249664,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.8195526081399294e-06,
+              "max": 0.9994575381278992,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 5.409178243098722e-07,
+              "max": 0.999981164932251,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 2.627701389812387e-09,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 16,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 597.2592651367188,
+            "median": 590.5172729492188,
+            "p10": 547.4545532226563,
+            "p90": 650.03212890625,
+            "p95": 658.3848999023437,
+            "min": 529.1376342773438,
+            "max": 666.7376708984375
+          },
+          "throughput_snapshots_per_second": 26.78903607520837,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 66030592,
+            "reserved_before_timing": 876609536,
+            "peak_allocated": 629184512,
+            "peak_reserved": 876609536,
+            "incremental_peak_allocated": 563153920,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 9.180322422253084e-07,
+              "max": 0.9994847178459167,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.41979413115223e-07,
+              "max": 0.9999849796295166,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                16,
+                3696,
+                1
+              ],
+              "min": 1.0124877602990523e-09,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 7392.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        },
+        {
+          "batch_size": 20,
+          "warmup_iterations": 2,
+          "timed_iterations": 5,
+          "latency_ms": {
+            "mean": 785.5612548828125,
+            "median": 803.4949340820312,
+            "p10": 754.247021484375,
+            "p90": 805.0993286132813,
+            "p95": 805.1009643554687,
+            "min": 743.0064697265625,
+            "max": 805.1026000976562
+          },
+          "throughput_snapshots_per_second": 25.45950411337883,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 71294464,
+            "reserved_before_timing": 1484783616,
+            "peak_allocated": 773364224,
+            "peak_reserved": 1484783616,
+            "incremental_peak_allocated": 702069760,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 9.180322422253084e-07,
+              "max": 0.9994847178459167,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.4197927100667584e-07,
+              "max": 0.9999849796295166,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                20,
+                3696,
+                1
+              ],
+              "min": 1.0124896476781942e-09,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 9240.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    }
+  ],
+  "virtual_dual_status": "not supplied; pass --virtual-runner",
+  "medium_irreplaceability_status": "included"
+}

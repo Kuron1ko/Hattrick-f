@@ -1,0 +1,55 @@
+{
+  "name": "sparse-path-cross-attention Level-4 validation-only Pareto/maximin selector",
+  "target_epoch": 60,
+  "allowed_candidate_window": [350, 400],
+  "forbidden_test_window": [400, 500],
+  "hard_gates": {
+    "high_norm_mean_min": 0.995,
+    "max_post_admission_mlu_max": 1.000001,
+    "max_disabled_flow_max": 1e-08
+  },
+  "preferred_low_no_significant_decline": {
+    "mean_delta_min": -0.005,
+    "two_sided_confidence": 0.95,
+    "two_sided_ci_upper_min": 0.0,
+    "gate": "paired Low mean delta >= -0.005 and two-sided 95% CI upper bound >= 0; this is the first-choice tier"
+  },
+  "fallback_low_noninferiority": {
+    "margin": 0.01,
+    "one_sided_confidence": 0.95,
+    "gate": "used only when the first-choice Low tier is empty; paired mean delta >= -0.01 and one-sided 95% lower confidence bound >= -0.01"
+  },
+  "preferred_high_tail_gates": {
+    "high_norm_p1_min": 0.985,
+    "high_norm_p10_min": 0.99,
+    "fallback_if_empty": "retain all candidates in the active Low tier; never relax High mean, capacity, disabled-flow, or the active Low tier"
+  },
+  "low_baseline": {
+    "method": "native six-objective Hattrick",
+    "seed": 490,
+    "validation_epoch": 60,
+    "metrics_file": "../../shared2x_full_objectives/artifacts/level4_confirmation/seed_490/validation_epoch_060_metrics.csv",
+    "comparison": "paired by validation snapshot using Low NormFulFill",
+    "primary_gate": "mean delta >= -0.005 and two-sided 95% CI upper bound >= 0",
+    "fallback_gate": "only if the primary tier is empty: mean delta and one-sided 95% lower confidence bound must both be >= -0.01"
+  },
+  "selection": {
+    "coordinates": [
+      "medium_norm_mean",
+      "medium_norm_p1",
+      "medium_norm_p10"
+    ],
+    "pareto": "remove every candidate weakly dominated on all three Medium coordinates",
+    "maximin": "maximize min(metric / best eligible metric) on the Pareto front",
+    "tie_break": [
+      "mean of the three normalized Medium coordinates",
+      "medium_norm_mean",
+      "medium_norm_p1",
+      "medium_norm_p10",
+      "minimum of High P1 and P10",
+      "earlier epoch"
+    ]
+  },
+  "checkpoint_requirement": "an immutable archived checkpoint whose embedded epoch matches train_history and validation files",
+  "test_data_policy": "the watcher never opens evaluation/test metrics, summaries, datasets, or snapshots 400-499"
+}

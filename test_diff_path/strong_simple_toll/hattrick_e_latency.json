@@ -1,0 +1,54 @@
+{
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "snapshot": 400,
+  "hattrick_e": {
+    "strict_raw_esm": true,
+    "kl_anchor_weight": 0.0,
+    "adam_steps": 40
+  },
+  "loads": {
+    "1": {
+      "hattrick_forward": {
+        "warmups": 5,
+        "repetitions": 30,
+        "mean_ms": 66.9337299996793
+      },
+      "hattrick_e_refinement": {
+        "warmups": 1,
+        "repetitions": 5,
+        "mean_ms": 763.0076799978269
+      },
+      "end_to_end_mean_ms": 829.9414099975062,
+      "slowdown_vs_hattrick": 12.39944957499728
+    },
+    "2": {
+      "hattrick_forward": {
+        "warmups": 5,
+        "repetitions": 30,
+        "mean_ms": 65.41153666670046
+      },
+      "hattrick_e_refinement": {
+        "warmups": 1,
+        "repetitions": 5,
+        "mean_ms": 702.8310800000327
+      },
+      "end_to_end_mean_ms": 768.2426166667332,
+      "slowdown_vs_hattrick": 11.74475720668749
+    },
+    "3": {
+      "hattrick_forward": {
+        "warmups": 5,
+        "repetitions": 30,
+        "mean_ms": 61.160003333740555
+      },
+      "hattrick_e_refinement": {
+        "warmups": 1,
+        "repetitions": 5,
+        "mean_ms": 676.8234599992866
+      },
+      "end_to_end_mean_ms": 737.9834633330271,
+      "slowdown_vs_hattrick": 12.066439226727425
+    }
+  }
+}

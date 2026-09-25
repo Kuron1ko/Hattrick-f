@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-08-20T16:54:48.3856635+08:00",
+  "status": "exploratory confirmation; the unguarded final-window aggregate was already known",
+  "scenario": "GEANT shared paths, 2x load, K=8, restored Fh/Fhm checkpoint",
+  "selection_window": [350, 366],
+  "independent_validation_holdout": [366, 400],
+  "large_evaluation": [400, 500],
+  "method": "frozen High plus joint predicted Medium/Low Pareto LP with 1.10x predicted Low floor; fall back to the complete baseline lower-class policy unless both predicted Medium and predicted Low weakly dominate baseline",
+  "low_floor_factor": 1.1,
+  "predicted_dominance_guard": true,
+  "validation_observations": {
+    "selection_350_365": {
+      "high_mean": 0.9999262451252375,
+      "medium_mean_gap": 0.0042889650795598505,
+      "medium_p1_gap": 0.011579216566070971,
+      "medium_p10_gap": 0.011408448309094155,
+      "low_mean_gap": 0.0006969936316943495
+    },
+    "holdout_366_399": {
+      "high_mean": 0.9996447776841083,
+      "medium_mean_gap": 0.008454712012919781,
+      "medium_p1_gap": -0.004343563230969849,
+      "medium_p10_gap": 0.004877420521641307,
+      "low_mean_gap": -0.000677752253290678
+    }
+  },
+  "large_evaluation_reporting": {
+    "high_norm_fulfill_mean_min": 0.995,
+    "low_no_material_decline_mean_gap_min": -0.005,
+    "low_paired_mean_gap_bootstrap_95pct_lower_min": -0.01,
+    "report_medium_mean_p1_p10_even_if_mixed": true,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260820,
+    "no_post_large_evaluation_tuning": true
+  },
+  "prior_final_window_disclosure": {
+    "known_before_this_freeze": true,
+    "known_unguarded_high_mean": 0.9985365072524154,
+    "known_unguarded_medium_mean_gap": 0.0034006107520064,
+    "known_unguarded_low_mean_gap": -0.02646997216547101
+  },
+  "sha256": {
+    "run_experiment.py": "20d334c6cf9ac4f59bc933bab33b49b1ae651540237386e751e1cf0c248d9415",
+    "repair.py": "4a3a30928ef7feab3d7326d4569d5356ee9df5b6170e9e3edac013d3a55545da",
+    "frameworks/hattrick_system.py": "4d1e371746e16c0a049ab85b68c6492dafd8c4a494d01ab7dd777bb4823578ba",
+    "best_model.pt": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab"
+  }
+}

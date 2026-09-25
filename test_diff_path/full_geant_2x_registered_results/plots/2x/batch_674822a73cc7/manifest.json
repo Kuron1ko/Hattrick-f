@@ -1,0 +1,50 @@
+{
+  "dataset": "2x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 32
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 55
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 32
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 32,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f3\\artifacts\\seed_490\\checkpoints\\epoch_032.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_032_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_032_summary.json",
+        "cache_reused": false,
+        "cache_source": null
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 55,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_055.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_055_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_055_summary.json",
+        "cache_reused": false,
+        "cache_source": null
+      },
+      "name": "Hattrick-55_Hattrick-f3-32",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\2x\\batch_674822a73cc7\\Hattrick-55_Hattrick-f3-32.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

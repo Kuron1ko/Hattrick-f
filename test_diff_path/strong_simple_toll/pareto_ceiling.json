@@ -1,0 +1,606 @@
+{
+  "purpose": "fixed-High Pareto feasibility diagnostic",
+  "actual_branch_deployable": false,
+  "loads": {
+    "2": {
+      "baseline": {
+        "High": {
+          "norm_fulfill_mean": 0.998536502122879,
+          "norm_fulfill_p1": 0.9882580143213272,
+          "norm_fulfill_p10": 0.9963001787662507
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9343662273883819,
+          "norm_fulfill_p1": 0.8901875579357147,
+          "norm_fulfill_p10": 0.8966957986354828
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1472881758213043,
+          "norm_fulfill_p1": 0.9548773527145386,
+          "norm_fulfill_p10": 0.9992088854312897
+        }
+      },
+      "trials": [
+        {
+          "weight": 0.05,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9739201819896698,
+              "norm_fulfill_p1": 0.9430604618787766,
+              "norm_fulfill_p10": 0.9473396956920623
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0920068508386611,
+              "norm_fulfill_p1": 0.9733916115760803,
+              "norm_fulfill_p10": 0.9974070370197297
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.039553954601287855,
+            "Medium.norm_fulfill_p1": 0.05287290394306188,
+            "Medium.norm_fulfill_p10": 0.05064389705657957,
+            "Low.norm_fulfill_mean": -0.055281324982643154,
+            "Low.norm_fulfill_p1": 0.018514258861541788,
+            "Low.norm_fulfill_p10": -0.0018018484115600586
+          }
+        },
+        {
+          "weight": 0.1,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9732676166296005,
+              "norm_fulfill_p1": 0.9410732191801071,
+              "norm_fulfill_p10": 0.945629769563675
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.0988012599945067,
+              "norm_fulfill_p1": 0.9737767970561981,
+              "norm_fulfill_p10": 0.9976465225219726
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.038901389241218554,
+            "Medium.norm_fulfill_p1": 0.05088566124439242,
+            "Medium.norm_fulfill_p10": 0.04893397092819218,
+            "Low.norm_fulfill_mean": -0.04848691582679754,
+            "Low.norm_fulfill_p1": 0.018899444341659577,
+            "Low.norm_fulfill_p10": -0.0015623629093171054
+          }
+        },
+        {
+          "weight": 0.15,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9721592926979065,
+              "norm_fulfill_p1": 0.9372443294525147,
+              "norm_fulfill_p10": 0.94314945936203
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1078654259443284,
+              "norm_fulfill_p1": 0.9742816185951233,
+              "norm_fulfill_p10": 0.9997578620910644
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03779306530952453,
+            "Medium.norm_fulfill_p1": 0.04705677151679999,
+            "Medium.norm_fulfill_p10": 0.04645366072654722,
+            "Low.norm_fulfill_mean": -0.039422749876975915,
+            "Low.norm_fulfill_p1": 0.019404265880584748,
+            "Low.norm_fulfill_p10": 0.0005489766597747137
+          }
+        },
+        {
+          "weight": 0.2,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365027189255,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9698453551530838,
+              "norm_fulfill_p1": 0.9316433906555176,
+              "norm_fulfill_p10": 0.9382256329059601
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1246056616306306,
+              "norm_fulfill_p1": 0.9840555894374847,
+              "norm_fulfill_p10": 1.0005076229572296
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03547912776470186,
+            "Medium.norm_fulfill_p1": 0.04145583271980291,
+            "Medium.norm_fulfill_p10": 0.041529834270477295,
+            "Low.norm_fulfill_mean": -0.022682514190673686,
+            "Low.norm_fulfill_p1": 0.02917823672294617,
+            "Low.norm_fulfill_p10": 0.001298737525939897
+          }
+        },
+        {
+          "weight": 0.24,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.998536502122879,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9631972181797027,
+              "norm_fulfill_p1": 0.9149150758981704,
+              "norm_fulfill_p10": 0.9268048882484436
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1647436851263047,
+              "norm_fulfill_p1": 0.9866870409250259,
+              "norm_fulfill_p10": 1.0130412578582764
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.028830990791320787,
+            "Medium.norm_fulfill_p1": 0.02472751796245576,
+            "Medium.norm_fulfill_p10": 0.030109089612960882,
+            "Low.norm_fulfill_mean": 0.017455509305000394,
+            "Low.norm_fulfill_p1": 0.03180968821048735,
+            "Low.norm_fulfill_p10": 0.01383237242698665
+          }
+        },
+        {
+          "weight": 0.3,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9441370528936386,
+              "norm_fulfill_p1": 0.8893825113773346,
+              "norm_fulfill_p10": 0.9019571840763092
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2719438695907592,
+              "norm_fulfill_p1": 0.9991763198375702,
+              "norm_fulfill_p10": 1.0897355556488038
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.009770825505256653,
+            "Medium.norm_fulfill_p1": -0.0008050465583800959,
+            "Medium.norm_fulfill_p10": 0.005261385440826438,
+            "Low.norm_fulfill_mean": 0.12465569376945496,
+            "Low.norm_fulfill_p1": 0.04429896712303161,
+            "Low.norm_fulfill_p10": 0.09052667021751404
+          }
+        },
+        {
+          "weight": 0.4,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.932053833603859,
+              "norm_fulfill_p1": 0.8648803520202637,
+              "norm_fulfill_p10": 0.8822302341461181
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.3320703220367431,
+              "norm_fulfill_p1": 0.9979024767875672,
+              "norm_fulfill_p10": 1.1090606331825257
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.0023123937845229703,
+            "Medium.norm_fulfill_p1": -0.025307205915450992,
+            "Medium.norm_fulfill_p10": -0.014465564489364646,
+            "Low.norm_fulfill_mean": 0.18478214621543887,
+            "Low.norm_fulfill_p1": 0.04302512407302861,
+            "Low.norm_fulfill_p10": 0.10985174775123596
+          }
+        },
+        {
+          "weight": 0.6,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365027189255,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9245360589027405,
+              "norm_fulfill_p1": 0.8458147484064102,
+              "norm_fulfill_p10": 0.8692915678024292
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.3542624819278717,
+              "norm_fulfill_p1": 1.0000916254520416,
+              "norm_fulfill_p10": 1.114563250541687
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.009830168485641444,
+            "Medium.norm_fulfill_p1": -0.04437280952930445,
+            "Medium.norm_fulfill_p10": -0.027404230833053544,
+            "Low.norm_fulfill_mean": 0.20697430610656742,
+            "Low.norm_fulfill_p1": 0.045214272737503,
+            "Low.norm_fulfill_p10": 0.1153543651103972
+          }
+        },
+        {
+          "weight": 1.0,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9985365015268326,
+              "norm_fulfill_p1": 0.9882580143213272,
+              "norm_fulfill_p10": 0.9963001787662507
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9165302592515946,
+              "norm_fulfill_p1": 0.8325842660665512,
+              "norm_fulfill_p10": 0.8496857345104217
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.3672437566518783,
+              "norm_fulfill_p1": 1.002910117506981,
+              "norm_fulfill_p10": 1.11926372051239
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.01783596813678734,
+            "Medium.norm_fulfill_p1": -0.057603291869163464,
+            "Medium.norm_fulfill_p10": -0.047010064125061035,
+            "Low.norm_fulfill_mean": 0.21995558083057398,
+            "Low.norm_fulfill_p1": 0.04803276479244245,
+            "Low.norm_fulfill_p10": 0.12005483508110038
+          }
+        }
+      ]
+    },
+    "3": {
+      "baseline": {
+        "High": {
+          "norm_fulfill_mean": 0.9490668958425522,
+          "norm_fulfill_p1": 0.8994986683130264,
+          "norm_fulfill_p10": 0.9126088798046113
+        },
+        "Medium": {
+          "norm_fulfill_mean": 1.023953809738159,
+          "norm_fulfill_p1": 0.9414205116033554,
+          "norm_fulfill_p10": 0.9599076867103576
+        },
+        "Low": {
+          "norm_fulfill_mean": 1.1987055003643037,
+          "norm_fulfill_p1": 1.04708101272583,
+          "norm_fulfill_p10": 1.1180705666542052
+        }
+      },
+      "trials": [
+        {
+          "weight": 0.05,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668940544128,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0604734414815902,
+              "norm_fulfill_p1": 0.9623783302307128,
+              "norm_fulfill_p10": 0.9807005167007447
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1292844355106353,
+              "norm_fulfill_p1": 0.9683441579341888,
+              "norm_fulfill_p10": 1.0379306197166442
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -1.7881394143159923e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03651963174343109,
+            "Medium.norm_fulfill_p1": 0.02095781862735746,
+            "Medium.norm_fulfill_p10": 0.020792829990387007,
+            "Low.norm_fulfill_mean": -0.06942106485366839,
+            "Low.norm_fulfill_p1": -0.07873685479164128,
+            "Low.norm_fulfill_p10": -0.08013994693756099
+          }
+        },
+        {
+          "weight": 0.1,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668958425522,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0601837754249572,
+              "norm_fulfill_p1": 0.9623489445447921,
+              "norm_fulfill_p10": 0.9802999317646026
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1334556102752686,
+              "norm_fulfill_p1": 0.9708279556035996,
+              "norm_fulfill_p10": 1.0434762835502625
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03622996568679815,
+            "Medium.norm_fulfill_p1": 0.02092843294143676,
+            "Medium.norm_fulfill_p10": 0.020392245054244973,
+            "Low.norm_fulfill_mean": -0.06524989008903503,
+            "Low.norm_fulfill_p1": -0.07625305712223052,
+            "Low.norm_fulfill_p10": -0.07459428310394278
+          }
+        },
+        {
+          "weight": 0.15,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668964385987,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0595431298017501,
+              "norm_fulfill_p1": 0.9622647857666016,
+              "norm_fulfill_p10": 0.9802795290946961
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.139138826727867,
+              "norm_fulfill_p1": 0.9790852677822113,
+              "norm_fulfill_p10": 1.061018717288971
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 5.9604643443123e-10,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03558932006359106,
+            "Medium.norm_fulfill_p1": 0.02084427416324619,
+            "Medium.norm_fulfill_p10": 0.020371842384338423,
+            "Low.norm_fulfill_mean": -0.05956667363643664,
+            "Low.norm_fulfill_p1": -0.06799574494361882,
+            "Low.norm_fulfill_p10": -0.05705184936523433
+          }
+        },
+        {
+          "weight": 0.2,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668958425522,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0572777158021927,
+              "norm_fulfill_p1": 0.9619786739349365,
+              "norm_fulfill_p10": 0.9791367471218109
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.1542137962579728,
+              "norm_fulfill_p1": 1.0228691178560256,
+              "norm_fulfill_p10": 1.0823740243911744
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.03332390606403357,
+            "Medium.norm_fulfill_p1": 0.020558162331581142,
+            "Medium.norm_fulfill_p10": 0.019229060411453225,
+            "Low.norm_fulfill_mean": -0.044491704106330854,
+            "Low.norm_fulfill_p1": -0.024211894869804462,
+            "Low.norm_fulfill_p10": -0.03569654226303087
+          }
+        },
+        {
+          "weight": 0.24,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668958425522,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0451811665296555,
+              "norm_fulfill_p1": 0.9532278102636337,
+              "norm_fulfill_p10": 0.9729003846645355
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.2214540719985962,
+              "norm_fulfill_p1": 1.092192429304123,
+              "norm_fulfill_p10": 1.1366029858589173
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": 0.021227356791496454,
+            "Medium.norm_fulfill_p1": 0.011807298660278298,
+            "Medium.norm_fulfill_p10": 0.0129926979541779,
+            "Low.norm_fulfill_mean": 0.022748571634292558,
+            "Low.norm_fulfill_p1": 0.04511141657829287,
+            "Low.norm_fulfill_p10": 0.018532419204712047
+          }
+        },
+        {
+          "weight": 0.3,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668958425522,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0197274494171142,
+              "norm_fulfill_p1": 0.927871419787407,
+              "norm_fulfill_p10": 0.9549185454845428
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.352652258872986,
+              "norm_fulfill_p1": 1.1764987134933471,
+              "norm_fulfill_p10": 1.2277145624160766
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": 0.0,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.004226360321044842,
+            "Medium.norm_fulfill_p1": -0.013549091815948433,
+            "Medium.norm_fulfill_p10": -0.0049891412258148415,
+            "Low.norm_fulfill_mean": 0.15394675850868222,
+            "Low.norm_fulfill_p1": 0.12941770076751702,
+            "Low.norm_fulfill_p10": 0.10964399576187134
+          }
+        },
+        {
+          "weight": 0.4,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668934583664,
+              "norm_fulfill_p1": 0.8994986671209335,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 1.0062039613723754,
+              "norm_fulfill_p1": 0.916106566786766,
+              "norm_fulfill_p10": 0.9385317325592041
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.4134559619426728,
+              "norm_fulfill_p1": 1.2376397597789763,
+              "norm_fulfill_p10": 1.274207389354706
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -2.3841858487472223e-09,
+            "High.norm_fulfill_p1": -1.19209286886246e-09,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.017749848365783638,
+            "Medium.norm_fulfill_p1": -0.02531394481658933,
+            "Medium.norm_fulfill_p10": -0.021375954151153564,
+            "Low.norm_fulfill_mean": 0.21475046157836908,
+            "Low.norm_fulfill_p1": 0.19055874705314624,
+            "Low.norm_fulfill_p10": 0.15613682270050067
+          }
+        },
+        {
+          "weight": 0.6,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668940544128,
+              "norm_fulfill_p1": 0.8994986683130264,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9986312866210938,
+              "norm_fulfill_p1": 0.9098360556364059,
+              "norm_fulfill_p10": 0.9339171171188354
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.4382599997520447,
+              "norm_fulfill_p1": 1.2645601892471314,
+              "norm_fulfill_p10": 1.2950910329818726
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -1.7881394143159923e-09,
+            "High.norm_fulfill_p1": 0.0,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.025322523117065288,
+            "Medium.norm_fulfill_p1": -0.031584455966949476,
+            "Medium.norm_fulfill_p10": -0.02599056959152224,
+            "Low.norm_fulfill_mean": 0.23955449938774098,
+            "Low.norm_fulfill_p1": 0.21747917652130133,
+            "Low.norm_fulfill_p10": 0.17702046632766733
+          }
+        },
+        {
+          "weight": 1.0,
+          "summary": {
+            "High": {
+              "norm_fulfill_mean": 0.9490668922662735,
+              "norm_fulfill_p1": 0.8994986671209335,
+              "norm_fulfill_p10": 0.9126088798046113
+            },
+            "Medium": {
+              "norm_fulfill_mean": 0.9930530703067779,
+              "norm_fulfill_p1": 0.9044719344377518,
+              "norm_fulfill_p10": 0.9291064143180847
+            },
+            "Low": {
+              "norm_fulfill_mean": 1.4499102604389191,
+              "norm_fulfill_p1": 1.2770777869224548,
+              "norm_fulfill_p10": 1.3144887328147887
+            }
+          },
+          "delta": {
+            "High.norm_fulfill_mean": -3.576278717609682e-09,
+            "High.norm_fulfill_p1": -1.19209286886246e-09,
+            "High.norm_fulfill_p10": 0.0,
+            "Medium.norm_fulfill_mean": -0.030900739431381163,
+            "Medium.norm_fulfill_p1": -0.036948577165603624,
+            "Medium.norm_fulfill_p10": -0.030801272392272927,
+            "Low.norm_fulfill_mean": 0.25120476007461545,
+            "Low.norm_fulfill_p1": 0.22999677419662468,
+            "Low.norm_fulfill_p10": 0.1964181661605835
+          }
+        }
+      ]
+    }
+  }
+}

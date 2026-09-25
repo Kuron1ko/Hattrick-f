@@ -1,0 +1,10 @@
+{
+  "pid": 7884,
+  "started_at_utc": "2026-08-24T11:33:47.574428+00:00",
+  "mode": "watch",
+  "target_epoch": 60,
+  "source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\artifacts\\level4_confirmation\\seed_490",
+  "test_data_read": false,
+  "finished_at_utc": "2026-08-24T11:52:42.441439+00:00",
+  "frozen": true
+}

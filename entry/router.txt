@@ -1,0 +1,131 @@
+Hattrick entry 工作区命令备忘录
+================================
+
+0. 每次新开 PowerShell
+----------------------
+
+Set-Location 'D:\kuroresearch\Hattrick-main\entry'
+$py = 'D:\kuroresearch\.venv-hattrick\Scripts\python.exe'
+Test-Path -LiteralPath $py
+
+
+1. 查看
+-----------------
+
+& $py .\list.py --dataset 1x --method Hattrick-f3 --seed 490
+& $py .\list.py --dataset 2x --method Hattrick --seed 490
+& $py .\list.py --dataset 3x --method Hattrick-f3 --seed 490
+
+
+
+2. 选择
+-----------------------
+
+& $py .\select.py --dataset 2x --method Hattrick-f3 --seed 490
+
+规则 .\selection_rules.json
+
+
+3. 训练
+---------------------
+
+同一条 train.py 命令同时处理初次训练和续训：
+- 没有可恢复状态时，从 epoch 1 开始；
+- 有 resume_state.pt/final_model.pt 和优化器状态时，自动从下一 epoch 恢复；
+- --epochs 是“训练到的总 epoch”，不是额外增加的 epoch 数；
+- 每个 epoch 独立保存在 model/<dataset>/<method>/seed_<seed>/checkpoints；
+- 续训时除 --epochs 外的超参数必须与原运行一致；
+- 先加 --dry-run 可以只检查将从哪里开始，不进行训练。
+
+查看训练计划：
+& $py .\train.py --dataset 2x --method Hattrick-f3 --seed 490 --epochs 60 --anneal-epochs 12 --top-k 5 --batch-size 8 --learning-rate 0.0005 --low-budget 0.03 --device cuda --dry-run
+
+训练/继续训练 Hattrick：
+& $py .\train.py --dataset 3x --method Hattrick --seed 490 --epochs 80 --top-k 5 --batch-size 8 --learning-rate 0.0005 --device cuda
+
+训练/继续训练 Hattrick-f3：
+& $py .\train.py --dataset 3x --method Hattrick-f3 --seed 490 --epochs 60 --anneal-epochs 12 --top-k 5 --batch-size 8 --learning-rate 0.0005 --low-budget 0.03 --device cuda
+
+新 seed 的完整训练 ：
+& $py .\train.py --dataset 1x --method Hattrick --seed 491 --epochs 40 --top-k 5 --batch-size 8 --learning-rate 0.0005 --device cuda
+& $py .\train.py --dataset 1x --method Hattrick-f3 --seed 491 --epochs 40 --anneal-epochs 12 --top-k 5 --batch-size 8 --learning-rate 0.0005 --low-budget 0.03 --device cuda
+
+Hattrick-f3 初次训练会自动选择同 dataset、同 seed 的 Hattrick 作为 Phase A；
+也可显式固定：--phase-a-epoch 22。导入的 1x Hattrick-49 只有推理权重、没有
+优化器状态，因此不能以 seed 490 继续 Hattrick；如需从头训练请使用新 seed。
+
+
+4.推理
+----------------
+
+& $py .\infer.py --dataset 1x --method Hattrick-f3 --epoch 4 --seed 490 --device cuda
+& $py .\infer.py --dataset 2x --method Hattrick --epoch 56 --seed 490 --device cuda
+& $py .\infer.py --dataset 3x --method Hattrick-f3 --epoch 34 --seed 490 --device cuda
+
+存在且模型 SHA、测试区间都一致时直接复用 cache；
+cache/<dataset>/<method>/seed_<seed>/epoch_<epoch>。
+忽略旧缓存时追加 --force。
+
+
+5. 对比绘图
+-------------------
+
+& $py .\draw.py --dataset 1x --method1 Hattrick-f3 --epoch1 4 --method2 Hattrick --epoch2 49 --seed 490 --device cuda
+& $py .\draw.py --dataset 2x --method1 Hattrick-f3 --epoch1 37 --method2 Hattrick --epoch2 56 --seed 490 --device cuda
+& $py .\draw.py --dataset 3x --method1 Hattrick-f3 --epoch1 34 --method2 Hattrick --epoch2 20 --seed 490 --device cuda
+
+draw.py 会先检测两个推理缓存；缺失时自动调用 infer.py。图片保存到
+pictures/<dataset>/，文件名为 method1-epoch1-method2-epoch2.png，图例只显示
+方法名，主标题为 CDF of NormFulFill。
+
+
+6. 数据集生成
+-------------
+
+& $py .\generate.py --dataset 3x
+
+生成器以 1x 为不可修改源，同时缩放真实流量和 ESM 预测流量。目标目录已有内容时
+会询问是否清空重建；非交互确认可追加 --yes。1x 或非“正整数x”格式会报错。
+
+
+7. Gurobi 基线结果检查
+----------------------
+
+& $py .\baseline.py --dataset 1x
+& $py .\baseline.py --dataset 2x
+& $py .\baseline.py --dataset 3x
+
+baseline.py 会检查 baseresult/<dataset> 内 7 个复制进来的基线文件是否各含
+10200 个快照。Gurobi 源码也已复制到 entry/frameworks，用于保持工作区完整；
+当前 1x/2x/3x 已有完整结果，不需要重新求解。
+
+
+8. 重新执行搬运
+---------------
+
+& $py .\migrate_workspace.py --source ..
+& $py .\migrate_workspace.py --source .. --only caches
+
+脚本只从源工作区复制，不删除源文件；可重复执行。公共入口和已经做过路径适配的
+文件在重复搬运时会被保留。--only 可选 core、data、baselines、models、caches。
+
+
+9. 目录速查
+-----------
+
+train.py / infer.py / draw.py / list.py / select.py / generate.py / baseline.py
+    用户入口。
+method/hattrick_system.py
+    Hattrick 的完整系统：参数注册、数据集构造、严格 ESM 推理、六目标训练、
+    有序梯度投影、自动恢复、验证和 checkpoint 保存。
+method/hattrick_f3_system.py
+    Hattrick-f3 的完整差异部分：参数注册、余弦退火、flow-only 投影及训练更新；
+    公共系统能力直接使用 hattrick_system.py。
+_workspace.py
+    仅负责工作区数据/模型/缓存路由、模型发现和选择规则，不包含实验算法。
+selection_rules.json
+    可编辑的 High mean 候选窗口与 Medium 字典序排序字段。
+data / baseresult / model / cache / pictures
+    数据、Gurobi 基线、模型、推理缓存和图片。
+
+entry 不包含 test_diff_path，训练、推理和绘图都不会导入该研究目录。

@@ -1,0 +1,89 @@
+{
+  "schema": 2,
+  "name": "LowGuard-v2 joint-validation precommit",
+  "candidate_count": 1,
+  "validation_window": [350, 400],
+  "forbidden_test_window": [400, 500],
+  "core_checkpoint_selected_on_350_399": true,
+  "core_medium_metrics_previously_known": true,
+  "low_guard_v2_joint_guarded_metrics_read": false,
+  "persistent_composite_test_data_read": false,
+  "unrelated_abandoned_architectures_previously_used_400_499": true,
+  "files": [
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\low_guard_v2\\validate_once.py",
+      "sha256": "92d00f11b3aa5dac4eced9d62a332571231816b4b8e998a8da74c6a541b25f95",
+      "length": 27330
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\low_guard_v2\\protocol.json",
+      "sha256": "89b68a5500ffb5c8912750ad216bb51f2363c80b1433784d6958fbf87b23cc3e",
+      "length": 5050
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_precommit_manifest.json",
+      "sha256": "19a2c08e0752cbb6830304af18f4dda4545b9e3a570e931b707675e51f05e44d",
+      "length": 5827
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\selected_checkpoint.pt",
+      "sha256": "e8f7df484aff6e13fc45bbd26a055deb368e90cb9a1bb1167b1f72ac3416fe14",
+      "length": 449912
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\manifest_frozen_epoch_060.json",
+      "sha256": "7c21228ff080ce8d9b35e712021f7b12d6445872a6215dad86f58f26f1e7c2b7",
+      "length": 110948
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\development_stronger_low_guard_300_349\\development_winner.pt",
+      "sha256": "e6f1921e2e7192d1c66d114ee4cb212eec0b56b450a475f7fbe87b22ac32754c",
+      "length": 14781
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\development_stronger_low_guard_300_349\\report.json",
+      "sha256": "731010e3d99b30270fc57b675ac5821ce98cc6f0996d75473bb8c58fe4f9fb16",
+      "length": 1346380
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\develop_stronger_low_guard_300_349.py",
+      "sha256": "dc20d578f2197f7a27fe33c5e91005cef36c754dea534b4579dd34d9de398eec",
+      "length": 9828
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\development_stronger_low_guard_300_349\\postselection_oof_and_cpu_audit.json",
+      "sha256": "3a14db2e43fe05132160e37f867bae865a1d2e061f972ff0aa67439e012386ca",
+      "length": 37812
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\level4_low_guard_frozen\\rejected_internal_gate.json",
+      "sha256": "cf6e96bad770eb9e4fae7ba66103f535eb2bc38ffcc09c7132698268d066646a",
+      "length": 6665
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\run_experiment.py",
+      "sha256": "c4061d15495d4d5ecfdf4e3ca7dd77fa0a64a732bfb0c1c1d0ceefb61a1df14f",
+      "length": 7692
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\train_low_guard.py",
+      "sha256": "e399cb7a3fd66d11f5379ffa6e906c7c8d4322c6a165f80abb59a8ca507f4565",
+      "length": 17317
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_edge_toll_head\\run_experiment.py",
+      "sha256": "839c6a8b2a091553fe817abedc97016b35e498980a4eb2d8f936cb5cbae4c866",
+      "length": 16443
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention\\evaluate_strict_esm_sequential.py",
+      "sha256": "4afdbd4fb2ccc4d8b6bd77297cf0dc24485f34b922719283f31121f1f741f98b",
+      "length": 23198
+    },
+    {
+      "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\final_model.pt",
+      "sha256": "394e0fe592491f70836b92a9a17543ea53d3fe1fbfc5b3f156bef0e4c3a78622",
+      "length": 338820
+    }
+  ]
+}

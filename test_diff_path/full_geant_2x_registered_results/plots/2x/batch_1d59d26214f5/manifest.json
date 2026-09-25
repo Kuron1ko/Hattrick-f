@@ -1,0 +1,50 @@
+{
+  "dataset": "2x",
+  "models": [
+    {
+      "name": "Hattrick-f3",
+      "epoch": 37
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 56
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f3",
+        "epoch": 37
+      },
+      "candidate": {
+        "method": "Hattrick-f3",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 37,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f3\\artifacts\\seed_490\\checkpoints\\epoch_037.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_037_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_037_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f3\\seed_490\\test_epoch_037_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "dataset": "2x",
+        "seed": 490,
+        "epoch": 56,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f\\artifacts\\hattrick\\seed_490\\checkpoints\\epoch_056.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_056_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_056_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_056_metrics.csv"
+      },
+      "name": "Hattrick-56_Hattrick-f3-37",
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\2x\\batch_1d59d26214f5\\Hattrick-56_Hattrick-f3-37.png",
+      "series": [
+        "Hattrick",
+        "Hattrick-f3"
+      ]
+    }
+  ]
+}

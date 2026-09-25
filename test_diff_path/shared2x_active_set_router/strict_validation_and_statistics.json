@@ -1,0 +1,142 @@
+{
+  "config": {
+    "steps": 24,
+    "learning_rate": 0.06,
+    "low_weight": 0.25,
+    "anchor_weight": 0.01
+  },
+  "deployment_mode": "strict one-snapshot-at-a-time correction",
+  "exploration": {
+    "range": [
+      350,
+      358
+    ],
+    "baseline": {
+      "High": {
+        "norm_fulfill_mean": 0.9998999536037445,
+        "norm_fulfill_p1": 0.9995428788661956,
+        "norm_fulfill_p10": 0.9997326612472535
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.972526527941227,
+        "norm_fulfill_p1": 0.9655640405416489,
+        "norm_fulfill_p10": 0.965868991613388
+      },
+      "Low": {
+        "norm_fulfill_mean": 0.9937678873538971,
+        "norm_fulfill_p1": 0.961686423420906,
+        "norm_fulfill_p10": 0.9726082980632782
+      }
+    },
+    "candidate": {
+      "High": {
+        "norm_fulfill_mean": 0.9998999536037445,
+        "norm_fulfill_p1": 0.9995428788661956,
+        "norm_fulfill_p10": 0.9997326612472535
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9958930313587189,
+        "norm_fulfill_p1": 0.992183827161789,
+        "norm_fulfill_p10": 0.9937397122383118
+      },
+      "Low": {
+        "norm_fulfill_mean": 0.9971354156732559,
+        "norm_fulfill_p1": 0.9815647232532502,
+        "norm_fulfill_p10": 0.9855126023292542
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": 0.0,
+      "High.norm_fulfill_p1": 0.0,
+      "High.norm_fulfill_p10": 0.0,
+      "Medium.norm_fulfill_mean": 0.023366503417491913,
+      "Medium.norm_fulfill_p1": 0.026619786620140085,
+      "Medium.norm_fulfill_p10": 0.027870720624923795,
+      "Low.norm_fulfill_mean": 0.0033675283193588257,
+      "Low.norm_fulfill_p1": 0.019878299832344126,
+      "Low.norm_fulfill_p10": 0.012904304265975997
+    },
+    "constraints_passed": true
+  },
+  "validation": {
+    "range": [
+      358,
+      400
+    ],
+    "baseline": {
+      "High": {
+        "norm_fulfill_mean": 0.9991721283821833,
+        "norm_fulfill_p1": 0.9960487657785415,
+        "norm_fulfill_p10": 0.9978890419006348
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.935038223153069,
+        "norm_fulfill_p1": 0.9020770156383514,
+        "norm_fulfill_p10": 0.9093402028083801
+      },
+      "Low": {
+        "norm_fulfill_mean": 0.9218975759687877,
+        "norm_fulfill_p1": 0.8052197712659835,
+        "norm_fulfill_p10": 0.840817803144455
+      }
+    },
+    "candidate": {
+      "High": {
+        "norm_fulfill_mean": 0.9991721340588161,
+        "norm_fulfill_p1": 0.9960487657785415,
+        "norm_fulfill_p10": 0.9978890419006348
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9698811514036996,
+        "norm_fulfill_p1": 0.927643996477127,
+        "norm_fulfill_p10": 0.9325603544712067
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0369189012618292,
+        "norm_fulfill_p1": 0.94156991481781,
+        "norm_fulfill_p10": 0.9674016058444976
+      }
+    },
+    "delta": {
+      "High.norm_fulfill_mean": 5.676632830464712e-09,
+      "High.norm_fulfill_p1": 0.0,
+      "High.norm_fulfill_p10": 0.0,
+      "Medium.norm_fulfill_mean": 0.03484292825063062,
+      "Medium.norm_fulfill_p1": 0.02556698083877562,
+      "Medium.norm_fulfill_p10": 0.023220151662826538,
+      "Low.norm_fulfill_mean": 0.11502132529304143,
+      "Low.norm_fulfill_p1": 0.1363501435518265,
+      "Low.norm_fulfill_p10": 0.12658380270004266
+    },
+    "constraints_passed": true
+  },
+  "final_paired_bootstrap_20000": {
+    "High": {
+      "mean_delta": -1.7881393432617187e-09,
+      "ci95": [
+        -5.364418029785156e-09,
+        5.960464477539063e-10
+      ],
+      "improved_snapshot_fraction": 0.01,
+      "unchanged_or_improved_snapshot_fraction": 0.99
+    },
+    "Medium": {
+      "mean_delta": 0.020818572044372558,
+      "ci95": [
+        0.018350342661142348,
+        0.02313609653711319
+      ],
+      "improved_snapshot_fraction": 0.97,
+      "unchanged_or_improved_snapshot_fraction": 0.97
+    },
+    "Low": {
+      "mean_delta": 0.0208647882938385,
+      "ci95": [
+        0.011267993211746217,
+        0.031080522567033766
+      ],
+      "improved_snapshot_fraction": 0.67,
+      "unchanged_or_improved_snapshot_fraction": 0.67
+    }
+  }
+}

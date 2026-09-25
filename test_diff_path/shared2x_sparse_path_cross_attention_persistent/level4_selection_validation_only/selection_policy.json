@@ -1,0 +1,40 @@
+{
+  "name": "persistent Stage-2 Level-4 validation-only core selector",
+  "target_epoch": 60,
+  "allowed_candidate_window": [350, 400],
+  "forbidden_test_window": [400, 500],
+  "hard_gates": {
+    "high_norm_mean_min": 0.995,
+    "max_post_admission_mlu_max": 1.000001,
+    "max_disabled_flow_max": 1e-08
+  },
+  "preferred_high_tail_gates": {
+    "high_norm_p1_min": 0.985,
+    "high_norm_p10_min": 0.99,
+    "fallback_if_empty": "retain every hard-gate candidate"
+  },
+  "selection": {
+    "coordinates": [
+      "medium_norm_mean",
+      "medium_norm_p1",
+      "medium_norm_p10"
+    ],
+    "pareto": "remove candidates weakly dominated on all three Medium coordinates",
+    "maximin": "maximize min(metric / best eligible metric) on the Pareto front",
+    "tie_break": [
+      "mean of normalized Medium coordinates",
+      "Medium mean",
+      "Medium P1",
+      "Medium P10",
+      "minimum High tail",
+      "earlier epoch"
+    ]
+  },
+  "low_policy": {
+    "core_low_is_descriptive_not_a_gate": true,
+    "reason": "a mandatory prediction-only Low guard is trained after the core checkpoint is frozen; it cannot alter High or Medium",
+    "final_composite_requirement": "on 350-399, Low guard must have nonnegative Mean/P1/P10 gain over its core and final Low must pass paired no-significant-decline versus native Hattrick"
+  },
+  "checkpoint_requirement": "immutable archived checkpoint matching train history and per-epoch validation files",
+  "test_data_policy": "neither training wrapper nor watcher opens snapshots 400-499"
+}

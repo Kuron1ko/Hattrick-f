@@ -1,0 +1,432 @@
+{
+  "benchmark": "strict-ESM steady-state policy forward",
+  "window_prefix": [
+    400,
+    401
+  ],
+  "batch_sizes": [
+    1
+  ],
+  "actual_traffic_matrices_zeroed": true,
+  "topology_cache": "first materialization excluded; steady-state cache reused",
+  "timing": "CUDA Events with synchronize before each timed forward",
+  "device": "cuda",
+  "torch_version": "2.5.1+cu124",
+  "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "results": [
+    {
+      "model": "native-hattrick",
+      "constructor_source": "runtime.Hattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_adapter\\run_experiment.py",
+      "runner_sha256": "02e2183670e336e0c67258e8c9ff10ca66b67b1529b40b5b7f845e067ff7a3fb",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\final_model.pt",
+        "sha256": "394e0fe592491f70836b92a9a17543ea53d3fe1fbfc5b3f156bef0e4c3a78622",
+        "epoch": 60
+      },
+      "parameters": {
+        "total_parameters": 20105,
+        "trainable_parameters": 20105,
+        "parameter_bytes": 80420,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {},
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 3,
+          "latency_ms": {
+            "mean": 41.230421702067055,
+            "median": 40.97945785522461,
+            "p10": 40.487117767333984,
+            "p90": 42.07411117553711,
+            "p95": 42.21094284057617,
+            "min": 40.36403274536133,
+            "max": 42.347774505615234
+          },
+          "throughput_snapshots_per_second": 24.253935776501304,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 36321280,
+            "reserved_before_timing": 65011712,
+            "peak_allocated": 44231680,
+            "peak_reserved": 65011712,
+            "incremental_peak_allocated": 7910400,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.200278808635713e-12,
+              "max": 0.9999955892562866,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.5828863827310746e-14,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 4.384144523111866e-12,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    },
+    {
+      "model": "hattrick-la-e52",
+      "constructor_source": "MediumPressureHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\run_experiment.py",
+      "runner_sha256": "5ee4f7cfede0471ddb6cd1a2826fcb120ee89a73c7734c97b0f69290c9973be0",
+      "checkpoint": {
+        "loaded": true,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_pressure_lookahead\\artifacts\\level4_confirmation\\seed_490\\epoch_checkpoints\\epoch_052.pt",
+        "sha256": "1e66c77783bbedb5392e487da4dfcc7347b10bcb465c688b101b22d3e551f8df",
+        "epoch": 52
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 3,
+          "latency_ms": {
+            "mean": 44.670719146728516,
+            "median": 44.70060729980469,
+            "p10": 43.52781982421875,
+            "p90": 45.80166320800781,
+            "p95": 45.9392951965332,
+            "min": 43.234622955322266,
+            "max": 46.076927185058594
+          },
+          "throughput_snapshots_per_second": 22.38602868056212,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 36327936,
+            "reserved_before_timing": 65011712,
+            "peak_allocated": 44268032,
+            "peak_reserved": 65011712,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 6.868100160725135e-15,
+              "max": 0.9999995231628418,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 1.095469087112526e-15,
+              "max": 0.9999997615814209,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 3.263659416503917e-13,
+              "max": 0.9999998807907104,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    },
+    {
+      "model": "virtual-medium-dual",
+      "constructor_source": "VirtualMediumDualHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_virtual_medium_dual\\run_experiment.py",
+      "runner_sha256": "182a332248af90837c82679a9d1b3f98198abe7ed856ff28af1a8cb0276eee4a",
+      "checkpoint": {
+        "loaded": false
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "virtual_medium_steps": 2,
+        "virtual_medium_temperature": 2.0,
+        "virtual_medium_price_power": 2.0,
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 3,
+          "latency_ms": {
+            "mean": 41.991860707600914,
+            "median": 42.32089614868164,
+            "p10": 40.1852668762207,
+            "p90": 43.666840362548825,
+            "p95": 43.835083389282225,
+            "min": 39.65135955810547,
+            "max": 44.003326416015625
+          },
+          "throughput_snapshots_per_second": 23.814138815215465,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 36327936,
+            "reserved_before_timing": 67108864,
+            "peak_allocated": 44268032,
+            "peak_reserved": 67108864,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11563912779092789,
+              "max": 0.1411554366350174,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11718719452619553,
+              "max": 0.1294008046388626,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11409460753202438,
+              "max": 0.13671769201755524,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 0,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {},
+            "build_counts_after": {},
+            "build_count_delta_during_timed_forwards": {},
+            "cache_reuse_confirmed": false,
+            "before": {},
+            "after": {}
+          }
+        }
+      ]
+    },
+    {
+      "model": "medium-irreplaceability",
+      "constructor_source": "MediumIrreplaceabilityHattrick",
+      "runner": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_medium_irreplaceability\\run_experiment.py",
+      "runner_sha256": "b759ca6d001cd076c0f088965b07305d8806ba2ea79e92789480ab303987b16f",
+      "checkpoint": {
+        "loaded": false
+      },
+      "parameters": {
+        "total_parameters": 20995,
+        "trainable_parameters": 20995,
+        "parameter_bytes": 83980,
+        "buffer_bytes": 0
+      },
+      "runtime_attributes": {
+        "medium_pressure_feature_count": 2,
+        "research_medium_pressure_lookahead_enabled": true,
+        "medium_coverage_cache_builds": 1,
+        "medium_irreplaceability_gamma": 2.0
+      },
+      "measurements": [
+        {
+          "batch_size": 1,
+          "warmup_iterations": 2,
+          "timed_iterations": 3,
+          "latency_ms": {
+            "mean": 43.52441660563151,
+            "median": 43.95238494873047,
+            "p10": 42.30369415283203,
+            "p90": 44.573951721191406,
+            "p95": 44.65164756774902,
+            "min": 41.89152145385742,
+            "max": 44.72934341430664
+          },
+          "throughput_snapshots_per_second": 22.975609508126357,
+          "cuda_memory_bytes": {
+            "allocated_before_timing": 36598272,
+            "reserved_before_timing": 65011712,
+            "peak_allocated": 44538368,
+            "peak_reserved": 65011712,
+            "incremental_peak_allocated": 7940096,
+            "incremental_peak_reserved": 0
+          },
+          "policy_audit": [
+            {
+              "class_index": 0,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.1200547143816948,
+              "max": 0.13137617707252502,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 1,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.10047893226146698,
+              "max": 0.1500542163848877,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            },
+            {
+              "class_index": 2,
+              "shape": [
+                1,
+                3696,
+                1
+              ],
+              "min": 0.11062616854906082,
+              "max": 0.14425455033779144,
+              "max_probability_sum_error": 2.384185791015625e-07,
+              "checksum": 462.0
+            }
+          ],
+          "coverage_cache_audit": {
+            "discoverable_tensor_count": 1,
+            "same_tensor_keys_after_timing": true,
+            "common_data_ptrs_unchanged": true,
+            "common_metadata_unchanged": true,
+            "build_counts_before": {
+              "_medium_coverage_cache_builds": 1
+            },
+            "build_counts_after": {
+              "_medium_coverage_cache_builds": 1
+            },
+            "build_count_delta_during_timed_forwards": {
+              "_medium_coverage_cache_builds": 0
+            },
+            "cache_reuse_confirmed": true,
+            "before": {
+              "buffer:_medium_edge_coverage_cache": {
+                "shape": [
+                  462,
+                  72
+                ],
+                "dtype": "torch.float32",
+                "device": "cuda:0",
+                "data_ptr": 81817179136,
+                "version": 0
+              }
+            },
+            "after": {
+              "buffer:_medium_edge_coverage_cache": {
+                "shape": [
+                  462,
+                  72
+                ],
+                "dtype": "torch.float32",
+                "device": "cuda:0",
+                "data_ptr": 81817179136,
+                "version": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "virtual_dual_status": "included",
+  "medium_irreplaceability_status": "included"
+}

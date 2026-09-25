@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "D:\\kuroresearch\\Hattrick-main",
+  "destination": "D:\\kuroresearch\\Hattrick-main\\entry",
+  "datasets": {
+    "1x": "geant_full_shared_load1x_train",
+    "2x": "geant_full_shared_load2x_train",
+    "3x": "geant_full_shared_load3x_train"
+  },
+  "methods": [
+    "Hattrick",
+    "Hattrick-f3"
+  ],
+  "section": "core",
+  "files_seen": 24,
+  "files_copied": 0,
+  "bytes_copied": 0,
+  "elapsed_seconds": 0.06912529998226091,
+  "runtime_external_access_required": false
+}

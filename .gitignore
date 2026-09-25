@@ -1,0 +1,84 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Virtual environments and local configuration
+.venv/
+.venv-*/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.err.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Model weights, optimizer states and serialized experiment objects
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+
+# Candidate OD paths are small and required by the routing pipeline
+!pairs/**/*.pkl
+
+# Large generated datasets and caches
+traffic_matrices/
+entry/data/
+entry/cache/
+topologies/**/*.pkl
+
+# Training outputs and parameter-search checkpoints
+models/
+optimizers/
+hp_search/
+results/
+entry/model/
+entry/logs/
+
+# Generated experiment artifacts; keep experiment source code
+test_diff_path/**/artifacts/
+test_diff_path/**/outputs/
+test_diff_path/**/timed_training_logs/
+test_diff_path/results_*/
+
+# Keep the compact reports that document the final Hattrick-f experiment
+!test_diff_path/shared2x_hattrick_f/artifacts/
+test_diff_path/shared2x_hattrick_f/artifacts/*
+!test_diff_path/shared2x_hattrick_f/artifacts/level3_report/
+!test_diff_path/shared2x_hattrick_f/artifacts/level3_report/**
+!test_diff_path/shared2x_hattrick_f/artifacts/level4_report/
+!test_diff_path/shared2x_hattrick_f/artifacts/level4_report/**
+
+# Large raw analysis exports; keep final figures and compact summaries
+output/analysis/**/raw/
+
+# Archived exploratory code is not part of the public project
+entry_removed_legacy_20260902/
+
+# Local profiling and crash files
+*.prof
+*.trace
+*.dmp

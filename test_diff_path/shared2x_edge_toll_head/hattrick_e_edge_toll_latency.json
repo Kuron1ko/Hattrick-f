@@ -1,0 +1,78 @@
+{
+  "method": "current Hattrick-e ESM edge-toll residual head",
+  "scope": "single-snapshot online inference after the ESM matrix is available; models/topology are resident and dataset I/O is excluded",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "snapshot": 400,
+  "batch_size": 1,
+  "loads": {
+    "1x": {
+      "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared1x_edge_toll_head\\strict_esm_onex_edge_toll.pt",
+      "medium_scale": 0.0,
+      "low_scale": 2.0,
+      "hattrick": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 48.789183,
+        "median_ms": 50.46835,
+        "p95_ms": 53.961895,
+        "min_ms": 39.508,
+        "max_ms": 57.7884
+      },
+      "hattrick_e_increment": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 2.963629,
+        "median_ms": 2.97895,
+        "p95_ms": 3.8567299999999993,
+        "min_ms": 2.3227,
+        "max_ms": 5.6174
+      },
+      "hattrick_e_end_to_end": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 54.27765,
+        "median_ms": 54.4309,
+        "p95_ms": 59.322269999999996,
+        "min_ms": 44.7175,
+        "max_ms": 69.2027
+      },
+      "mean_added_ms": 5.488467,
+      "mean_slowdown": 1.1124935213610772
+    },
+    "2x": {
+      "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_edge_toll_head\\best_edge_toll_head.pt",
+      "medium_scale": 1.0,
+      "low_scale": 1.0,
+      "hattrick": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 51.299795,
+        "median_ms": 51.9816,
+        "p95_ms": 59.443394999999995,
+        "min_ms": 40.8811,
+        "max_ms": 73.191
+      },
+      "hattrick_e_increment": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 2.7178660000000003,
+        "median_ms": 2.74285,
+        "p95_ms": 3.203115,
+        "min_ms": 2.155,
+        "max_ms": 4.6302
+      },
+      "hattrick_e_end_to_end": {
+        "warmups": 20,
+        "repetitions": 100,
+        "mean_ms": 55.433057,
+        "median_ms": 55.8842,
+        "p95_ms": 59.58575,
+        "min_ms": 44.9301,
+        "max_ms": 69.2213
+      },
+      "mean_added_ms": 4.133261999999995,
+      "mean_slowdown": 1.0805707313255344
+    }
+  }
+}

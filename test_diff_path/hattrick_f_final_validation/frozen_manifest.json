@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "root_semantics": "relative paths are resolved against the Hattrick-main repository root",
+  "coverage": {
+    "exact_files": "full SHA256 commitment for listed runtime, topology, pairs, and 8sp path/PTE-source assets",
+    "traffic_windows": "directory inventory counts plus first/last and three fixed interior sample hashes; not a full-content commitment to every TM file"
+  },
+  "exact_files": [
+    {
+      "role": "runtime_dependency",
+      "relative_path": "utils/AdamOptimizer.py",
+      "size_bytes": 2028,
+      "sha256": "1dbb87b114b3845f86718a401e1f4ad2acd09a29d4707706505a35327f3e0325"
+    },
+    {
+      "role": "runtime_dependency",
+      "relative_path": "utils/robust_proj_utils.py",
+      "size_bytes": 10013,
+      "sha256": "76affbd2e7f27863d6371794eee834fb8549558a3156aec40e1e06227cea0c7e"
+    },
+    {
+      "role": "runtime_dependency",
+      "relative_path": "utils/snapshot_utils.py",
+      "size_bytes": 7125,
+      "sha256": "657e245fb127c03c29f123f637604fe3f21ced266e29993ed69fb30cff7010ad"
+    },
+    {
+      "role": "runtime_dependency",
+      "relative_path": "utils/cluster_utils.py",
+      "size_bytes": 10047,
+      "sha256": "f9ccc1af7918cdd0b739bf9cfa6b492a4120bc237ae89c3f485dcd87d1a69df4"
+    },
+    {
+      "role": "runtime_dependency",
+      "relative_path": "utils/build_dataset_within_cluster.py",
+      "size_bytes": 9047,
+      "sha256": "53c69ca0f24b8d514252dabd58192a3eee1b5584257065e4e1f460a85037be46"
+    },
+    {
+      "role": "holdout_topology",
+      "relative_path": "topologies/geant/t1.json",
+      "size_bytes": 3840,
+      "sha256": "4badaa5fa30c96407780ce58911b125659bdf18cc07999a3e3cc502d77559096"
+    },
+    {
+      "role": "holdout_pairs",
+      "relative_path": "pairs/geant/t1.pkl",
+      "size_bytes": 7545,
+      "sha256": "50557b7dc88720e4e57562f9906c8708a7770731fff7cb0133092e91bd5b255d"
+    },
+    {
+      "role": "holdout_8sp_paths_pte_source",
+      "relative_path": "topologies/paths/geant_8_paths_cluster_0.pkl",
+      "size_bytes": 309560,
+      "sha256": "deb2359aec805952c2dfaae313b5e1c93ac5f8d279a0e659e7a7b29df97bbe4e"
+    },
+    {
+      "role": "holdout_8sp_paths_dict",
+      "relative_path": "topologies/paths_dict/geant_8_paths_dict_cluster_0.pkl",
+      "size_bytes": 148836,
+      "sha256": "fbbcf6b1b8685f955dcadd46d629c5d8f34a20bc03e44b8e6c6e79514f1f06c3"
+    },
+    {
+      "role": "holdout_8sp_padded_path_edges",
+      "relative_path": "topologies/padded_edge_ids_per_path/geant_8_paths_cluster_0_padded_edge_ids_per_path.pkl",
+      "size_bytes": 267625,
+      "sha256": "b57ea03557d72c5440322c8bcbeff4d8ea322f4c75e0e42936722e49d4e2e5f4"
+    },
+    {
+      "role": "holdout_8sp_path_edge_dictionary",
+      "relative_path": "topologies/padded_edge_ids_per_path/geant_8_paths_cluster_0_edge_ids_dict.pkl",
+      "size_bytes": 158041,
+      "sha256": "f1623d0fa0896ff487e1d149d6cfd19ef218ba9e8822eff9b22b037edd2bde5d"
+    },
+    {
+      "role": "training_topology",
+      "relative_path": "topologies/geant_priomask500_shared_load2x_train/t1.json",
+      "size_bytes": 3840,
+      "sha256": "4badaa5fa30c96407780ce58911b125659bdf18cc07999a3e3cc502d77559096"
+    },
+    {
+      "role": "training_pairs",
+      "relative_path": "pairs/geant_priomask500_shared_load2x_train/t1.pkl",
+      "size_bytes": 7545,
+      "sha256": "50557b7dc88720e4e57562f9906c8708a7770731fff7cb0133092e91bd5b255d"
+    },
+    {
+      "role": "training_8sp_paths_pte_source",
+      "relative_path": "topologies/paths/geant_priomask500_shared_load2x_train_8_paths_cluster_0.pkl",
+      "size_bytes": 309674,
+      "sha256": "b43cc57090ea0b38173b183e0c80a970a2c750688657ccc6d08ed5dc3b09cb17"
+    },
+    {
+      "role": "training_8sp_paths_dict",
+      "relative_path": "topologies/paths_dict/geant_priomask500_shared_load2x_train_8_paths_dict_cluster_0.pkl",
+      "size_bytes": 148836,
+      "sha256": "fbbcf6b1b8685f955dcadd46d629c5d8f34a20bc03e44b8e6c6e79514f1f06c3"
+    },
+    {
+      "role": "training_8sp_padded_path_edges",
+      "relative_path": "topologies/padded_edge_ids_per_path/geant_priomask500_shared_load2x_train_8_paths_cluster_0_padded_edge_ids_per_path.pkl",
+      "size_bytes": 267848,
+      "sha256": "0b1581b9689ff745dc05cf4c61aa3f5797b59756a06e15ab924576e668093f79"
+    },
+    {
+      "role": "training_8sp_path_edge_dictionary",
+      "relative_path": "topologies/padded_edge_ids_per_path/geant_priomask500_shared_load2x_train_8_paths_cluster_0_edge_ids_dict.pkl",
+      "size_bytes": 158041,
+      "sha256": "54c4375bbba04cb3b6098b784dca89d74a7f61a8e71e332005726f229e2c1410"
+    },
+    {
+      "role": "holdout_filename_index",
+      "relative_path": "results/geant/8sp/0/filenames.txt",
+      "size_bytes": 279765,
+      "sha256": "9d13e8794c1e449f32e0b6cb32d782c4709d7861d679ff460e5cc167af4e8ebd"
+    },
+    {
+      "role": "training_filename_index",
+      "relative_path": "results/geant_priomask500_shared_load2x_train/8sp/0/filenames.txt",
+      "size_bytes": 12392,
+      "sha256": "ad678aa2f8087c756e7945d41c100517da5cce460442230ac7865680cd9c5dcc"
+    }
+  ],
+  "traffic_window_samples": [
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "High",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_1",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 2002,
+          "sha256": "451ad17a0dec0b1ecf2d6ec625be0400f0b6dd0abad503f57b0d5921b24ac761"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 2002,
+          "sha256": "dc0135f4774a108783730c610fd92eb05d536e39a1f6de15c4618c3198c0754a"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 2002,
+          "sha256": "75dfe7e8ced595ecebb1730a7c8cae5778fbb3f90a0229d451dc4f875d649710"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 2002,
+          "sha256": "d26458c072a8ca0bf622d5cfa4dac23a81666da5d9b57f64f09fb1b09a24a1f2"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 2002,
+          "sha256": "8b9cb3fc56c32a6f2262fe6f951a36417abeec6b6ba1d118b34db4622038a914"
+        }
+      ]
+    },
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "High",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_1_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 3850,
+          "sha256": "9ba7279174c6f98133d714358ed2c3ab96d4f06756096e20afce9a92045ec5bc"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 3850,
+          "sha256": "80b1fc84e331930008db5a76a404c2cd9d703c93ff5d6cb1e90c17b16cd1b32f"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 3850,
+          "sha256": "960d36f36b40d5ce07074d3918a21b0ca26691e7e6a7eeb6966b9f197bac5c40"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 3850,
+          "sha256": "b7643476f340d47e945a5628c84b7042f7fecb9c9e79c664da9e843be881e589"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 3850,
+          "sha256": "7805c3014021a176f2f84a0996f4c50984f7be0fa7617a6667106f538b36b158"
+        }
+      ]
+    },
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "Medium",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_2",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 2002,
+          "sha256": "a1502a78387d5eb85bc9137102c842ab24e3c936735d60a2c801264ba3fffbdb"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 2002,
+          "sha256": "c4b96fc8797754783d5fc91d0d3ea7eee5438b232aff8933da971aa296d9246f"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 2002,
+          "sha256": "77e1cc684e76e0b7fc8727299352abdc4e938fe61d2c9b9b83bd15df4e0b0d5e"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 2002,
+          "sha256": "be19b6803e8fe69959eff6b6a6060d42436714a6b7e00810b8a16307b0a9d588"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 2002,
+          "sha256": "c2d1001b971c6500aa67958ae98474a97075939cd616181e277902a059877f91"
+        }
+      ]
+    },
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "Medium",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_2_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 3850,
+          "sha256": "aba96d02eacd42abe84c7495eb235817216082dbb94a0335bdbde4e12f731fee"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 3850,
+          "sha256": "9e738c9a79ee21ca96d44868d6cacf8267238e0745cb5309c6716d837c3e08ce"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 3850,
+          "sha256": "750613468151b275c7aeb20d5bc28a528465d4005d9908481eb679e09f1be3af"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 3850,
+          "sha256": "3fbd61008162c5253cebb9927548264d450dfcdf25ecb543b357d1d1026866cb"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 3850,
+          "sha256": "b81690e54bc6c404db00112cc656654d483969d7824a9542dfef551f96ae5a03"
+        }
+      ]
+    },
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "Low",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_3",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 2002,
+          "sha256": "48123a47678edd30e3f4504b2ceecba70163bfa69a1bd31f9508066c685d3ec3"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 2002,
+          "sha256": "32ea80161d1aa1fd33c865f0385853338b7b35ab8cd4f6393a1716b35d5edec9"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 2002,
+          "sha256": "3517deecc1249fa32b282e09739d0a272d3063d856f36f028d12fb86fea844b5"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 2002,
+          "sha256": "e13956f544ab3b01dd43678328895fa6de0e45959ac95820b3294f52a35982aa"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 2002,
+          "sha256": "d9f46b8e4071b18cb56f8b59cb9203a013bcd492481668d3bd742411ca97cfd9"
+        }
+      ]
+    },
+    {
+      "window": "near",
+      "zero_based_snapshot_range": [
+        500,
+        1000
+      ],
+      "file_number_range_inclusive": [
+        501,
+        1000
+      ],
+      "class": "Low",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_3_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 501,
+          "filename": "t501.pkl",
+          "size_bytes": 3850,
+          "sha256": "070f64f19f571e307454abb001a61d86791695b021912e765b2001717862fb9d"
+        },
+        {
+          "file_number": 626,
+          "filename": "t626.pkl",
+          "size_bytes": 3850,
+          "sha256": "c2f69ab4c4fa82b682588e30a9565021399d431c03f129e56c0be5a1486c1b11"
+        },
+        {
+          "file_number": 751,
+          "filename": "t751.pkl",
+          "size_bytes": 3850,
+          "sha256": "0f22ac3f16581521b114eee2f1a7b0a64ac5e0fef4cc22d26543e52806541b9d"
+        },
+        {
+          "file_number": 876,
+          "filename": "t876.pkl",
+          "size_bytes": 3850,
+          "sha256": "b4f0aff784e531a312eae24b26c04f0bc009584d6cd887bf00b1cba8d40bc9e7"
+        },
+        {
+          "file_number": 1000,
+          "filename": "t1000.pkl",
+          "size_bytes": 3850,
+          "sha256": "b8b7b0876e2283dfc9bb6be3acf8880e8d49ffc21ea43043baef0f9e9a0debd2"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "High",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_1",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 2002,
+          "sha256": "bf31b1a9d52fa827cd833cd303b5605cc7444b2407e93116fe4f5504db387123"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 2002,
+          "sha256": "a986309972e5a1d887ef3cd8c752248a3e2f616412c796ef1e7a7fc6ce0705e0"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 2002,
+          "sha256": "b6944895edaf8df5828215ce4a5a2edbd1a31f581ddffb899a8e8e061fdfbdb1"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 2002,
+          "sha256": "2e2ef968cee1fa177455d62716d1fab60043c6a94c6dcc93f6a82de908cd20a2"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 2002,
+          "sha256": "49a641e911ac45478cdf3024b0ccf7f9f42d46663ce211ed88ab88c3423e9633"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "High",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_1_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 3850,
+          "sha256": "3da6bd765adc7ced6413ca1297e29678a8662465df1a761f2df145ca3047d7a4"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 3850,
+          "sha256": "0501b002c8757a2a7eb4a7386978b97c11fa3280cfa890d6961b82290e533fed"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 3850,
+          "sha256": "ce05975dd4b0386b0e2802938f7014a6847579c9ed5c879453829055b8529421"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 3850,
+          "sha256": "e7a4eb1bb6b5fdbffc4bc35dfd1b75009cfff10a443a1efac32d7c7a7ebe535b"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 3850,
+          "sha256": "5bf3bec5159a306d4feb1bcd377b2e51a4da2df6c3787e2757935080f8ff4438"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "Medium",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_2",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 2002,
+          "sha256": "a5a05a935e45f194c7ca6533a536e0538d6fc28a777cd3ac0f8c2ba9aed9b55b"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 2002,
+          "sha256": "1c42e10b41ea90c46932836dda1323e99d23ddb4ef6bf5d8c8484328410c9c7f"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 2002,
+          "sha256": "46afbf82698ace873036a3573a15ff7c7f09130d035f874a0b48a2e0961d79af"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 2002,
+          "sha256": "4d8326ba9d03aa054a2689d2b18718bb1249caa95b2778ac654da56570250db1"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 2002,
+          "sha256": "4c878b3056d66e6770843c766cb3965a5881aca41f18331f920e7e77bedd5beb"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "Medium",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_2_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 3850,
+          "sha256": "c6cd73257db03f5cd2297978b6c3cec391df682686fd522bf2b398bfac0a270d"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 3850,
+          "sha256": "ae574a277bff40284a083e207ca536090e9acb6ccbf103c7c5c013c1165d1c1d"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 3850,
+          "sha256": "91a49bc5e491500856f2e0ad06c5c53720d77b56040a1886303ad33e44b07b12"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 3850,
+          "sha256": "064e40d0c561efc06c0e282798b524b21ec63079045e6ab8145e134c37eb2d2e"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 3850,
+          "sha256": "6eb33b47670b1b1f4a0fd159cdcd3a3443baca7998b02aaebaf16f0d0d296c31"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "Low",
+      "kind": "actual",
+      "relative_directory": "traffic_matrices/geant_3",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 2002,
+          "sha256": "b771ae45e410a2fd58402df653344b6e2b264ee11fbb5f6b511317775edaaef2"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 2002,
+          "sha256": "b2b054f31b222653fed47207bcd9aa27a0edff537890b583371782b8cb6be177"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 2002,
+          "sha256": "ca07bdd351bd88b465a59a4f290a7d371fd52f0949753d4c4cfa970cee4871e8"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 2002,
+          "sha256": "b94a30746bb529034cbb71f9c6f595d5621fa37842e69d1b98e9555493a92820"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 2002,
+          "sha256": "143e8c2ed939183cfe62f60d865d2e0121abe4061d82e91fba52b63ad874db70"
+        }
+      ]
+    },
+    {
+      "window": "far",
+      "zero_based_snapshot_range": [
+        9000,
+        9500
+      ],
+      "file_number_range_inclusive": [
+        9001,
+        9500
+      ],
+      "class": "Low",
+      "kind": "esm",
+      "relative_directory": "traffic_matrices/geant_3_esm",
+      "expected_window_file_count": 500,
+      "observed_window_file_count": 500,
+      "total_numbered_tm_files_in_directory": 10773,
+      "sample_offsets_from_window_start": [
+        0,
+        125,
+        250,
+        375,
+        499
+      ],
+      "samples": [
+        {
+          "file_number": 9001,
+          "filename": "t9001.pkl",
+          "size_bytes": 3850,
+          "sha256": "d31f617e6edada4da24223f9c95b7666c2b69e390c7529bf0ebc3a1118ed020f"
+        },
+        {
+          "file_number": 9126,
+          "filename": "t9126.pkl",
+          "size_bytes": 3850,
+          "sha256": "ce74949d63680bd43232090e2835240d88a19234a4a911a984f0184c8e7697db"
+        },
+        {
+          "file_number": 9251,
+          "filename": "t9251.pkl",
+          "size_bytes": 3850,
+          "sha256": "5bb53ace8f9880244b6f1bcc4f4c578a105fa7acbf522b5057afcba89df1574c"
+        },
+        {
+          "file_number": 9376,
+          "filename": "t9376.pkl",
+          "size_bytes": 3850,
+          "sha256": "efab8c0593fcf89d2beb453952f7069b36b214fe7870191737f69d44f8f25514"
+        },
+        {
+          "file_number": 9500,
+          "filename": "t9500.pkl",
+          "size_bytes": 3850,
+          "sha256": "278bf46610359e044af33ca45f3810c8872d8d3c57997cff4a5d2dbc66cf14e2"
+        }
+      ]
+    }
+  ]
+}

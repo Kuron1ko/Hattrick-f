@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "name": "Hattrick-f",
+      "epoch": 9
+    }
+  ],
+  "baseline": {
+    "name": "Hattrick",
+    "epoch": 22
+  },
+  "figure_count": 1,
+  "figures": [
+    {
+      "request": {
+        "name": "Hattrick-f",
+        "epoch": 9
+      },
+      "candidate": {
+        "method": "Hattrick-f",
+        "seed": 490,
+        "epoch": 9,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f\\artifacts\\hattrick_f\\seed_490\\best_model.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f\\seed_490\\test_epoch_009_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f\\seed_490\\test_epoch_009_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick-f\\seed_490\\test_epoch_009_metrics.csv"
+      },
+      "baseline": {
+        "method": "Hattrick",
+        "seed": 490,
+        "epoch": 22,
+        "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_hattrick_f\\artifacts\\selected_hattrick.pt",
+        "metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_metrics.csv",
+        "summary": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_summary.json",
+        "cache_reused": true,
+        "cache_source": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\hattrick\\seed_490\\test_epoch_022_metrics.csv"
+      },
+      "output": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\full_geant_2x_registered_results\\plots\\batch_6277e45f87d6\\cdf_01_hattrick-f-e009_vs_hattrick-e022.png",
+      "series": [
+        "Hattrick · epoch 22",
+        "Hattrick-f · epoch 9"
+      ]
+    }
+  ]
+}

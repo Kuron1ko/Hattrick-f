@@ -1,0 +1,3142 @@
+{
+  "method": "strict-ESM priority-decoupled sequential correction",
+  "actual_tm_used_for_policy": false,
+  "discovery": {
+    "a": [
+      318,
+      334
+    ],
+    "b": [
+      350,
+      366
+    ]
+  },
+  "full": {
+    "safety": [
+      318,
+      350
+    ],
+    "validation": [
+      350,
+      400
+    ]
+  },
+  "trials": [
+    {
+      "config": [
+        4,
+        0.06,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.0041183053981512785,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713487923145,
+                "norm_fulfill_p1": 0.99967340528965,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9680283516645432,
+                "norm_fulfill_p1": 0.950076025724411,
+                "norm_fulfill_p10": 0.9591485261917114
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0375582724809647,
+                "norm_fulfill_p1": 1.0107876121997834,
+                "norm_fulfill_p10": 1.0270038843154907
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -7.450580596923828e-09,
+              "High.norm_fulfill_p1": -1.0132789607375514e-07,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.005579698830842972,
+              "Medium.norm_fulfill_p1": 0.010546508431434565,
+              "Medium.norm_fulfill_p10": 0.008969396352767944,
+              "Low.norm_fulfill_mean": 0.007563233375549316,
+              "Low.norm_fulfill_p1": 0.015621465444564886,
+              "Low.norm_fulfill_p10": 0.016447395086288452
+            },
+            "config": [
+              4,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 6.776331249966461
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9846965186297894,
+                "norm_fulfill_p1": 0.9721298724412918,
+                "norm_fulfill_p10": 0.9747482240200043
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9986222498118877,
+                "norm_fulfill_p1": 0.9637916475534439,
+                "norm_fulfill_p10": 0.9820197820663452
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.007182464003562927,
+              "Medium.norm_fulfill_p1": 0.012742376327514626,
+              "Medium.norm_fulfill_p10": 0.013135373592376709,
+              "Low.norm_fulfill_mean": -0.0056107789278030396,
+              "Low.norm_fulfill_p1": -0.00041112899780271217,
+              "Low.norm_fulfill_p10": -0.0013704299926757812
+            },
+            "config": [
+              4,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 4.722306250187103
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9856900982558727,
+                "norm_fulfill_p1": 0.9510994493961334,
+                "norm_fulfill_p10": 0.9613918364048004
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.161227062344551,
+                "norm_fulfill_p1": 1.1138468444347382,
+                "norm_fulfill_p10": 1.1263153553009033
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0027386844158172607,
+              "Medium.norm_fulfill_p1": -0.0018334001302718894,
+              "Medium.norm_fulfill_p10": 0.0018959641456604004,
+              "Low.norm_fulfill_mean": -0.0027224943041801453,
+              "Low.norm_fulfill_p1": -0.010913443565368608,
+              "Low.norm_fulfill_p10": -0.011489629745483398
+            },
+            "config": [
+              4,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 4.408700000567478
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0071140564978123,
+                "norm_fulfill_p1": 0.9639355212450027,
+                "norm_fulfill_p10": 0.9729076027870178
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2057155892252922,
+                "norm_fulfill_p1": 1.0778556168079376,
+                "norm_fulfill_p10": 1.133505642414093
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006573088467121124,
+              "Medium.norm_fulfill_p1": 0.0034184157848358154,
+              "Medium.norm_fulfill_p10": 0.0080488920211792,
+              "Low.norm_fulfill_mean": 0.00388481467962265,
+              "Low.norm_fulfill_p1": -0.011733198165893466,
+              "Low.norm_fulfill_p10": 0.010298430919647217
+            },
+            "config": [
+              4,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 4.500731250118406
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        4,
+        0.06,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.004118289332836866,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9680283479392529,
+                "norm_fulfill_p1": 0.9500760346651077,
+                "norm_fulfill_p10": 0.9591485559940338
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.037408858537674,
+                "norm_fulfill_p1": 1.009712016582489,
+                "norm_fulfill_p10": 1.0271510481834412
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.005579695105552673,
+              "Medium.norm_fulfill_p1": 0.010546517372131303,
+              "Medium.norm_fulfill_p10": 0.008969426155090332,
+              "Low.norm_fulfill_mean": 0.007413819432258606,
+              "Low.norm_fulfill_p1": 0.014545869827270574,
+              "Low.norm_fulfill_p10": 0.01659455895423889
+            },
+            "config": [
+              4,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 5.786093750430155
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.984696514904499,
+                "norm_fulfill_p1": 0.9721298724412918,
+                "norm_fulfill_p10": 0.9747482240200043
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9986108243465424,
+                "norm_fulfill_p1": 0.9637606859207153,
+                "norm_fulfill_p10": 0.9819165766239166
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.007182460278272629,
+              "Medium.norm_fulfill_p1": 0.012742376327514626,
+              "Medium.norm_fulfill_p10": 0.013135373592376709,
+              "Low.norm_fulfill_mean": -0.005622204393148422,
+              "Low.norm_fulfill_p1": -0.00044209063053135544,
+              "Low.norm_fulfill_p10": -0.0014736354351043701
+            },
+            "config": [
+              4,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 5.85822500033828
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9856900833547115,
+                "norm_fulfill_p1": 0.9510994493961334,
+                "norm_fulfill_p10": 0.9613918364048004
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1678941920399666,
+                "norm_fulfill_p1": 1.1186773777008057,
+                "norm_fulfill_p10": 1.1322818994522095
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.002738669514656067,
+              "Medium.norm_fulfill_p1": -0.0018334001302718894,
+              "Medium.norm_fulfill_p10": 0.0018959641456604004,
+              "Low.norm_fulfill_mean": 0.0039446353912353516,
+              "Low.norm_fulfill_p1": -0.006082910299301192,
+              "Low.norm_fulfill_p10": -0.005523085594177246
+            },
+            "config": [
+              4,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.5178250004246365
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0071140602231026,
+                "norm_fulfill_p1": 0.9639355301856994,
+                "norm_fulfill_p10": 0.9729076325893402
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2148969173431396,
+                "norm_fulfill_p1": 1.0805313169956208,
+                "norm_fulfill_p10": 1.1432074308395386
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006573092192411423,
+              "Medium.norm_fulfill_p1": 0.003418424725532554,
+              "Medium.norm_fulfill_p10": 0.008048921823501587,
+              "Low.norm_fulfill_mean": 0.013066142797470093,
+              "Low.norm_fulfill_p1": -0.009057497978210316,
+              "Low.norm_fulfill_p10": 0.020000219345092773
+            },
+            "config": [
+              4,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 4.559081249681185
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        4,
+        0.06,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.004118309356272221,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9680283516645432,
+                "norm_fulfill_p1": 0.950076025724411,
+                "norm_fulfill_p10": 0.9591485261917114
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0374107956886292,
+                "norm_fulfill_p1": 1.0106246054172516,
+                "norm_fulfill_p10": 1.0270000100135803
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.005579698830842972,
+              "Medium.norm_fulfill_p1": 0.010546508431434565,
+              "Medium.norm_fulfill_p10": 0.008969396352767944,
+              "Low.norm_fulfill_mean": 0.007415756583213806,
+              "Low.norm_fulfill_p1": 0.015458458662033103,
+              "Low.norm_fulfill_p10": 0.016443520784378052
+            },
+            "config": [
+              4,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 5.856081249476119
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.984696514904499,
+                "norm_fulfill_p1": 0.9721298724412918,
+                "norm_fulfill_p10": 0.9747482240200043
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9986319690942764,
+                "norm_fulfill_p1": 0.9638146609067917,
+                "norm_fulfill_p10": 0.9820964932441711
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.007182460278272629,
+              "Medium.norm_fulfill_p1": 0.012742376327514626,
+              "Medium.norm_fulfill_p10": 0.013135373592376709,
+              "Low.norm_fulfill_mean": -0.005601059645414352,
+              "Low.norm_fulfill_p1": -0.00038811564445495605,
+              "Low.norm_fulfill_p10": -0.0012937188148498535
+            },
+            "config": [
+              4,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.072381250509352
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.985690101981163,
+                "norm_fulfill_p1": 0.9510994493961334,
+                "norm_fulfill_p10": 0.9613918364048004
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1746330186724663,
+                "norm_fulfill_p1": 1.1236364781856536,
+                "norm_fulfill_p10": 1.138442873954773
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.002738688141107559,
+              "Medium.norm_fulfill_p1": -0.0018334001302718894,
+              "Medium.norm_fulfill_p10": 0.0018959641456604004,
+              "Low.norm_fulfill_mean": 0.010683462023735046,
+              "Low.norm_fulfill_p1": -0.0011238098144532582,
+              "Low.norm_fulfill_p10": 0.0006378889083862305
+            },
+            "config": [
+              4,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.151012499889475
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383731245995,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0071140602231026,
+                "norm_fulfill_p1": 0.9639355212450027,
+                "norm_fulfill_p10": 0.9729076027870178
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2246515229344368,
+                "norm_fulfill_p1": 1.0841630756855012,
+                "norm_fulfill_p10": 1.1525599360466003
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006573092192411423,
+              "Medium.norm_fulfill_p1": 0.0034184157848358154,
+              "Medium.norm_fulfill_p10": 0.0080488920211792,
+              "Low.norm_fulfill_mean": 0.022820748388767242,
+              "Low.norm_fulfill_p1": -0.0054257392883299005,
+              "Low.norm_fulfill_p10": 0.02935272455215454
+            },
+            "config": [
+              4,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.2470437498850515
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        4,
+        0.08,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.0048480103723704815,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9688708670437336,
+                "norm_fulfill_p1": 0.9509385824203491,
+                "norm_fulfill_p10": 0.9587997794151306
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0421007722616196,
+                "norm_fulfill_p1": 1.0241836905479431,
+                "norm_fulfill_p10": 1.0276148915290833
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006422214210033417,
+              "Medium.norm_fulfill_p1": 0.01140906512737272,
+              "Medium.norm_fulfill_p10": 0.008620649576187134,
+              "Low.norm_fulfill_mean": 0.012105733156204224,
+              "Low.norm_fulfill_p1": 0.029017543792724587,
+              "Low.norm_fulfill_p10": 0.01705840229988098
+            },
+            "config": [
+              4,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 4.18153125065146
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866919256746769,
+                "norm_fulfill_p1": 0.9760898649692535,
+                "norm_fulfill_p10": 0.9783811569213867
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9950136318802834,
+                "norm_fulfill_p1": 0.9630195647478104,
+                "norm_fulfill_p10": 0.9754760563373566
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.00917787104845047,
+              "Medium.norm_fulfill_p1": 0.01670236885547638,
+              "Medium.norm_fulfill_p10": 0.016768306493759155,
+              "Low.norm_fulfill_mean": -0.009219396859407425,
+              "Low.norm_fulfill_p1": -0.0011832118034362793,
+              "Low.norm_fulfill_p10": -0.007914155721664429
+            },
+            "config": [
+              4,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 4.638637499738252
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.986112006008625,
+                "norm_fulfill_p1": 0.9498994529247284,
+                "norm_fulfill_p10": 0.9612946808338165
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1602124348282814,
+                "norm_fulfill_p1": 1.110398280620575,
+                "norm_fulfill_p10": 1.12916898727417
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003160592168569565,
+              "Medium.norm_fulfill_p1": -0.0030333966016768965,
+              "Medium.norm_fulfill_p10": 0.0017988085746765137,
+              "Low.norm_fulfill_mean": -0.003737121820449829,
+              "Low.norm_fulfill_p1": -0.01436200737953186,
+              "Low.norm_fulfill_p10": -0.008635997772216797
+            },
+            "config": [
+              4,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 4.456918750292971
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0087789818644524,
+                "norm_fulfill_p1": 0.9654468208551407,
+                "norm_fulfill_p10": 0.975423276424408
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.20513666421175,
+                "norm_fulfill_p1": 1.081467765569687,
+                "norm_fulfill_p10": 1.1334941387176514
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.008238013833761215,
+              "Medium.norm_fulfill_p1": 0.004929715394973777,
+              "Medium.norm_fulfill_p10": 0.010564565658569336,
+              "Low.norm_fulfill_mean": 0.003305889666080475,
+              "Low.norm_fulfill_p1": -0.008121049404144154,
+              "Low.norm_fulfill_p10": 0.010286927223205566
+            },
+            "config": [
+              4,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 4.377875000500353
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        4,
+        0.08,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.0048480110708624125,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9688708782196045,
+                "norm_fulfill_p1": 0.9509385824203491,
+                "norm_fulfill_p10": 0.9587997794151306
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0420189127326012,
+                "norm_fulfill_p1": 1.022909301519394,
+                "norm_fulfill_p10": 1.028357446193695
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006422225385904312,
+              "Medium.norm_fulfill_p1": 0.01140906512737272,
+              "Medium.norm_fulfill_p10": 0.008620649576187134,
+              "Low.norm_fulfill_mean": 0.012023873627185822,
+              "Low.norm_fulfill_p1": 0.027743154764175437,
+              "Low.norm_fulfill_p10": 0.017800956964492798
+            },
+            "config": [
+              4,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 5.066287500085309
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866919293999672,
+                "norm_fulfill_p1": 0.9760898649692535,
+                "norm_fulfill_p10": 0.9783811569213867
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9956101328134537,
+                "norm_fulfill_p1": 0.9633434325456619,
+                "norm_fulfill_p10": 0.9772684276103973
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.009177874773740768,
+              "Medium.norm_fulfill_p1": 0.01670236885547638,
+              "Medium.norm_fulfill_p10": 0.016768306493759155,
+              "Low.norm_fulfill_mean": -0.008622895926237106,
+              "Low.norm_fulfill_p1": -0.000859344005584739,
+              "Low.norm_fulfill_p10": -0.006121784448623657
+            },
+            "config": [
+              4,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 5.544800000279793
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.986112006008625,
+                "norm_fulfill_p1": 0.9498994529247284,
+                "norm_fulfill_p10": 0.9612946808338165
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1669736206531525,
+                "norm_fulfill_p1": 1.1150352954864502,
+                "norm_fulfill_p10": 1.1350789070129395
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003160592168569565,
+              "Medium.norm_fulfill_p1": -0.0030333966016768965,
+              "Medium.norm_fulfill_p10": 0.0017988085746765137,
+              "Low.norm_fulfill_mean": 0.003024064004421234,
+              "Low.norm_fulfill_p1": -0.00972499251365666,
+              "Low.norm_fulfill_p10": -0.0027260780334472656
+            },
+            "config": [
+              4,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.4758374999437365
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.008778978139162,
+                "norm_fulfill_p1": 0.9654467701911926,
+                "norm_fulfill_p10": 0.975423276424408
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.214063510298729,
+                "norm_fulfill_p1": 1.0858514726161956,
+                "norm_fulfill_p10": 1.1399658918380737
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.008238010108470917,
+              "Medium.norm_fulfill_p1": 0.00492966473102574,
+              "Medium.norm_fulfill_p10": 0.010564565658569336,
+              "Low.norm_fulfill_mean": 0.012232735753059387,
+              "Low.norm_fulfill_p1": -0.0037373423576354536,
+              "Low.norm_fulfill_p10": 0.01675868034362793
+            },
+            "config": [
+              4,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.965343750176544
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        4,
+        0.08,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.004848022945225239,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9688708744943142,
+                "norm_fulfill_p1": 0.9509385824203491,
+                "norm_fulfill_p10": 0.9587997794151306
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0420685708522797,
+                "norm_fulfill_p1": 1.0235571384429931,
+                "norm_fulfill_p10": 1.0273478031158447
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006422221660614014,
+              "Medium.norm_fulfill_p1": 0.01140906512737272,
+              "Medium.norm_fulfill_p10": 0.008620649576187134,
+              "Low.norm_fulfill_mean": 0.012073531746864319,
+              "Low.norm_fulfill_p1": 0.02839099168777459,
+              "Low.norm_fulfill_p10": 0.016791313886642456
+            },
+            "config": [
+              4,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.1579000004931
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866919256746769,
+                "norm_fulfill_p1": 0.9760898649692535,
+                "norm_fulfill_p10": 0.9783811569213867
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9961004517972469,
+                "norm_fulfill_p1": 0.9633469194173813,
+                "norm_fulfill_p10": 0.9774646461009979
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.00917787104845047,
+              "Medium.norm_fulfill_p1": 0.01670236885547638,
+              "Medium.norm_fulfill_p10": 0.016768306493759155,
+              "Low.norm_fulfill_mean": -0.008132576942443848,
+              "Low.norm_fulfill_p1": -0.0008558571338653786,
+              "Low.norm_fulfill_p10": -0.005925565958023071
+            },
+            "config": [
+              4,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.187687499936146
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9861120171844959,
+                "norm_fulfill_p1": 0.9498994529247284,
+                "norm_fulfill_p10": 0.9612947106361389
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1737081110477448,
+                "norm_fulfill_p1": 1.1197244584560395,
+                "norm_fulfill_p10": 1.141187608242035
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.00316060334444046,
+              "Medium.norm_fulfill_p1": -0.0030333966016768965,
+              "Medium.norm_fulfill_p10": 0.0017988383769989014,
+              "Low.norm_fulfill_mean": 0.00975855439901352,
+              "Low.norm_fulfill_p1": -0.005035829544067338,
+              "Low.norm_fulfill_p10": 0.0033826231956481934
+            },
+            "config": [
+              4,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.126168749891804
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0087789855897427,
+                "norm_fulfill_p1": 0.9654467701911926,
+                "norm_fulfill_p10": 0.975423276424408
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2229648903012276,
+                "norm_fulfill_p1": 1.0885212957859038,
+                "norm_fulfill_p10": 1.1469589471817017
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.008238017559051514,
+              "Medium.norm_fulfill_p1": 0.00492966473102574,
+              "Medium.norm_fulfill_p10": 0.010564565658569336,
+              "Low.norm_fulfill_mean": 0.021134115755558014,
+              "Low.norm_fulfill_p1": -0.001067519187927246,
+              "Low.norm_fulfill_p10": 0.02375173568725586
+            },
+            "config": [
+              4,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 6.49813125073706
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.06,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005119995446875691,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9694018177688122,
+                "norm_fulfill_p1": 0.950529220700264,
+                "norm_fulfill_p10": 0.9571842849254608
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0433336570858955,
+                "norm_fulfill_p1": 1.0256041884422302,
+                "norm_fulfill_p10": 1.0272982120513916
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0069531649351119995,
+              "Medium.norm_fulfill_p1": 0.01099970340728762,
+              "Medium.norm_fulfill_p10": 0.007005155086517334,
+              "Low.norm_fulfill_mean": 0.013338617980480194,
+              "Low.norm_fulfill_p1": 0.030438041687011697,
+              "Low.norm_fulfill_p10": 0.01674172282218933
+            },
+            "config": [
+              6,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 5.306356250002864
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.987544983625412,
+                "norm_fulfill_p1": 0.9768953204154969,
+                "norm_fulfill_p10": 0.9797053933143616
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9930655620992184,
+                "norm_fulfill_p1": 0.9616601139307022,
+                "norm_fulfill_p10": 0.9674870371818542
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010030928999185562,
+              "Medium.norm_fulfill_p1": 0.01750782430171971,
+              "Medium.norm_fulfill_p10": 0.01809254288673401,
+              "Low.norm_fulfill_mean": -0.011167466640472412,
+              "Low.norm_fulfill_p1": -0.002542662620544478,
+              "Low.norm_fulfill_p10": -0.015903174877166748
+            },
+            "config": [
+              6,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 5.934287500167557
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326563358307,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9862363636493683,
+                "norm_fulfill_p1": 0.94941745698452,
+                "norm_fulfill_p10": 0.9613205790519714
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1599681302905083,
+                "norm_fulfill_p1": 1.110300749540329,
+                "norm_fulfill_p10": 1.1309474110603333
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 7.450580596923828e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0032849498093128204,
+              "Medium.norm_fulfill_p1": -0.003515392541885376,
+              "Medium.norm_fulfill_p10": 0.001824706792831421,
+              "Low.norm_fulfill_mean": -0.003981426358222961,
+              "Low.norm_fulfill_p1": -0.014459538459777876,
+              "Low.norm_fulfill_p10": -0.006857573986053467
+            },
+            "config": [
+              6,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.933200000072247
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0096326544880867,
+                "norm_fulfill_p1": 0.9666212320327758,
+                "norm_fulfill_p10": 0.9766970872879028
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2035508677363396,
+                "norm_fulfill_p1": 1.0778271019458772,
+                "norm_fulfill_p10": 1.132356882095337
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.009091686457395554,
+              "Medium.norm_fulfill_p1": 0.006104126572608948,
+              "Medium.norm_fulfill_p10": 0.011838376522064209,
+              "Low.norm_fulfill_mean": 0.0017200931906700134,
+              "Low.norm_fulfill_p1": -0.011761713027953924,
+              "Low.norm_fulfill_p10": 0.009149670600891113
+            },
+            "config": [
+              6,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.825449999974808
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.06,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005119991255924106,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9694018214941025,
+                "norm_fulfill_p1": 0.9505291700363159,
+                "norm_fulfill_p10": 0.9571842849254608
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0431182086467743,
+                "norm_fulfill_p1": 1.0266557455062866,
+                "norm_fulfill_p10": 1.0272604823112488
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006953168660402298,
+              "Medium.norm_fulfill_p1": 0.010999652743339472,
+              "Medium.norm_fulfill_p10": 0.007005155086517334,
+              "Low.norm_fulfill_mean": 0.013123169541358948,
+              "Low.norm_fulfill_p1": 0.03148959875106805,
+              "Low.norm_fulfill_p10": 0.01670399308204651
+            },
+            "config": [
+              6,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.551031249931839
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9875449761748314,
+                "norm_fulfill_p1": 0.9768953204154969,
+                "norm_fulfill_p10": 0.9797053933143616
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9936624281108379,
+                "norm_fulfill_p1": 0.9622793644666672,
+                "norm_fulfill_p10": 0.9699272513389587
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010030921548604965,
+              "Medium.norm_fulfill_p1": 0.01750782430171971,
+              "Medium.norm_fulfill_p10": 0.01809254288673401,
+              "Low.norm_fulfill_mean": -0.010570600628852844,
+              "Low.norm_fulfill_p1": -0.0019234120845794678,
+              "Low.norm_fulfill_p10": -0.013462960720062256
+            },
+            "config": [
+              6,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.508787500228209
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.986236359924078,
+                "norm_fulfill_p1": 0.94941745698452,
+                "norm_fulfill_p10": 0.9613205790519714
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1667779833078384,
+                "norm_fulfill_p1": 1.1148546814918519,
+                "norm_fulfill_p10": 1.1368317604064941
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003284946084022522,
+              "Medium.norm_fulfill_p1": -0.003515392541885376,
+              "Medium.norm_fulfill_p10": 0.001824706792831421,
+              "Low.norm_fulfill_mean": 0.0028284266591072083,
+              "Low.norm_fulfill_p1": -0.009905606508255005,
+              "Low.norm_fulfill_p10": -0.0009732246398925781
+            },
+            "config": [
+              6,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.794162500431412
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0096326544880867,
+                "norm_fulfill_p1": 0.9666212320327758,
+                "norm_fulfill_p10": 0.9766970872879028
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2123516127467155,
+                "norm_fulfill_p1": 1.0826240241527558,
+                "norm_fulfill_p10": 1.1383018493652344
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.009091686457395554,
+              "Medium.norm_fulfill_p1": 0.006104126572608948,
+              "Medium.norm_fulfill_p10": 0.011838376522064209,
+              "Low.norm_fulfill_mean": 0.01052083820104599,
+              "Low.norm_fulfill_p1": -0.006964790821075262,
+              "Low.norm_fulfill_p10": 0.015094637870788574
+            },
+            "config": [
+              6,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.1125875001598615
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.06,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005119996145367622,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9694018140435219,
+                "norm_fulfill_p1": 0.9505291700363159,
+                "norm_fulfill_p10": 0.9571842849254608
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0428958535194397,
+                "norm_fulfill_p1": 1.0247997701168061,
+                "norm_fulfill_p10": 1.027619183063507
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.006953161209821701,
+              "Medium.norm_fulfill_p1": 0.010999652743339472,
+              "Medium.norm_fulfill_p10": 0.007005155086517334,
+              "Low.norm_fulfill_mean": 0.012900814414024353,
+              "Low.norm_fulfill_p1": 0.02963362336158759,
+              "Low.norm_fulfill_p10": 0.01706269383430481
+            },
+            "config": [
+              6,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 8.392381250814651
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9875449910759926,
+                "norm_fulfill_p1": 0.9768952697515487,
+                "norm_fulfill_p10": 0.9797054529190063
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9942043051123619,
+                "norm_fulfill_p1": 0.9623368173837662,
+                "norm_fulfill_p10": 0.9717369079589844
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010030936449766159,
+              "Medium.norm_fulfill_p1": 0.017507773637771562,
+              "Medium.norm_fulfill_p10": 0.018092602491378784,
+              "Low.norm_fulfill_mean": -0.010028723627328873,
+              "Low.norm_fulfill_p1": -0.0018659591674804465,
+              "Low.norm_fulfill_p10": -0.011653304100036621
+            },
+            "config": [
+              6,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 8.28159374941606
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9862363636493683,
+                "norm_fulfill_p1": 0.94941745698452,
+                "norm_fulfill_p10": 0.9613205790519714
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1734565123915672,
+                "norm_fulfill_p1": 1.1195069432258606,
+                "norm_fulfill_p10": 1.142913818359375
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0032849498093128204,
+              "Medium.norm_fulfill_p1": -0.003515392541885376,
+              "Medium.norm_fulfill_p10": 0.001824706792831421,
+              "Low.norm_fulfill_mean": 0.009506955742835999,
+              "Low.norm_fulfill_p1": -0.005253344774246216,
+              "Low.norm_fulfill_p10": 0.005108833312988281
+            },
+            "config": [
+              6,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.664918750582729
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383731245995,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0096326619386673,
+                "norm_fulfill_p1": 0.9666212320327758,
+                "norm_fulfill_p10": 0.9766970872879028
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2205215841531754,
+                "norm_fulfill_p1": 1.0856979310512542,
+                "norm_fulfill_p10": 1.145273208618164
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.00909169390797615,
+              "Medium.norm_fulfill_p1": 0.006104126572608948,
+              "Medium.norm_fulfill_p10": 0.011838376522064209,
+              "Low.norm_fulfill_mean": 0.0186908096075058,
+              "Low.norm_fulfill_p1": -0.00389088392257686,
+              "Low.norm_fulfill_p10": 0.02206599712371826
+            },
+            "config": [
+              6,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.65001874990412
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.08,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.00599412783049047,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713487923145,
+                "norm_fulfill_p1": 0.99967340528965,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9729008376598358,
+                "norm_fulfill_p1": 0.9492555141448975,
+                "norm_fulfill_p10": 0.9643373191356659
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0386567488312721,
+                "norm_fulfill_p1": 1.0237528502941131,
+                "norm_fulfill_p10": 1.026900827884674
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -7.450580596923828e-09,
+              "High.norm_fulfill_p1": -1.0132789607375514e-07,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010452184826135635,
+              "Medium.norm_fulfill_p1": 0.009725996851921104,
+              "Medium.norm_fulfill_p10": 0.014158189296722412,
+              "Low.norm_fulfill_mean": 0.008661709725856781,
+              "Low.norm_fulfill_p1": 0.028586703538894587,
+              "Low.norm_fulfill_p10": 0.016344338655471802
+            },
+            "config": [
+              6,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 5.653787499795726
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.989138551056385,
+                "norm_fulfill_p1": 0.9767708897590637,
+                "norm_fulfill_p10": 0.9801830649375916
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9897592812776566,
+                "norm_fulfill_p1": 0.9543066531419754,
+                "norm_fulfill_p10": 0.9620040357112885
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011624496430158615,
+              "Medium.norm_fulfill_p1": 0.017383393645286516,
+              "Medium.norm_fulfill_p10": 0.01857021450996399,
+              "Low.norm_fulfill_mean": -0.014473747462034225,
+              "Low.norm_fulfill_p1": -0.009896123409271262,
+              "Low.norm_fulfill_p10": -0.021386176347732544
+            },
+            "config": [
+              6,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 6.24115625032573
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866289347410202,
+                "norm_fulfill_p1": 0.9480379432439804,
+                "norm_fulfill_p10": 0.9613312780857086
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1587603017687798,
+                "norm_fulfill_p1": 1.1053255558013917,
+                "norm_fulfill_p10": 1.1317609548568726
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003677520900964737,
+              "Medium.norm_fulfill_p1": -0.004894906282424949,
+              "Medium.norm_fulfill_p10": 0.0018354058265686035,
+              "Low.norm_fulfill_mean": -0.005189254879951477,
+              "Low.norm_fulfill_p1": -0.019434732198715166,
+              "Low.norm_fulfill_p10": -0.00604403018951416
+            },
+            "config": [
+              6,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.3963937507433
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0118524767458439,
+                "norm_fulfill_p1": 0.9688200324773788,
+                "norm_fulfill_p10": 0.9801087975502014
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.201980821788311,
+                "norm_fulfill_p1": 1.0787800312042237,
+                "norm_fulfill_p10": 1.1284018754959106
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.01131150871515274,
+              "Medium.norm_fulfill_p1": 0.008302927017211914,
+              "Medium.norm_fulfill_p10": 0.015250086784362793,
+              "Low.norm_fulfill_mean": 0.00015004724264144897,
+              "Low.norm_fulfill_p1": -0.010808783769607366,
+              "Low.norm_fulfill_p10": 0.005194664001464844
+            },
+            "config": [
+              6,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 5.164024999430694
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.08,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005994131788611412,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9729008376598358,
+                "norm_fulfill_p1": 0.9492554306983948,
+                "norm_fulfill_p10": 0.9643373787403107
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0384380370378494,
+                "norm_fulfill_p1": 1.023519605398178,
+                "norm_fulfill_p10": 1.0262560844421387
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010452184826135635,
+              "Medium.norm_fulfill_p1": 0.009725913405418396,
+              "Medium.norm_fulfill_p10": 0.014158248901367188,
+              "Low.norm_fulfill_mean": 0.008442997932434082,
+              "Low.norm_fulfill_p1": 0.028353458642959573,
+              "Low.norm_fulfill_p10": 0.0156995952129364
+            },
+            "config": [
+              6,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.359337500020047
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9891385436058044,
+                "norm_fulfill_p1": 0.9767708897590637,
+                "norm_fulfill_p10": 0.9801830649375916
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9908253848552704,
+                "norm_fulfill_p1": 0.9541769623756409,
+                "norm_fulfill_p10": 0.9645376801490784
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011624488979578018,
+              "Medium.norm_fulfill_p1": 0.017383393645286516,
+              "Medium.norm_fulfill_p10": 0.01857021450996399,
+              "Low.norm_fulfill_mean": -0.013407643884420395,
+              "Low.norm_fulfill_p1": -0.010025814175605774,
+              "Low.norm_fulfill_p10": -0.018852531909942627
+            },
+            "config": [
+              6,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 6.971150000026682
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866289384663105,
+                "norm_fulfill_p1": 0.9480379432439804,
+                "norm_fulfill_p10": 0.961331307888031
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.165955364704132,
+                "norm_fulfill_p1": 1.1095857322216034,
+                "norm_fulfill_p10": 1.1375015377998352
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0036775246262550354,
+              "Medium.norm_fulfill_p1": -0.004894906282424949,
+              "Medium.norm_fulfill_p10": 0.0018354356288909912,
+              "Low.norm_fulfill_mean": 0.0020058080554008484,
+              "Low.norm_fulfill_p1": -0.015174555778503462,
+              "Low.norm_fulfill_p10": -0.00030344724655151367
+            },
+            "config": [
+              6,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.38758749957924
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0118524841964245,
+                "norm_fulfill_p1": 0.9688200324773788,
+                "norm_fulfill_p10": 0.9801087975502014
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2097805812954903,
+                "norm_fulfill_p1": 1.0838277816772461,
+                "norm_fulfill_p10": 1.1347013711929321
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011311516165733337,
+              "Medium.norm_fulfill_p1": 0.008302927017211914,
+              "Medium.norm_fulfill_p10": 0.015250086784362793,
+              "Low.norm_fulfill_mean": 0.00794980674982071,
+              "Low.norm_fulfill_p1": -0.00576103329658495,
+              "Low.norm_fulfill_p10": 0.011494159698486328
+            },
+            "config": [
+              6,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.067743749757938
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        6,
+        0.08,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005994132487103343,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9729008451104164,
+                "norm_fulfill_p1": 0.9492554306983948,
+                "norm_fulfill_p10": 0.9643373787403107
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0383988246321678,
+                "norm_fulfill_p1": 1.0226531028747559,
+                "norm_fulfill_p10": 1.02532297372818
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010452192276716232,
+              "Medium.norm_fulfill_p1": 0.009725913405418396,
+              "Medium.norm_fulfill_p10": 0.014158248901367188,
+              "Low.norm_fulfill_mean": 0.008403785526752472,
+              "Low.norm_fulfill_p1": 0.02748695611953733,
+              "Low.norm_fulfill_p10": 0.014766484498977661
+            },
+            "config": [
+              6,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 8.61001875000511
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9891385622322559,
+                "norm_fulfill_p1": 0.9767708897590637,
+                "norm_fulfill_p10": 0.9801830649375916
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9915754124522209,
+                "norm_fulfill_p1": 0.9545095205307007,
+                "norm_fulfill_p10": 0.9652429521083832
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.01162450760602951,
+              "Medium.norm_fulfill_p1": 0.017383393645286516,
+              "Medium.norm_fulfill_p10": 0.01857021450996399,
+              "Low.norm_fulfill_mean": -0.012657616287469864,
+              "Low.norm_fulfill_p1": -0.009693256020545937,
+              "Low.norm_fulfill_p10": -0.018147259950637817
+            },
+            "config": [
+              6,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.207468750493717
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326563358307,
+                "norm_fulfill_p1": 0.9656510293483734,
+                "norm_fulfill_p10": 0.9744059443473816
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9866289384663105,
+                "norm_fulfill_p1": 0.9480379939079284,
+                "norm_fulfill_p10": 0.9613312780857086
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1725562140345573,
+                "norm_fulfill_p1": 1.1139524042606355,
+                "norm_fulfill_p10": 1.1434160470962524
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 7.450580596923828e-09,
+              "High.norm_fulfill_p1": 1.788139347702611e-08,
+              "High.norm_fulfill_p10": 5.960464477539063e-08,
+              "Medium.norm_fulfill_mean": 0.0036775246262550354,
+              "Medium.norm_fulfill_p1": -0.004894855618476912,
+              "Medium.norm_fulfill_p10": 0.0018354058265686035,
+              "Low.norm_fulfill_mean": 0.00860665738582611,
+              "Low.norm_fulfill_p1": -0.010807883739471391,
+              "Low.norm_fulfill_p10": 0.005611062049865723
+            },
+            "config": [
+              6,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.354843750363216
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0118524692952633,
+                "norm_fulfill_p1": 0.9688200324773788,
+                "norm_fulfill_p10": 0.9801087975502014
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.216576099395752,
+                "norm_fulfill_p1": 1.086939263343811,
+                "norm_fulfill_p10": 1.141795039176941
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011311501264572144,
+              "Medium.norm_fulfill_p1": 0.008302927017211914,
+              "Medium.norm_fulfill_p10": 0.015250086784362793,
+              "Low.norm_fulfill_mean": 0.014745324850082397,
+              "Low.norm_fulfill_p1": -0.0026495516300200084,
+              "Low.norm_fulfill_p10": 0.018587827682495117
+            },
+            "config": [
+              6,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.677893750245858
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.06,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005977165885269642,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.972976204007864,
+                "norm_fulfill_p1": 0.9519046097993851,
+                "norm_fulfill_p10": 0.9632501900196075
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0382476449012756,
+                "norm_fulfill_p1": 1.0256812810897826,
+                "norm_fulfill_p10": 1.027028739452362
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010527551174163818,
+              "Medium.norm_fulfill_p1": 0.01237509250640867,
+              "Medium.norm_fulfill_p10": 0.013071060180664062,
+              "Low.norm_fulfill_mean": 0.00825260579586029,
+              "Low.norm_fulfill_p1": 0.030515134334564098,
+              "Low.norm_fulfill_p10": 0.01647225022315979
+            },
+            "config": [
+              8,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.318368750020454
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9891830012202263,
+                "norm_fulfill_p1": 0.9770513653755188,
+                "norm_fulfill_p10": 0.9807093739509583
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9896469190716743,
+                "norm_fulfill_p1": 0.9536530464887619,
+                "norm_fulfill_p10": 0.9613814651966095
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011668946593999863,
+              "Medium.norm_fulfill_p1": 0.017663869261741683,
+              "Medium.norm_fulfill_p10": 0.01909652352333069,
+              "Low.norm_fulfill_mean": -0.014586109668016434,
+              "Low.norm_fulfill_p1": -0.010549730062484719,
+              "Low.norm_fulfill_p10": -0.0220087468624115
+            },
+            "config": [
+              8,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.3383812505198875
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9865983575582504,
+                "norm_fulfill_p1": 0.9482366651296615,
+                "norm_fulfill_p10": 0.9614464044570923
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1589754223823547,
+                "norm_fulfill_p1": 1.107842081785202,
+                "norm_fulfill_p10": 1.1317216753959656
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0036469437181949615,
+              "Medium.norm_fulfill_p1": -0.004696184396743797,
+              "Medium.norm_fulfill_p10": 0.0019505321979522705,
+              "Low.norm_fulfill_mean": -0.004974134266376495,
+              "Low.norm_fulfill_p1": -0.01691820621490492,
+              "Low.norm_fulfill_p10": -0.006083309650421143
+            },
+            "config": [
+              8,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.638424999640847
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0119810812175274,
+                "norm_fulfill_p1": 0.9694012850522995,
+                "norm_fulfill_p10": 0.9801546037197113
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2011251747608185,
+                "norm_fulfill_p1": 1.0756148040294646,
+                "norm_fulfill_p10": 1.12723708152771
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011440113186836243,
+              "Medium.norm_fulfill_p1": 0.008884179592132613,
+              "Medium.norm_fulfill_p10": 0.01529589295387268,
+              "Low.norm_fulfill_mean": -0.0007055997848510742,
+              "Low.norm_fulfill_p1": -0.013974010944366455,
+              "Low.norm_fulfill_p10": 0.00402987003326416
+            },
+            "config": [
+              8,
+              0.06,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.770912499836413
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.06,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.0059771540109068155,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9729761928319931,
+                "norm_fulfill_p1": 0.9519046097993851,
+                "norm_fulfill_p10": 0.9632501900196075
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0386243611574173,
+                "norm_fulfill_p1": 1.0260861933231353,
+                "norm_fulfill_p10": 1.0272042751312256
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010527539998292923,
+              "Medium.norm_fulfill_p1": 0.01237509250640867,
+              "Medium.norm_fulfill_p10": 0.013071060180664062,
+              "Low.norm_fulfill_mean": 0.008629322052001953,
+              "Low.norm_fulfill_p1": 0.030920046567916804,
+              "Low.norm_fulfill_p10": 0.016647785902023315
+            },
+            "config": [
+              8,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.059418749122415
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9891829937696457,
+                "norm_fulfill_p1": 0.9770513653755188,
+                "norm_fulfill_p10": 0.9807093441486359
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9907129891216755,
+                "norm_fulfill_p1": 0.9535234481096267,
+                "norm_fulfill_p10": 0.9639150500297546
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011668939143419266,
+              "Medium.norm_fulfill_p1": 0.017663869261741683,
+              "Medium.norm_fulfill_p10": 0.0190964937210083,
+              "Low.norm_fulfill_mean": -0.01352003961801529,
+              "Low.norm_fulfill_p1": -0.010679328441619895,
+              "Low.norm_fulfill_p10": -0.019475162029266357
+            },
+            "config": [
+              8,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 8.179756249774073
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9865983463823795,
+                "norm_fulfill_p1": 0.9482366144657135,
+                "norm_fulfill_p10": 0.9614464044570923
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1661618649959564,
+                "norm_fulfill_p1": 1.1122560620307922,
+                "norm_fulfill_p10": 1.1374554634094238
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003646932542324066,
+              "Medium.norm_fulfill_p1": -0.0046962350606918335,
+              "Medium.norm_fulfill_p10": 0.0019505321979522705,
+              "Low.norm_fulfill_mean": 0.002212308347225189,
+              "Low.norm_fulfill_p1": -0.012504225969314664,
+              "Low.norm_fulfill_p10": -0.0003495216369628906
+            },
+            "config": [
+              8,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.703918750143202
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0119810998439789,
+                "norm_fulfill_p1": 0.9694012850522995,
+                "norm_fulfill_p10": 0.9801546037197113
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.208901822566986,
+                "norm_fulfill_p1": 1.080782377719879,
+                "norm_fulfill_p10": 1.1347978711128235
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011440131813287735,
+              "Medium.norm_fulfill_p1": 0.008884179592132613,
+              "Medium.norm_fulfill_p10": 0.01529589295387268,
+              "Low.norm_fulfill_mean": 0.007071048021316528,
+              "Low.norm_fulfill_p1": -0.008806437253952026,
+              "Low.norm_fulfill_p10": 0.011590659618377686
+            },
+            "config": [
+              8,
+              0.06,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.708918750016892
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.06,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.005977158667519689,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9729761891067028,
+                "norm_fulfill_p1": 0.9519046097993851,
+                "norm_fulfill_p10": 0.9632501900196075
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0390618443489075,
+                "norm_fulfill_p1": 1.023086178302765,
+                "norm_fulfill_p10": 1.027440369129181
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.010527536273002625,
+              "Medium.norm_fulfill_p1": 0.01237509250640867,
+              "Medium.norm_fulfill_p10": 0.013071060180664062,
+              "Low.norm_fulfill_mean": 0.009066805243492126,
+              "Low.norm_fulfill_p1": 0.02792003154754641,
+              "Low.norm_fulfill_p10": 0.016883879899978638
+            },
+            "config": [
+              8,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 10.260087499773363
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9891830012202263,
+                "norm_fulfill_p1": 0.9770513653755188,
+                "norm_fulfill_p10": 0.9807093739509583
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9914538376033306,
+                "norm_fulfill_p1": 0.9538560062646866,
+                "norm_fulfill_p10": 0.9651350975036621
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.011668946593999863,
+              "Medium.norm_fulfill_p1": 0.017663869261741683,
+              "Medium.norm_fulfill_p10": 0.01909652352333069,
+              "Low.norm_fulfill_mean": -0.012779191136360168,
+              "Low.norm_fulfill_p1": -0.010346770286560059,
+              "Low.norm_fulfill_p10": -0.018255114555358887
+            },
+            "config": [
+              8,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 10.426549999465351
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9865983501076698,
+                "norm_fulfill_p1": 0.9482366144657135,
+                "norm_fulfill_p10": 0.9614464044570923
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1727577224373817,
+                "norm_fulfill_p1": 1.1167760491371155,
+                "norm_fulfill_p10": 1.143362045288086
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.0036469362676143646,
+              "Medium.norm_fulfill_p1": -0.0046962350606918335,
+              "Medium.norm_fulfill_p10": 0.0019505321979522705,
+              "Low.norm_fulfill_mean": 0.008808165788650513,
+              "Low.norm_fulfill_p1": -0.007984238862991377,
+              "Low.norm_fulfill_p10": 0.005557060241699219
+            },
+            "config": [
+              8,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 9.345912500066333
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0119811072945595,
+                "norm_fulfill_p1": 0.9694012850522995,
+                "norm_fulfill_p10": 0.9801546335220337
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2156987711787224,
+                "norm_fulfill_p1": 1.084200245141983,
+                "norm_fulfill_p10": 1.1418412923812866
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.011440139263868332,
+              "Medium.norm_fulfill_p1": 0.008884179592132613,
+              "Medium.norm_fulfill_p10": 0.015295922756195068,
+              "Low.norm_fulfill_mean": 0.013867996633052826,
+              "Low.norm_fulfill_p1": -0.0053885698318481,
+              "Low.norm_fulfill_p10": 0.01863408088684082
+            },
+            "config": [
+              8,
+              0.06,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 10.147150000193506
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.08,
+        2,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.006838605040684342,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9778981432318687,
+                "norm_fulfill_p1": 0.9580797374248504,
+                "norm_fulfill_p10": 0.971591055393219
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.031529314815998,
+                "norm_fulfill_p1": 1.0193676948547363,
+                "norm_fulfill_p10": 1.0229254364967346
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.015449490398168564,
+              "Medium.norm_fulfill_p1": 0.018550220131874018,
+              "Medium.norm_fulfill_p10": 0.021411925554275513,
+              "Low.norm_fulfill_mean": 0.0015342757105827332,
+              "Low.norm_fulfill_p1": 0.0242015480995178,
+              "Low.norm_fulfill_p10": 0.012368947267532349
+            },
+            "config": [
+              8,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.3387187494518
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9899033755064011,
+                "norm_fulfill_p1": 0.9768865555524826,
+                "norm_fulfill_p10": 0.9802403450012207
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9872170090675354,
+                "norm_fulfill_p1": 0.9557811766862869,
+                "norm_fulfill_p10": 0.958765059709549
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.012389320880174637,
+              "Medium.norm_fulfill_p1": 0.017499059438705444,
+              "Medium.norm_fulfill_p10": 0.01862749457359314,
+              "Low.norm_fulfill_mean": -0.01701601967215538,
+              "Low.norm_fulfill_p1": -0.008421599864959717,
+              "Low.norm_fulfill_p10": -0.024625152349472046
+            },
+            "config": [
+              8,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 7.620699999279168
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326526105404,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9869501069188118,
+                "norm_fulfill_p1": 0.9475974440574646,
+                "norm_fulfill_p10": 0.9610502123832703
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1573767438530922,
+                "norm_fulfill_p1": 1.1029749155044555,
+                "norm_fulfill_p10": 1.1277593970298767
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003998693078756332,
+              "Medium.norm_fulfill_p1": -0.005335405468940735,
+              "Medium.norm_fulfill_p10": 0.001554340124130249,
+              "Low.norm_fulfill_mean": -0.006572812795639038,
+              "Low.norm_fulfill_p1": -0.02178537249565138,
+              "Low.norm_fulfill_p10": -0.01004558801651001
+            },
+            "config": [
+              8,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.672399999137269
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.95133838057518,
+                "norm_fulfill_p1": 0.9411328375339508,
+                "norm_fulfill_p10": 0.9420341551303864
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0141420550644398,
+                "norm_fulfill_p1": 0.9715850561857223,
+                "norm_fulfill_p10": 0.9834005832672119
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1999814361333847,
+                "norm_fulfill_p1": 1.076018512248993,
+                "norm_fulfill_p10": 1.1239683628082275
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 3.725290298461914e-09,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.013601087033748627,
+              "Medium.norm_fulfill_p1": 0.011067950725555442,
+              "Medium.norm_fulfill_p10": 0.01854187250137329,
+              "Low.norm_fulfill_mean": -0.001849338412284851,
+              "Low.norm_fulfill_p1": -0.013570302724838168,
+              "Low.norm_fulfill_p10": 0.0007611513137817383
+            },
+            "config": [
+              8,
+              0.08,
+              2,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 7.934575000035693
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.08,
+        4,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.006838608533143997,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9778981357812881,
+                "norm_fulfill_p1": 0.9580796867609024,
+                "norm_fulfill_p10": 0.971591055393219
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.0320407375693321,
+                "norm_fulfill_p1": 1.0194272220134735,
+                "norm_fulfill_p10": 1.022680640220642
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.015449482947587967,
+              "Medium.norm_fulfill_p1": 0.01855016946792598,
+              "Medium.norm_fulfill_p10": 0.021411925554275513,
+              "Low.norm_fulfill_mean": 0.0020456984639167786,
+              "Low.norm_fulfill_p1": 0.02426107525825494,
+              "Low.norm_fulfill_p10": 0.01212415099143982
+            },
+            "config": [
+              8,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 7.957312500366243
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9899033680558205,
+                "norm_fulfill_p1": 0.9768865555524826,
+                "norm_fulfill_p10": 0.9802403450012207
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9885196425020695,
+                "norm_fulfill_p1": 0.95639588534832,
+                "norm_fulfill_p10": 0.9605526626110077
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.01238931342959404,
+              "Medium.norm_fulfill_p1": 0.017499059438705444,
+              "Medium.norm_fulfill_p10": 0.01862749457359314,
+              "Low.norm_fulfill_mean": -0.015713386237621307,
+              "Low.norm_fulfill_p1": -0.007806891202926658,
+              "Low.norm_fulfill_p10": -0.022837549448013306
+            },
+            "config": [
+              8,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 8.390943749873259
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9869501106441021,
+                "norm_fulfill_p1": 0.9475974440574646,
+                "norm_fulfill_p10": 0.9610502123832703
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1638074442744255,
+                "norm_fulfill_p1": 1.107213294506073,
+                "norm_fulfill_p10": 1.1340082287788391
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003998696804046631,
+              "Medium.norm_fulfill_p1": -0.005335405468940735,
+              "Medium.norm_fulfill_p10": 0.001554340124130249,
+              "Low.norm_fulfill_mean": -0.0001421123743057251,
+              "Low.norm_fulfill_p1": -0.01754699349403377,
+              "Low.norm_fulfill_p10": -0.0037967562675476074
+            },
+            "config": [
+              8,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.459506249892002
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0141420625150204,
+                "norm_fulfill_p1": 0.9715850561857223,
+                "norm_fulfill_p10": 0.9834006130695343
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2062436640262604,
+                "norm_fulfill_p1": 1.0815074563026428,
+                "norm_fulfill_p10": 1.130285918712616
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.013601094484329224,
+              "Medium.norm_fulfill_p1": 0.011067950725555442,
+              "Medium.norm_fulfill_p10": 0.01854190230369568,
+              "Low.norm_fulfill_mean": 0.00441288948059082,
+              "Low.norm_fulfill_p1": -0.00808135867118831,
+              "Low.norm_fulfill_p10": 0.007078707218170166
+            },
+            "config": [
+              8,
+              0.08,
+              4,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.882481250111596
+          }
+        }
+      }
+    },
+    {
+      "config": [
+        8,
+        0.08,
+        6,
+        0.06,
+        0.01
+      ],
+      "feasible": false,
+      "score": 0.006838620873168111,
+      "loads": {
+        "2": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999713562428951,
+                "norm_fulfill_p1": 0.9996735066175461,
+                "norm_fulfill_p10": 0.9999924898147583
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9778981357812881,
+                "norm_fulfill_p1": 0.9580796867609024,
+                "norm_fulfill_p10": 0.971591055393219
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.032549686729908,
+                "norm_fulfill_p1": 1.0192534267902373,
+                "norm_fulfill_p10": 1.0212604999542236
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.015449482947587967,
+              "Medium.norm_fulfill_p1": 0.01855016946792598,
+              "Medium.norm_fulfill_p10": 0.021411925554275513,
+              "Low.norm_fulfill_mean": 0.0025546476244926453,
+              "Low.norm_fulfill_p1": 0.02408728003501881,
+              "Low.norm_fulfill_p10": 0.010704010725021362
+            },
+            "config": [
+              8,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 15,
+            "overlay_ms_per_snapshot": 10.12201250068756
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9999262280762196,
+                "norm_fulfill_p1": 0.9993267476558685,
+                "norm_fulfill_p10": 0.9997991621494293
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.9899033717811108,
+                "norm_fulfill_p1": 0.9768865555524826,
+                "norm_fulfill_p10": 0.9802403450012207
+              },
+              "Low": {
+                "norm_fulfill_mean": 0.9896482899785042,
+                "norm_fulfill_p1": 0.9565563946962357,
+                "norm_fulfill_p10": 0.962307333946228
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": -3.725290298461914e-09,
+              "High.norm_fulfill_p1": -5.066394814789987e-08,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.012389317154884338,
+              "Medium.norm_fulfill_p1": 0.017499059438705444,
+              "Medium.norm_fulfill_p10": 0.01862749457359314,
+              "Low.norm_fulfill_mean": -0.0145847387611866,
+              "Low.norm_fulfill_p1": -0.007646381855010986,
+              "Low.norm_fulfill_p10": -0.02108287811279297
+            },
+            "config": [
+              8,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 11,
+            "overlay_ms_per_snapshot": 9.944925000127114
+          }
+        },
+        "3": {
+          "a": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9811326488852501,
+                "norm_fulfill_p1": 0.96565101146698,
+                "norm_fulfill_p10": 0.9744058847427368
+              },
+              "Medium": {
+                "norm_fulfill_mean": 0.986950121819973,
+                "norm_fulfill_p1": 0.9475974440574646,
+                "norm_fulfill_p10": 0.9610502123832703
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.1697298511862755,
+                "norm_fulfill_p1": 1.111449259519577,
+                "norm_fulfill_p10": 1.1404231190681458
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": 0.0,
+              "High.norm_fulfill_p10": 0.0,
+              "Medium.norm_fulfill_mean": 0.003998707979917526,
+              "Medium.norm_fulfill_p1": -0.005335405468940735,
+              "Medium.norm_fulfill_p10": 0.001554340124130249,
+              "Low.norm_fulfill_mean": 0.0057802945375442505,
+              "Low.norm_fulfill_p1": -0.013311028480529785,
+              "Low.norm_fulfill_p10": 0.002618134021759033
+            },
+            "config": [
+              8,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 8.844337499795074
+          },
+          "b": {
+            "summary": {
+              "High": {
+                "norm_fulfill_mean": 0.9513383768498898,
+                "norm_fulfill_p1": 0.9411328285932541,
+                "norm_fulfill_p10": 0.942034125328064
+              },
+              "Medium": {
+                "norm_fulfill_mean": 1.0141420662403107,
+                "norm_fulfill_p1": 0.9715850561857223,
+                "norm_fulfill_p10": 0.9834006130695343
+              },
+              "Low": {
+                "norm_fulfill_mean": 1.2119503170251846,
+                "norm_fulfill_p1": 1.0845643520355224,
+                "norm_fulfill_p10": 1.1376098990440369
+              }
+            },
+            "delta": {
+              "High.norm_fulfill_mean": 0.0,
+              "High.norm_fulfill_p1": -8.940696738513054e-09,
+              "High.norm_fulfill_p10": -2.9802322387695312e-08,
+              "Medium.norm_fulfill_mean": 0.013601098209619522,
+              "Medium.norm_fulfill_p1": 0.011067950725555442,
+              "Medium.norm_fulfill_p10": 0.01854190230369568,
+              "Low.norm_fulfill_mean": 0.010119542479515076,
+              "Low.norm_fulfill_p1": -0.005024462938308716,
+              "Low.norm_fulfill_p10": 0.014402687549591064
+            },
+            "config": [
+              8,
+              0.08,
+              6,
+              0.06,
+              0.01
+            ],
+            "active": 16,
+            "overlay_ms_per_snapshot": 9.588875000190455
+          }
+        }
+      }
+    }
+  ],
+  "selected": [],
+  "full_results": []
+}

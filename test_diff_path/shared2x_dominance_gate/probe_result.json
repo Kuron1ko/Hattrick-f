@@ -1,0 +1,1283 @@
+{
+  "method": "ESM proposal with per-snapshot dominance abstention gate",
+  "idea": "Use ESM-SAR as a high-gain proposal, but fall back to Hattrick unless the ESM simulator predicts nonnegative Medium and Low gains with margins.",
+  "input_contract": {
+    "online": "ESM-predicted TMs, Hattrick policies, capacities",
+    "actual_tm": "evaluation only",
+    "high_policy": "identical to Hattrick by construction"
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_order_epsilon\\artifacts\\phase_a\\level3_validation_only\\seed_490\\best_model.pt",
+  "exploration_range": [
+    350,
+    358
+  ],
+  "validation_range": [
+    358,
+    400
+  ],
+  "proposal_config": {
+    "steps": 24,
+    "learning_rate": 0.06,
+    "low_weight": 0.25,
+    "anchor_weight": 0.01
+  },
+  "exploration_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9998999983072281,
+      "norm_fulfill_p1": 0.9995428746938706,
+      "norm_fulfill_p10": 0.999732619524002
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9725264981389046,
+      "norm_fulfill_p1": 0.9655640405416489,
+      "norm_fulfill_p10": 0.965868991613388
+    },
+    "Low": {
+      "norm_fulfill_mean": 0.9937678501009941,
+      "norm_fulfill_p1": 0.9616861295700073,
+      "norm_fulfill_p10": 0.9726080417633056
+    }
+  },
+  "exploration_candidates": [
+    {
+      "medium_margin": 0.0,
+      "low_margin": -0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.0,
+      "low_margin": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.0,
+      "low_margin": 0.002,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9802841991186142,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971091523766518,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.007757700979709625,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.003341302275657654,
+            "paired_negative_count": 2,
+            "paired_min_gain": -0.0036321282386779785,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.0,
+      "low_margin": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971301853656769,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623352646827698,
+            "paired_negative_count": 1,
+            "paired_min_gain": -1.1920928955078125e-07,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.0,
+      "low_margin": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971301853656769,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623352646827698,
+            "paired_negative_count": 1,
+            "paired_min_gain": -1.1920928955078125e-07,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.0,
+      "low_margin": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": -0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": 0.002,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9802841991186142,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.997109167277813,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.007757700979709625,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033413171768188477,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0036321282386779785,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.002,
+      "low_margin": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9750559255480766,
+          "norm_fulfill_p1": 0.9655640405416489,
+          "norm_fulfill_p10": 0.965868991613388
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529427409172058,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": true,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": -0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9958930611610413,
+          "norm_fulfill_p1": 0.9921838825941086,
+          "norm_fulfill_p10": 0.9937397301197052
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971262440085411,
+          "norm_fulfill_p1": 0.9815311467647553,
+          "norm_fulfill_p10": 0.98548743724823
+        }
+      },
+      "diagnostics": {
+        "accepted": 8,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.023366563022136688,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.01739656925201416,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": 0.003358393907546997,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": 0.002,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9802841991186142,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.997109167277813,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 3,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.007757700979709625,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033413171768188477,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0036321282386779785,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971302002668381,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623501658439636,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.005,
+      "low_margin": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.975055918097496,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9971301853656769,
+          "norm_fulfill_p1": 0.9784783226251602,
+          "norm_fulfill_p10": 0.9845026552677154
+        }
+      },
+      "diagnostics": {
+        "accepted": 1,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.002529419958591461,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0033623352646827698,
+            "paired_negative_count": 1,
+            "paired_min_gain": -1.1920928955078125e-07,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": -0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9933636337518692,
+          "norm_fulfill_p1": 0.9733649426698685,
+          "norm_fulfill_p10": 0.9876691043376923
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9937638938426971,
+          "norm_fulfill_p1": 0.9619159120321273,
+          "norm_fulfill_p10": 0.9749058663845063
+        }
+      },
+      "diagnostics": {
+        "accepted": 7,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.02083713561296463,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -3.956258296966553e-06,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": 0.0,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9933636337518692,
+          "norm_fulfill_p1": 0.9733649426698685,
+          "norm_fulfill_p10": 0.9876691043376923
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9937638938426971,
+          "norm_fulfill_p1": 0.9619159120321273,
+          "norm_fulfill_p10": 0.9749058663845063
+        }
+      },
+      "diagnostics": {
+        "accepted": 7,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.02083713561296463,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Low": {
+            "mean_gain": -3.956258296966553e-06,
+            "paired_negative_count": 3,
+            "paired_min_gain": -0.004357814788818359,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": 0.002,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.9777547717094421,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.993746817111969,
+          "norm_fulfill_p1": 0.9616861295700073,
+          "norm_fulfill_p10": 0.9726080417633056
+        }
+      },
+      "diagnostics": {
+        "accepted": 2,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": 0.005228273570537567,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": -2.1032989025115967e-05,
+            "paired_negative_count": 1,
+            "paired_min_gain": -0.0036321282386779785,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": 0.005,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.972526490688324,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9937678501009941,
+          "norm_fulfill_p1": 0.9616861295700073,
+          "norm_fulfill_p10": 0.9726080417633056
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": -7.450580596923828e-09,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": 0.01,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.972526490688324,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9937678351998329,
+          "norm_fulfill_p1": 0.9616861295700073,
+          "norm_fulfill_p10": 0.9726080417633056
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": -7.450580596923828e-09,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": -1.4901161193847656e-08,
+            "paired_negative_count": 1,
+            "paired_min_gain": -1.1920928955078125e-07,
+            "ecdf_max_upward_violation": 0.125
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": false
+      }
+    },
+    {
+      "medium_margin": 0.01,
+      "low_margin": 0.02,
+      "summary": {
+        "High": {
+          "norm_fulfill_mean": 0.9998999983072281,
+          "norm_fulfill_p1": 0.9995428746938706,
+          "norm_fulfill_p10": 0.999732619524002
+        },
+        "Medium": {
+          "norm_fulfill_mean": 0.972526490688324,
+          "norm_fulfill_p1": 0.9655640363693238,
+          "norm_fulfill_p10": 0.9658689498901367
+        },
+        "Low": {
+          "norm_fulfill_mean": 0.9937678501009941,
+          "norm_fulfill_p1": 0.9616861295700073,
+          "norm_fulfill_p10": 0.9726080417633056
+        }
+      },
+      "diagnostics": {
+        "accepted": 0,
+        "total": 8,
+        "classes": {
+          "High": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          },
+          "Medium": {
+            "mean_gain": -7.450580596923828e-09,
+            "paired_negative_count": 0,
+            "paired_min_gain": -5.960464477539063e-08,
+            "ecdf_max_upward_violation": 0.125
+          },
+          "Low": {
+            "mean_gain": 0.0,
+            "paired_negative_count": 0,
+            "paired_min_gain": 0.0,
+            "ecdf_max_upward_violation": 0.0
+          }
+        },
+        "all_three_empirical_cdfs_noninferior": false,
+        "all_three_paired_noninferior": true
+      }
+    }
+  ],
+  "winner": {
+    "medium_margin": 0.002,
+    "low_margin": 0.02,
+    "summary": {
+      "High": {
+        "norm_fulfill_mean": 0.9998999983072281,
+        "norm_fulfill_p1": 0.9995428746938706,
+        "norm_fulfill_p10": 0.999732619524002
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9750559255480766,
+        "norm_fulfill_p1": 0.9655640405416489,
+        "norm_fulfill_p10": 0.965868991613388
+      },
+      "Low": {
+        "norm_fulfill_mean": 0.9971302002668381,
+        "norm_fulfill_p1": 0.9784783226251602,
+        "norm_fulfill_p10": 0.9845026552677154
+      }
+    },
+    "diagnostics": {
+      "accepted": 1,
+      "total": 8,
+      "classes": {
+        "High": {
+          "mean_gain": 0.0,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.002529427409172058,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.0033623501658439636,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": true
+    }
+  },
+  "validation_baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9991721383162907,
+      "norm_fulfill_p1": 0.9960488146543502,
+      "norm_fulfill_p10": 0.9978890419006348
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9350381890932719,
+      "norm_fulfill_p1": 0.9020769453048706,
+      "norm_fulfill_p10": 0.9093402028083801
+    },
+    "Low": {
+      "norm_fulfill_mean": 0.9218976412500653,
+      "norm_fulfill_p1": 0.8052195358276367,
+      "norm_fulfill_p10": 0.8408179700374603
+    }
+  },
+  "validation": {
+    "medium_margin": 0.002,
+    "low_margin": 0.02,
+    "summary": {
+      "High": {
+        "norm_fulfill_mean": 0.9991721397354489,
+        "norm_fulfill_p1": 0.9960488146543502,
+        "norm_fulfill_p10": 0.9978890419006348
+      },
+      "Medium": {
+        "norm_fulfill_mean": 0.9628719744228181,
+        "norm_fulfill_p1": 0.9276439613103866,
+        "norm_fulfill_p10": 0.9325604677200318
+      },
+      "Low": {
+        "norm_fulfill_mean": 1.0363592519646598,
+        "norm_fulfill_p1": 0.919446314573288,
+        "norm_fulfill_p10": 0.9674018025398254
+      }
+    },
+    "diagnostics": {
+      "accepted": 35,
+      "total": 42,
+      "classes": {
+        "High": {
+          "mean_gain": 1.419158208937872e-09,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Medium": {
+          "mean_gain": 0.027833785329546248,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        },
+        "Low": {
+          "mean_gain": 0.11446161071459453,
+          "paired_negative_count": 0,
+          "paired_min_gain": 0.0,
+          "ecdf_max_upward_violation": 0.0
+        }
+      },
+      "all_three_empirical_cdfs_noninferior": true,
+      "all_three_paired_noninferior": true
+    }
+  },
+  "next_step": "Replace the two fixed margins by a tiny conformal lower-bound critic trained on 0-349, then keep the same abstention rule."
+}

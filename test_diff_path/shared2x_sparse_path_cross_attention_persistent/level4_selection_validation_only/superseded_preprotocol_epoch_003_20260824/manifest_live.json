@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-24T13:23:56.963514+00:00",
+  "frozen": false,
+  "target_epoch": 60,
+  "latest_history_epoch": 3,
+  "observed_history_epochs": [
+    1,
+    2,
+    3
+  ],
+  "archived_epochs": [
+    1,
+    2,
+    3
+  ],
+  "unavailable_past_checkpoints": [],
+  "source_run_directory": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\artifacts\\level4_confirmation\\seed_490",
+  "source_train_history_sha256": "03da24f327c71c32c5c78dac9763e333cd2b29b5eb62e99976f38e9bd799e42d",
+  "baseline_validation_metrics": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\validation_epoch_060_metrics.csv",
+  "baseline_validation_metrics_sha256": "225f8809e26cf11e144589e447981a88f48fd07c7dce8777445dff3a80b9602d",
+  "policy": {
+    "name": "persistent Stage-2 Level-4 validation-only core selector",
+    "target_epoch": 60,
+    "allowed_candidate_window": [
+      350,
+      400
+    ],
+    "forbidden_test_window": [
+      400,
+      500
+    ],
+    "hard_gates": {
+      "high_norm_mean_min": 0.995,
+      "max_post_admission_mlu_max": 1.000001,
+      "max_disabled_flow_max": 1e-08
+    },
+    "preferred_high_tail_gates": {
+      "high_norm_p1_min": 0.985,
+      "high_norm_p10_min": 0.99,
+      "fallback_if_empty": "retain every hard-gate candidate"
+    },
+    "selection": {
+      "coordinates": [
+        "medium_norm_mean",
+        "medium_norm_p1",
+        "medium_norm_p10"
+      ],
+      "pareto": "remove candidates weakly dominated on all three Medium coordinates",
+      "maximin": "maximize min(metric / best eligible metric) on the Pareto front",
+      "tie_break": [
+        "mean of normalized Medium coordinates",
+        "Medium mean",
+        "Medium P1",
+        "Medium P10",
+        "minimum High tail",
+        "earlier epoch"
+      ]
+    },
+    "low_policy": {
+      "core_low_is_descriptive_not_a_gate": true,
+      "reason": "a mandatory prediction-only Low guard is trained after the core checkpoint is frozen; it cannot alter High or Medium",
+      "final_composite_requirement": "on 350-399, Low guard must have nonnegative Mean/P1/P10 gain over its core and final Low must pass paired no-significant-decline versus native Hattrick"
+    },
+    "checkpoint_requirement": "immutable archived checkpoint matching train history and per-epoch validation files",
+    "test_data_policy": "neither training wrapper nor watcher opens snapshots 400-499"
+  },
+  "test_data_read": false,
+  "selection": {
+    "selection_tier": "hard-high+preferred-high-tail+medium-pareto-maximin",
+    "candidate_count": 3,
+    "hard_gate_count": 2,
+    "preferred_tail_count": 2,
+    "selection_pool_count": 2,
+    "pareto_epochs": [
+      3
+    ],
+    "core_low_used_for_selection": false,
+    "mandatory_downstream_low_guard": true,
+    "selected": {
+      "epoch": 3,
+      "checkpoint": {
+        "epoch": 3,
+        "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\archive\\epoch_003.pt",
+        "sha256": "c240021dd5e93465a63e5807d69e14ddd29e40c3dc7c36cc4fa7febdf1d6565b",
+        "source": "final_model.pt"
+      },
+      "high_norm_mean": 0.9969458555158487,
+      "high_norm_p1": 0.9917134294518514,
+      "high_norm_p10": 0.9932690453540944,
+      "medium_norm_mean": 0.8717447730862908,
+      "medium_norm_p1": 0.830596244215054,
+      "medium_norm_p10": 0.8353940331805959,
+      "low_norm_mean": 1.0216994556678127,
+      "max_post_admission_mlu": 1.000000238418579,
+      "max_disabled_flow": 0.0,
+      "validation_summary_sha256": "b92d2a69f6d74240c0223bdf92b4af1775bf48c542ed98d323f71d0bd9076aa8",
+      "validation_metrics_sha256": "09f6dc3ee2e99c6f33e093be922181d4168cba2e67bc64707e22b7d3f38e3ab2",
+      "low_paired_audit_descriptive": {
+        "n": 50,
+        "mean_delta": -0.018787635552073204,
+        "standard_error": 0.002759600901024778,
+        "two_sided_95_lower": -0.024333260532750072,
+        "two_sided_95_upper": -0.013242010571396335,
+        "direct_mean_delta_min": -0.005,
+        "direct_two_sided_95_upper_min": 0.0,
+        "direct_no_significant_decline_pass": false,
+        "one_sided_95_lower": -0.023414247202287197,
+        "fallback_noninferiority_margin": 0.01,
+        "fallback_noninferiority_pass": false
+      },
+      "hard_gate_pass": true,
+      "preferred_high_tail_pass": true,
+      "medium_normalized_ratios": {
+        "medium_norm_mean": 1.0,
+        "medium_norm_p1": 1.0,
+        "medium_norm_p10": 1.0
+      },
+      "medium_maximin": 1.0,
+      "medium_normalized_mean": 1.0
+    },
+    "candidates": [
+      {
+        "epoch": 1,
+        "checkpoint": {
+          "epoch": 1,
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\archive\\epoch_001.pt",
+          "sha256": "8154253689ec826f52439c9e0c7a725276235da5f567f07cf1d195814c14a2a9",
+          "source": "archive"
+        },
+        "high_norm_mean": 0.9491482825527199,
+        "high_norm_p1": 0.9277297762115904,
+        "high_norm_p10": 0.9314093505208079,
+        "medium_norm_mean": 0.6846571993320555,
+        "medium_norm_p1": 0.6327910398273227,
+        "medium_norm_p10": 0.6542136210106863,
+        "low_norm_mean": 0.7537670869832559,
+        "max_post_admission_mlu": 1.000000238418579,
+        "max_disabled_flow": 0.0,
+        "validation_summary_sha256": "ad8a1f3e7c878a8d9da6f1abf26be0abaf27c5ef13dfbde33e148ca7c245f929",
+        "validation_metrics_sha256": "ad4d82979e5e4af42a68d6cf263ca5e70513209bc423cb38f663cb5fd48c0810",
+        "low_paired_audit_descriptive": {
+          "n": 50,
+          "mean_delta": -0.2867200042366299,
+          "standard_error": 0.003964144441691859,
+          "two_sided_95_lower": -0.2946862498030428,
+          "two_sided_95_upper": -0.278753758670217,
+          "direct_mean_delta_min": -0.005,
+          "direct_two_sided_95_upper_min": 0.0,
+          "direct_no_significant_decline_pass": false,
+          "one_sided_95_lower": -0.29336609456449286,
+          "fallback_noninferiority_margin": 0.01,
+          "fallback_noninferiority_pass": false
+        },
+        "hard_gate_pass": false,
+        "preferred_high_tail_pass": false
+      },
+      {
+        "epoch": 2,
+        "checkpoint": {
+          "epoch": 2,
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\archive\\epoch_002.pt",
+          "sha256": "1eda8112ffc3f1019d83468987abd4ec7e437ac4b9f60ad8d0e0c380eb182afb",
+          "source": "best_model.pt"
+        },
+        "high_norm_mean": 0.9981793647621826,
+        "high_norm_p1": 0.9919440178875835,
+        "high_norm_p10": 0.996227231176612,
+        "medium_norm_mean": 0.8557450731564634,
+        "medium_norm_p1": 0.8044969583105662,
+        "medium_norm_p10": 0.8129242164424858,
+        "low_norm_mean": 1.0215141709455744,
+        "max_post_admission_mlu": 1.000000238418579,
+        "max_disabled_flow": 0.0,
+        "validation_summary_sha256": "84f6d1eb566a9a979a72aced529665bd76d88db7f95180ddaa02647e6965b030",
+        "validation_metrics_sha256": "3fdfebe5fd5d535a61b80356dbea6f88f68fbb55c25d1fbe14835b4a64f6a972",
+        "low_paired_audit_descriptive": {
+          "n": 50,
+          "mean_delta": -0.018972920274311467,
+          "standard_error": 0.003347587895461811,
+          "two_sided_95_lower": -0.025700149219334136,
+          "two_sided_95_upper": -0.012245691329288797,
+          "direct_mean_delta_min": -0.005,
+          "direct_two_sided_95_upper_min": 0.0,
+          "direct_no_significant_decline_pass": false,
+          "one_sided_95_lower": -0.02458532210803586,
+          "fallback_noninferiority_margin": 0.01,
+          "fallback_noninferiority_pass": false
+        },
+        "hard_gate_pass": true,
+        "preferred_high_tail_pass": true
+      },
+      {
+        "epoch": 3,
+        "checkpoint": {
+          "epoch": 3,
+          "path": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_sparse_path_cross_attention_persistent\\level4_selection_validation_only\\archive\\epoch_003.pt",
+          "sha256": "c240021dd5e93465a63e5807d69e14ddd29e40c3dc7c36cc4fa7febdf1d6565b",
+          "source": "final_model.pt"
+        },
+        "high_norm_mean": 0.9969458555158487,
+        "high_norm_p1": 0.9917134294518514,
+        "high_norm_p10": 0.9932690453540944,
+        "medium_norm_mean": 0.8717447730862908,
+        "medium_norm_p1": 0.830596244215054,
+        "medium_norm_p10": 0.8353940331805959,
+        "low_norm_mean": 1.0216994556678127,
+        "max_post_admission_mlu": 1.000000238418579,
+        "max_disabled_flow": 0.0,
+        "validation_summary_sha256": "b92d2a69f6d74240c0223bdf92b4af1775bf48c542ed98d323f71d0bd9076aa8",
+        "validation_metrics_sha256": "09f6dc3ee2e99c6f33e093be922181d4168cba2e67bc64707e22b7d3f38e3ab2",
+        "low_paired_audit_descriptive": {
+          "n": 50,
+          "mean_delta": -0.018787635552073204,
+          "standard_error": 0.002759600901024778,
+          "two_sided_95_lower": -0.024333260532750072,
+          "two_sided_95_upper": -0.013242010571396335,
+          "direct_mean_delta_min": -0.005,
+          "direct_two_sided_95_upper_min": 0.0,
+          "direct_no_significant_decline_pass": false,
+          "one_sided_95_lower": -0.023414247202287197,
+          "fallback_noninferiority_margin": 0.01,
+          "fallback_noninferiority_pass": false
+        },
+        "hard_gate_pass": true,
+        "preferred_high_tail_pass": true,
+        "medium_normalized_ratios": {
+          "medium_norm_mean": 1.0,
+          "medium_norm_p1": 1.0,
+          "medium_norm_p10": 1.0
+        },
+        "medium_maximin": 1.0,
+        "medium_normalized_mean": 1.0
+      }
+    ]
+  },
+  "watcher_source_sha256": {
+    "watch_and_select.py": "db870a4399b964934424b93ede7c6aa17d1cc77dc5c0a2e568048e69fc10d480",
+    "base_watch_and_select.py": "c0e25d46ff0aedd9b1a30f66465e225db1f00815848812fc39d82e555a7d1197",
+    "selection_policy.json": "36026468706c73562c4ac61c812ca5054494f42c313fd71332f897525ea948bf"
+  }
+}

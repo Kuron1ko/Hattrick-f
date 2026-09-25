@@ -1,0 +1,91 @@
+{
+  "method": "direct CDF-calibrated ESM gain gate over ESM-SAR proposals",
+  "traffic_scale": "2x",
+  "protocol": {
+    "offline_memory": [
+      0,
+      318
+    ],
+    "safety_selection": [
+      318,
+      350
+    ],
+    "independent_validation": [
+      350,
+      400
+    ],
+    "level4_confirmation": [
+      400,
+      500
+    ],
+    "actual_tm_online": false
+  },
+  "frozen_gate": {
+    "medium_predicted_gain_threshold": 0.008,
+    "low_predicted_gain_threshold": 0.005,
+    "low_trust_alpha": 0.9
+  },
+  "checkpoint": "D:\\kuroresearch\\Hattrick-main\\test_diff_path\\shared2x_full_objectives\\artifacts\\level4_confirmation\\seed_490\\best_model.pt",
+  "checkpoint_sha256": "ee6a03118ad80341019c60ae8c2b8cbf7b999d6d9d51e0f3de24658a91aa66ab",
+  "seconds_100_snapshots": 35.83090080000693,
+  "baseline": {
+    "High": {
+      "norm_fulfill_mean": 0.9985365080833435,
+      "norm_fulfill_p1": 0.9882580137252808,
+      "norm_fulfill_p10": 0.9963001787662507
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9343662142753602,
+      "norm_fulfill_p1": 0.8901874989271163,
+      "norm_fulfill_p10": 0.8966957449913024
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1472881823778152,
+      "norm_fulfill_p1": 0.9548773539066314,
+      "norm_fulfill_p10": 0.9992087244987488
+    }
+  },
+  "candidate_raw_summary": {
+    "High": {
+      "norm_fulfill_mean": 0.9985365062952042,
+      "norm_fulfill_p1": 0.9882580137252808,
+      "norm_fulfill_p10": 0.9963001787662507
+    },
+    "Medium": {
+      "norm_fulfill_mean": 0.9455439096689224,
+      "norm_fulfill_p1": 0.8996667373180389,
+      "norm_fulfill_p10": 0.9159154951572418
+    },
+    "Low": {
+      "norm_fulfill_mean": 1.1597862446308136,
+      "norm_fulfill_p1": 0.9673404061794281,
+      "norm_fulfill_p10": 1.0019129812717438
+    }
+  },
+  "dominance_diagnostics": {
+    "accepted": 50,
+    "total": 100,
+    "classes": {
+      "High": {
+        "mean_gain": 0.0,
+        "paired_negative_count": 0,
+        "paired_min_gain": 0.0,
+        "ecdf_max_upward_violation": 0.0
+      },
+      "Medium": {
+        "mean_gain": 0.011177693605422973,
+        "paired_negative_count": 0,
+        "paired_min_gain": 0.0,
+        "ecdf_max_upward_violation": 0.0
+      },
+      "Low": {
+        "mean_gain": 0.01249806523323059,
+        "paired_negative_count": 15,
+        "paired_min_gain": -0.0510636568069458,
+        "ecdf_max_upward_violation": 0.040000000000000036
+      }
+    },
+    "all_three_empirical_cdfs_noninferior": false,
+    "all_three_paired_noninferior": false
+  }
+}
